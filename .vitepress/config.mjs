@@ -10,6 +10,10 @@ export default defineConfig({
   outDir: './dist',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' }
@@ -23,12 +27,33 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       },
+      
+      {
+        text: '放款支付',
+        items: [
+          { text: 'test', link: '/test/test-1' },
+          { text: 'test', link: '/test/test-2' },
+         
+        ]
+      },
+    
+     
       {
         text: 'test',
         items: [
-          { text: 'test-1', link: '/test-1' }
+          // This shows `/guide/index.md` page.
+          { text: 'test-2' ,
+            items:[
+              {
+                text:[
+                  'test-1'
+                ]
+              }
+            ]
+        }
         ]
       }
+
     ],
 
     // socialLinks: [

@@ -26,7 +26,7 @@ export default defineConfig({
         items: [
           { text: "Version", link: "/markdown-examples" },
           { text: "API 目录", link: "/api-examples" },
-          { text: "前言", link: "/api-examples" },
+          { text: "前言", link: "/preface" },
           { text: "文档说明", link: "/api-examples" },
         ],
       },
@@ -35,8 +35,8 @@ export default defineConfig({
         items: [
           {
             items: [
-              { text: "test", link: "/test/test-1" },
-              { text: "test", link: "/test/test-2" },
+              { text: "3.1推送线上支付交易(payoutQueue)", link: "/test/test-1" },
+              { text: "3.2回传支付确认讯息（payoutQueuePayout）", link: "/test/test-2" },
             ]
           },
         ]

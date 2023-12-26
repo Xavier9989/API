@@ -77,17 +77,7 @@ export default {
 
 
 
-1. Open the file.
-2. Find the following code block on line 21:
 
-        <html>
-          <head>
-            <title>Test</title>
-          </head>
-
-3.  Update the title to match the name of your website.
-1.  Open the file containing the Linux mascot.
-2.  Marvel at its beauty.
 
     
 
@@ -186,4 +176,4 @@ This is a details block.
 
 ## More
 
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+<!-- Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown). -->

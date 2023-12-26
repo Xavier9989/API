@@ -1,6 +1,9 @@
 
-# Markdown Extension Examples1
-
+# 版本
+_________________
+### 本文档包含Skypay专有的信息，未经本公司明确书面许可，不得复制、披露或全部或部分使用。
+_________________
+ 
 | 版本      | 上版时间 | 描述                       |Wayne.Wang|
 | ------ | :-----------: | -------------------------------------------|-----     |   
 | 1.0      |   2018/06/21    | 基准1.0 |Wayne.Wang|
@@ -19,41 +22,34 @@
 | 1.13     |   2018/11/28    |3.2回传支付确认讯息（payoutQueuePayout）添加输入参数–action  。4.2支付成功通知（PayoutPayout）添加输出参数–withdrawChannel。4.2支付成功通知（PayoutPayout）添加输入参数–payChannel。4.4收款成功通知（collectionCollect）更新输入参数–4:ECPay。4.2支付成功通知（PayoutPayout）添加输入参数–companyName。|Wayne.Wang|
 | 1.14     |   2018/12/07    |3.1推送线上支付交易(payoutQueue)添加输入参数–accountNo,bankNo,bankProvince,bankCity添加输出参数–referenceNo。7.Return Code添加新的返回代码。 添加 8.withdrawChannel 。|Wayne.Wang|
 | 1.15     |   2019/01/31    |3.1推送线上支付交易(payoutQueue)删除 Bank,Paymaya channel添加新的返回代码。7.Return Code更新返回代码列表。8.withdrawChannel更新可用的渠道。|Wayne.Wang|
-| 1.16     |   2019/02/18    |3.1推送线上支付交易(payoutQueue)MLhuillier&Palawan Pawnshop going to stop using and the stop date will annoce at future.。4.1线下支付数据验证（PayoutInquiry）Final the api sepc.。4.2支付成功通知（PayoutPayout）Final the api spec。4.3收款数据验证（CollectionInquiry）添加输出参数。 删除 8.withdrawChannel。|Wayne.Wang|
-| 1.17     |   2019/03/24    |  Cool |Wayne.Wang|
-| 1.18     |   2019/04/29    | $1600 |Wayne.Wang|
-| 1.19     |   2019/05/06    |   $12 |Wayne.Wang|
-| 1.20     |   2019/06/18    |    $1 |Wayne.Wang|
-| 1.21     |   2019/07/08    | $1600 |Wayne.Wang|
-| 1.22     |   2019/08/05    |   $12 |Wayne.Wang|
-| 1.23     |   2019/08/14    |    $1 |Wayne.Wang|
-| 1.24     |   2019/08/25    |  Cool |Wayne.Wang|
-| 1.27     |   2019/10/21    |    $1 |Wayne.Wang|
-| 1.29     |   2020/02/24    |   $12 |Wayne.Wang|
-| 1.30     |   2020/08/28    |    $1 |Wayne.Wang|
-| 1.31     |   2020/09/29    |  Cool |Wayne.Wang|
-| 1.32     |   2020/11/19    | $1600 |Wayne.Wang|
-| 1.33     |   2021/01/26    |   $12 |Wayne.Wang|
-| 1.35     |   2023/5/11     |    $1 |Wayne.Wang|
+| 1.16     |   2019/02/18    |3.1推送线上支付交易(payoutQueue)MLhuillier&Palawan Pawnshop going to stop using and the stop date will annoce at future.。    4.1线下支付数据验证（PayoutInquiry）Final the api sepc.。4.2支付成功通知（PayoutPayout）Final the api spec。4.3收款数据验证（CollectionInquiry）添加输出参数。 删除 8.withdrawChannel。|Wayne.Wang|
+| 1.17     |   2019/03/24    |添加 9.withdrawChannel已修改了所有章节以添加所需的列。4.3收款数据验证（CollectionInquiry）Modified parameter to fit MLhuillier bills payment API interface。|Wayne.Wang|
+| 1.18     |   2019/04/29    |添加 4.5支付状态查询（payoutQueryStatus）。|Wayne.Wang|
+| 1.19     |   2019/05/06    |添加 3.1	Payout–payoutQueue For Bank 。添加 7	Get Catalog。|Denny Pujo|
+| 1.20     |   2019/06/18    |添加ed related ProvinceId in Town City。|Denny Pujo|
+| 1.21     |   2019/07/08    |1.新增中文说明。2.增加的支付渠道。|Vinson Huang|
+| 1.22     |   2019/08/05    |将发行日期和到期日期更改为3.1版银行付款队列中的可选日期。|Denny Pujo|
+| 1.23     |   2019/08/14    |变更可用渠道。|Vinson Huang|
+| 1.24     |   2019/08/25    |更改字段的数据类型和长度描述符。|Vinson Huang|
+| 1.27     |   2019/10/21    |添加 7-11 Generate Barcode。|Denny Pujo|
+| 1.29     |   2020/02/24    |添加 4.3.1 Generate QR Code。|Denny Pujo|
+| 1.30     |   2020/08/28    |删除 3.4 payoutQueueV2。删除 3.4.1 Generate QRCode。删除 3.5 amendTransactionV2。|Denny Pujo|
+| 1.31     |   2020/09/29    |3.1推送线上支付交易(payoutQueue)修改后只允许电子电子和银行交易。添加 3.4 payoutQueueV2。添加 3.4.1 Generate QRCode。添加 3.5 amendTransactionV2。3.2 payoutQueuePayout添加 ml referenceNumber。|Denny Pujo|
+| 1.32     |   2020/11/19    |添加 WithdrawChannel E-wallet:Paymaya,GrabPay,OmniPay。|Abel|
+| 1.33     |   2021/01/26    |添加 Withdraw Channel:LBC,EGcash。|Abel|
+| 1.35     |   2023/5/11     |添加 4.6 getReportPayout/(Collection)。|Wayne.Wang|
+| 1.36     |   2023/12/15    |添加5.充值、提现、查询接口。5.1通知接口-充值、结算、提现（financeNotification）。添加5.2查詢接口-充值、结算、提现（notificationInquiry）。|Wayne.Wang|
 | 1.36     |   2023/12/15    |   $12 |Wayne.Wang|
+| 1.36     |   2023/12/15    |   $12 |Wayne.Wang|
+## (提醒)：
+1.修改后的文件验证之后将进行有效的修改。
+2.本封面应附在修改后的或新的发布文档中。
 
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-**Maxwell's equations:**
-
-| equation                                                                                                                                  | description |
-| --------------------------------- | ------------------------------------ |
-| $\nabla \cdot \vec{\mathbf{B}}  = 0$ | divergence of $\vec{\mathbf{B}}$ is zero|
-| $\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}  = \vec{\mathbf{0}}$| curl of $\vec{\mathbf{E}}$ is proportional to the rate of change of $\vec{\mathbf{B}}$ |
-| $\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} = \frac{4\pi}{c}\vec{\mathbf{j}}\nabla \cdot \vec{\mathbf{E}} = 4 \pi \rho$ | _wha?_|
+_________________
 
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
 
-I really like using Markdown.
-
-I think I'll use it to format all of my documents from now on.
+                                                                                                
 
 ## Syntax Highlighting
 

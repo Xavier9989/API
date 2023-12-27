@@ -1,0 +1,1 @@
+## 4.6 交易结果查询（getReportPayout(Collection)）

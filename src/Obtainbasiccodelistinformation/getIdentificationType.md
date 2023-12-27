@@ -1,0 +1,1 @@
+# 7.3取得身份验证类别(getIdentificationType)

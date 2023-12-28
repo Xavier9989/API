@@ -67,6 +67,10 @@ export default defineConfig({
           {
             items: [
               {
+                text: "支付处理流程-实时交易说明",
+                link: "/Offlinepayment/Realtimetransactioninstructions",
+              },
+              {
                 text: "4.1 线下支付数据验证（PayoutInquiry）",
                 link: "/Offlinepayment/PayoutInquiry",
               },
@@ -112,11 +116,11 @@ export default defineConfig({
             items: [
               {
                 text: "5.1通知接口-充值、结算、提现（financeNotification）",
-                link: "/Offlinepayment/financeNotification",
+                link: "/Rechargebalancewithdrawal/financeNotification",
               },
               {
                 text: "5.2查詢接口-充值、结算、提现（notificationInquiry）",
-                link: "/Offlinepayment/collectionCollect",
+                link: "/Rechargebalancewithdrawal/notificationInquiry",
               },
             ],
           },

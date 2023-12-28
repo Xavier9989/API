@@ -1,6 +1,4 @@
----
-outline: deep
----
+
 
 # API 目录
 ###   SkyPay第三支付API规范	
@@ -18,6 +16,7 @@ _________________
     - [3.4 ML/LBCExpress非实时放款（payoutQueueV2）](http://localhost:5173/onlinepayment/payoutQueueV2.html).
     - [3.5修改支付交易（amendTransactionV2）](http://localhost:5173/onlinepayment/amendTransactionV2.html).
 - 4. 支付处理流程-实时交易说明
+    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](http://localhost:5173/Offlinepayment/Realtimetransactioninstructions.html).
     - [4.1 线下支付数据验证（PayoutInquiry）](http://localhost:5173/Offlinepayment/PayoutInquiry.html).
 	- [4.2 支付成功通知（PayoutPayout）](http://localhost:5173/Offlinepayment/PayoutPayout.html).
     - [4.3 收款数据验证（CollectionInquiry）](http://localhost:5173/Offlinepayment/CollectionInquiry.html).
@@ -42,51 +41,3 @@ _________________
 - 8. [回传code](http://localhost:5173/Backpropagationmessagedefinition/Backpropagationmessagedefinition.html).
 - 9. [支付管道（渠道代码即code值）](http://localhost:5173/Paymentpipeline/Paymentpipeline.html).
 - 10. [收款管道（渠道代码即code值）](http://localhost:5173/Paymentpipeline/Paymentpipeline1.html).
-
-
-<!-- This page demonstrates usage of some of the runtime APIs provided by VitePress.
-
-The main `useData()` API can be used to access site, theme, and page data for the current page. It works in both `.md` and `.vue` files: -->
-
-```md
-<script setup>
-import { useData } from 'vitepress'
-
-const { theme, page, frontmatter } = useData()
-</script>
-
- ## Results 
-
- ### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre> 
-```
-
-<script setup>
-import { useData } from 'vitepress'
-
-const { site, theme, page, frontmatter } = useData()
-</script>
-
- ## Results
-
-### Theme Data
-<pre>{{ theme }}</pre>
-
-### Page Data
-<pre>{{ page }}</pre>
-
-### Page Frontmatter
-<pre>{{ frontmatter }}</pre>
-
- ## More 
-
-<!-- Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata). -->
-
-## details
-This is a details block. 

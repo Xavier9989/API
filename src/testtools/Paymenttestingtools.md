@@ -5,8 +5,6 @@
 
 ### 接口请求参数及返回的原始信息请点击交易后面的DETAIL按钮
 ![](../public/6.2付款测试交易查看.png "Shiprock")
-
-
 ## 还款测试流程
 ### 模拟4.3 Collection Inquiry&4.4 Collection Collect还款查询以及还款确认接口请求。点击CREATE按钮打开测试工具页面。
 

@@ -16,7 +16,7 @@ _________________
     - [3.4 ML/LBCExpress非实时放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
     - [3.5修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
 - 4. 支付处理流程-实时交易说明
-    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](.Offlinepayment/Realtimetransactioninstructions.md).
+    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
     - [4.1 线下支付数据验证（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
 	- [4.2 支付成功通知（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
     - [4.3 收款数据验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
@@ -26,7 +26,7 @@ _________________
     - [4.6 交易结果查询（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
     - [4.7余额查询（balanceQuery）](./Offlinepayment/balanceQuery.md).
 - 5. 充值、结算、提现
-    - [5.1通知接口-充值、结算、提现（financeNotification）](.Rechargebalancewithdrawal/financeNotification.md).
+    - [5.1通知接口-充值、结算、提现（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
     - [5.2查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
 - 6. 测试工具
     - [6.1 支付测试工具](./testtoos/Paymenttestingtools.md).

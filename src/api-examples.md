@@ -29,8 +29,8 @@ _________________
     - [5.1通知接口-充值、结算、提现（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
     - [5.2查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
 - 6. 测试工具
-    - [6.1 支付测试工具](./testtoos/Paymenttestingtools.md).
-    - [6.2 收款验证工具](./testtoos/Collectionverificationtool.md).
+    - [6.1 支付测试工具](./testtools/Collectionverificationtool.md).
+    - [6.2 收款验证工具](./testtools/Paymenttestingtools.md).
 - 7. 取得基本代码列表信息
     - [7.1取得国别定义(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
     - [7.2取得公民状态(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).

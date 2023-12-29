@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
+  title: " Awesome Project",
   description: "A VitePress Site",
   // 源码目录
   srcDir: "./src",

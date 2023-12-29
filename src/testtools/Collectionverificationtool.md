@@ -1,14 +1,14 @@
 # 6.1 支付测试工具
 
-## 请在后台CallBack配置好对应接口的回调地址，Content Type：text/plain，测试工具位置（中文界面显示付款工具，英文界面显示payout tool）
+### 请在后台CallBack配置好对应接口的回调地址，Content Type：text/plain，测试工具位置（中文界面显示付款工具，英文界面显示payout tool）
 ![](../public/CB回调.png "Shiprock")![](../public/回调填写界面.png "Shiprock")
 
-## 线上渠道放款测试流程
+### 线上渠道放款测试流程
 #### 请直接请求3.1 payoutQueue接口，短暂延迟后系统会自动回调3.2 payoutQueuePayout接口通知放款成功。(暂时只能模拟成功回调，不能手动回调或者失败回调)。
 #### 接口请求参数及返回的原始信息请点击交易后面的DETAIL按钮
 ![](../public/查看交易信息.png "Shiprock")
 
-## 线下门店放款测试流程
+### 线下门店放款测试流程
 #### 模拟4.1 payoutInquiry&4.2 payoutPayout线下店支付查询及支付成功回调讯息流程。点击CREATE按钮打开测试工具页面。
 ![](../public/4.1线下放款测试工具.png "Shiprock")
 

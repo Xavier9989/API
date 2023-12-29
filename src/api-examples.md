@@ -6,38 +6,38 @@ _________________
 - [版本](http://localhost:5173/markdown-examples.html).
 - 目录 
 - [前言](http://localhost:5173/preface.html).
-- API文档说明
-    - 1. 数据加密说明
-    - 2. 加密程序说明
+- [API文档说明](./APIdocumentationdescription.md)
+    - 1.数据加密说明
+    - 2.加密程序说明
 - 3. 线上支付说明
-    - [3.1推送线上支付交易(payoutQueue)](http://localhost:5173/onlinepayment/payoutQueue.html).
-    - [3.2回传支付确认讯息（payoutQueuePayout）)](http://localhost:5173/onlinepayment/payoutQueuePayout.html).
-    - [3.3取消支付交易（cancelPayout）](http://localhost:5173/onlinepayment/cancelPayout.html).
-    - [3.4 ML/LBCExpress非实时放款（payoutQueueV2）](http://localhost:5173/onlinepayment/payoutQueueV2.html).
-    - [3.5修改支付交易（amendTransactionV2）](http://localhost:5173/onlinepayment/amendTransactionV2.html).
+    - [3.1推送线上支付交易(payoutQueue)](./onlinepayment/payoutQueue.md)
+    - [3.2回传支付确认讯息（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
+    - [3.3取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
+    - [3.4 ML/LBCExpress非实时放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [3.5修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
 - 4. 支付处理流程-实时交易说明
-    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](http://localhost:5173/Offlinepayment/Realtimetransactioninstructions.html).
-    - [4.1 线下支付数据验证（PayoutInquiry）](http://localhost:5173/Offlinepayment/PayoutInquiry.html).
-	- [4.2 支付成功通知（PayoutPayout）](http://localhost:5173/Offlinepayment/PayoutPayout.html).
-    - [4.3 收款数据验证（CollectionInquiry）](http://localhost:5173/Offlinepayment/CollectionInquiry.html).
-        - [4.3.1产生7-11收款条形码（Generate711Barcode）](http://localhost:5173/Offlinepayment/Generate711Barcode.html).
-    - [4.4 收款成功通知（collectionCollect）](http://localhost:5173/Offlinepayment/collectionCollect.html).
-    - [4.5 支付状态查询（payoutQueryStatus）](http://localhost:5173/Offlinepayment/payoutQueryStatus.html).
-    - [4.6 交易结果查询（getReportPayout(Collection)）](http://localhost:5173/Offlinepayment/getReportPayout.html).
-    - [4.7余额查询（balanceQuery）](http://localhost:5173/Offlinepayment/balanceQuery.html).
+    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](.Offlinepayment/Realtimetransactioninstructions.md).
+    - [4.1 线下支付数据验证（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
+	- [4.2 支付成功通知（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
+    - [4.3 收款数据验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
+        - [4.3.1产生7-11收款条形码（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
+    - [4.4 收款成功通知（collectionCollect）](./Offlinepayment/collectionCollect.md).
+    - [4.5 支付状态查询（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
+    - [4.6 交易结果查询（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
+    - [4.7余额查询（balanceQuery）](./Offlinepayment/balanceQuery.md).
 - 5. 充值、结算、提现
-    - [5.1通知接口-充值、结算、提现（financeNotification）](http://localhost:5173/Rechargebalancewithdrawal/financeNotification.html).
-    - [5.2查詢接口-充值、结算、提现（notificationInquiry）](http://localhost:5173/Rechargebalancewithdrawal/notificationInquiry.html).
+    - [5.1通知接口-充值、结算、提现（financeNotification）](.Rechargebalancewithdrawal/financeNotification.md).
+    - [5.2查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
 - 6. 测试工具
-    - [6.1 支付测试工具](http://localhost:5173/testtoos/Paymenttestingtools.html).
-    - [6.2 收款验证工具](http://localhost:5173/testtoos/Collectionverificationtool.html).
+    - [6.1 支付测试工具](./testtoos/Paymenttestingtools.md).
+    - [6.2 收款验证工具](./testtoos/Collectionverificationtool.md).
 - 7. 取得基本代码列表信息
-    - [7.1取得国别定义(getNationality)](http://localhost:5173/Obtainbasiccodelistinformation/getNationality.html).
-    - [7.2取得公民状态(getCivilStatus)](http://localhost:5173/Obtainbasiccodelistinformation/getCivilStatus.html).
-    - [7.3取得身份验证类别(getIdentificationType)](http://localhost:5173/Obtainbasiccodelistinformation/getIdentificationType.html).
-    - [7.4取得城巿代码(getTownCity)](http://localhost:5173/Obtainbasiccodelistinformation/getTownCity.html).
-    - [7.5取得省份代码(getProvince)](http://localhost:5173/Obtainbasiccodelistinformation/getProvince.html).
-    - [7.6取得银行代码(getBankCode)](http://localhost:5173/Obtainbasiccodelistinformation/getBankCode.html).
-- 8. [回传code](http://localhost:5173/Backpropagationmessagedefinition/Backpropagationmessagedefinition.html).
-- 9. [支付管道（渠道代码即code值）](http://localhost:5173/Paymentpipeline/Paymentpipeline.html).
-- 10. [收款管道（渠道代码即code值）](http://localhost:5173/Paymentpipeline/Paymentpipeline1.html).
+    - [7.1取得国别定义(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
+    - [7.2取得公民状态(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [7.3取得身份验证类别(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [7.4取得城巿代码(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
+    - [7.5取得省份代码(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
+    - [7.6取得银行代码(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
+- 8. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 9. [支付管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline.md).
+- 10. [收款管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline1.md).

@@ -3,9 +3,9 @@
 # API 目录
 ###   SkyPay第三支付API规范	
 _________________
-- [版本](http://localhost:5173/markdown-examples.html).
-- 目录 
-- [前言](http://localhost:5173/preface.html).
+- [版本](./markdown-examples.md).
+- 目录
+- [前言](./preface.md).
 - [API文档说明](./APIdocumentationdescription.md)
     - 1.数据加密说明
     - 2.加密程序说明

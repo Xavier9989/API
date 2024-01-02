@@ -8,7 +8,7 @@ hero:
     alt: SKYPAY
   actions:
     - theme: brand
-      text: Click to enterr
+      text: Click to enter
       link: /markdown-examples
 ---
 

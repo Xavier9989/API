@@ -1,6 +1,4 @@
 import { defineConfig } from "vitepress";
-
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: " Awesome Project",
   description: "A VitePress Site",
@@ -9,7 +7,6 @@ export default defineConfig({
   // 打包后的代码目录
   outDir: "./dist",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: "local",
     },

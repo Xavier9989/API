@@ -4,13 +4,13 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|generate711Barcode(固定参数值)(必填) - Ex:"action":"generate711Barcode"|
-|authentication  - 验证码|string |255|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber - 收款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
-|name - 姓名|string |50|（必填）还款人名字,使用逗号分割。(必填)  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
+|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|contractNumber - 收款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|name - 姓名|string |50|（必填）还款人名字,使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone - 手机号|string|50|09开头的11位数字(必填)  - Ex:"phone":"09270348095"|
-|amount - 金额|decimal|10.2|必须是用户实际收款金额,小数点最高二位数(必填) -  ex:"amount":3400.00|
+|amount - 金额|decimal|10.2|(必填)必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
 
 #### Post data
 ```md

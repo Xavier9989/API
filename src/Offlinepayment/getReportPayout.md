@@ -4,9 +4,9 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutInquiry(固定参数值)(必填) - Ex:"action":"payoutInquiry"|
-|authentication  - 验证码|string |255|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填) payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
+|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |startDate - 起始时间|string|50|"2022-12-02"|
 |endDate - 截止时间|string|50|"2022-12-02"|
 |dateType|string|50|CreateDate、CollectedTime(collection)、PayTime(payout)|

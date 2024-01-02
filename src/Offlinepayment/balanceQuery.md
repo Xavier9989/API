@@ -3,9 +3,9 @@
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|balanceQuery(固定参数值)(必填) - Ex:"action":"balanceQuery"|
-|authentication  - 验证码|string |255|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)balanceQuery(固定参数值) - Ex:"action":"balanceQuery"|
+|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 #### Input parameters
 ```md

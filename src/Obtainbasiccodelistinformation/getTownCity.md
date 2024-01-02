@@ -5,9 +5,9 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action-调用行为|string|50|getCatalog(固定参数值)- Ex:"action":"getCatalog"|
-|authentication  - 验证码|string |255|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |catalogType - 目录类别|string|50|选择所需的基础代码类别
 Ex:"catalogType":"getTownCity"|
 |versionDate - 版本日期|dataTime|---|

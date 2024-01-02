@@ -4,10 +4,10 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutInquiry(固定参数值)(必填) - Ex:"action":"payoutInquiry"|
-|authentication  - 验证码|string |100|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber - 取款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
+|authentication  - 验证码|string |100|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 #### Post data
 ```md
 {
@@ -21,8 +21,8 @@
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime - 回应时间|DateTime|26|yyyy-MM-dd HH:mm:ss.SSSS(必填)|
-|responseCode - 回应代码|int|4|4系统默认回传码,长度为4的数字,标准参考回传码定义,(必填)|
+|responseTime - 回应时间|DateTime|26|(必填)yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode - 回应代码|int|4|(必填)4系统默认回传码,长度为4的数字,标准参考回传码定义,|
 |responseDescription - 回应描叙内容|string|255|响应信息|
 |sender - 汇款人|string|255|产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |sender添加ress - 汇款人地址|string|255|汇款人地址(必填)|
@@ -34,7 +34,7 @@
 |amount - 金额|string|10.2|支付金额支持数字小数位两位(必填) -  ex:"amount":3400.00|
 |idcardPicType - 相片文件格式|string|50|文件格式之附属档名(必填) - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl - 相片存取网络地址|string |500|(必填)Ex:"idcardPicUrl":"https://aaa.s3.amazonaws.com/uploadfile/12334"|
-|contractNumber - 收款码|string|15|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
+|contractNumber - 收款码|string|15|（选填）前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |location - 地址|string |1000|添加ress取现人地址(必填)|
 
 ##### Output data：

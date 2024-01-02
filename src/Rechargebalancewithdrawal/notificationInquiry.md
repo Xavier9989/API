@@ -3,9 +3,9 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutInquiry(固定参数值)(必填) - Ex:"action":"payoutInquiry"|
-|authentication  - 验证码|string |50|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
+|authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |transctionDate - 通知日期-开始|Date|10|查询开始日 - ex:2023-06-18|
 |transEndDate - 通知日期-结束|Date|10|查询结束日 - ex:2023-06-19|
 |statementTypes - 通知类型|string[]||1:打款帐户充值 - 2:收款结算转充值 - 3:帐户馀额互转 - 4:收款交易结算 - 5:收款帐户提现 - 6:打款帐户提现|

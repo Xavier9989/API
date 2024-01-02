@@ -4,15 +4,15 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|generate711Barcode(固定参数值)(必填) - Ex:"action":"generate711Barcode"|
-|authentication  - 验证码|string |255|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber - 收款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
-|amount - 金额|decimal|10.2|必须是用户实际收款金额,小数点最高二位数(必填) -  ex:"amount":3400.00|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
+|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|contractNumber - 收款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|amount - 金额|decimal|10.2|(必填)必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
 |phone - 手机号|string|50|09开头的11位数字(必填)  - Ex:"phone":"09270348095"|
 |receiptNumber - 收据编号|string|50|(必填) - 收据编号|
-|collectedTime - 收款时间|DateTime| |(yyyy-MM-dd HH:mm:ss) - (必填) - 收款时间,日期格式yyyy-MM-dd HH:mm:ss|
-|payChannel - 收款管道|int||收款管道,详细说明请参考第10章(必填)|
+|collectedTime - 收款时间|DateTime| |(必填)(yyyy-MM-dd HH:mm:ss) -  - 收款时间,日期格式yyyy-MM-dd HH:mm:ss|
+|payChannel - 收款管道|int||(必填)收款管道,详细说明请参考第10章|
 
 #### Post data
 

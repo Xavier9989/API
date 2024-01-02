@@ -11,10 +11,10 @@ Input parameters:
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutQueue(固定参数值)(必填) - Ex:"action":"payoutQueue"|
-|authentication  - 验证码|string |50|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber - 取款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)payoutQueue(固定参数值) - Ex:"action":"payoutQueue"|
+|authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |payType - 支付状态|int|1|1：upload:己上传,代表交易数据之支付信息,己通知支付单位 - 2：payout:己支付,支付单位完成付款,回传通知支付成功讯息 - 3：cancel:取消支付,未支付,合作伙伴通知取消交易,回传取消交易成功 - 4:failure:支付失败=>支付时错误,回传支付失败讯息 - 5：Amended Success:修改资料成功 - 6:Amended Fail:修改资料失败|
 |dealTime - 交易时间|DateTime|YES|1：uploaded Time:上传时间 - 2：paid Time:完成支付时 - 3：canceled Time:取消交易时间 - 4：fail time:支付失败时间 - 5：Ameded Success Time:修改资料成功时间 - 6：Ameded Fail Time:修改资料失败时间|
 |failDescription - 交易失败讯息|string |Option|Fail description - 交易失败讯息|

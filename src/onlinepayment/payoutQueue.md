@@ -9,16 +9,16 @@
 ##### Input parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutQueue(固定参数值)(必填) - Ex:"action":"payoutQueue"|
-|authentication  - 验证码|string |50|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)payoutQueue(固定参数值) - Ex:"action":"payoutQueue"|
+|authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |sender - 支付方|string|50|产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
-|controlNumber - 取款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
-|name - 取现人名字|string |50|取现人名字,使用逗号分割。(必填)  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone - 移动电话|string|11|09开头的11位数字(必填)  - Ex:"phone":"09270348095"|
-|amount - 金额|string|10.2|支付金额支持数字小数位两位(必填) -  ex:"amount":3400.00|
+|controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|name - 取现人名字|string |50|(必填)取现人名字,使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|phone - 移动电话|string|11|(必填)09开头的11位数字  - Ex:"phone":"09270348095"|
+|amount - 金额|string|10.2|(必填)支付金额支持数字小数位两位 -  ex:"amount":3400.00|
 |accountNo - 账户号|string |50|银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
-|withdrawChannel - 支付管道|int| |指定支付渠道代码(必填) - 参考第九章管道详细说明|
+|withdrawChannel - 支付管道|int| |(必填)指定支付渠道代码 - 参考第九章管道详细说明|
 |identificationId - 身份证件号码|string|50|（选填）- 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |identificationTypeId - 验证身份证件类别|string |3|参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
 |idType - 验证身份证件类别|string|50|电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|

@@ -5,11 +5,11 @@
 #### Input parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|用户名称，SkyPay提供(必填) - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|payoutPayout(固定参数值)(必填) - Ex:"action":"payoutPayout"|
-|authentication  - 验证码|string |100|验证密钥(必填) - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber - 取款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
-|withdrawChannel - 支付管道|int |YES|支付管道,详细内容请参考第9章(必填) - Ex:支付管道支付管道名称9	RDPawnshop|
+|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action-调用行为|string|50|(必填)payoutPayout(固定参数值) - Ex:"action":"payoutPayout"|
+|authentication  - 验证码|string |100|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|withdrawChannel - 支付管道|int |YES|(必填)支付管道,详细内容请参考第9章 - Ex:支付管道支付管道名称9	RDPawnshop|
 |payTime - 支付时间|DateTime|YES|(yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
 
 #### Post data

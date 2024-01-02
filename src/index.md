@@ -8,13 +8,12 @@ hero:
  
   name: "SKYPAY第三方支付文档"
   text: "SkyPay Payment API Specification"
-  tagline:  great project tagline
   image:
     src: /logo.png
     alt: SKYPAY
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Click to enter
       link: /markdown-examples
     # - theme: alt
       # text: API Examples

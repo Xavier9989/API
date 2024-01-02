@@ -10,12 +10,12 @@
 |controlNumber - 取款码|string|13|前缀码5码+8~10个数字（前缀码在绑定邮箱中获取）(必填) - Ex:SKY**12345678|
 #### Post data
 ```md
-    {
+{
     "userName":"AppName@skypay",
     "action":"payoutInquiry",
     "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
     "controlNumber":"SKY0XXXXXXXXXX"
-    }
+}
 ```
 
 #### Output parameters

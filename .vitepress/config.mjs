@@ -43,7 +43,7 @@ export default defineConfig({
               },
               {
                 text: "3.3取消支付交易（cancelPayout）",
-                link: "/onlinepayment/cancelpayout",
+                link: "/onlinepayment/cancelPayout",
               },
               {
                 text: "3.4 ML/LBCExpress非实时放款（payoutQueueV2）",

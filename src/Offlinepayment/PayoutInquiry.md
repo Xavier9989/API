@@ -9,7 +9,7 @@
 |authentication  - 验证码|string |100|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 #### Post data
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"payoutInquiry",
@@ -38,7 +38,7 @@
 |location - 地址|string |1000|添加ress取现人地址(必填)|
 
 ##### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

@@ -31,24 +31,26 @@
 |Currency - 货币|string|3|固定币别PHP|
 |referenceNumber交易编号(唯一)|string|15|此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
 #### Post data
-```md
-{
-    "userName":"AppName@skypay",
-    "action":"financeNotification",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "transctionDate":"2023-06-18 17:52:10",
-    "companyPrefix":"SKY98",
-    "companyName":"SKYPAY",
-    "accountNo":"SKY98",
-    "sourceAccountNo":"",
-    "beneficiaryAccountNo":"001234567899",
-    "statementType":"1",
-    "signType":"recharge",
-    "amount":12000000,
-    "currency":"PHP",
-    "referenceNumber":"D-20231204-001"
-}
-```
+
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+ &ensp;&ensp;&ensp;   "userName"  &ensp;: <font color=blue> &ensp;"AppName@skypay" </font>, <br>
+  &ensp;&ensp;&ensp;   "action"   &ensp;  : <font color=blue>  &ensp; "financeNotification"</font>,<br>
+   &ensp;&ensp;&ensp;  "authentication"   &ensp;  : <font color=blue> &ensp; "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+  &ensp;&ensp;&ensp;   "transctionDate"&ensp;: &ensp;<font color=blue>"2023-06-18 17:52:10"</font>,<br>
+  &ensp;&ensp;&ensp;   "companyPrefix"&ensp;:&ensp;<font color=blue>"SKY98"</font>,<br>
+  &ensp;&ensp;&ensp;   "companyName"&ensp;:&ensp;<font color=blue>"SKYPAY"</font>,<br>
+  &ensp;&ensp;&ensp;   "accountNo"&ensp;:&ensp;<font color=blue>"091234567899"</font>,<br>
+  &ensp;&ensp;&ensp;   "sourceAccountNo"&ensp;:&ensp;<font color=blue>""</font>,<br>
+  &ensp;&ensp;&ensp;   "beneficiaryAccountNo"&ensp;:&ensp;<font color=blue>"001234567899"</font>,<br>
+ &ensp;&ensp;&ensp;"statementType"&ensp;:&ensp;<font color=blue>"1"</font>,<br>
+  &ensp;&ensp;&ensp;   "signType"&ensp;:&ensp;<font color=blue>"recharge"</font>,<br>
+   &ensp;&ensp;&ensp;  "amount"&ensp;:&ensp;<font color=blue>12000000</font>,<br>
+   &ensp;&ensp;&ensp;  "currency"&ensp;:&ensp;<font color=blue>"PHP"</font>,<br>
+  &ensp;&ensp;&ensp;   "referenceNumber"&ensp;:&ensp;<font color=blue>"D-20231204-001"</font><br>
+}</font>
+</td></tr></table>
 
 #### Output parameters
 
@@ -59,13 +61,16 @@
 |responseDescription - 回传内容描述|string|255|Success|
 
 #### Output data：
-```md
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
+  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
 }
-```
+</font>
+</td></tr></table>
+
 ### Return code
 | 状态代码                        |   状态描述    | 
 | :-------------------------: | :-----------: |

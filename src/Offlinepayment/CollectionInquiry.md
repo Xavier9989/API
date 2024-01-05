@@ -13,7 +13,7 @@
 
 #### Post data
 
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"collectionInquiry",
@@ -35,7 +35,7 @@
 |payerPhone - 还款人电话|string|11|09开头11位数字(必填) - 监管要求需要还款信息留存档案|
 
 #### Output data
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

@@ -12,22 +12,23 @@
 |authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumbers[] - 取款码数组|string[]||(必填)取消交易时,可同时多笔取款码进行取消,用数组格式,一次性传送多笔要取消的取款码|
 #### Post data
-```md
-{
-    "userName":"AppName@skypay",
-    "action":"cancelPayout",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumbers":[
-        {
-        "controlNumber":"SK0XXXXXXXXXX"
-        },
-        {
-        "controlNumber":"SK0XXXXXXXXXX"
-        }
-    ]
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+ &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
+  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"cancelPayout"</font>,<br>
+  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+     &ensp;&ensp;&ensp; &ensp;&ensp;  "controlNumbers"&ensp;: <font color=blue>&ensp;[</font><br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{<br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"controlNumber"&ensp;: <font color=blue>&ensp;"SK0XXXXXXXXXX"</font><br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;},<br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;{<br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"controlNumber"&ensp;: <font color=blue>&ensp;"SK0XXXXXXXXXX"</font><br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;}<br>
+        &ensp;&ensp;&ensp; &ensp;&ensp;]<br>
 }
-
-```
+</font>
+</td></tr></table>
 
 ##### Output parameters
 | 参数                        |    类型     | 长度    |描述|
@@ -37,13 +38,16 @@
 |responseCode - 回传代码|int|4|4系统默认回传码,长度为4的数字,标准参考回传码定义|
 |responseDescription - 回传内容描述|string|255|响应信息|
 ##### Output data：
-```md
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
+  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
 }
-```
+</font>
+</td></tr></table>
+
 #### Return code
 
 | 状态代码                        |   状态描述    | 

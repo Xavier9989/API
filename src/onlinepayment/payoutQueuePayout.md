@@ -12,7 +12,7 @@ Input parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|(必填)payoutQueue(固定参数值) - Ex:"action":"payoutQueue"|
+|action-调用行为|string|50|(必填)payoutQueuePayout(固定参数值) - Ex:"action":"payoutQueuePayout"|
 |authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |payType - 支付状态|int|1|1：upload:己上传,代表交易数据之支付信息,己通知支付单位 - 2：payout:己支付,支付单位完成付款,回传通知支付成功讯息 - 3：cancel:取消支付,未支付,合作伙伴通知取消交易,回传取消交易成功 - 4:failure:支付失败=>支付时错误,回传支付失败讯息 - 5：Amended Success:修改资料成功 - 6:Amended Fail:修改资料失败|
@@ -20,18 +20,20 @@ Input parameters:
 |failDescription - 交易失败讯息|string |Option|Fail description - 交易失败讯息|
 |referenceNumber|string|Option|当使用ML支付回调payType为1和5的状态时返回referenceNumber（upload和Amended Success）|
 #### Post data
-```md
-{
-    "userName":"AppName@skypay",
-    "action":"payoutQueuePayout",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SKY99123456789",
-    "payType":"1",
-    "dealTime":"2018-08-07 11:58:33",
-    "referenceNumber":"MLA001041380755361119"
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
+  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"payoutQueuePayout"</font>,<br>
+  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+  &ensp;&ensp;&ensp;   "controlNumber"&ensp;: <font color=blue> &ensp;"SK99123456789"</font>,<br>
+  &ensp;&ensp;&ensp;  "payType"&ensp;: <font color=blue> &ensp;"1"</font>,<br>
+  &ensp;&ensp;&ensp; "dealTime"&ensp;: <font color=blue> &ensp;"2018-08-07 11:58:33"</font>,<br>
+  &ensp;&ensp;&ensp;  "referenceNumber"&ensp;: <font color=blue> &ensp;"MLA001041380755361119"</font>,<br>
 }
+</font>
+</td></tr></table>
 
-```
 ##### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -40,13 +42,16 @@ Input parameters:
 |responseCode - 回传代码|int|4|1000|
 |responseDescription - 回传内容描述|string|255|Success|
 ##### Output data：
-```md
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
+<table color=blue><tr><td white=DarkSeaGreen>
+<font color=Red>
+{<br>
+  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
+  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
 }
-```
+</font>
+</td></tr></table>
+
 #### Return code
 
 | 状态代码                        |   状态描述    | 

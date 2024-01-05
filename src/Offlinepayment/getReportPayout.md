@@ -15,7 +15,7 @@
 
 ### Payout
 #### Post data
-```md
+```json
 {
     "userName":"XXXXX@skypay",
     "action":"getReportPayout",
@@ -28,7 +28,7 @@
 }
 ```
 #### Output data
-```md
+```json
 {
 "   totalTransaction":4383,
     "lastPage":false,
@@ -62,7 +62,7 @@
 ```
 ### Collection
 #### Post data
-```md
+```json
 {
     "userName":"XXXXX@skypay",
     "action":"getReportPayout",
@@ -73,7 +73,7 @@
     "pagination":1,
     "pageSize":100
 }
-#### Output data
+Output data
 {
     "totalTransaction":350,
     "lastPage":false,

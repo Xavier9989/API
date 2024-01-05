@@ -13,7 +13,7 @@
 |amount - 金额|decimal|10.2|(必填)必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
 
 #### Post data
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"generate711Barcode",
@@ -33,7 +33,7 @@
 |referenceNumber|string|50|Generated Code|
 
 ##### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

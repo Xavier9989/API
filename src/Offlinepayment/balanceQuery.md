@@ -8,7 +8,7 @@
 |authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 #### Input parameters
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"balanceQuery",
@@ -25,7 +25,7 @@
 |Balance - 余额|decimal|(10,2)整数10位小数2位|回传合作伙伴账户余额|
 
 #### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

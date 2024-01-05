@@ -1,8 +1,8 @@
 ---
 layout: home
 hero:
-  name: "SKYPAY第三方支付文档"
-  text: "SkyPay Payment API Specification"
+  name: "SKYPAY三方支付文档"
+  text: "SkyPay Payment API"
   image:
     src: /logo.png
     alt: SKYPAY
@@ -12,3 +12,4 @@ hero:
       link: /markdown-examples
 ---
 
+  

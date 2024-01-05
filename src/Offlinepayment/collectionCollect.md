@@ -16,7 +16,7 @@
 
 #### Post data
 
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"collectionCollect",
@@ -38,7 +38,7 @@
 |responseDescription - 回传内容描述|string|255|响应信息（必填）|
 
 #### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

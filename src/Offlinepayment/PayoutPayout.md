@@ -14,7 +14,7 @@
 
 #### Post data
 
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"payoutPayout",
@@ -39,7 +39,7 @@
 
 
 #### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

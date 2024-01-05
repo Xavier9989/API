@@ -18,7 +18,7 @@
 
 ##### Post data
 
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"payoutQueryStatus",
@@ -51,7 +51,7 @@
 |traceNo - ML专属支付码|String|50|MLhuillier(RT) - referenceNumber ML专属支付码|
 
 #### Output data：
-```md
+```json
 {
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",

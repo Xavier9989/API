@@ -10,7 +10,7 @@
 |transEndDate - 通知日期-结束|Date|10|查询结束日 - ex:2023-06-19|
 |statementTypes - 通知类型|string[]||1:打款帐户充值 - 2:收款结算转充值 - 3:帐户馀额互转 - 4:收款交易结算 - 5:收款帐户提现 - 6:打款帐户提现|
 #### Post data
-```md
+```json
 {
     "userName":"AppName@skypay",
     "action":"notificationInquiry",
@@ -43,7 +43,7 @@
 |referenceNumber交易编号(唯一)|string|15|此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
 
 #### Output data
-```md
+```json
 {
     "responseTime":"2023-06-18 17:52:10.5211",
     "responseCode":"1000",

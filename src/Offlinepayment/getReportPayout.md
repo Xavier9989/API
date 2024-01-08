@@ -13,13 +13,13 @@
 |Pagination - 页码|string|50|1|
 |pageSize - 页面尺寸|string|50|100|
 
-### Payout
-#### Post data
+## Payout
+### Post data
 ```json
 {
-    "userName":"XXXXX@skypay",
-    "action":"getReportPayout",
-    "authentication":"XXXXXXXXXXX",
+    "userName":"AppName@skypay",
+    "action":"generate711Barcode",
+    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
     "startDate":"2022-12-02",
     "endDate":"2022-12-02",
     "dateType":"CreateDate",
@@ -27,84 +27,89 @@
     "pageSize":100
 }
 ```
-#### Output data
+
+### Output data
 ```json
 {
-"   totalTransaction":4383,
-    "lastPage":false,
-    "result":[
-        {
-            "createDate":"2022-11-02 11:55:35",
-            "payTime":"2022-11-02 11:55:49",
-            "controlNo":"SK98162998034",
-            "amount":1300.0,
-            "phone":"09XXXXXXXXX",
-            "receiptNo":"9006565379735"
-        },
-        {
-            "createDate":"2022-11-02 11:55:55",
-            "payTime":"2022-11-02 11:56:09",
-            "controlNo":"SK98162998035",
-            "amount":2000.0,
-            "phone":"09XXXXXXXXX",
-            "receiptNo":"8006565384381"
-        },
-        {
-            "createDate":"2022-11-02 11:55:55",
-            "payTime":"2022-11-02 11:56:10",
-            "controlNo":"SK98162998036",
-            "amount":1500.0,
-            "phone":"09XXXXXXXXX",
-            "receiptNo":"8006565384429"
-        },
-    ]
+    "totalTransaction" : 4383,
+    "lastPage" : false,
+    "result" : [
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998034",
+           "amount" : 1300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "9006565379735"
+         },
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998035",
+           "amount" : 3300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "9006565379735"
+         },
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998035",
+           "amount" : 2300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "9006565379735"
+       },
+    ]
 }
 ```
-### Collection
-#### Post data
+
+## Collection
+### Post data
 ```json
 {
-    "userName":"XXXXX@skypay",
-    "action":"getReportPayout",
-    "authentication":"XXXXXXXXXXX",
-    "startDate":"2022-12-02",
-    "endDate":"2022-12-02",
-    "dateType":"CreateDate",
-    "pagination":1,
-    "pageSize":100
+    "userName" :  "AppName@skypay",
+    "action" :  "getReportPayout",
+    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "startDate" :  "2022-12-02",
+    "endDate" :  "2022-12-02",
+    "dateType" :  "CreateDate",
+    "pagination" :  1,
+    "pageSize" :  100
 }
-Output data
+```
+
+### Output data
+```json
 {
-    "totalTransaction":350,
-    "lastPage":false,
-    "result":[
-    {
-        "createDate":"2022-11-02 10:31:38",
-        "collectionTime":"2022-11-02 10:32:50",
-        "contractNo":"SKY986712074168",
-        "amount":7610.0,
-        "phone":"09XXXXXX",
-        "receiptNo":"SKP4992200182",
-        "status":"Confirmed"
-    },
-    {
-        "createDate":"2022-11-02 10:32:13",
-        "collectionTime":"2022-11-02 10:32:13",
-        "contractNo":"SKY986712075315",
-        "amount":2430.0,
-        "phone":"09XXXXXX",
-        "receiptNo":"E103ED0E4726",
-        "status":"Confirmed"
-    },
-    {
-        "createDate":"2022-11-02 10:35:44",
-        "collectionTime":"2022-11-02 10:35:44",
-        "contractNo":"SKY986712074207",
-        "amount":5000.0,
-        "phone":"09XXXXXX",
-        "receiptNo":"8D20C1C3432E",
-        "status":"Confirmed"
-    },
-  ]
+    "totalTransaction" : 4383,
+    "lastPage" : false,
+    "result" : [
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998034",
+           "amount" : 1300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "SKP4992200182",
+           "status" : "Confirmed"
+         },
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998035",
+           "amount" : 3300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "E103ED0E4726",
+           "status" : "Confirmed"
+         },
+       { 
+          "createDate" : "2022-11-02 11:55:35",
+           "payTime" : "2022-11-02 11:55:49",
+           "controlNo" : "SK98162998035",
+           "amount" : 2300.0,
+           "phone" : "09XXXXXXXXX",
+           "referenceNo" : "8D20C1C3432E",
+           "status" : "Confirmed"
+       },
+    ]
 }
 ```

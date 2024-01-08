@@ -6,13 +6,13 @@
     - **重送不建议更换支付码(避免重复放款，重试间隔应该在300秒以上)**。
     - **交易状态是Pending或Complete状态交易记录不可以重送，避免重复支付**。
     - **禁止通过不同的提款渠道重新发送同一笔交易**。
-##### Input parameters:
+
+Input parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|(必填)payoutQueue(固定参数值) - Ex:"action":"payoutQueue"|
+|action-调用行为|string|50|(必填)payoutQueuePayout(固定参数值) - Ex:"action":"payoutQueue"|
 |authentication  - 验证码|string |50|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender - 支付方|string|50|产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name - 取现人名字|string |50|(必填)取现人名字,使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone - 移动电话|string|11|(必填)09开头的11位数字  - Ex:"phone":"09270348095"|
@@ -23,83 +23,79 @@
 |identificationTypeId - 验证身份证件类别|string |3|参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
 |idType - 验证身份证件类别|string|50|电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|
 |idcardPicType - 图片格式|string|50|电子钱包进行支付时选填，银行无此参数Ex:"idcardPicType":"jpg"|
-|idcardPicUrl - 相片存取网络地址|string |500|电子钱包进行支付时选填，银行无此参数Ex:"idcardPicUrl":"https://aaa.s3.amazonaws.comuploadfile12334"|
+|idcardPicUrl - 相片存取网络地址|string |500|电子钱包进行支付时选填，银行无此参数Ex:"idcardPicUrl":""|
 |birthday - 生日|Date|10|(选填) - 生日格式：yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |birthPlace - 出生地|string|250|银行渠道进行支付时选填，电子钱包无此参数|
 |location - 取款人地址|string |500|(选填) - Ex:"location":manila"|
 |provinceId - 省份ID|int| |请参考第七章接口7.5 Get Province - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
 |cityId - 城巿ID|int||请参考第七章接口7.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
 |expiryDate - 证件到期日|string |50|银行渠道进行支付时选填，电子钱包无此参数|
+
+
 ##### Post data
 #### 支付为电子钱包时,调用API送出的数据格式内容:
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
- &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"payoutQueue"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;   "sender"&ensp;: <font color=blue> &ensp;"app name"</font>,<br>
-  &ensp;&ensp;&ensp;   "controlNumber"&ensp;: <font color=blue> &ensp;"SK99123456789"</font>,<br>
-  &ensp;&ensp;&ensp;   "name"&ensp;: <font color=blue> &ensp;"Last name,First name,Middle name"</font>,<br>
-  &ensp;&ensp;&ensp;   "phone"&ensp;: <font color=blue> &ensp;"092210083333"</font>,<br>
-  &ensp;&ensp;&ensp;   "amount"&ensp;: <font color=blue> &ensp;"3900.00"</font>,<br>
-  &ensp;&ensp;&ensp;   "accountNo"&ensp;: <font color=blue> &ensp;"09123456789"</font>,<br>
-  &ensp;&ensp;&ensp;   "withdrawChannel"&ensp;: <font color=blue> &ensp;"6"</font>,<br>
-  &ensp;&ensp;&ensp;   "identificationId"&ensp;: <font color=blue> &ensp; "123456789011"</font>,//从这个参数开始都可以传空<br>
-  &ensp;&ensp;&ensp;   "idType"&ensp;: <font color=blue> &ensp;"SSS"</font>,<br>
-  &ensp;&ensp;&ensp;   "idcardPicType"&ensp;: <font color=blue> &ensp;"png"</font>,<br>
-  &ensp;&ensp;&ensp;   "idcardPicUrl"&ensp;: <font color=blue> &ensp;"http://skybridge.com.tw/sample.png"</font>,<br>
-  &ensp;&ensp;&ensp;   "birthday"&ensp;: <font color=blue> &ensp;"1911-09-01"</font>,<br>
- &ensp;&ensp;&ensp;    "location"&ensp;: <font color=blue> &ensp;"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"</font><br>
+```json
+{
+    "userName":"AppName@skypay",
+    "action": "payoutQueue",
+    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "sender":"app name",
+    "controlNumber":"SK99123456789",
+    "name":"Last name,First name,Middle name",
+    "phone": "092210083333",
+    "amount":"3900.00",
+    "accountNo": "09123456789",
+    "withdrawChannel":"6",
+    "identificationId":  "123456789011",//从这个参数开始都可以传空
+    "idType":  "SSS",
+    "idcardPicType":"png",
+    "idcardPicUrl":"http://skybridge.com.tw/sample.png",
+    "birthday": "1911-09-01",
+    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"
 }
-</font>
-</td></tr></table>
+```
+
 
 #### 支付为银行时,调用API送出的数据格式内容:（bank交易时，请先走7.6获取银行代码接口来获取目前可用的银行列表）
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"payoutQueue"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;   "sender"&ensp;: <font color=blue> &ensp;"app name"</font>,<br>
-  &ensp;&ensp;&ensp;   "controlNumber"&ensp;: <font color=blue> &ensp;"SK99123456789"</font>,<br>
-  &ensp;&ensp;&ensp;   "name"&ensp;: <font color=blue> &ensp;"Last name,First name,Middle name"</font>,<br>
-  &ensp;&ensp;&ensp;   "phone"&ensp;: <font color=blue> &ensp;"092210083333"</font>,<br>
-  &ensp;&ensp;&ensp;   "amount"&ensp;: <font color=blue> &ensp;"3900.00"</font>,<br>
-  &ensp;&ensp;&ensp;   "bankNo"&ensp;: <font color=blue> &ensp;"SEC"</font>,<br>
-  &ensp;&ensp;&ensp;   "accountNo"&ensp;: <font color=blue> &ensp;"09123456789"</font>,<br>
-  &ensp;&ensp;&ensp;   "withdrawChannel"&ensp;: <font color=blue> &ensp;"6"</font>,<br>
-  &ensp;&ensp;&ensp;   "identificationId"&ensp;: <font color=blue> &ensp; "123456789011"</font>,//从这个参数开始都可以传空<br>
-  &ensp;&ensp;&ensp;   "identificationTypeId"&ensp;: <font color=blue> &ensp; "1"</font>,<br>
-  &ensp;&ensp;&ensp;   "birthday"&ensp;: <font color=blue> &ensp;"1911-09-01"</font>,<br>
-  &ensp;&ensp;&ensp;   "birthPlace"&ensp;: <font color=blue> &ensp;"Manila"</font>,<br>
-  &ensp;&ensp;&ensp;    "location"&ensp;: <font color=blue> &ensp;"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"</font><br>
-  &ensp;&ensp;&ensp;    "provinceId"&ensp;: <font color=blue> &ensp;"996"</font>,<br>
-  &ensp;&ensp;&ensp;   "cityId"&ensp;: <font color=blue> &ensp;"47"</font>,<br>
-  &ensp;&ensp;&ensp;  "expiryDate"&ensp;: <font color=blue> &ensp;"2024-05-01"</font><br>
+```json
+{
+    "userName":"AppName@skypay",
+    "action": "payoutQueue",
+    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "sender":"app name",
+    "controlNumber": "SK99123456789",
+    "name":"Last name,First name,Middle name",
+    "phone":"092210083333",
+    "amount":"3900.00",
+    "bankNo":"SEC",
+    "accountNo":"09123456789",
+    "withdrawChannel":"6",
+    "identificationId":"123456789011",//从这个参数开始都可以传空
+    "identificationTypeId": "1",
+    "birthday":"1911-09-01",
+    "birthPlace":"Manila",
+    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin",
+    "provinceId":"996",
+    "cityId":"47",
+    "expiryDate": "2024-05-01"
 }
-</font>
-</td></tr></table>
+```
 
 ##### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS|
-|回传时间||||
+|responseTime - 回传时间|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode - 回传代码|int|4|默认回传码,长度为4的数字,标准参考回传码定义|
 |responseDescription - 回传内容描述|string|255|响应信息|
 
 ##### Output data：
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
+```json
+{
+  "responseTime":"2018-06-18 17:52:10.5211",
+  "responseCode":"1000",
+  "responseDescription":"Success",
 }
-</font>
-</td></tr></table>
+```
 
 ### Return code:
 

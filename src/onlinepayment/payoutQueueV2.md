@@ -26,48 +26,40 @@
 |withdrawChannel - 支付管道|int| |支付渠道名称 - 1 MLhuillier  -  13 LBCExpress|
 
 ##### Post data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
- &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"payoutQueueV2"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;   "sender"&ensp;: <font color=blue> &ensp;"app name"</font>,<br>
-  &ensp;&ensp;&ensp;   "controlNumber"&ensp;: <font color=blue> &ensp;"SK99123456789"</font>,<br>
-  &ensp;&ensp;&ensp;   "name"&ensp;: <font color=blue> &ensp;"Last name,First name,Middle name"</font>,<br>
-  &ensp;&ensp;&ensp;   "birthday"&ensp;: <font color=blue> &ensp;"1911-09-01"</font>,<br>
-  &ensp;&ensp;&ensp;   "identificationId"&ensp;: <font color=blue> &ensp; "123456789011"</font>,<br>
-  &ensp;&ensp;&ensp;   "identificationTypeId"&ensp;: <font color=blue> &ensp; "1"</font>,<br>
-  &ensp;&ensp;&ensp;   "phone"&ensp;: <font color=blue> &ensp;"092210083333"</font>,<br>
-  &ensp;&ensp;&ensp;   "amount"&ensp;: <font color=blue> &ensp;"3900.00"</font>,<br>
-  &ensp;&ensp;&ensp;   "idcardPicType"&ensp;: <font color=blue> &ensp;"png"</font>,<br>
-  &ensp;&ensp;&ensp;   "idcardPicUrl"&ensp;: <font color=blue> &ensp;"http://skybridge.com.tw/sample.png"</font>,<br>
-  &ensp;&ensp;&ensp;    "location"&ensp;: <font color=blue> &ensp;"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"</font><br>
-  &ensp;&ensp;&ensp;   "withdrawChannel"&ensp;: <font color=blue> &ensp;"13"</font>,<br>
+```json
+{
+    "userName":"AppName@skypay",
+    "action": "payoutQueueV2",
+    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "sender":"app name",
+    "controlNumber":"SK99123456789",
+    "name":"Last name,First name,Middle name",
+    "birthday": "1911-09-01",
+    "identificationId":  "123456789011",
+    "identificationTypeId":  "123456789011",
+    "phone": "092210083333",
+    "amount":"3900.00",
+    "idcardPicType":"png",
+    "idcardPicUrl":"http://skybridge.com.tw/sample.png",
+    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin",
+    "withdrawChannel":"13"
 }
-</font>
-</td></tr></table>
+```
 
 ##### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS - 必填|
-|回传时间||||
+|responseTime - 回传时间|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS - 必填|
 |responseCode - 回传代码|int|4|4系统默认回传码,长度为4的数字,标准参考回传码定义,(必填)|
 |responseDescription - 回传内容描述|string|255|响应信息|
 |referenceNo - 关连码|string|255|此字段将带回空值|
 
 ##### Output data：
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
-  &ensp;&ensp;&ensp; "referenceNo"&ensp;:&ensp;<font color=blue>""</font><br>
+```json
+{
+    "responseTime":"2018-06-18 17:52:10.5211",
+    "responseCode":"1000",
+    "responseDescription":"Success",
+    "referenceNo":""
 }
-</font>
-</td></tr></table>
-
-
-
+```

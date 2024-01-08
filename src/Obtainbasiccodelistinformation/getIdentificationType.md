@@ -12,18 +12,15 @@
 
 
 #### Post data
-
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"getCatalog"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;	"catalogType"&ensp;: <font color=blue> &ensp;"getIdentificationType"</font>,<br>
-  &ensp;&ensp;&ensp;	"versionDate"&ensp;: <font color=blue> &ensp;""</font><br>
+```json
+{
+    "userName" :  "AppName@skypay",
+    "action" :  "getCatalog",
+    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "catalogType" :  "getIdentificationType",
+    "versionDate" :  ""
 }
-</font>
-</td></tr></table>
+```
 
 
 #### Output parameters
@@ -36,21 +33,19 @@
 |IdentificationType|string|255|身分验证类别名称|
 
 #### Output data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-   &ensp;&ensp;&ensp;   "result"&ensp;:&ensp;[<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;   {&ensp;<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;         "IdentificationId":&ensp;<font color=blue>1</font>,<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "IdentificationType":&ensp;<font color=blue>"Company ID"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;        }<br>
-          &ensp;&ensp;&ensp; &ensp;&ensp;   {&ensp;<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;         "IdentificationId":&ensp;<font color=blue>2</font>,<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "IdentificationType":&ensp;<font color=blue>"Driver’s License"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;        }<br>
-     &ensp;&ensp;&ensp;    ]<br>
+```json
+{
+   "responseTime" : "2018-06-18 17:52:10.5211",
+    "responseCode" : "1000",
+    "result" : [
+       { 
+       "IdentificationId": 1,
+       "IdentificationType": "Company ID"
+       }
+       { 
+       "IdentificationId": 2,
+       "IdentificationType": "Driver’s License"
+       }
+    ]
 }
-</font>
-</td></tr></table>
+```

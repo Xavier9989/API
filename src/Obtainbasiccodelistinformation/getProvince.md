@@ -14,17 +14,15 @@ Ex:"catalogType":"getProvince"|
 
 
 #### Post data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"getCatalog"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;	"catalogType"&ensp;: <font color=blue> &ensp;"getProvince"</font>,<br>
-  &ensp;&ensp;&ensp;	"versionDate"&ensp;: <font color=blue> &ensp;""</font><br>
+```json
+{
+    "userName" :  "AppName@skypay",
+    "action" :  "getCatalog",
+    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "catalogType" :  "getProvince",
+    "versionDate" :  ""
 }
-</font>
-</td></tr></table>
+```
 
 
 #### Output parameters
@@ -37,17 +35,15 @@ Ex:"catalogType":"getProvince"|
 |Province|string||省份名称|
 
 #### Output data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-   &ensp;&ensp;&ensp;   "result"&ensp;:&ensp;[<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;   {&ensp;<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;         "ProvinceId":&ensp;<font color=blue>1</font>,<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "Province":&ensp;<font color=blue>"sample string"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;        }<br>
-     &ensp;&ensp;&ensp;    ]<br>
+```json
+{
+   "responseTime" : "2018-06-18 17:52:10.5211",
+    "responseCode" : "1000",
+    "result" : [
+       { 
+       "ProvinceId": 1,
+       "Province": "sample string"
+       }
+    ]
 }
-</font>
-</td></tr></table>
+```

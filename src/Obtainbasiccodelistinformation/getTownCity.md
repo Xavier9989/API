@@ -13,17 +13,15 @@
 
 
 #### Post data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"getCatalog"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;	"catalogType"&ensp;: <font color=blue> &ensp;"getTownCity"</font>,<br>
-  &ensp;&ensp;&ensp;	"versionDate"&ensp;: <font color=blue> &ensp;""</font><br>
+```json
+{
+    "userName" :  "AppName@skypay",
+    "action" :  "getCatalog",
+    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "catalogType" :  "getTownCity",
+    "versionDate" :  ""
 }
-</font>
-</td></tr></table>
+```
 
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
@@ -36,18 +34,16 @@
 |TownCity|string|255|城巿代码名称|
 
 #### Output data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-   &ensp;&ensp;&ensp;   "result"&ensp;:&ensp;[<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;   {&ensp;<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;         "TownCityId":&ensp;<font color=blue>1</font>,<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "TownCity":&ensp;<font color=blue>"Sallapadan"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "ProvinceId":&ensp;<font color=blue>"1"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;        }<br>
-     &ensp;&ensp;&ensp;    ]<br>
+```json
+{
+   "responseTime" : "2018-06-18 17:52:10.5211",
+    "responseCode" : "1000",
+    "result" : [
+       { 
+       "TownCityId": 1,
+       "TownCity": "Sallapadan"
+       "ProvinceId": "1"
+       }
+    ]
 }
-</font>
-</td></tr></table>
+```

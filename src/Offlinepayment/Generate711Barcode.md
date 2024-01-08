@@ -18,12 +18,13 @@
     "userName":"AppName@skypay",
     "action":"generate711Barcode",
     "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "contractNumber":"SKY0XXXXXXXXXX",
-    "name":"MyName,This,Is",
-    "phone":"09123456789",
-    "amount":"3900"
+    "controlNumber":"SKY0XXXXXXXXXX",
+    "amount":"3900.00",
+    "phone":"6392210083333",
+    "name":"MyName,This,Is"
 }
 ```
+
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -33,12 +34,13 @@
 |referenceNumber|string|50|Generated Code|
 
 ##### Output data：
+
 ```json
 {
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
-    "referenceNumber":"9919-2940-0349"
+  "responseTime":"2018-06-18 17:52:10.5211",
+  "responseCode":"1000",
+  "responseDescription":"Success",
+  "referenceNumber":"9919-2940-0349"
 }
 ```
 

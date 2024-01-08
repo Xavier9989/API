@@ -2,7 +2,15 @@
 - ## 1.数据加密说明 ##
     - 透过网络传送Json数据前,必须进行加密,简易操作步骤如下:
 - (1) Json string/加密前明文格式：
-postData=a="userName":"services@skybridge.com","action":"payoutInruiry","authentication":"E7735A85-D825-4832-A9F3-4B00CE038BB4","controlNumber":"SKY99000000001"
+
+```json
+  {
+  "userName":"services@skybridge.com",
+  "action":"payoutInruiry",
+  "authentication":"E7735A85-D825-4832-A9F3-4B00CE038BB4",
+  "controlNumber":"SKY99000000001"
+  }
+```
 
 - (2)clsCryptAES.Encrypt(postDatea,passwordKey)/加密后密文格式=>
 mFn2rMpky5Rj+pQILkJ0VpLfdBsz2WQnXcYjCDPhKUomqTZGru2fVoP6PfpspIwjt7B0lWkl30wdlDlMGuHiyDwtpPBzVF3bnR9Nuy020DpVfGQqBYMvcDb6T4wRWbhu4fytl7itmYhAG2nQceKARB67ohoKYgiBdyFudSMkMg1wga0TM+5uepe8i8kcS1QTpXLkF8xlSjRxlMng==

@@ -1,7 +1,10 @@
 import { defineConfig } from "vitepress";
+
 export default defineConfig({
+  
   title: " Awesome Project",
   description: "A VitePress Site",
+  
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
@@ -12,13 +15,14 @@ export default defineConfig({
     },
 
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Examples", link: "/markdown-examples" },
+      { text: "Home", link: "/markdown-examples" },
+      // { text: "Examples", link: "/markdown-examples" },
+      
     ],
 
     sidebar: [
       {
-        text: "Examples",
+        text: "introduction",
         items: [
           { text: "Version", link: "/markdown-examples" },
           { text: "API 目录", link: "/api-examples" },

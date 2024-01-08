@@ -21,7 +21,7 @@
     "userName":"AppName@skypay",
     "action":"collectionCollect",
     "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "contractNumber":"SKY0XXXXXXXXXX",
+    "controlNumber":"SKY0XXXXXXXXXX",
     "amount":"3900.00",
     "phone":"6392210083333",
     "receiptNumber":"B6C13B76E4BF",
@@ -38,11 +38,12 @@
 |responseDescription - 回传内容描述|string|255|响应信息（必填）|
 
 #### Output data：
+
 ```json
 {
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
+  "responseTime":"2018-06-18 17:52:10.5211",
+  "responseCode":"1000",
+  "responseDescription":"Success"
 }
 ```
 

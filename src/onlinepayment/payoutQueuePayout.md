@@ -20,37 +20,32 @@ Input parameters:
 |failDescription - 交易失败讯息|string |Option|Fail description - 交易失败讯息|
 |referenceNumber|string|Option|当使用ML支付回调payType为1和5的状态时返回referenceNumber（upload和Amended Success）|
 #### Post data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"payoutQueuePayout"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;   "controlNumber"&ensp;: <font color=blue> &ensp;"SK99123456789"</font>,<br>
-  &ensp;&ensp;&ensp;  "payType"&ensp;: <font color=blue> &ensp;"1"</font>,<br>
-  &ensp;&ensp;&ensp; "dealTime"&ensp;: <font color=blue> &ensp;"2018-08-07 11:58:33"</font>,<br>
-  &ensp;&ensp;&ensp;  "referenceNumber"&ensp;: <font color=blue> &ensp;"MLA001041380755361119"</font>,<br>
+```json
+{
+    "userName": "AppName@skypay",
+    "action": "payoutQueuePayout",
+    "authentication": "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "controlNumber":"SK99123456789",
+    "payType":"1",
+    "dealTime":"2018-08-07 11:58:33",
+    "referenceNumber": "MLA001041380755361119",
 }
-</font>
-</td></tr></table>
+```
 
 ##### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS|
-|回传时间||||
+|responseTime - 回传时间|DateTime|50|yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode - 回传代码|int|4|1000|
 |responseDescription - 回传内容描述|string|255|Success|
 ##### Output data：
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-  &ensp;&ensp;&ensp; "responseDescription"&ensp;:&ensp;<font color=blue>"Success"</font>,<br>
+```json
+{
+    "responseTime":"2018-06-18 17:52:10.5211",
+    "responseCode":"1000",
+    "responseDescription":"Success"
 }
-</font>
-</td></tr></table>
+```
 
 #### Return code
 

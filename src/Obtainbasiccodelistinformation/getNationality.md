@@ -14,18 +14,15 @@ Ex:"catalogType":"getNationality"|
 
 
 #### Post data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp; "userName"&ensp;: <font color=blue> &ensp;"AppName@skypay"</font>,<br>
-  &ensp;&ensp;&ensp;   "action"&ensp;: <font color=blue> &ensp;"getCatalog"</font>,<br>
-  &ensp;&ensp;&ensp;   "authentication"&ensp;: <font color=blue> &ensp;"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
-  &ensp;&ensp;&ensp;	"catalogType"&ensp;: <font color=blue> &ensp;"getNationality"</font>,<br>
-  &ensp;&ensp;&ensp;	"versionDate"&ensp;: <font color=blue> &ensp;""</font><br>
+```json
+{
+    "userName" :  "AppName@skypay",
+    "action" :  "getCatalog",
+    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+    "catalogType" :  "getNationality",
+    "versionDate" :  ""
 }
-</font>
-</td></tr></table>
-
+```
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -35,19 +32,16 @@ Ex:"catalogType":"getNationality"|
 |NationalityId|int||国家代码|
 |NationalityName|string|255|国家名称|
 
-#### Output data
-<table color=blue><tr><td white=DarkSeaGreen>
-<font color=Red>
-{<br>
-  &ensp;&ensp;&ensp;"responseTime"&ensp;:&ensp;<font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
-    &ensp;&ensp;&ensp; "responseCode"&ensp;:&ensp;<font color=blue>"1000"</font>,<br>
-   &ensp;&ensp;&ensp;   "result"&ensp;:&ensp;[<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;   {&ensp;<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;         "NationalityId":&ensp;<font color=blue>1</font>,<br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;		 "NationalityName":&ensp;<font color=blue>"sample string"</font><br>
-     &ensp;&ensp;&ensp; &ensp;&ensp;        }<br>
-     &ensp;&ensp;&ensp;    ]<br>
+### Output data
+```json
+{
+   "responseTime" : "2018-06-18 17:52:10.5211",
+    "responseCode" : "1000",
+    "result" : [
+       { 
+       "NationalityId": 1,
+       "NationalityName": "sample string"
+       }
+    ]
 }
-</font>
-</td></tr></table>
-
+```

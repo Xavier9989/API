@@ -20,19 +20,20 @@
 
 ```json
 {
-    "userName":"AppName@skypay",
-    "action":"payoutQueryStatus",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumbers":[
-      {
-        "controlNumber":"SK0XXXXXXXXXX"
-      },
-      {
-        "controlNumber":"SK0XXXXXXXXXX"
-    }
-  ]
+  "userName": "AppName@skypay",
+  "action":"payoutQueryStatus",
+  "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
+  "controlNumbers":[
+        {
+            "controlNumber":"SK0XXXXXXXXXX"
+        },
+        {
+            "controlNumber":"SK0XXXXXXXXXX"
+        }
+    ]
 }
 ```
+
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -53,33 +54,32 @@
 #### Output data：
 ```json
 {
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
-    "controlNumbers":[
-    {
-        "controlNumber":"SK99000000004",
-        "transactionDate":"2019-01-14 15:47:13",
-        "status":"4",
-        "statusDesc":"Failed",
-        "payTime":"",
-        "cancelTime":"",
-        "withdrawChannel":"Bank",
-        "referenceNo":""
-    },
-    {
-        "controlNumber":"SK99000000004",
-        "transactionDate":"2019-01-14 15:47:13",
-        "status":"4",
-        "statusDesc":"Failed",
-        "payTime":"",
-        "cancelTime":"",
-        "withdrawChannel":"Bank",
-        "referenceNo":""
-    }
-  ]
+   "responseTime" : "2018-06-18 17:52:10.5211",
+    "responseCode" : "1000",
+    "responseDescription" : "Success",
+    "controlNumbers" : [
+       { 
+         "controlNumber" : "SK0XXXXXXXXXX",
+          "transactionDate" : "2019-01-14 15:47:13",
+          "status" : "4",
+          "statusDesc" : "Failed",
+          "payTime" : "",
+          "cancelTime" : "",
+          "withdrawChannel" : "Bank",
+          "referenceNo" : ""
+       },
+       { 
+         "controlNumber" : "SK0XXXXXXXXXX",
+          "transactionDate" : "2019-01-14 15:47:13",
+          "status" : "4",
+          "statusDesc" : "Failed",
+          "payTime" : "",
+          "cancelTime" : "",
+          "withdrawChannel" : "Bank",
+          "referenceNo" : "",
+       }
+    ]
 }
-
 ```
 
 

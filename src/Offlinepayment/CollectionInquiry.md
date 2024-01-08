@@ -16,13 +16,14 @@
 ```json
 {
     "userName":"AppName@skypay",
-    "action":"collectionInquiry",
+    "action":"collectionIcnquiry",
     "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "contractNumber":"SKY0XXXXXXXXXX",
+    "controlNumber":"SKY0XXXXXXXXXX",
     "amount":"3900.00",
     "phone":"6392210083333"
 }
 ```
+
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -40,12 +41,11 @@
     "responseTime":"2018-06-18 17:52:10.5211",
     "responseCode":"1000",
     "responseDescription":"Success",
-    "amount":"3920",
+    "amount":"3900.00",
     "payerName":"Last name,First name,Middle name",
     "payer添加ress":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin",
     "payerPhone":"092210083333"
 }
-
 ```
 
 ### Return code:

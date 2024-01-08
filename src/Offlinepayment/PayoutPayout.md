@@ -13,20 +13,16 @@
 |payTime - 支付时间|DateTime|YES|(yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
 
 #### Post data
-
 ```json
 {
     "userName":"AppName@skypay",
     "action":"payoutPayout",
     "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SK0XXXXXXXXXX",
+    "controlNumber":"SKY0XXXXXXXXXX",
     "withdrawChannel":"1",
     "payTime":"2019-02-18 14:59:33"
 }
 ```
-
-
-
 
 #### Output parameters:
 
@@ -37,13 +33,12 @@
 |responseDescription - 回传内容描述|string|255|响应信息（必填）|
 
 
-
 #### Output data：
 ```json
 {
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
+  "responseTime":"2018-06-18 17:52:10.5211",
+  "responseCode":"1000",
+  "responseDescription":"Success"
 }
 ```
 

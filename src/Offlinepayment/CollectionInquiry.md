@@ -2,14 +2,14 @@
 #### API由合作伙伴提供，顾客在申请还款时将触发API。
 
 #### Input parameters
-| 参数                        |    类型     | 长度    |描述|
-| :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|userName - 使用者名称|string|50|(必填)用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action-调用行为|string|50|(必填)collectionInquiry(固定参数值) - Ex:"action":"collectionInquiry"|
-|authentication  - 验证码|string |255|(必填)验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber - 取款码|string|13|(必填)前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|amount - 金额|string|10.2|(必填)支付金额支持数字小数位两位 -  ex:"amount":3400.00|
-|phone - 移动电话|string|11|(必填)09开头的11位数字  - Ex:"phone":"09270348095"|
+| 参数                        |    类型     | 长度   |Y/N |描述|
+| :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
+|userName|string|50|Y|用户名称 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|Y|collectionInquiry(固定参数值) - Ex:"action":"collectionInquiry"|
+|authentication |string |255|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber|string|13~15|Y|取款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|amount|string|10.20|Y|支付金额支持数字小数位两位 -  ex:"amount":3400.00|
+|phone|string|11|Y|09开头的11位数字  - Ex:"phone":"09270348095"|
 
 #### Post data
 

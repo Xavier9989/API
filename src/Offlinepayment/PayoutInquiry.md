@@ -64,7 +64,7 @@
 ### Return code:
 
 | 状态代码                        |   状态描述    | 
-| :-------------------------: | :-----------: |
+| :-------------------------: | :----------- |
 |1000 |Success|
 |-1001|Verification error|
 |-1009|Unpredictable exception occurs|

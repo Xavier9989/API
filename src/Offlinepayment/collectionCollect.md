@@ -12,7 +12,7 @@
 |phone|string|50|Y|09开头的11位数字 - Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  收据编号|
 |collectedTime|DateTime| |Y|(yyyy-MM-dd HH:mm:ss) -  - 收款时间,日期格式yyyy-MM-dd HH:mm:ss|
-|payChannel|int||Y|收款管道 - 详细说明请参考第10章|
+|payChannel|int||Y|收款管道 - 详细说明请参考第10章[渠道code值](/src/Paymentpipeline/Paymentpipeline1.md)|
 
 #### Post data
 
@@ -35,7 +35,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime|DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS(必填)|
 |responseCode |int|4|回传代码 - 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription |string|255|回传内容描述 - 响应信息（必填）|
+|responseDescription |string|255.|回传内容描述 - 响应信息（必填）|
 
 #### Output data：
 
@@ -50,7 +50,7 @@
 ### Return code:
 
 | 状态代码                        |   状态描述    | 
-| :-------------------------: | :-----------: |
+| :-------------------------: | :----------- |
 |1000 |Success|
 |-1001|Verification  failed|
 |-1009|An Unpredictable exception occurs|

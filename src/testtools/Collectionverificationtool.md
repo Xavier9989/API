@@ -1,6 +1,7 @@
 # 6.1 支付测试工具
 
-- 请在后台CallBack配置好对应接口的回调地址，Content Type：text/plain，测试工具位置（中文界面显示付款工具，英文界面显示payout tool）
+
+- <font color = red>请在后台CallBack配置好对应接口的回调地址，Content Type：text/plain，测试工具位置（中文界面显示付款工具，英文界面显示payout tool）</font>
 ![](../public/CB回调.png "Shiprock")![](../public/回调填写界面.png "Shiprock")
 
 - 线上渠道放款测试流程
@@ -14,8 +15,8 @@
 
 - 4.1 payoutInquiry放款查询请求模拟
 
-    - 选择Channel渠道(推荐选择RD Pawnshop)，Type选择payoutInquiry，输入放款码Control No，点击SEND按钮发送请求，此时接口会请求在Callback配置的URL并返回解析过后的信息。
+    - 选择Channel渠道<font color = red>(推荐选择RD Pawnshop)</font>，Type选择payoutInquiry，<font color = red>输入放款码Control No</font>，点击SEND按钮发送请求，此时接口会请求在Callback配置的URL并返回解析过后的信息。
 - 4.2 payoutPayout放款确认通知请求模拟
-    - 4.1接口成功之后才可以进行4.2操作，单独进行4.2操作会直接失败。选择Channel渠道(推荐选择RD Pawnshop)，Type选择payoutPayout，输入放款码Control No和放款时间Pay Time（EX:2022-07-01 16:00:00），点击SEND按钮发送请求，此时接口会请求在Callback配置的URL并返回解析过后的信息。
+    - 4.1接口成功之后才可以进行4.2操作，单独进行4.2操作会直接失败。选择Channel渠道<font color = red>(推荐选择RD Pawnshop)</font>，Type选择payoutPayout，<font color = red>输入放款码Control No和放款时间Pay Time（EX:2022-07-01 16:00:00）</font>，点击SEND按钮发送请求，此时接口会请求在Callback配置的URL并返回解析过后的信息。
 ![](../public/4.2选择渠道进行付款.png "Shiprock")
 

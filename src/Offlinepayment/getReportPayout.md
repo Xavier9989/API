@@ -7,11 +7,11 @@
 |userName|string|50|Y|用户名称 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y| payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
 |authentication|string |255.|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|startDate|string|50| |起始时间 - "2022-12-02"|
-|endDate |string|50||截止时间 - "2022-12-02"|
-|dateType|string|50||CreateDate、CollectedTime(collection)、PayTime(payout)|
-|Pagination |string|50||页码 - 1|
-|pageSize |string|50||页面尺寸 - 100|
+|startDate|string|50| Y|起始时间 - "2022-12-02"|
+|endDate |string|50|Y|截止时间 - "2022-12-02"|
+|dateType|string|50|Y|CreateDate、CollectedTime(collection)、PayTime(payout)|
+|Pagination |string|50|Y|页码 - 1|
+|pageSize |string|50|Y|页面尺寸 - 100|
 
 ## Payout
 ### Post data

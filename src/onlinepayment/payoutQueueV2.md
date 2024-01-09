@@ -1,9 +1,9 @@
-# 3.4    ML/LBCExpress非实时放款（payoutQueueV2）
+# 3.4    ML/Cebuana实时放款（payoutQueueV2）
 
 ### 此接口为指定渠道支付接口，由合作伙伴主动推送至SkyPay，为异步接口并由3.2 PayoutQueuePayout接口回调支付结果。
-### 注意
-#### 请注意若选择此支付接口，表示此笔款项指定在LBC或ML取款，其他渠道将不支持取此笔款项。
-#### 在用户未取款前皆可取消此笔支付，请调用「3.3 Payout–cancelPayout」。取消不是实时取消，次日回复取消结果，取消不退服务费。
+### <font color = red>注意</font>
+#### <font color = red>请注意若选择此支付接口，表示此笔款项指定在Cebuana或ML取款，其他渠道将不支持取此笔款项。</font>
+#### <font color = red>在用户未取款前皆可取消此笔支付，请调用「3.3 Payout–cancelPayout」。取消不是实时取消，次日回复取消结果，取消不退服务费。</font>
 
 ##### Input parameters:
 | 参数                        |    类型     | 长度   |Y/N |描述|
@@ -19,10 +19,9 @@
 |identificationTypeId  |string |3| |验证身份证件类别 - 请参考第7.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
 |phone  |string|11|Y | 09开头的11位数字 -  Ex:"phone":"09270348095"|
 |amount |decimal|10.20|Y |支付金额支持数字小数位两位 -   ex:"amount":3400.00|
-|accountNo  |string |50| |账户号 - 银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
 |idcardPicType  |string|50|Y|图片格式 - 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl  |string |500|Y|相片存取网络地址  -   Ex:"idcardPicUrl":"https://12334.png"|
-|location  |string |100|Y| 取款人地址 - Ex:"location":"lalakay los banos laguna"|
+|location  |string |500|Y| 取款人地址 - Ex:"location":"lalakay los banos laguna"|
 |withdrawChannel  |int| | Y |支付渠道名称 - 1 MLhuillier  -  13 Cebuana - Lhuillier	|
 
 ##### Post data
@@ -50,8 +49,8 @@
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS - 必填|
-|responseCode  |int|4|回传代码 - 4系统默认回传码,长度为4的数字,标准参考回传码定义,(必填)|
-|responseDescription - |string|255|回传内容描述 - 响应信息|
+|responseCode  |int|4|系统默认回传码长度为4的数字标准参考回传码定义|
+|responseDescription |string|255|回传内容描述 - 响应信息|
 |referenceNo  |string|255|关连码 - 此字段将带回空值|
 
 ##### Output data：

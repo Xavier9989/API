@@ -1,9 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  
-  title: " Awesome Project",
-  description: "A VitePress Site",
+  // title: " Awesome Project",
+  // description: "A VitePress Site",
   
   // 源码目录
   srcDir: "./src",
@@ -13,11 +12,12 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    logo:'/logo.png',
 
     nav: [
       { text: "Home", link: "/markdown-examples" },
       // { text: "Examples", link: "/markdown-examples" },
-      
+
     ],
 
     sidebar: [
@@ -45,22 +45,30 @@ export default defineConfig({
                 text: "3.2回传支付确认讯息（payoutQueuePayout）",
                 link: "/onlinepayment/payoutQueuePayout",
               },
-              {
-                text: "3.3取消支付交易（cancelPayout）",
-                link: "/onlinepayment/cancelPayout",
-              },
-              {
-                text: "3.4 ML/LBCExpress非实时放款（payoutQueueV2）",
-                link: "/onlinepayment/payoutQueueV2",
-              },
-              {
-                text: "3.5修改支付交易（amendTransactionV2）",
-                link: "/onlinepayment/amendTransactionV2",
-              },
+             
             ],
           },
         ],
       },
+      {
+        text: "3.线上支付处理流程",
+        collapsed: true,
+        items: [
+          {
+            text: "3.3取消支付交易（cancelPayout）",
+            link: "/onlinepayment/cancelPayout",
+          },
+          {
+            text: "3.4 ML/Cebuana实时放款（payoutQueueV2）",
+            link: "/onlinepayment/payoutQueueV2",
+          },
+          {
+            text: "3.5修改支付交易（amendTransactionV2）",
+            link: "/onlinepayment/amendTransactionV2",
+          },
+        ]
+      },
+
       {
         text: "4.线下支付处理流程",
         collapsed: true,

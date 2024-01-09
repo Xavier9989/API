@@ -30,7 +30,7 @@
 |responseTime - 回传时间|DateTime|50|(必填)yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode - 回传代码|int|4|（必填）系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容|
 |responseDescription - 回传内容描述|string|255|响应信息（必填）|
-|amount - 收款金额|decimal|10.2|支付金额只能为数字小数位两位(必填)监管要求需要还款信息留存档案|
+|amount - 收款金额|decimal|10.20|支付金额只能为数字小数位两位(必填)监管要求需要还款信息留存档案|
 |payerName - 还款人名称|string|255|还款人名字,使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix(必填)监管要求需要还款信息留存档案|
 |payer添加ress - 还款人地址|string|255|(必填)监管要求需要还款信息留存档案|
 |payerPhone - 还款人电话|string|11|09开头11位数字(必填) - 监管要求需要还款信息留存档案|
@@ -51,7 +51,7 @@
 ### Return code:
 
 | 状态代码                        |   状态描述    | 
-| :-------------------------: | :-----------: |
+| :-------------------------: | :----------- |
 |1000 |Success|
 |-1001|Verification error|
 |-1009|Unpredictable exception occurs|

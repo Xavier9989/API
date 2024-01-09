@@ -1,3 +1,4 @@
+
 # 5.2 查詢接口-充值、结算、提现（notificationInquiry）
 ### 这支API是由SKYPAY提供,由合作伙伴发动请求進行查詢。提供日期区间及类型之查询，并返回日期及类型范围内「充值、结算、提现」之通知记录。
 #### Input parameters
@@ -10,6 +11,8 @@
 |transEndDate |Date|10| |通知日期-结束 - ex:2023-06-19|
 |statementTypes |string[]|| |通知类型：<br>1:打款帐户充值 <br> 2:收款结算转充值 <br> 3:帐户馀额互转 <br> 4:收款交易结算<br> 5:收款帐户提现 <br> 6:打款帐户提现|
 ### Post data
+
+
 ```json
 {
     "userName"  :  "AppName@skypay" ,
@@ -28,9 +31,6 @@
 |responseCode  |int|4|回传代码 - 1000|
 |responseDescription |string|255|Success|
 |notifications |string[]|255|通知数组名 - Array|
-
-| 参数                        |    类型     | 长度    |描述|
-| :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |transctionDate  |DateTime|50|通知日期 - ex:2023-06-18 17:52:10|
 |companyPrefix |string|5|公司编码 - ex:SKY98|
 |companyName |string|200.|公司名称 - ex:Skybridge Payment Inc.|
@@ -42,6 +42,7 @@
 |Amount|int||金額 - Ex:1200000|
 |Currency |string|3|固定币别PHP|
 |referenceNumber|string|15|交易编号(唯一)  - 此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
+
 
 ### Output data
 
@@ -80,6 +81,7 @@
   ]
 }
 ```
+
 ### Return code
 | 状态代码                        |   状态描述    | 
 | :-------------------------: | :-----------: |

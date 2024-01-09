@@ -1,11 +1,15 @@
 # 3.1    推送线上支付交易(payoutQueue)
 这个API是由SkyPay提供,并由合作伙伴进行主动推送。
 当客户取得支付交易核准信息,合作伙伴必须透过此界面推送支付数据进行支付交易。
-- 重复支付注意
-    - **为了避免重复支付，重送交易前请先查询交易状态（查询操作请在交易发送后300秒）**。
-    - **重送不建议更换支付码(避免重复放款，重试间隔应该在300秒以上)**。
-    - **交易状态是Pending或Complete状态交易记录不可以重送，避免重复支付**。
-    - **禁止通过不同的提款渠道重新发送同一笔交易**。
+
+- <font color = red>重复支付注意 </font>
+    - <font color = red>为了避免重复支付，重送交易前请先查询交易状态（查询操作请在交易发送后300秒）。</font>
+    - <font color = red>重送不建议更换支付码(避免重复放款，重试间隔应该在300秒以上)。</font>
+    - <font color = red>交易状态是Pending或Complete状态交易记录不可以重送，避免重复支付。</font>
+    - <font color = red>禁止通过不同的提款渠道重新发送同一笔交易。</font>
+   
+
+
 
 #### Input parameters:
 |       参数                | 类型         |   长度       |  Y/n|     描述    |
@@ -18,21 +22,20 @@
 |name |string |50|  Y  |取现人名字-使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone|string|11 |  Y |09开头的11位数字  - Ex:"phone":"09270348095"|
 |amount|string|10.20  |    Y   |支付金额支持数字小数位两位 -  ex:"amount":3400.00|
-|accountNo  |string |50|  |账户号-银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
-|withdrawChannel|int||  Y| 指定支付渠道代码 - 参考第九章管道详细说明|
+|bankNo|string |50| Y |账户号-银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
+|accountNo  |string |50| Y |电子钱包:账号为取现人09开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
+|withdrawChannel|int||  Y| 指定支付渠道代码 - 参考第九章管道详细说明[渠道code值](/src/Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |身份证件号码- 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
-|identificationTypeId  |string |3|     |验证身份证件类别-参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
-|idType  |string|50|   |验证身份证件类别-电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|
-|idcardPicType  |string|50|        |图片格式-电子钱包进行支付时选填，银行无此参数Ex:"idcardPicType":"jpg"|
-|idcardPicUrl  |string |500|   |相片存取网络地址-电子钱包进行支付时选填，银行无此参数Ex:"idcardPicUrl":""|
+|identificationTypeId  |string |3|   N  |验证身份证件类别-参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
+|idType  |string|50| N  |验证身份证件类别-电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|
+|idcardPicType  |string|50|     N   |图片格式-电子钱包进行支付时选填，银行无此参数Ex:"idcardPicType":"jpg"|
+|idcardPicUrl  |string |500| N  |相片存取网络地址-电子钱包进行支付时选填，银行无此参数Ex:"idcardPicUrl":""|
 |birthday  |Date|10|  N     |生日格式：yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
-|birthPlace  |string|250|    |出生地-银行渠道进行支付时选填，电子钱包无此参数|
+|birthPlace  |string|250|  N  |出生地-银行渠道进行支付时选填，电子钱包无此参数|
 |location  |string |500|N |取款人地址 - Ex:"location":manila"|
-|provinceId |int| |     |省份ID-请参考第七章接口7.5 Get Province - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
-|cityId  |int||      |城巿ID-请参考第七章接口7.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
-|expiryDate  |string |50| |证件到期日-银行渠道进行支付时选填，电子钱包无此参数|
-
-
+|provinceId |int| |  N   |省份ID-请参考第七章接口7.5 Get Province - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
+|cityId  |int||   N   |城巿ID-请参考第七章接口7.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
+|expiryDate  |string |50| N|证件到期日-银行渠道进行支付时选填，电子钱包无此参数|
 
 ##### Post data
 #### 支付为电子钱包时,调用API送出的数据格式内容:
@@ -58,7 +61,7 @@
 ```
 
 
-#### 支付为银行时,调用API送出的数据格式内容:（bank交易时，请先走7.6获取银行代码接口来获取目前可用的银行列表）
+#### 支付为银行时,调用API送出的数据格式内容:<font color = red>（bank交易时，请先走7.6获取银行代码接口来获取目前可用的银行列表） </font>
 ```json
 {
     "userName":"AppName@skypay",
@@ -84,11 +87,12 @@
 ```
 
 ##### Output parameters:
+
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|回传代码 - 默认回传码,长度为4的数字,标准参考回传码定义|
-|responseDescription |string|255|回传内容描述 - 响应信息|
+|responseTime  |DateTime|50|回传时间  -  yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|回传代码  -  1000|
+|responseDescription  |string|255|回传内容描述  -  Success|
 
 ##### Output data：
 ```json
@@ -102,7 +106,7 @@
 ### Return code:
 
 | 状态代码                        |   状态描述    | 
-| :-------------------------: | :-----------: |
+| :-------------------------: | :----------- |
 |1000|Success|
 |-1000|Post context is not valid|
 |-1008|Control number is already exists|

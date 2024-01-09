@@ -2,8 +2,8 @@
 
 在本文档中,时间参数的定义是使用GMT+8时区
 ## 2.系统架构
-#### callerName：由SkyPay提供（在账户绑定邮箱的邮件中）
-######  已开户的callerName只能发送一次到邮箱内，如有忘记请联系我们的技术支持
+#### <font color = red>callerName：由SkyPay提供（在账户绑定邮箱的邮件中）</font>
+######  <font color = red>已开户的callerName只能发送一次到邮箱内，如有忘记请联系我们的技术支持</font>
 _________________
 - 测试请求接口url：
 - https://test.skypay.ph/services/{callerName}
@@ -22,7 +22,7 @@ _________________
 ![](./public/生成秘钥流程.jpg)
 
 ## 5.验证机制
-每次交易进行API功能调用时,必须先提供验证信息,以便于后台进行安全验证,包含下列信息
-- User Name使用者：由SkyPay另外提供（在账户绑定邮箱的邮件中）
-- Authentication Key验证密钥：由SkyPay另外提供（在管理后台的金钥功能里）
-- Prefix前缀码：由SkyPay另外提供（在账户绑定邮箱的邮件中，放还款统一使用SKY**开头）
+<font color = red>每次交易进行API功能调用时,必须先提供验证信息,以便于后台进行安全验证,包含下列信息</font>
+- <font color = red>User Name使用者：由SkyPay另外提供（在账户绑定邮箱的邮件中）</font>
+- <font color = red>Authentication Key验证密钥：由SkyPay另外提供（在管理后台的金钥功能里）</font>
+- <font color = red>Prefix前缀码：由SkyPay另外提供（在账户绑定邮箱的邮件中，放还款统一使用SKY**开头）</font>

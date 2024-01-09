@@ -1,9 +1,8 @@
 # 3.5    修改支付交易（amendTransactionV2）
 #### 当支付数据推送错误时，可以此接口进行数据修正，最常见为用户姓名错误(错字、顺序错误)，此接口与「3.4 Payout–payoutQueueV2」字段相同，请针对欲修改的字段带入新值，其于请带入原始值。
-### 注意
- ### 如果无法修改，请先取消交易，然后通过API"3.4 Payout-payoutQueueV2"再次发送。
-### LBCExpress渠道的交易，只能修改收款人姓名，其他信息不能修改。
-
+### <font color = red>注意 ：</font>
+ ### <font color = red>如果无法修改，请先取消交易，然后通过API"3.4 Payout-payoutQueueV2"再次发送。</font>
+### <font color = red>Cebuana渠道的交易，只能修改收款人姓名，其他信息不能修改。</font>
 ##### Input parameters:
 | 参数                        |    类型     | 长度   | Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
@@ -46,8 +45,8 @@
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS - 必填|
-|responseCode |int|4|回传代码 - 4系统默认回传码,长度为4的数字,标准参考回传码定义,(必填)|
-|responseDescription |string|255-|回传内容描述 - 响应信息|
+|responseCode |int|4|系统默认回传码,长度为4的数字,标准参考回传码定义|
+|responseDescription |string|255|回传内容描述 - 响应信息|
 
 ##### Output data：
 ```json

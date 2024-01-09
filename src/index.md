@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: home
 hero:
   name: "SKYPAY三方支付文档"
@@ -10,7 +10,4 @@ hero:
     - theme: brand
       text: Click to enter
       link: /markdown-examples
----
-
-
-  
+--- -->

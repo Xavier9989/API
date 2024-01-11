@@ -1,5 +1,4 @@
 {
-  "plugins": ["copy-code-button"],
   "name": "gitbook-plugin-copy-code-button",
   "version": "1.0.0",
   "description": "使用技术\r - [VitePress](https://vitepress.dev/) - 文档框架",
@@ -13,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.32"
+    "babel-plugin-component": "^1.1.1",
+    "vitepress": "^1.0.0-rc.32",
+    "vue": "^3.4.6"
   },
   "dependencies": {
     "algoliasearch": "^4.22.0",
@@ -73,12 +74,10 @@
     "vfile-location": "^5.0.2",
     "vfile-message": "^4.0.2",
     "vite": "^5.0.10",
-    "vue": "^3.3.13",
     "web-namespaces": "^2.0.1",
     "zwitch": "^2.0.4"
   },
   "directories": {
     "doc": "docs"
   }
-
 }

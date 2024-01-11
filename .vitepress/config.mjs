@@ -1,25 +1,37 @@
-import { defineConfig } from "vitepress";
 
+import { defineConfig } from "vitepress";
 export default defineConfig({
-  // title: " Awesome Project",
-  // description: "A VitePress Site",
-  
+  title: "SKYPAY",
+  description: "A VitePress Site",
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    fr: {
+      label: '中文',
+      lang: 'fr', // 可选，将作为 `lang` 属性添加到 `html` 标签中
+      link: '/fr/guide' // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
+      // 其余 locale 特定属性...
+    }
+
+    
+  },
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
   outDir: "./dist",
+  
+  text: "Version", link: "/markdown-examples" ,
   themeConfig: {
     search: {
       provider: "local",
     },
-    logo:'/logo.png',
-
+    // logo:'/logo.png',
     nav: [
       { text: "Home", link: "/markdown-examples" },
-      // { text: "Examples", link: "/markdown-examples" },
-
     ],
-
+    
     sidebar: [
       {
         text: "introduction",

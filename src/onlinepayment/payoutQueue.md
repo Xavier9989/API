@@ -7,9 +7,6 @@
     - <font color = red>重送不建议更换支付码(避免重复放款，重试间隔应该在300秒以上)。</font>
     - <font color = red>交易状态是Pending或Complete状态交易记录不可以重送，避免重复支付。</font>
     - <font color = red>禁止通过不同的提款渠道重新发送同一笔交易。</font>
-   
-
-
 
 #### Input parameters:
 |       参数                | 类型         |   长度       |  Y/n|     描述    |

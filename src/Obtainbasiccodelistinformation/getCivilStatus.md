@@ -12,15 +12,15 @@
 
 
 #### Post data
-```json
-{
-    "userName" :  "AppName@skypay",
-    "action" :  "getCatalog",
-    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "catalogType" :  "getCivilStatus",
-    "versionDate" :  ""
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> :  <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> :  <font color=blue>"getCatalog"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> :  <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"catalogType"</font> :  <font color=blue>"getCivilStatus"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"versionDate"</font> :  <font color=blue>""</font><br>
 }
-```
+
 
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
@@ -32,15 +32,14 @@
 |CivilStatus|string|255|公民状态|
 
 #### Output data
-```json
-{
-   "responseTime" : "2018-06-18 17:52:10.5211",
-    "responseCode" : "1000",
-    "result" : [
-       { 
-       "CivilStatusId": 1,
-       "CivilStatus": "sample string"
-       }
-    ]
+
+{<br>
+   <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+   <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+   <font color=red>&ensp;&ensp;&ensp;&ensp;"result"</font> : [<br>
+       { <br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"CivilStatusId"</font>: <font color=blue>1</font>,<br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"CivilStatus"</font>: <font color=blue>"sample string"</font><br>
+       }<br>
+    ]<br>
 }
-```

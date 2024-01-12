@@ -13,40 +13,40 @@
 
 #### Post data
 
-```json
-{
-    "userName":"AppName@skypay",
-    "action":"collectionIcnquiry",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SKY0XXXXXXXXXX",
-    "amount":"3900.00",
-    "phone":"6392210083333"
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"collectionIcnquiry"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SKY0XXXXXXXXXX"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"phone"</font> : <font color=blue>"6392210083333"</font><br>
 }
-```
+
 
 #### Output parameters
-| 参数                        |    类型     | 长度    |描述|
-| :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime - 回传时间|DateTime|50|(必填)yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode - 回传代码|int|4|（必填）系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容|
-|responseDescription - 回传内容描述|string|255|响应信息（必填）|
-|amount - 收款金额|decimal|10.20|支付金额只能为数字小数位两位(必填)监管要求需要还款信息留存档案|
-|payerName - 还款人名称|string|255|还款人名字,使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix(必填)监管要求需要还款信息留存档案|
-|payer添加ress - 还款人地址|string|255|(必填)监管要求需要还款信息留存档案|
-|payerPhone - 还款人电话|string|11|09开头11位数字(必填) - 监管要求需要还款信息留存档案|
+| 参数                        |    类型     | 长度  |Y/N  |描述|
+| :-------------------------: | :-----------: |:-----:|:-----:|--------------------------------|   
+|responseTime|DateTime|50|Y|回传时间 -yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode|int|4|Y|系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容|
+|responseDescription|string|255| Y|回传内容描述 - 响应信息|
+|amount|decimal|10.20|Y|收款金额 - 支付金额只能为数字小数位两位(必填)监管要求需要还款信息留存档案|
+|payerName|string|255|Y|还款人名字 - 使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix(必填)监管要求需要还款信息留存档案|
+|payer添加ress|string|255|Y|还款人地址 监管要求需要还款信息留存档案|
+|payerPhone|string|11|Y|还款人电话 - 09开头11位数字 监管要求需要还款信息留存档案|
 
 #### Output data
-```json
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
-    "amount":"3900.00",
-    "payerName":"Last name,First name,Middle name",
-    "payer添加ress":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin",
-    "payerPhone":"092210083333"
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"payerName"</font> : <font color=blue>"Last name,First name,Middle name"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"payer添加ress"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"payerPhone"</font> : <font color=blue>"092210083333"</font><br>
 }
-```
+
 
 ### Return code:
 

@@ -10,14 +10,14 @@
 |controlNumber |string|13~15|Y| 取款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 #### Post data
 
-```json
-{
-    "userName":"AppName@skypay",
-    "action":"payoutInquiry",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SKY0XXXXXXXXXX"
+
+{<br>
+    <font color=red>&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;"action"</font> : <font color=blue>"payoutInquiry"</font>,<br>
+    <font color=red>&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SKY0XXXXXXXXXX"</font><br>
 }
-```
+
 
 #### Output parameters
 | 参数                        |    类型     | 长度   | Y/N|描述|
@@ -39,27 +39,27 @@
 |location  |string |100| Y|地址 - 添加ress取现人地址(必填)|
 
 ##### Output data：
-```json 
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
-    "referenceNo":"",
-    "sender":"Skybridge",
-    "controlNumber":"SKYXXXXXXXXXX",
-    "sender添加ress":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin",
-    "name":"Last name,First name,Middle name",
-    "birthday":"1945-01-01",
-    "identificationId":"123456789011",
-    "idType":"SSS",
-    "phone":"6392210083333",
-    "amount":"3900.00",
-    "idcardPicType":"png",
-    "idcardPicUrl":"http://skybridge.com.tw/sample.png",
-    "contractNumber":"SK00000000001",
-    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"
+
+{<br>
+    <font color=red>&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font>,<br>
+    <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>""</font>,<br>
+    <font color=red>&ensp;&ensp;"sender"</font> : <font color=blue>"Skybridge"</font>,<br>
+    <font color=red>&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SKYXXXXXXXXXX"</font>,<br>
+    <font color=red>&ensp;&ensp;"sender添加ress"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font>,<br>
+    <font color=red>&ensp;&ensp;"name"</font> : <font color=blue>"Last name,First name,Middle name"</font>,<br>
+    <font color=red>&ensp;&ensp;"birthday"</font> : <font color=blue>"1945-01-01"</font>,<br>
+    <font color=red>&ensp;&ensp;"identificationId"</font> : <font color=blue>"123456789011"</font>,<br>
+    <font color=red>&ensp;&ensp;"idType"</font> : <font color=blue>"SSS"</font>,<br>
+    <font color=red>&ensp;&ensp;"phone"</font> : <font color=blue>"6392210083333"</font>,<br>
+    <font color=red>&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;"idcardPicType"</font> : <font color=blue>"png"</font>,<br>
+    <font color=red>&ensp;&ensp;"idcardPicUrl"</font> : <font color=blue>"http://skybridge.com.tw/sample.png"</font>,<br>
+    <font color=red>&ensp;&ensp;"contractNumber"</font> : <font color=blue>"SK00000000001"</font>,<br>
+    <font color=red>&ensp;&ensp;"location"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font><br>
 }
-```
+
 
 ### Return code:
 

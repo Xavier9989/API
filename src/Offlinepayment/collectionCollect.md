@@ -7,7 +7,7 @@
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
 |authentication|string |255|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber |string|13|Y|收款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|contractNumber |string|13~15|Y|收款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |amount|decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
 |phone|string|50|Y|09开头的11位数字 - Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  收据编号|
@@ -16,19 +16,19 @@
 
 #### Post data
 
-```json
-{
-    "userName":"AppName@skypay",
-    "action":"collectionCollect",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SKY0XXXXXXXXXX",
-    "amount":"3900.00",
-    "phone":"6392210083333",
-    "receiptNumber":"B6C13B76E4BF",
-    "collectedTime":"2018-06-18 17:52:10",
-    "payChannel":"1"
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"collectionCollect"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SKY0XXXXXXXXXX"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"phone"</font> : <font color=blue>"6392210083333"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"receiptNumber"</font> : <font color=blue>"B6C13B76E4BF"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"collectedTime"</font> : <font color=blue>"2018-06-18 17:52:10"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"payChannel"</font> : <font color=blue>"1"</font><br>
 }
-```
+
 
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
@@ -39,13 +39,13 @@
 
 #### Output data：
 
-```json
-{
-  "responseTime":"2018-06-18 17:52:10.5211",
-  "responseCode":"1000",
-  "responseDescription":"Success"
+
+{<br>
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font><br>
 }
-```
+
 
 ### Return code:
 

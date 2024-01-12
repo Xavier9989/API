@@ -11,15 +11,15 @@
 |versionDate |dataTime|||版本日期|
 
 #### Post data
-```json
-{
-    "userName" :  "AppName@skypay",
-    "action" :  "getCatalog",
-    "authentication" :  "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "catalogType" :  "getIdentificationType",
-    "versionDate" :  ""
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> :  <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> :  <font color=blue>"getCatalog"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> :  <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"catalogType"</font> :  <font color=blue>"getIdentificationType"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"versionDate"</font> :  <font color=blue>""</font><br>
 }
-```
+
 
 
 #### Output parameters
@@ -34,19 +34,18 @@
 
 
 #### Output data
-```json
-{
-   "responseTime" : "2018-06-18 17:52:10.5211",
-    "responseCode" : "1000",
-    "result" : [
-       { 
-       "IdentificationId": 1,
-       "IdentificationType": "Company ID"
-       }
-       { 
-       "IdentificationId": 2,
-       "IdentificationType": "Driver’s License"
-       }
-    ]
+
+{<br>
+   <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"result"</font> : [<br>
+       { <br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"IdentificationId"</font> : <font color=blue>1</font>,<br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"IdentificationType"</font> : <font color=blue>"Company ID"</font>
+       }<br>
+       { <br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"IdentificationId"</font> : <font color=blue>2</font>,<br>
+       <font color=red>&ensp;&ensp;&ensp;&ensp;"IdentificationType"</font> : <font color=blue>"Driver’s License"</font><br>
+       }<br>
+    ]<br>
 }
-```

@@ -1,4 +1,4 @@
-// node_modules/@vue/shared/dist/shared.esm-bundler.js
+// node_modules/.pnpm/@vue+shared@3.4.8/node_modules/@vue/shared/dist/shared.esm-bundler.js
 function makeMap(str, expectsLowerCase) {
   const set2 = new Set(str.split(","));
   return expectsLowerCase ? (val) => set2.has(val.toLowerCase()) : (val) => set2.has(val);
@@ -276,7 +276,7 @@ var stringifySymbol = (v, i = "") => {
   return isSymbol(v) ? `Symbol(${(_a = v.description) != null ? _a : i})` : v;
 };
 
-// node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
+// node_modules/.pnpm/@vue+reactivity@3.4.8/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js
 function warn(msg, ...args) {
   console.warn(`[Vue warn] ${msg}`, ...args);
 }
@@ -1449,7 +1449,7 @@ var TriggerOpTypes = {
   "CLEAR": "clear"
 };
 
-// node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
+// node_modules/.pnpm/@vue+runtime-core@3.4.8/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var stack = [];
 function pushWarningContext(vnode) {
   stack.push(vnode);
@@ -2545,8 +2545,6 @@ function hasPropsChanged(prevProps, nextProps, emitsOptions) {
   return false;
 }
 function updateHOCHostEl({ vnode, parent }, el) {
-  if (!el)
-    return;
   while (parent) {
     const root = parent.subTree;
     if (root.suspense && root.suspense.activeBranch === vnode) {
@@ -3185,7 +3183,12 @@ function queueEffectWithSuspense(fn, suspense) {
 function setActiveBranch(suspense, branch) {
   suspense.activeBranch = branch;
   const { vnode, parentComponent } = suspense;
-  const el = vnode.el = branch.el;
+  let el = branch.el;
+  while (!el && branch.component) {
+    branch = branch.component.subTree;
+    el = branch.el;
+  }
+  vnode.el = el;
   if (parentComponent && parentComponent.subTree === vnode) {
     parentComponent.vnode.el = el;
     updateHOCHostEl(parentComponent, el);
@@ -6548,29 +6551,34 @@ function propHasMismatch(el, key, clientValue, vnode) {
   let actual;
   let expected;
   if (key === "class") {
-    actual = toClassSet(el.getAttribute("class") || "");
-    expected = toClassSet(normalizeClass(clientValue));
-    if (!isSetEqual(actual, expected)) {
+    actual = el.getAttribute("class");
+    expected = normalizeClass(clientValue);
+    if (!isSetEqual(toClassSet(actual || ""), toClassSet(expected))) {
       mismatchType = mismatchKey = `class`;
     }
   } else if (key === "style") {
-    actual = toStyleMap(el.getAttribute("style") || "");
-    expected = toStyleMap(
-      isString(clientValue) ? clientValue : stringifyStyle(normalizeStyle(clientValue))
-    );
+    actual = el.getAttribute("style");
+    expected = isString(clientValue) ? clientValue : stringifyStyle(normalizeStyle(clientValue));
+    const actualMap = toStyleMap(actual);
+    const expectedMap = toStyleMap(expected);
     if (vnode.dirs) {
       for (const { dir, value } of vnode.dirs) {
         if (dir.name === "show" && !value) {
-          expected.set("display", "none");
+          expectedMap.set("display", "none");
         }
       }
     }
-    if (!isMapEqual(actual, expected)) {
+    if (!isMapEqual(actualMap, expectedMap)) {
       mismatchType = mismatchKey = "style";
     }
   } else if (el instanceof SVGElement && isKnownSvgAttr(key) || el instanceof HTMLElement && (isBooleanAttr(key) || isKnownHtmlAttr(key))) {
-    actual = el.hasAttribute(key) ? el.getAttribute(key) : key in el ? el[key] : "";
-    expected = isBooleanAttr(key) ? includeBooleanAttr(clientValue) ? "" : false : clientValue == null ? "" : String(clientValue);
+    if (isBooleanAttr(key)) {
+      actual = el.hasAttribute(key);
+      expected = includeBooleanAttr(clientValue);
+    } else {
+      actual = el.hasAttribute(key) ? el.getAttribute(key) : key in el ? el[key] : "";
+      expected = clientValue == null ? "" : String(clientValue);
+    }
     if (actual !== expected) {
       mismatchType = `attribute`;
       mismatchKey = key;
@@ -9529,7 +9537,7 @@ function isMemoSame(cached, memo) {
   }
   return true;
 }
-var version = "3.4.7";
+var version = "3.4.8";
 var warn2 = true ? warn$1 : NOOP;
 var ErrorTypeStrings = ErrorTypeStrings$1;
 var devtools = true ? devtools$1 : void 0;
@@ -9547,7 +9555,7 @@ var resolveFilter = null;
 var compatUtils = null;
 var DeprecationTypes = null;
 
-// node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
+// node_modules/.pnpm/@vue+runtime-dom@3.4.8/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js
 var svgNS = "http://www.w3.org/2000/svg";
 var mathmlNS = "http://www.w3.org/1998/Math/MathML";
 var doc = typeof document !== "undefined" ? document : null;
@@ -11087,7 +11095,7 @@ var initDirectivesForSSR = () => {
   }
 };
 
-// node_modules/vue/dist/vue.runtime.esm-bundler.js
+// node_modules/.pnpm/vue@3.4.8/node_modules/vue/dist/vue.runtime.esm-bundler.js
 function initDev() {
   {
     initCustomFormatter();
@@ -11267,10 +11275,41 @@ export {
 };
 /*! Bundled license information:
 
+@vue/shared/dist/shared.esm-bundler.js:
+  (**
+  * @vue/shared v3.4.8
+  * (c) 2018-present Yuxi (Evan) You and Vue contributors
+  * @license MIT
+  **)
+
+@vue/reactivity/dist/reactivity.esm-bundler.js:
+  (**
+  * @vue/reactivity v3.4.8
+  * (c) 2018-present Yuxi (Evan) You and Vue contributors
+  * @license MIT
+  **)
+
 @vue/runtime-core/dist/runtime-core.esm-bundler.js:
+  (**
+  * @vue/runtime-core v3.4.8
+  * (c) 2018-present Yuxi (Evan) You and Vue contributors
+  * @license MIT
+  **)
   (*! #__NO_SIDE_EFFECTS__ *)
 
 @vue/runtime-dom/dist/runtime-dom.esm-bundler.js:
+  (**
+  * @vue/runtime-dom v3.4.8
+  * (c) 2018-present Yuxi (Evan) You and Vue contributors
+  * @license MIT
+  **)
   (*! #__NO_SIDE_EFFECTS__ *)
+
+vue/dist/vue.runtime.esm-bundler.js:
+  (**
+  * vue v3.4.8
+  * (c) 2018-present Yuxi (Evan) You and Vue contributors
+  * @license MIT
+  **)
 */
-//# sourceMappingURL=chunk-6L22JV22.js.map
+//# sourceMappingURL=chunk-3ITF2VAY.js.map

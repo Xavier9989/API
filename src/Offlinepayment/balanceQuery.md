@@ -8,13 +8,13 @@
 |authentication |string |255.|Y|验证码  - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 #### Input parameters
-```json
-{
-    "userName":"AppName@skypay",
-    "action":"balanceQuery",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"balanceQuery"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font><br>
 }
-```
+
 
 #### Output parameters
 | 参数                        |    类型     | 长度    |描述|
@@ -25,14 +25,14 @@
 |Balance |decimal|10.20|回传合作伙伴账户余额|
 
 #### Output data：
-```json
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success",
-    "balance":726718.00
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"balance"</font> : <font color=blue>726718.00</font><br>
 }
-```
+
 
 ### Return code:
 

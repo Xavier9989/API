@@ -1,22 +1,19 @@
-
 import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "SKYPAY",
   description: "A VitePress Site",
   locales: {
-    root: {
-      label: 'English',
-      lang: 'en'
-    },
-    fr: {
-      label: '中文',
-      lang: 'fr', // 可选，将作为 `lang` 属性添加到 `html` 标签中
-      link: '/fr/guide' // 默认 /fr/ -- 显示在导航栏翻译菜单上，可以是外部的
-      // 其余 locale 特定属性...
-    }
 
-    
+    root: {
+      label: '中文',
+      lang: 'cn'
+    },
+    en: {
+      label: 'English',
+      lang: 'en',
+    },
   },
+  head: [['link', { rel: 'icon', href: '/favicon.' }]],
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
@@ -24,19 +21,21 @@ export default defineConfig({
   
   text: "Version", link: "/markdown-examples" ,
   themeConfig: {
+    logo: '/logo.svg',
+    siteTitle: false,
     search: {
       provider: "local",
     },
     // logo:'/logo.png',
     nav: [
-      { text: "Home", link: "/markdown-examples" },
+      { text: "Home", link: "/Version1" },
     ],
     
     sidebar: [
       {
         text: "introduction",
         items: [
-          { text: "Version", link: "/markdown-examples" },
+          { text: "Version", link: "/Version1" },
           { text: "API 目录", link: "/api-examples" },
           { text: "前言", link: "/preface" },
           { text: "文档说明", link: "/APIdocumentationdescription" },
@@ -44,7 +43,7 @@ export default defineConfig({
       },
 
       {
-        text: "3.线上支付处理流程",
+        text: "3.线上请求线上支付处理流程",
         collapsed: true,
         items: [
           {
@@ -63,7 +62,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "3.线上支付处理流程",
+        text: "3.线上请求线下支付处理流程",
         collapsed: true,
         items: [
           {

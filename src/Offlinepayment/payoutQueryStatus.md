@@ -18,21 +18,22 @@
 
 ##### Post data
 
-```json
-{
-  "userName": "AppName@skypay",
-  "action":"payoutQueryStatus",
-  "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-  "controlNumbers":[
-        {
-            "controlNumber":"SK0XXXXXXXXXX"
-        },
-        {
-            "controlNumber":"SK0XXXXXXXXXX"
-        }
-    ]
+
+{<br>
+  <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;"userName"</span> : <span class = "text-blue-500">"AppName@skypay"</span>,<br>
+  <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;"action"</span> : <span class = "text-blue-500">"payoutQueryStatus"</span>,<br>
+  <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;"authentication"</span> : <span class = "text-blue-500">"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</span>,<br>
+  <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;"controlNumbers"</span> :[  <br>
+        &ensp;&ensp;&ensp;&ensp;{<br>
+          <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"controlNumber"</span> : <span class = "text-blue-500">"SK0XXXXXXXXXX"</span><br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;},<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;{<br>
+          <span class = "text-red-500">&ensp;&ensp;&ensp;&ensp;&ensp; "controlNumber"</span> : <span class = "text-blue-500">&ensp;"SK0XXXXXXXXXX"</span><br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;}<br>
+    &ensp;&ensp;&ensp;&ensp;]<br>
 }
-```
+
+
 
 #### Output parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
@@ -52,35 +53,35 @@
 |traceNo |String|50||ML专属支付码 - MLhuillier(RT) - referenceNumber ML专属支付码|
 
 #### Output data：
-```json
-{
-   "responseTime" : "2018-06-18 17:52:10.5211",
-    "responseCode" : "1000",
-    "responseDescription" : "Success",
-    "controlNumbers" : [
-       { 
-         "controlNumber" : "SK0XXXXXXXXXX",
-          "transactionDate" : "2019-01-14 15:47:13",
-          "status" : "4",
-          "statusDesc" : "Failed",
-          "payTime" : "",
-          "cancelTime" : "",
-          "withdrawChannel" : "Bank",
-          "referenceNo" : ""
-       },
-       { 
-         "controlNumber" : "SK0XXXXXXXXXX",
-          "transactionDate" : "2019-01-14 15:47:13",
-          "status" : "4",
-          "statusDesc" : "Failed",
-          "payTime" : "",
-          "cancelTime" : "",
-          "withdrawChannel" : "Bank",
-          "referenceNo" : "",
-       }
-    ]
+
+{<br>
+   <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumbers"</font> : [<br>
+       { <br>
+         <font color=red>&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SK0XXXXXXXXXX"</font>,<br>
+          <font color=red>&ensp;&ensp;"transactionDate"</font> : <font color=blue>"2019-01-14 15:47:13"</font>,<br>
+          <font color=red>&ensp;&ensp;"status"</font> : <font color=blue>"4"</font>,<br>
+          <font color=red>&ensp;&ensp;"statusDesc"</font> : <font color=blue>"Failed"</font>,<br>
+          <font color=red>&ensp;&ensp;"payTime"</font> : <font color=blue>""</font>,<br>
+          <font color=red>&ensp;&ensp;"cancelTime"</font> : <font color=blue>""</font>,<br>
+          <font color=red>&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"Bank"</font>,<br>
+          <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>""</font><br>
+       },<br>
+       { <br>
+         <font color=red>&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SK0XXXXXXXXXX"</font>,<br>
+          <font color=red>&ensp;&ensp;"transactionDate"</font> : <font color=blue>"2019-01-14 15:47:13"</font>,<br>
+          <font color=red>&ensp;&ensp;"status"</font> : <font color=blue>"4"</font>,<br>
+          <font color=red>&ensp;&ensp;"statusDesc"</font> : <font color=blue>"Failed"</font>,<br>
+          <font color=red>&ensp;&ensp;"payTime"</font> : <font color=blue>""</font>,<br>
+          <font color=red>&ensp;&ensp;"cancelTime"</font> : <font color=blue>""</font>,<br>
+          <font color=red>&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"Bank"</font>,<br>
+          <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>""</font>,<br>
+       }<br>
+    ]<br>
 }
-```
+
 
 
 

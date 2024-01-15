@@ -1,7 +1,7 @@
 # 4.3 收款数据验证（CollectionInquiry）
-#### API由合作伙伴提供，顾客在申请还款时将触发API。
+### API由合作伙伴提供，顾客在申请还款时将触发API。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName|string|50|Y|用户名称 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -11,7 +11,7 @@
 |amount|string|10.20|Y|支付金额支持数字小数位两位 -  ex:"amount":3400.00|
 |phone|string|11|Y|09开头的11位数字  - Ex:"phone":"09270348095"|
 
-#### Post data
+### Post data
 
 
 {<br>
@@ -24,7 +24,7 @@
 }
 
 
-#### Output parameters
+### Output parameters
 | 参数                        |    类型     | 长度  |Y/N  |描述|
 | :-------------------------: | :-----------: |:-----:|:-----:|--------------------------------|   
 |responseTime|DateTime|50|Y|回传时间 -yyyy-MM-dd HH:mm:ss.SSSS|
@@ -35,7 +35,7 @@
 |payer添加ress|string|255|Y|还款人地址 监管要求需要还款信息留存档案|
 |payerPhone|string|11|Y|还款人电话 - 09开头11位数字 监管要求需要还款信息留存档案|
 
-#### Output data
+### Output data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>

@@ -1,14 +1,14 @@
 # 4.1 线下支付数据验证（PayoutInquiry）
 **这个支付验证的API服务,是由合作伙伴提供,它将会在取现人要求提款时,发出要求验证讯息**
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName |string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
 |authentication   |string |100|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber |string|13~15|Y| 取款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-#### Post data
+### Post data
 
 
 {<br>
@@ -19,7 +19,7 @@
 }
 
 
-#### Output parameters
+### Output parameters
 | 参数                        |    类型     | 长度   | Y/N|描述|
 | :-------------------------: | :-----------: |:-----:| :--:|--------------------------------|   
 |responseTime  |DateTime|26|Y |回应时间 -  yyyy-MM-dd HH:mm:ss.SSSS|
@@ -38,7 +38,7 @@
 |contractNumber  |string|15|N|收款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |location  |string |100| Y|地址 - 添加ress取现人地址(必填)|
 
-##### Output data：
+### Output data：
 
 {<br>
     <font color=red>&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>

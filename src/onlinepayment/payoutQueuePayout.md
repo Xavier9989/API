@@ -19,35 +19,31 @@ Input parameters:
 |dealTime  |DateTime||Y|交易时间 :<br> 1：uploaded Time:上传时间 <br> 2：paid Time:完成支付时 <br> 3：canceled Time:取消交易时间 <br> 4：fail time:支付失败时间 <br> 5：Ameded Success Time:修改资料成功时间 <br> 6：Ameded Fail Time:修改资料失败时间|
 |failDescription |string |Option|Y|Fail description - 交易失败讯息|
 |referenceNumber|string|Option|N|当使用ML支付回调payType为1和5的状态时返回referenceNumber（upload和Amended Success）|
-#### Post data
-```json
-{
-    "userName": "AppName@skypay",
-    "action": "payoutQueuePayout",
-    "authentication": "30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "controlNumber":"SK99123456789",
-    "payType":"1",
-    "dealTime":"2018-08-07 11:58:33",
-    "referenceNumber": "MLA001041380755361119",
+### Post data
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"payoutQueuePayout"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SK99123456789"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"payType"</font> : <font color=blue>"1"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"dealTime"</font> : <font color=blue>"2018-08-07 11:58:33"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"referenceNumber"</font> : <font color=blue>"MLA001041380755361119"</font>,<br>
 }
-```
 
-##### Output parameters:
+### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间  -  yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码  -  1000|
 |responseDescription  |string|255|回传内容描述  -  Success|
-##### Output data：
-```json
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success"
+### Output data：
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font><br>
 }
-```
 
-#### Return code
+### Return code
 
 | 状态代码                        |   状态描述    | 
 | :-------------------------: | :----------- |

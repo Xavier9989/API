@@ -1,14 +1,19 @@
 # 3.5    修改支付交易（amendTransactionV2）
+
 #### 当支付数据推送错误时，可以此接口进行数据修正，最常见为用户姓名错误(错字、顺序错误)，此接口与「3.4 Payout–payoutQueueV2」字段相同，请针对欲修改的字段带入新值，其于请带入原始值。
+
 ### <font color = red>注意 ：</font>
+
  ### <font color = red>如果无法修改，请先取消交易，然后通过API"3.4 Payout-payoutQueueV2"再次发送。</font>
+
 ### <font color = red>Cebuana渠道的交易，只能修改收款人姓名，其他信息不能修改。</font>
-##### Input parameters:
+
+### Input parameters:
 | 参数                        |    类型     | 长度   | Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
 |userName |string|50|Y|用户名 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|amendTransactionV2(固定参数值) - Ex:"action":"amendTransactionV2"|
-|authentication  - |string |50|Y| 验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication   |string |50|Y| 验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |sender |string|100| Y|支付方 - 产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber  |string|13~15|Y|取款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|Y|取现人名字  - 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
@@ -21,7 +26,7 @@
 |location  |string |100|Y|取款人地址 - Ex:"location":"lalakay los banos laguna"|
 |withdrawChannel|int|Option | Y|支付渠道名称 - 1 MLhuillier  |
 
-##### Post data
+### Post data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
@@ -41,14 +46,14 @@
 }
 
 
-##### Output parameters:
+### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS - 必填|
 |responseCode |int|4|系统默认回传码,长度为4的数字,标准参考回传码定义|
 |responseDescription |string|255|回传内容描述 - 响应信息|
 
-##### Output data：
+### Output data：
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>

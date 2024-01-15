@@ -1,0 +1,41 @@
+# API directory
+###   SkyPay Third Payment API Specification
+_________________
+- [Version](./Version.md).
+- Directory
+- [Preface](./preface.md).
+- [API documentation description](./APIdocumentationdescription.md)
+    - 1.Data encryption instructions
+    - 2.Encryption Program Description
+- 3. Online payment instructions
+    - [3.1Push online payment transactions(payoutQueue)](./onlinepayment/payoutQueue.md)
+    - [3.2Return payment confirmation message（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
+    - [3.3Cancel payment transaction（cancelPayout）](./onlinepayment/cancelPayout.md).
+    - [3.4 ML/CebuanaOnline request for offline loan disbursement（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [3.5Modify payment transactions（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
+- 4. Payment processing flow - Real time transaction instructions
+    - [4.Payment processing flow - Real time transaction instructions（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
+    - [4.1 Offline payment data verification（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
+	- [4.2 Payment success notification（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
+    - [4.3 Verification of payment data（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
+        - [4.3.1Generate 7-11 payment barcode（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
+    - [4.4 Notification of successful payment（collectionCollect）](./Offlinepayment/collectionCollect.md).
+    - [4.5 Payment status query（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
+    - [4.6 Transaction result query（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
+    - [4.7balance inquiry（balanceQuery）](./Offlinepayment/balanceQuery.md).
+- 5. Recharge、settle、withdraw
+    - [5.1Notification Interface - Recharg 、Settlement、 Withdrawal（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
+    - [5.2Query interface - recharge、 settlement、 withdrawal（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
+- 6. test tools
+    - [6.1 Payment testing tools](./testtools/Collectionverificationtool.md).
+    - [6.2 Collection verification tool](./testtools/Paymenttestingtools.md).
+- 7. Obtain basic code list information
+    - [7.1Obtain Country Definition(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
+    - [7.2Obtaining citizenship status(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [7.3Obtaining citizenship status(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [7.4Obtain the city code(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
+    - [7.5Obtain province code(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
+    - [7.6Obtain bank code(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
+- 8. [Backhaulcode](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 9. [Payment pipeline (channel code or code value)](./Paymentpipeline/Paymentpipeline.md).
+- 10. [Payment pipeline (channel code, i.e. code value)](./Paymentpipeline/Paymentpipeline1.md).

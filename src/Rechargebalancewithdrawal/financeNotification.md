@@ -12,7 +12,8 @@
 ![](../public/充值、结算、提现.png "Shiprock")
 
 ### <font color = red>回调接口只做通知使用，无论收到任何状态，只可以返回responseCode 1000，代表成功收到通知。</font>
-#### Input parameters
+
+### Input parameters
 
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
@@ -30,28 +31,27 @@
 |Amount |int||     |金額 - Ex:1200000|
 |Currency |string|3|    | 固定币别 - PHP|
 |referenceNumber|string|15|  |交易编号(唯一) - 此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
-#### Post data
 
-```json
-{
-    "userName":"AppName@skypay" , 
-    "action":"financeNotification",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "transctionDate":"2023-06-18 17:52:10",
-    "companyPrefix":"SKY98",
-    "companyName":"SKYPAY",
-    "accountNo":"091234567899",
-    "sourceAccountNo":"",
-    "beneficiaryAccountNo":"001234567899",
-    "statementType":"1",
-    "signType":"recharge",
-    "amount":12000000,
-    "currency":"PHP",
-    "referenceNumber":"D-20231204-001"
+### Post data
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName" </font>: <font color=blue>"AppName@skypay" </font>,<br> 
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"financeNotification"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"transctionDate"</font> : <font color=blue>"2023-06-18 17:52:10"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"companyPrefix"</font> : <font color=blue>"SKY98"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"companyName"</font> : <font color=blue>"SKYPAY"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"accountNo"</font> : <font color=blue>"091234567899"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"sourceAccountNo"</font> : <font color=blue>""</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"beneficiaryAccountNo"</font> : <font color=blue>"001234567899"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"statementType"</font> : <font color=blue>"1"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"signType"</font> : <font color=blue>"recharge"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>12000000</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"currency"</font> : <font color=blue>"PHP"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"referenceNumber"</font> : <font color=blue>"D-20231204-001"</font><br>
 }
-```
 
-#### Output parameters
+### Output parameters
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -59,15 +59,13 @@
 |responseCode  |int|4|回传代码 -1000|
 |responseDescription |string|255|回传内容描述 - 响应信息|
 
+### Output data：
 
-#### Output data：
-```json
-{
-    "responseTime":"2018-06-18 17:52:10.5211",
-    "responseCode":"1000",
-    "responseDescription":"Success"
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font><br>
 }
-```
 
 ### Return code
 | 状态代码                        |   状态描述    | 

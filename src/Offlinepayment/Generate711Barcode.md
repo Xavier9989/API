@@ -1,7 +1,8 @@
 # 4.3.1产生7-11收款条形码（Generate711Barcode）
-#### 该 API 的目的是减少填写错误的合同编号金额的可能性。条形码生成有效期 24 小时。客户需要在其 Apps中将 API 返回的代码中的 referenceNumber 生成为 Code128-A 条形码。取现人转到 7-11 进行收款后，他们可以向店员显示条形码以处理收款。店员扫描条形码后，收款流程将不会改变，在进一步处理之前，它将再次调用收款查询。
+#### <font color=red>该 API 的目的是减少填写错误的合同编号金额的可能性。</font><br>
+#### 条形码生成有效期 24 小时。客户需要在其 Apps中将 API 返回的代码中的 referenceNumber 生成为 Code128-A 条形码。<br>取现人转到 7-11 进行收款后，他们可以向店员显示条形码以处理收款。店员扫描条形码后，收款流程将不会改变，在进一步处理之前，它将再次调用收款查询。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -12,7 +13,7 @@
 |phone |string|50|Y|09开头的11位数字 - Ex:"phone":"09270348095"|
 |amount |decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
 
-#### Post data
+### Post data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
@@ -25,7 +26,7 @@
 }
 
 
-#### Output parameters
+### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS|
@@ -33,7 +34,7 @@
 |responseDescription |string|255.| 回传内容描述 - 响应信息（必填）|
 |referenceNumber|string|50|Generated Code|
 
-##### Output data：
+### Output data：
 
 
 {<br>

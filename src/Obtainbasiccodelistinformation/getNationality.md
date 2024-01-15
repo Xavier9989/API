@@ -2,7 +2,7 @@
 
 ### 这支取得基本代码服务的API,提供用于使用银行付款的数据列表。调用服务时,versionDate请传空值，一切以正式环境接口为准。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -13,7 +13,7 @@
 
 
 
-#### Post data
+### Post data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> :  <font color=blue>"AppName@skypay"</font>,<br>
@@ -23,7 +23,7 @@
     <font color=red>&ensp;&ensp;&ensp;&ensp;"versionDate"</font> :  <font color=blue>""</font><br>
 }
 
-#### Output parameters
+### Output parameters
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   

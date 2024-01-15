@@ -1,0 +1,17 @@
+# 8.回传讯息定义
+# API返回代码如下所示
+| 状态代码                        |   状态描述    | 
+| :-------------------------: | :----------- |
+|1000|Success|
+|-1000|Post context is not valid|
+|-1008|Control number is already exists|
+|-1009|Unpredictable exception occurMerchant is not available|
+|-1016|Insufficient balance|
+|-1020|Bank city is incorrect|
+|-1021|Bank No is incorrect|
+|-1022|Invalid Accountnumber|
+|-1027|balance limit exceeded|
+|-1028|Has exceeded the limit of 5 transactions per day|
+|-1032|Your IP xxx is not whitelisted.Please contact Support Team.|
+|-9999|Service not available/Connection error|
+|-1001|Invalid Accountnumber|

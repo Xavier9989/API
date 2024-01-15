@@ -1,7 +1,8 @@
 # 4.6 交易结果查询（getReportPayout(Collection)）
 
-#### 交易结果查询服务API由Skypay提供,可以对交易结果进行查询
-#### Input parameters
+### 交易结果查询服务API由Skypay提供,可以对交易结果进行查询
+
+### Input parameters
 | 参数                        |    类型     | 长度  |Y/N  |描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
 |userName|string|50|Y|用户名称 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -78,38 +79,36 @@
 
 
 ### Output data
-```json
-{
-    "totalTransaction" : 4383,
-    "lastPage" : false,
-    "result" : [
-       { 
-          "createDate" : "2022-11-02 11:55:35",
-           "payTime" : "2022-11-02 11:55:49",
-           "controlNo" : "SK98162998034",
-           "amount" : 1300.0,
-           "phone" : "09XXXXXXXXX",
-           "referenceNo" : "SKP4992200182",
-           "status" : "Confirmed"
-         },
-       { 
-          "createDate" : "2022-11-02 11:55:35",
-           "payTime" : "2022-11-02 11:55:49",
-           "controlNo" : "SK98162998035",
-           "amount" : 3300.0,
-           "phone" : "09XXXXXXXXX",
-           "referenceNo" : "E103ED0E4726",
-           "status" : "Confirmed"
-         },
-       { 
-          "createDate" : "2022-11-02 11:55:35",
-           "payTime" : "2022-11-02 11:55:49",
-           "controlNo" : "SK98162998035",
-           "amount" : 2300.0,
-           "phone" : "09XXXXXXXXX",
-           "referenceNo" : "8D20C1C3432E",
-           "status" : "Confirmed"
-       },
-    ]
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"totalTransaction"</font> : <font color=blue>4383</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"lastPage"</font> : <font color=blue>false</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"result"</font> : [<br>
+       { <br>
+          <font color=red>&ensp;&ensp;"createDate"</font> : <font color=blue>"2022-11-02 11:55:35"</font>,<br>
+           <font color=red>&ensp;&ensp;"payTime"</font> : <font color=blue>"2022-11-02 11:55:49"</font>,<br>
+           <font color=red>&ensp;&ensp;"controlNo"</font> : <font color=blue>"SK98162998034"</font>,<br>
+           <font color=red>&ensp;&ensp;"amount"</font> : <font color=blue>1300.0</font>,<br>
+           <font color=red>&ensp;&ensp;"phone"</font> : <font color=blue>"09XXXXXXXXX"</font>,<br>
+           <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>"SKP4992200182"</font>,<br>
+           <font color=red>&ensp;&ensp;"status"</font> : <font color=blue>"Confirmed"</font><br>
+         },<br>
+       { <br>
+          <font color=red>&ensp;&ensp;"createDate"</font> : <font color=blue>"2022-11-02 11:55:35"</font>,<br>
+           <font color=red>&ensp;&ensp;"payTime"</font> : <font color=blue>"2022-11-02 11:55:49"</font>,<br>
+           <font color=red>&ensp;&ensp;"controlNo"</font> : <font color=blue>"SK98162998035"</font>,<br>
+           <font color=red>&ensp;&ensp;"amount"</font> : <font color=blue>3300.0</font>,<br>
+           <font color=red>&ensp;&ensp;"phone"</font> : <font color=blue>"09XXXXXXXXX"</font>,<br>
+           <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>"E103ED0E4726"</font>,<br>
+           <font color=red>&ensp;&ensp;"status"</font> : <font color=blue>"Confirmed"</font><br>
+         },<br>
+       { <br>
+          <font color=red>&ensp;&ensp;"createDate"</font> : <font color=blue>"2022-11-02 11:55:35"</font>,<br>
+           <font color=red>&ensp;&ensp;"payTime"</font> : <font color=blue>"2022-11-02 11:55:49"</font>,<br>
+           <font color=red>&ensp;&ensp;"controlNo"</font> : <font color=blue>"SK98162998035"</font>,<br>
+           <font color=red>&ensp;&ensp;"amount"</font> : <font color=blue>2300.0</font>,<br>
+           <font color=red>&ensp;&ensp;"phone"</font> : <font color=blue>"09XXXXXXXXX"</font>,<br>
+           <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>"8D20C1C3432E"</font>,<br>
+           <font color=red>&ensp;&ensp;"status"</font> : <font color=blue>"Confirmed"</font><br>
+       },<br>
+    ]<br>
 }
-```

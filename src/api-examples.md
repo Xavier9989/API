@@ -11,7 +11,7 @@ _________________
     - [3.1推送线上支付交易(payoutQueue)](./onlinepayment/payoutQueue.md)
     - [3.2回传支付确认讯息（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
     - [3.3取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [3.4 ML/LBCExpress非实时放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [3.4 ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
     - [3.5修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
 - 4. 支付处理流程-实时交易说明
     - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
@@ -39,5 +39,3 @@ _________________
 - 8. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
 - 9. [支付管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline.md).
 - 10. [收款管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline1.md).
-
-<span class="text-red-500">test</span>

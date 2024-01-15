@@ -1,7 +1,7 @@
 # 4.4 收款成功通知（collectionCollect）
-##### 这支服务是由合作伙伴提供,它将由线下店出纳触发以确认报销。
+#### 这支服务是由合作伙伴提供,它将由线下店出纳触发以确认报销。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -14,7 +14,7 @@
 |collectedTime|DateTime| |Y|(yyyy-MM-dd HH:mm:ss) -  - 收款时间,日期格式yyyy-MM-dd HH:mm:ss|
 |payChannel|int||Y|收款管道 - 详细说明请参考第10章[渠道code值](/src/Paymentpipeline/Paymentpipeline1.md)|
 
-#### Post data
+### Post data
 
 
 {<br>
@@ -30,14 +30,14 @@
 }
 
 
-#### Output parameters
+### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime|DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS(必填)|
 |responseCode |int|4|回传代码 - 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
 |responseDescription |string|255.|回传内容描述 - 响应信息（必填）|
 
-#### Output data：
+### Output data：
 
 
 {<br>

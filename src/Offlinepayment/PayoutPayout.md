@@ -1,8 +1,8 @@
 # 4.2 支付成功通知（PayoutPayout）
 
-#### 这支回复取款成功信息功能由合作伙伴提供,线下店出纳已确认取款时,会回传送取款成功讯息给Skypay,再回复合作伙伴。
+### 这支回复取款成功信息功能由合作伙伴提供,线下店出纳已确认取款时,会回传送取款成功讯息给Skypay,再回复合作伙伴。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -12,7 +12,7 @@
 |withdrawChannel|int |Option|Y|支付管道 - 详细内容请参考第9章 - Ex:支付管道支付管道名称9	RDPawnshop|
 |payTime|DateTime||Y |支付时间 - (yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
 
-#### Post data
+### Post data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
@@ -24,10 +24,10 @@
 }
 
 
-#### Output parameters:
+### Output parameters:
 
 | 参数                        |    类型     | 长度    |描述|
-| :-------------------------: | :-----------: |:-----:|--------------------------------|   
+| :-------------------------: | :-----------: |:-------------:|----------------------------------------------------------------------|   
 |responseTime |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
 |responseDescription |string|255.|回传内容描述 - 响应信息（必填）|

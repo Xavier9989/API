@@ -1,7 +1,7 @@
 # 7.6取得银行代码(getBankCode)
 ### 这支取得基本代码服务的API,提供用于使用银行付款的数据列表。调用服务时,versionDate请传空值，一切以正式环境接口为准。
 
-#### Input parameters
+### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -11,7 +11,7 @@
 |versionDate |dataTime|||版本日期|
 
 
-#### Post data
+### Post data
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> :  <font color=blue>"AppName@skypay"</font>,<br>
@@ -22,7 +22,7 @@
 }
 
 
-#### Output parameters
+### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS（必填）|
@@ -31,7 +31,7 @@
 |getBankCode|int||银行代码ID|
 |BankName|string|50|银行名称|
 
-#### Output data
+### Output data
 
 {<br>
   <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>&ensp;"2018-06-18 17:52:10.5211"</font>,<br>

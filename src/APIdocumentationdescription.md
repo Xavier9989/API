@@ -3,7 +3,6 @@
     - 透过网络传送Json数据前,必须进行加密,简易操作步骤如下:
 - (1) Json string/加密前明文格式：postData
 
-
 <font color=red>
 {<br>
   &ensp;&ensp;&ensp;&ensp;"userName"&ensp;:&ensp;"services@skybridge.com",<br>
@@ -45,4 +44,3 @@ SFA6Iwgv35ruBIkFglcZdrT5dofQN2dDavP9qAX3Pu82Mlsj36kd9RikBOS<br>+3BdiqT0sniupvgcF
     - Php：
         - 1.[Aes.php](./public/Aes.php.md)
         - 2.[AESUtil.php](./public/AESUtil.php.md)
-

@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "SKYPAY",
   description: "A VitePress Site",
+  
   locales: {
 
     root: {
@@ -13,6 +14,8 @@ export default defineConfig({
       lang: 'en',
     },
   },
+
+
   head: [['link', { rel: 'icon', href: '/favicon.' }]],
   // 源码目录
   srcDir: "./src",
@@ -21,6 +24,7 @@ export default defineConfig({
   
   text: "Version", link: "/markdown-examples" ,
   themeConfig: {
+    i18nRouting: true,
     logo: '/logo.svg',
     siteTitle: false,
     search: {
@@ -31,6 +35,7 @@ export default defineConfig({
       { text: "Home", link: "/Version1" },
     ],
     
+  
     sidebar: [
       {
         text: "introduction",
@@ -233,5 +238,7 @@ export default defineConfig({
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
-  },
+  
+},
 });
+

@@ -8,7 +8,7 @@
     - <font color = red>交易状态是Pending或Complete状态交易记录不可以重送，避免重复支付。</font>
     - <font color = red>禁止通过不同的提款渠道重新发送同一笔交易。</font>
 
-#### Input parameters:
+### Input parameters:
 |       参数                | 类型         |   长度       |  Y/n|     描述    |
 |:-------------------------:|:-----------:|     :------:     |   :-----:       |-----------|   
 |userName |string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
@@ -34,56 +34,55 @@
 |cityId  |int||   N   |城巿ID-请参考第七章接口7.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
 |expiryDate  |string |50| N|证件到期日-银行渠道进行支付时选填，电子钱包无此参数|
 
-##### Post data
-#### 支付为电子钱包时,调用API送出的数据格式内容:
-```json
-{
-    "userName":"AppName@skypay",
-    "action": "payoutQueue",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "sender":"app name",
-    "controlNumber":"SK99123456789",
-    "name":"Last name,First name,Middle name",
-    "phone": "092210083333",
-    "amount":"3900.00",
-    "accountNo": "09123456789",
-    "withdrawChannel":"6",
-    "identificationId":  "123456789011",//从这个参数开始都可以传空
-    "idType":  "SSS",
-    "idcardPicType":"png",
-    "idcardPicUrl":"http://skybridge.com.tw/sample.png",
-    "birthday": "1911-09-01",
-    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"
+### Post data
+
+### 支付为电子钱包时,调用API送出的数据格式内容:
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"payoutQueue"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"sender"</font> : <font color=blue>"app name"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SK99123456789"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"name"</font> : <font color=blue>"Last name,First name,Middle name"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"phone"</font> : <font color=blue>"092210083333"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"accountNo"</font> : <font color=blue>"09123456789"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"6"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> :  <font color=blue>"123456789011"</font>,//Starting from this parameter, all can be passed empty<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"idType"</font> :  <font color=blue>"SSS"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"idcardPicType"</font> : <font color=blue>"png"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"idcardPicUrl"</font> : <font color=blue>"http://skybridge.com.tw/sample.png"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"birthday"</font> : <font color=blue>"1911-09-01"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"location"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"</font><br>
 }
-```
 
 
-#### 支付为银行时,调用API送出的数据格式内容:<font color = red>（bank交易时，请先走7.6获取银行代码接口来获取目前可用的银行列表） </font>
-```json
-{
-    "userName":"AppName@skypay",
-    "action": "payoutQueue",
-    "authentication":"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75",
-    "sender":"app name",
-    "controlNumber": "SK99123456789",
-    "name":"Last name,First name,Middle name",
-    "phone":"092210083333",
-    "amount":"3900.00",
-    "bankNo":"SEC",
-    "accountNo":"09123456789",
-    "withdrawChannel":"6",
-    "identificationId":"123456789011",//从这个参数开始都可以传空
-    "identificationTypeId": "1",
-    "birthday":"1911-09-01",
-    "birthPlace":"Manila",
-    "location":"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin",
-    "provinceId":"996",
-    "cityId":"47",
-    "expiryDate": "2024-05-01"
+### 支付为银行时,调用API送出的数据格式内容:<font color = red>（bank交易时，请先走7.6获取银行代码接口来获取目前可用的银行列表） </font>
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"payoutQueue"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"sender"</font> : <font color=blue>"app name"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SK99123456789"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"name"</font> : <font color=blue>"Last name,First name,Middle name"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"phone"</font> : <font color=blue>"092210083333"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"bankNo"</font> : <font color=blue>"SEC"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"accountNo"</font> : <font color=blue>"09123456789"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"6"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> : <font color=blue>"123456789011"//Starting from this parameter, all can be passed empty</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationTypeId"</font> : <font color=blue>"1"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"birthday"</font> : <font color=blue>"1911-09-01"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"birthPlace"</font> : <font color=blue>"Manila"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"location"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-líp-pin"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"provinceId"</font> : <font color=blue>"996"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"cityId"</font> : <font color=blue>"47"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"expiryDate"</font> : <font color=blue>"2024-05-01"</font><br>
 }
-```
 
-##### Output parameters:
+### Output parameters:
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
@@ -91,14 +90,12 @@
 |responseCode  |int|4|回传代码  -  1000|
 |responseDescription  |string|255|回传内容描述  -  Success|
 
-##### Output data：
-```json
+### Output data：
 {
-  "responseTime":"2018-06-18 17:52:10.5211",
-  "responseCode":"1000",
-  "responseDescription":"Success",
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseTime"</font> : <font color=blue>"2018-06-18 17:52:10.5211"</font>,<br>
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseCode"</font> : <font color=blue>"1000"</font>,<br>
+  <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font><br>
 }
-```
 
 ### Return code:
 

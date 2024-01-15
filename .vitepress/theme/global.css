@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .logo {
-    margin-right: 0!important;
+    
     height: auto!important;
+    margin-left: 0!important;
 }

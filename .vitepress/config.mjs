@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 export default defineConfig({
+  
   title: "SKYPAY",
   description: "A VitePress Site",
   
@@ -23,8 +24,9 @@ export default defineConfig({
   outDir: "./dist",
   
   text: "Version", link: "/markdown-examples" ,
+  
   themeConfig: {
-    i18nRouting: true,
+    // i18nRouting: false,
     logo: '/logo.svg',
     siteTitle: false,
     search: {
@@ -34,7 +36,6 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/Version1" },
     ],
-    
   
     sidebar: [
       {

@@ -7,7 +7,7 @@
     "vue": {
       "src": "../../../node_modules/.pnpm/vue@3.4.8/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6215055d",
+      "fileHash": "bc0f7c64",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
@@ -19,13 +19,13 @@
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/.pnpm/@vueuse+core@10.7.1_vue@3.4.8/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "ca7933ca",
+      "fileHash": "02d0520d",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/.pnpm/@vueuse+integrations@10.7.1_focus-trap@7.5.4_vue@3.4.8/node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "a84ada53",
+      "fileHash": "56aa5a2c",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {

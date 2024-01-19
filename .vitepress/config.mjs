@@ -17,7 +17,7 @@ export default defineConfig({
     }
   },
 
-  head: [["link", { rel: "icon", href: "/favicon." }]],
+  head: [["link", { rel: "icon", href: "/favicon.png" }]],
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
@@ -29,6 +29,7 @@ export default defineConfig({
   themeConfig: {
     // i18nRouting: false,
     logo: "/logo.svg",
+
     siteTitle: false,
     search: {
       provider: "local",

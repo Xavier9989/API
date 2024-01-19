@@ -1,10 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import './global.css'
-import Layout from './Layout.vue'
+
 
 export default {
-    extends: DefaultTheme,
-    Layout
+    extends: DefaultTheme
+
   }
   // interface LocaleSpecificConfig<ThemeConfig = any> {
   //   lang?: string

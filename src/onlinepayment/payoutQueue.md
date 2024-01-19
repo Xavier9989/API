@@ -1,6 +1,7 @@
 # 3.1    推送线上支付交易(payoutQueue)
 这个API是由SkyPay提供,并由合作伙伴进行主动推送。
 当客户取得支付交易核准信息,合作伙伴必须透过此界面推送支付数据进行支付交易。
+![](../public/4线上放款.png)
 
 - <font color = red>重复支付注意 </font>
     - <font color = red>为了避免重复支付，重送交易前请先查询交易状态（查询操作请在交易发送后300秒）。</font>
@@ -21,7 +22,7 @@
 |amount|string|10.20  |    Y   |支付金额支持数字小数位两位 -  ex:"amount":3400.00|
 |bankNo|string |50| Y |账户号-银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
 |accountNo  |string |50| Y |电子钱包:账号为取现人09开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
-|withdrawChannel|int||  Y| 指定支付渠道代码 - 参考第九章管道详细说明[渠道code值](/src/Paymentpipeline/Paymentpipeline.md)|
+|withdrawChannel|int||  Y| 指定支付渠道代码 - 参考第九章管道详细说明[渠道code值](../Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |身份证件号码- 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3|   N  |验证身份证件类别-参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
 |idType  |string|50| N  |验证身份证件类别-电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|
@@ -49,7 +50,7 @@
     <font color=red>&ensp;&ensp;&ensp;&ensp;"amount"</font> : <font color=blue>"3900.00"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"accountNo"</font> : <font color=blue>"09123456789"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"6"</font>,<br>
-    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> :  <font color=blue>"123456789011"</font>,//Starting from this parameter, all can be passed empty<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> :  <font color=blue>"123456789011"//从这个参数开始都可以传空</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"idType"</font> :  <font color=blue>"SSS"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"idcardPicType"</font> : <font color=blue>"png"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"idcardPicUrl"</font> : <font color=blue>"http://skybridge.com.tw/sample.png"</font>,<br>
@@ -72,7 +73,7 @@
     <font color=red>&ensp;&ensp;&ensp;&ensp;"bankNo"</font> : <font color=blue>"SEC"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"accountNo"</font> : <font color=blue>"09123456789"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"withdrawChannel"</font> : <font color=blue>"6"</font>,<br>
-    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> : <font color=blue>"123456789011"//Starting from this parameter, all can be passed empty</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationId"</font> : <font color=blue>"123456789011"//从这个参数开始都可以传空</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"identificationTypeId"</font> : <font color=blue>"1"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"birthday"</font> : <font color=blue>"1911-09-01"</font>,<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"birthPlace"</font> : <font color=blue>"Manila"</font>,<br>

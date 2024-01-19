@@ -1,7 +1,7 @@
 # API directory
 ###   SkyPay Third Payment API Specification
 _________________
-- [Version](./Version.md).
+- [Version](./Version1.md).
 - Directory
 - [Preface](./preface.md).
 - [API documentation description](./APIdocumentationdescription.md)

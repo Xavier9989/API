@@ -1,7 +1,7 @@
 # API 目录
 ###   SkyPay第三支付API规范
 _________________
-- [版本](./Version.md).
+- [版本](./Version1.md).
 - 目录
 - [前言](./preface.md).
 - [API文档说明](./APIdocumentationdescription.md)

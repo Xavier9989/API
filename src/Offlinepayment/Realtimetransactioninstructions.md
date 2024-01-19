@@ -1,6 +1,7 @@
 # 支付处理流程-实时交易说明
-![](../public/4线上放款 "Shiprock")
-![](../public/收款交易顺序图1.png "Shiprock")
+
+## 收款-交易顺序图
+![](../public/收款交易顺序图1.png)
 ### <font color = red>payoutInquiry取款验证信息</font>
 - (1)当取现人要求线下店进行取款要求时,payoutInquire将会实时被叫用,进行支付信息验证工作
 -  (2)payoutInquire被叫用后,会回传合作伙伴验证结果,线下店将会收到详细的支付信息以及用户信息

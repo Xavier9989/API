@@ -13,7 +13,7 @@
 |phone|string|50|Y|11 digit number starting with 09 - Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  Receipt No|
 |collectedTime|DateTime| |Y|(yyyy-MM-dd HH:mm:ss) -  - Collection time, date format yyyy-MM-dd HH:mm:ss|
-|payChannel|int||Y|Payment Pipeline - For detailed instructions, please refer to Chapter 10[Channel code value](/src/Paymentpipeline/Paymentpipeline1.md)|
+|payChannel|int||Y|Payment Pipeline - For detailed instructions, please refer to Chapter 10[Channel code value](../Paymentpipeline/Paymentpipeline1.md)|
 
 ### Post data
 

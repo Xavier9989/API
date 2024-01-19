@@ -1,5 +1,7 @@
 # 4.1 Offline payment data verification（PayoutInquiry）
-**This payment verification API service is provided by the partner and will send a verification request message when the withdrawer requests a withdrawal**
+
+**<font color=red>This payment verification API service is provided by the partner and will send a verification request message when the withdrawer requests a withdrawal</font>**
+![](../public/4.1线下放款.png)
 
 ### Input parameters
 

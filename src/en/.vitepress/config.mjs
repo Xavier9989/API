@@ -1,55 +1,66 @@
 import { defineConfig } from "vitepress";
-
 export default defineConfig({
-
+  
   title: "SKYPAY",
   description: "A VitePress Site",
+ 
+  // locales: {
 
-  locales: {
+  //   root: {
+  //     label: '中文',
+  //     lang: 'cn'
+  //   },
+  //   en: {
+  //     label: 'English',
+  //     lang: 'en',
+  //   },
+  // },
+  // locales: {
 
-    root: {
-      label: '简体中文',
-      lang: 'zh'
-    },
-    en: {
-      label: 'English',
-      lang: 'en',
-    }
-  },
+  //   root: {
+  //     label: 'English',
+  //     lang: 'en'
+  //   },
+  //   en: {
+  //     label: '中文',
+  //     lang: 'cn'
+  //   },
+  // },
 
-  head: [["link", { rel: "icon", href: "/favicon." }]],
+  
+  head: [['link', { rel: 'icon', href: '/favicon.' }]],
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
   outDir: "./dist",
-
-  text: "Version",
-  link: "/",
-
+  
+  text: "Version", link: "/" ,
+  
   themeConfig: {
     // i18nRouting: false,
-    logo: "/logo.svg",
+    logo: '/logo.svg',
     siteTitle: false,
     search: {
       provider: "local",
     },
     // logo:'/logo.png',
-    nav: [{ text: "Home", link: "/Version1" }],
-
+    nav: [
+      { text: "Home", link: "/Version1" },
+    ],
   
     sidebar: [
       {
         text: "introduction",
         items: [
           { text: "Version", link: "/Version1" },
-          { text: "API 目录", link: "/api-examples" },
+          { text: "API directory", link: "/api-examples" },
           { text: "前言", link: "/preface" },
           { text: "文档说明", link: "/APIdocumentationdescription" },
         ],
       },
 
       {
-        text: "3.线上请求线上支付处理流程",
+        text: "3.Online request and online payment processing process",
         collapsed: true,
         items: [
           {
@@ -62,13 +73,13 @@ export default defineConfig({
                 text: "3.2回传支付确认讯息（payoutQueuePayout）",
                 link: "/onlinepayment/payoutQueuePayout",
               },
-
+             
             ],
           },
         ],
       },
       {
-        text: "3.5.线上请求线下支付处理流程",
+        text: "3.线上请求线下支付处理流程",
         collapsed: true,
         items: [
           {
@@ -83,7 +94,7 @@ export default defineConfig({
             text: "3.5修改支付交易（amendTransactionV2）",
             link: "/onlinepayment/amendTransactionV2",
           },
-        ],
+        ]
       },
 
       {
@@ -234,22 +245,12 @@ export default defineConfig({
           },
         ],
       },
-      {
-        text: "11.更改密钥流程",
-        collapsed: true,
-        items: [
-          {
-            text: "更改密钥流程",
-            link: "/Changekeyprocess/Changekeyprocess",
-          },
-        ],
-      },
     ],
 
     // socialLinks: [
     //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     // ]
-
-   },
+  
+},
 });
 

@@ -11,20 +11,20 @@
 ### Input parameters:
 | 参数                        |    类型     | 长度   | Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
-|userName |string|50|Y|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|调用行为<br>amendTransactionV2(固定参数值) - Ex:"action":"amendTransactionV2"|
-|authentication   |string |50|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication   |string |50|Y| 验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |sender |string|100| Y|支付方<br> 产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber  |string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|Y|取现人名字<br> 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday|Date|10|Y | 生日格式<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
+|birthday|Date|10|Y | 生日格式：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |identificationId  |string|50|Y|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
-|identificationTypeId |string |3|Y|验证身份证件类别（银行）请参考第7.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
-|phone |string|11|Y| 09开头的11位数字<br> Ex:"phone":"09270348095"|
-|idcardPicType |string|50|Y|相片文件格式 <br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
+|identificationTypeId |string |3|Y|验证身份证件类别<br>（银行）请参考第7.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
+|phone |string|11|Y| 09开头的11位数字 <br> Ex:"phone":"09270348095"|
+|idcardPicType |string|50|Y|相片文件格式<br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl|string |500|Y|相片存取网络地址<br> Ex:"idcardPicUrl":"https://12334"|
 |location  |string |100|Y|取款人地址<br> Ex:"location":"lalakay los banos laguna"|
-|withdrawChannel|int|Option | Y|支付渠道名称<br> 1 MLhuillier  |
+|withdrawChannel|int|Option | Y|支付渠道名称v 1 MLhuillier  |
 
 ### Post data
 
@@ -51,7 +51,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间<br> yyyy-MM-dd HH:mm:ss.SSSS - 必填|
 |responseCode |int|4|系统默认回传码,长度为4的数字,标准参考回传码定义|
-|responseDescription |string|255|回传内容描述 - 响应信息|
+|responseDescription |string|255|回传内容描述<br> 响应信息|
 
 ### Output data：
 

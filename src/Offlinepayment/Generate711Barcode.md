@@ -5,13 +5,13 @@
 ### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
-|authentication|string |255|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber|string|13~15|Y|收款码 - 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|name |string |50|Y|还款人名字  - 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone |string|50|Y|09开头的11位数字 - Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 -  ex:"amount":3400.00|
+|userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|Y|调用行为<br>generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
+|authentication|string |255|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|contractNumber|string|13~15|Y|收款码 <br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|name |string |50|Y|还款人名字<br> 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|phone |string|50|Y|09开头的11位数字<br> Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
 
 ### Post data
 
@@ -29,9 +29,9 @@
 ### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|回传代码 - 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription |string|255.| 回传内容描述 - 响应信息（必填）|
+|responseTime |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|回传代码<br> 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
+|responseDescription |string|255.| 回传内容描述<br> 响应信息（必填）|
 |referenceNumber|string|50|Generated Code|
 
 ### Output data：

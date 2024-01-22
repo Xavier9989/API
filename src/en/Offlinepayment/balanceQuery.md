@@ -5,8 +5,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName |string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|balanceQuery(Fixed parameter values) - Ex:"action":"balanceQuery"|
-|authentication |string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>balanceQuery(Fixed parameter values) - Ex:"action":"balanceQuery"|
+|authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 ### Input parameters
 

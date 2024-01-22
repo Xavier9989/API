@@ -6,9 +6,9 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
 |userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|payoutPayout(Fixed parameter values) - Ex:"action":"payoutPayout"|
-|authentication |string |100|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber |string|13~15|Y|Payment code - prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|action|string|50|Y|Call behavior<br>payoutPayout(Fixed parameter values) - Ex:"action":"payoutPayout"|
+|authentication |string |100|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber |string|13~15|Y|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |withdrawChannel|int |Option|Y|Payment Pipeline - For detailed content, please refer to Chapter 9 - Ex:Payment pipeline name 9	RDPawnshop|
 |payTime|DateTime||Y |time of payment - (yyyy-MM-dd HH:mm:ss) - Cashier payment time|
 

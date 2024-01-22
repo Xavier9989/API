@@ -5,10 +5,10 @@
 ### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|getCatalog(固定参数值)- Ex:"action":"getCatalog"|
-|authentication |string |255.|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|catalogType|string|50||目录类别 - 选择所需的基础代码类别 - Ex:"catalogType":"getNationality"|
+|userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|Y|调用行为<br>getCatalog(固定参数值)- Ex:"action":"getCatalog"|
+|authentication |string |255.|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|catalogType|string|50||目录类别 <br> 选择所需的基础代码类别 - Ex:"catalogType":"getNationality"|
 |versionDate |dataTime|||版本日期|
 
 
@@ -27,9 +27,9 @@
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|回传时间 - yyyy-MM-dd HH:mm:ss.SSSS（必填）|
-|responseCode  |int|4|回传代码 - 系统默认回传码,长度为4的数字,标准参考回码定义|
-|result |string[]|Key/Value|回传结果 - 回传Key/Value格式字符串数组|
+|responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS（必填）|
+|responseCode  |int|4|回传代码 <br> 系统默认回传码,长度为4的数字,标准参考回码定义|
+|result |string[]|Key/Value|回传结果 <br> 回传Key/Value格式字符串数组|
 |getBankCode|int||国家代码|
 |BankName|string|50|国家名称|
 

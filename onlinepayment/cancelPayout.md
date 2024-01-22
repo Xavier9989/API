@@ -15,7 +15,7 @@
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|调用行为<br>cancelPayout(固定参数值) - Ex:"action":"cancelPayout"|
-|authentication  |string |50|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication  |string |50|Y| 验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumbers[] |string[]|13~15  |Y|取款码数组<br> 取消交易时,可同时多笔取款码进行取消,用数组格式,一次性传送多笔要取消的取款码|
 
 ### Post data
@@ -37,9 +37,9 @@
 
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|回传时间 <br>  yyyy-MM-dd HH:mm:ss.SSSS|
+|responseTime  |DateTime|50|回传时间<br>  yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|系统默认回传码,长度为4的数字,标准参考回传码定义|
-|responseDescription  |string|255|回传内容描述 <br> Success|
+|responseDescription  |string|255|回传内容描述  <br> Success|
 
 ### Output data：
 {<br>

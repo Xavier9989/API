@@ -10,20 +10,20 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|User Name - Provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|payoutQueueV2(Fixed parameter values)- Ex:"action":"payoutQueueV2"|
-|authentication   |string |50|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender  |string|100| Y   |Payer - Product APP Name: Designed by Partner - Ex:"sender":"APP NAME"|
-|controlNumber  |string|13~15|Y|Withdrawal code - Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|name |string |50|Y|Name of withdrawal person - separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday |Date|10|Y| Birthday format：yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
-|identificationId  |string|50|Y|ID number - Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|identificationTypeId  |string |3| |Verify ID document type - please refer to Chapter 7.3 for identification type - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
-|phone  |string|11|Y | 11 digit number starting with 09 -  Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y |Payment amount supports two decimal places -   ex:"amount":3400.00|
-|idcardPicType  |string|50|Y|Image Format - File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl  |string |500|Y|Photo access network address  -   Ex:"idcardPicUrl":"https://12334.png"|
-|location  |string |500|Y| Withdrawal address - Ex:"location":"lalakay los banos laguna"|
-|withdrawChannel  |int| | Y |Payment channel name - 1 MLhuillier  -  13 Cebuana - Lhuillier	|
+|action|string|50|Y|Call behavior<br>payoutQueueV2(Fixed parameter values)- Ex:"action":"payoutQueueV2"|
+|authentication   |string |50|Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|sender  |string|100| Y   |Payer - Product APP Name: Designed by Partner <br> Ex:"sender":"APP NAME"|
+|controlNumber  |string|13~15|Y|Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|name |string |50|Y|Name of withdrawal person<br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|birthday |Date|10|Y| Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
+|identificationId  |string|50|Y|ID number <br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
+|identificationTypeId  |string |3| |Verify ID document type <br> please refer to Chapter 7.3 for identification type - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
+|phone  |string|11|Y | 11 digit number starting with 09 <br>  Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y |Payment amount supports two decimal places <br>   ex:"amount":3400.00|
+|idcardPicType  |string|50|Y|Image Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl  |string |500|Y|Photo access network address  <br>  Ex:"idcardPicUrl":"https://12334.png"|
+|location  |string |500|Y| Withdrawal address <br> Ex:"location":"lalakay los banos laguna"|
+|withdrawChannel  |int| | Y |Payment channel name <br> 1 MLhuillier  -  13 Cebuana - Lhuillier	|
 
 ### Post data
 
@@ -49,10 +49,10 @@
 ### Output parameters:
 | parameter                        |    type     | length    |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS - REQUIRED|
+|responseTime  |DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS - REQUIRED|
 |responseCode  |int|4|The default length of the system's return code is 4, which is a numerical standard reference for the definition of return codes|
-|responseDescription |string|255|Return content description - response information|
-|referenceNo  |string|255|Relationship code - This field will bring back a null value|
+|responseDescription |string|255|Return content description <br> response information|
+|referenceNo  |string|255|Relationship code <br> This field will bring back a null value|
 
 ### Output data：
 

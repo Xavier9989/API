@@ -5,8 +5,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|getCatalog(Fixed parameter values)- Ex:"action":"getCatalog"|
-|authentication |string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>getCatalog(Fixed parameter values)- Ex:"action":"getCatalog"|
+|authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |catalogType |string|50||Catalog Category - Select the required base code category - Ex:"catalogType":"getIdentificationType"|
 |versionDate |dataTime|||Version Date|
 

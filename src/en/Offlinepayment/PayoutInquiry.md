@@ -8,9 +8,9 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName |string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
-|authentication   |string |100|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber |string|13~15|Y| Payment code - prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
+|authentication   |string |100|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber |string|13~15|Y| Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 
 ### Post data
 
@@ -25,21 +25,21 @@
 ### Output parameters
 |              parameter                        |    type     | length   |Y/N |describe|
 | :-----------------------------: | :-----------: |:-----:| :--:|--------------------------------|   
-|responseTime  |DateTime|26|Y |responsiveness -  yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|Y |Response code -4 system default return code, a number of length 4, standard reference return code definition|
-|responseDescription  |string|255||Response Description Content - Response Information|
-|sender  |string|255|Y|Remitter - Product APP Name (Required: Designed by Partner) - Ex:"sender":"APP NAME"|
+|responseTime  |DateTime|26|Y |responsiveness <br>  yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|Y |Response code <br>4 system default return code, a number of length 4, standard reference return code definition|
+|responseDescription  |string|255||Response Description Content <br> Response Information|
+|sender  |string|255|Y|Remitter<br> Product APP Name (Required: Designed by Partner) - Ex:"sender":"APP NAME"|
 |sender increaseress|string|255|Y |Remittance Address|
-|name |string |50| Y|Name of withdrawal person - separated by commas  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday |Date|10|Y |Birthday format：yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
-|identificationId  |string|50|Y|ID number - Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|idType  |string|50| |Verify ID Type - ID Type (SSS, UMID, Driver's License, TIN...) "idType": "TIN" (mandatory)|
-|phone |string|11| Y |11 digit number starting with 09 (required)  - Ex:"phone":"09270348095"|
-|amount |string|10.20| Y |Amount - Payment amount supports two decimal places (required) -  ex:"amount":3400.00|
-|idcardPicType |string|50| Y|Photo file format - file format attachment file name (required) - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl |string |500|Y|Photo access network address - Ex:"idcardPicUrl":"https://12334"|
-|contractNumber  |string|15|N|Payment code - prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|location  |string |100| Y|Address - Add Address Withdrawal Address (Required)|
+|name |string |50| Y|Name of withdrawal person <br> separated by commas  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|birthday |Date|10|Y |Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
+|identificationId  |string|50|Y|ID number <br>Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
+|idType  |string|50| |Verify ID Type <br> ID Type (SSS, UMID, Driver's License, TIN...) "idType": "TIN" (mandatory)|
+|phone |string|11| Y |11 digit number starting with 09 (required) <br> Ex:"phone":"09270348095"|
+|amount |string|10.20| Y |Amount <br>Payment amount supports two decimal places (required) -  ex:"amount":3400.00|
+|idcardPicType |string|50| Y|Photo file format <br>file format attachment file name (required) - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl |string |500|Y|Photo access network address<br> Ex:"idcardPicUrl":"https://12334"|
+|contractNumber  |string|15|N|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|location  |string |100| Y|Address<br> Add Address Withdrawal Address (Required)|
 
 ### Output data：
 

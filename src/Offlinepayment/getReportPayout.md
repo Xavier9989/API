@@ -5,14 +5,14 @@
 ### Input parameters
 | 参数                        |    类型     | 长度  |Y/N  |描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
-|userName|string|50|Y|用户名称 - SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y| payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
-|authentication|string |255.|Y|验证码 - 验证密钥 - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|startDate|string|50| Y|起始时间 - "2022-12-02"|
-|endDate |string|50|Y|截止时间 - "2022-12-02"|
+|userName|string|50|Y|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|Y| 调用行为<br>payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
+|authentication|string |255.|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|startDate|string|50| Y|起始时间<br> "2022-12-02"|
+|endDate |string|50|Y|截止时间 <br>"2022-12-02"|
 |dateType|string|50|Y|CreateDate、CollectedTime(collection)、PayTime(payout)|
-|Pagination |string|50|Y|页码 - 1|
-|pageSize |string|50|Y|页面尺寸 - 100|
+|Pagination |string|50|Y|页码 <br> 1|
+|pageSize |string|50|Y|页面尺寸 <br> 100|
 
 ## Payout
 ### Post data

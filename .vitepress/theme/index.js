@@ -1,17 +1,16 @@
 import DefaultTheme from 'vitepress/theme'
 import './global.css'
-
+// import { inBrowser useData } from 'vitepress'
+// import { watchEffect } from 'vue'
 
 export default {
-    extends: DefaultTheme
-
+    extends: DefaultTheme,
+    // setup() {
+    //   const { lang } = useData()
+    //   watchEffect(() => {
+    //     if (inBrowser) {
+    //       document.cookie = `nf_lang=${lang.value}; expires=Mon, 1 Jan 2024 00:00:00 UTC; path=/`
+    //     }
+    //   })
+    // }
   }
-  // interface LocaleSpecificConfig<ThemeConfig = any> {
-  //   lang?: string
-  //   dir?: string
-  //   title?: string
-  //   titleTemplate?: string | boolean
-  //   description?: string
-  //   head?: HeadConfig[] // will be merged with existing head entries, duplicate meta tags are automatically removed
-  //   themeConfig?: ThemeConfig // will be shallow merged, common stuff can be put in top-level themeConfig entry
-  // },

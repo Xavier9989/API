@@ -6,8 +6,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName |string|50|Y|User name, - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
-|authentication |string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
+|authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |transctionDate|Date|10| |Notification Date - Start- ex:2023-06-18|
 |transEndDate |Date|10| |Notification Date - End - ex:2023-06-19|
 |statementTypes |string[]|| |Notification type:<br>1. Recharge from payment account<br>2. Recharge from payment settlement<br>3. Account balance transfer<br>4. Payment transaction settlement<br>5. Withdrawal from payment account<br>6. Withdrawal from payment account|

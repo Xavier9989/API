@@ -10,8 +10,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
-|authentication|string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
+|authentication|string |255|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |contractNumber|string|13~15|Y|Payment code - prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|Y|Reparer's name - separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone |string|50|Y|11 digit number starting with 09 - Ex:"phone":"09270348095"|

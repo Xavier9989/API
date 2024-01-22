@@ -21,10 +21,10 @@
 |identificationTypeId  |string |3| |验证身份证件类别 <br> 请参考第7.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
 |phone  |string|11|Y | 09开头的11位数字<br>  Ex:"phone":"09270348095"|
 |amount |decimal|10.20|Y |支付金额支持数字小数位两位 <br>   ex:"amount":3400.00|
-|idcardPicType  |string|50|Y|图片格式<br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl  |string |500|Y|相片存取网络地址 <br>  Ex:"idcardPicUrl":"https://12334.png"|
-|location  |string |500|Y| 取款人地址<br> Ex:"location":"lalakay los banos laguna"|
-|withdrawChannel  |int| | Y |支付渠道名称<br> 1 MLhuillier  -  13 Cebuana - Lhuillier	|
+|idcardPicType  |string|50|Y|图片格式 <br>文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl  |string |500|Y|相片存取网络地址  <br>  Ex:"idcardPicUrl":"https://12334.png"|
+|location  |string |500|Y| 取款人地址 <br> Ex:"location":"lalakay los banos laguna"|
+|withdrawChannel  |int| | Y |支付渠道名称 <br>1 MLhuillier  -  13 Cebuana - Lhuillier	|
 
 ### Post data
 {<br>
@@ -52,7 +52,7 @@
 |responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS - 必填|
 |responseCode  |int|4|系统默认回传码长度为4的数字标准参考回传码定义|
 |responseDescription |string|255|回传内容描述 <br> 响应信息|
-|referenceNo  |string|255|关连码<br> 此字段将带回空值|
+|referenceNo  |string|255|关连码 <br> 此字段将带回空值|
 
 ### Output data：
 {<br>

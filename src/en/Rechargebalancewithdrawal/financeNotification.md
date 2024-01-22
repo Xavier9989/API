@@ -25,8 +25,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName|string|50|Y|User name, provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
-|authentication  |string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
+|authentication  |string |255|Y|Verification Code<br>Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |transctionDate |DateTime|50| |notice date -  ex:2023-06-18 17:52:10|
 |companyPrefix |string|5|  |Company Code -  ex:SKY98|
 |companyName |string|200|  |corporate name - ex:Skybridge Payment Inc.|

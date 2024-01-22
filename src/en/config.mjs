@@ -4,18 +4,18 @@ export default defineConfig({
 
   title: "SKYPAY",
   description: "A VitePress Site",
+  cleanUrls: true,
   locales: {
 
-    root:{
+    root: {
       label: '中文',
-      lang: 'zh-CN',
+      lang: 'zh-CN'
     },
     en: {
       label: 'English',
       lang: 'en',
-
-    },
-    
+      link: "/en/config.mjs"
+    }
   },
 
   head: [["link", { rel: "icon", href: "/favicon.png" }]],
@@ -24,7 +24,7 @@ export default defineConfig({
   // 打包后的代码目录
   outDir: "./dist",
 
-  // text: "Version",
+  text: "Version",
   link: "/",
   lastUpdated: true,
 
@@ -35,11 +35,29 @@ export default defineConfig({
     siteTitle: false,
     search: {
       provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索"
+          },
+          modal: {
+            displayDetails: "显示详情",
+            resetButtonTitle: "重置",
+            backButtonTitle: "返回",
+            noResultsText: "未找到结果",
+            footer: {
+              selectText: "选择",
+              navigateText: "导航",
+              closeText: "关闭",
+            }
+          }
+        }
+      }
     },
     // logo:'/logo.png',
     nav: [{ text: "Home", link: "/Version1" }],
-    sidebar:
-    [
+  
+    sidebar: [
       {
         text: "introduction",
         items: [
@@ -51,7 +69,7 @@ export default defineConfig({
       },
 
       {
-        text: "3.线上请求线上支付流程",
+        text: "3.线上请求线上支付处理流程",
         collapsed: true,
         items: [
           {
@@ -70,7 +88,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "3.5.1线上请求线下支付流程",
+        text: "3.5.1线上请求线下支付处理流程",
         collapsed: true,
         items: [
           {
@@ -217,7 +235,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "9.支付管道（渠道代码）",
+        text: "9.支付管道（渠道代码即code值）",
         collapsed: true,
         items: [
           {
@@ -227,7 +245,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "10.收款管道（渠道代码）",
+        text: "10.收款管道（渠道代码即code值）",
         collapsed: true,
         items: [
           {

@@ -15,10 +15,10 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
+|action|string|50|Y|Call behavior<br>generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
 |authentication|string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumbers|String[]||Y|Payment code array name - Array(parameter tag name is controlNumber)|
-|controlNumber |String|13~15|Y|Payment code - Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|controlNumbers|String[]||Y|Payment code array name <br> Array(parameter tag name is controlNumber)|
+|controlNumber |String|13~15|Y|Payment code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 
 ### Post data
 
@@ -42,19 +42,19 @@
 ### Output parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|responseTime |DateTime|50|Y|Return time  - yyyy-MM-dd HH:mm:ss.SSSS(必填)|
-|responseCode |int|4|Y|Return Code - System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and specify the content of the return|
-|responseDescription |string|255|Y| Feedback Content Description - Response Information (Required)|
-|controlNumbers |String[]|  | Y   |Name of withdrawal code array - Array|
-|controlNumber |string|13~15|Y|Withdrawal code - name of the payee - separated by commas。Last name+","+First name+","+Middle name+","+Suffix(Required) Regulatory requirements require retention of repayment information in archives|
-|transactionDate |DateTime|||Transaction Date - yyyy-MM-dd HH:mm:ss.fff|
+|responseTime |DateTime|50|Y|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS(必填)|
+|responseCode |int|4|Y|Return Code <br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and specify the content of the return|
+|responseDescription |string|255|Y| Feedback Content Description<br> Response Information (Required)|
+|controlNumbers |String[]|  | Y   |Name of withdrawal code array <br> Array|
+|controlNumber |string|13~15|Y|Withdrawal code <br> name of the payee - separated by commas。Last name+","+First name+","+Middle name+","+Suffix(Required) Regulatory requirements require retention of repayment information in archives|
+|transactionDate |DateTime|||Transaction Date<br> yyyy-MM-dd HH:mm:ss.fff|
 |status |int||Y|Status code : <br>0	Pending:Waiting <br> 1	Completed:Completed <br> 2	Uploaded:Complete upload <br> 3	Cancelled:Canceled <br> 4	Failed:fail <br> 10	Inquiry Success:query was successful<br> 11	Inquiry Failure:Query failed|
 |statusDesc |String|50|Y |State Description: <br> Pending:Waiting <br> Completed:Complet <br> Uploaded:Complete upload <br> Cancelled:Canceled <br> Failed:fail <br> Inquiry Success:query was successful <br> Inquiry Failure:Query failed|
-|payTime  |DateTime|||Withdrawal time - (yyyy-MM-dd HH:mm:ss)|
-|cancelTime |DateTime|||Cancel time - (yyyy-MM-dd HH:mm:ss)|
-|withdrawChannel |int |Option||Payment Pipeline - For detailed information, please refer to section10|
-|referenceNo |String|50||Receipt No - GCash:reference number - Real time return receipt number|
-|traceNo |String|50||MLExclusive payment code - MLhuillier(RT) - referenceNumber MLExclusive payment code|
+|payTime  |DateTime|||Withdrawal time <br> (yyyy-MM-dd HH:mm:ss)|
+|cancelTime |DateTime|||Cancel time <br> (yyyy-MM-dd HH:mm:ss)|
+|withdrawChannel |int |Option||Payment Pipeline <br> For detailed information, please refer to section10|
+|referenceNo |String|50||Receipt No <br> GCash:reference number - Real time return receipt number|
+|traceNo |String|50||MLExclusive payment code <br> MLhuillier(RT) - referenceNumber MLExclusive payment code|
 
 ### Output data：
 

@@ -7,8 +7,8 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
 |userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y| payoutInquiry(Fixed parameter values)- Ex:"action":"payoutInquiry"|
-|authentication|string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values)- Ex:"action":"payoutInquiry"|
+|authentication|string |255|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |startDate|string|50| Y|starting time - "2022-12-02"|
 |endDate |string|50|Y|deadline - "2022-12-02"|
 |dateType|string|50|Y|CreateDate、CollectedTime(collection)、PayTime(payout)|

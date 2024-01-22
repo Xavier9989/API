@@ -14,9 +14,9 @@
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
 |userName|string|50|Y|User Name - Provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|cancelPayout(Fixed parameter values) - Ex:"action":"cancelPayout"|
-|authentication  |string |50|Y| Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumbers[] |string[]|13~15  |Y|Withdrawal Code Array - When canceling a transaction, multiple withdrawal codes can be cancelled simultaneously. Using array format, multiple withdrawal codes to be cancelled can be transmitted at once|
+|action|string|50|Y|Call behavior<br>cancelPayout(Fixed parameter values) - Ex:"action":"cancelPayout"|
+|authentication  |string |50|Y| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumbers[] |string[]|13~15  |Y|Withdrawal Code Array <br> When canceling a transaction, multiple withdrawal codes can be cancelled simultaneously. Using array format, multiple withdrawal codes to be cancelled can be transmitted at once|
 
 ### Post data
 
@@ -38,9 +38,9 @@
 
 | parameter                        |    type    | length    |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|Return time  -  yyyy-MM-dd HH:mm:ss.SSSS|
+|responseTime  |DateTime|50|Return time <br>  yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|The default return code of the system is a number with a length of 4, as defined by the standard reference return code|
-|responseDescription  |string|255|Return content description  -  Success|
+|responseDescription  |string|255|Return content description <br>  Success|
 
 ### Output data：
 

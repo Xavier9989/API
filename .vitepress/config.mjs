@@ -1,21 +1,34 @@
 import { defineConfig } from "vitepress";
 
-export default defineConfig({
+// import { sidebar } from "./sidebar.mjs";
 
+export default defineConfig({
+  aside: true,
+  lang: "zh-CN",
   title: "SKYPAY",
   description: "A VitePress Site",
   locales: {
-
-    root:{
-      label: '中文',
-      lang: 'zh-CN',
+    // root:{
+    //   label: '中文',
+    //   lang: 'zh-CN',
+    // },
+    // en: {
+    //   label: 'English',
+    //   lang: 'en'
+    // },
+    root: {
+      lang: "zh-CN",
+      label: "简体中文",
+      description:
+        "A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。",
+      selectText: "简体中文",
     },
     en: {
-      label: 'English',
-      lang: 'en',
-
+      lang: "en-US",
+      label: "English",
+      description: "A powerful & simple & fast theme for Hexo.",
+      selectText: "English",
     },
-    
   },
 
   head: [["link", { rel: "icon", href: "/favicon.png" }]],
@@ -29,6 +42,10 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
     // i18nRouting: false,
     logo: "/logo.svg",
 
@@ -38,8 +55,8 @@ export default defineConfig({
     },
     // logo:'/logo.png',
     nav: [{ text: "Home", link: "/Version1" }],
-    sidebar:
-    [
+    // sidebar,
+    sidebar: [
       {
         text: "introduction",
         items: [
@@ -64,7 +81,6 @@ export default defineConfig({
                 text: "3.2回传支付确认讯息（payoutQueuePayout）",
                 link: "/onlinepayment/payoutQueuePayout",
               },
-
             ],
           },
         ],
@@ -247,11 +263,16 @@ export default defineConfig({
         ],
       },
     ],
-
-    // socialLinks: [
-    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    // ]
-
-   },
+    '/en/': [
+      {
+        text: "introduction",
+        items: [
+          { text: "Version", link: "/src/en/Version1" },
+          { text: "API", link: "/src/en/api-examples" },
+          { text: "前言", link: "/src/en/preface" },
+          { text: "文档说明", link: "/src/en/APIdocumentationdescription" },
+        ],
+      },
+    ],
+  },
 });
-

@@ -37,6 +37,6 @@ _________________
     - [7.5取得省份代码(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
     - [7.6取得银行代码(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
 - 8. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 9. [支付管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline.md).
-- 10. [收款管道（渠道代码即code值）](./Paymentpipeline/Paymentpipeline1.md).
+- 9. [支付管道（渠道代码）](./Paymentpipeline/Paymentpipeline.md).
+- 10. [收款管道（渠道代码）](./Paymentpipeline/Paymentpipeline1.md).
 - 11. [更改密钥流程](./Changekeyprocess/Changekeyprocess.md).

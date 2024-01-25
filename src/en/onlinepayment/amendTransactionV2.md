@@ -10,10 +10,10 @@
 ### Input parameters:
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
-|userName |string|50|Y|Username - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|User name<br>  provided by SkyPay Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>amendTransactionV2(Fixed parameter values) - Ex:"action":"amendTransactionV2"|
 |authentication  |string |50|Y| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender |string|100| Y|Payer - Product APP Name (Required: Designed by Partner) <br>Ex:"sender":"APP NAME"|
+|sender |string|100| Y|Payer <br> Product APP Name (Required: Designed by Partner) <br>Ex:"sender":"APP NAME"|
 |controlNumber  |string|13~15|Y|Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|Y|Name of withdrawal person <br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |birthday|Date|10|Y | Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|

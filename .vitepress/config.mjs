@@ -3,8 +3,7 @@ import { defineConfig } from "vitepress";
 // import { sidebar } from "./sidebar.mjs";
 
 export default defineConfig({
-  aside: true,
-  lang: "zh-CN",
+  // aside: true,
   title: "SKYPAY",
   description: "A VitePress Site",
   locales: {
@@ -28,6 +27,213 @@ export default defineConfig({
       label: "English",
       description: "A powerful & simple & fast theme for Hexo.",
       selectText: "English",
+      themeConfig: {
+        sidebar: [
+          {
+            text: "introduction",
+            items: [
+              { text: "Version", link: "/en/Version1" },
+              { text: "API", link: "/en/api-examples" },
+              { text: "preface", link: "/en/preface" },
+              { text: "Documentation", link: "/en/APIdocumentationdescription" },
+            ],
+          },
+          {
+            text: "3.OnlineRequestOnlinePaymentProcess",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "3.1Pushonlinepaymenttransactions(payoutQueue)",
+                    link: "/en/onlinepayment/payoutQueue",
+                  },
+                  {
+                    text: "3.2Returnpaymentconfirmationmessage（payoutQueuePayout）",
+                    link: "/en/onlinepayment/payoutQueuePayout",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "3.5.1Onlinerequestandofflinepaymentprocess",
+            collapsed: true,
+            items: [
+              {
+                text: "3.3Cancelpaymenttransaction（cancelPayout）",
+                link: "/en/onlinepayment/cancelPayout",
+              },
+              {
+                text: "3.4 ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                link: "/en/onlinepayment/payoutQueueV2",
+              },
+              {
+                text: "3.5Modifypaymenttransactions（amendTransactionV2）",
+                link: "/en/onlinepayment/amendTransactionV2",
+              },
+            ],
+          },
+          {
+            text: "4.Offlinepaymentprocessingflow",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "Paymentprocessingflow - Realtimetransactioninstructions",
+                    link: "/en/Offlinepayment/Realtimetransactioninstructions",
+                  },
+                  {
+                    text: "4.1 Offlinepaymentdataverification（PayoutInquiry）",
+                    link: "/en/Offlinepayment/PayoutInquiry",
+                  },
+                  {
+                    text: "4.2 Paymentsuccessnotification（PayoutPayout）",
+                    link: "/en/Offlinepayment/PayoutPayout",
+                  },
+                  {
+                    text: "4.3 Verificationofpaymentdata （CollectionInquiry）",
+                    link: "/en/Offlinepayment/CollectionInquiry",
+                    items: [
+                      {
+                        text: "4.3.1Generate7-11paymentbarcode（Generate711Barcode）",
+                        link: "/en/Offlinepayment/Generate711Barcode",
+                      },
+                    ],
+                  },
+                  {
+                    text: "4.4 Notificationofsuccessfulpayment（collectionCollect）",
+                    link: "/en/Offlinepayment/collectionCollect",
+                  },
+                  {
+                    text: "4.5 Paymentstatusquery  （payoutQueryStatus）",
+                    link: "/en/Offlinepayment/payoutQueryStatus",
+                  },
+                  {
+                    text: "4.6 Transaction result query（getReportPayout(Collection)）",
+                    link: "/en/Offlinepayment/getReportPayout",
+                  },
+                  {
+                    text: "4.7balanceinquiry （balanceQuery）",
+                    link: "/en/Offlinepayment/balanceQuery",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "5. Recharge、settle、withdraw",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "5.1NotificationInterface - Recharge、Settlement、Withdrawal（financeNotification）",
+                    link: "/en/Rechargebalancewithdrawal/financeNotification",
+                  },
+                  {
+                    text: "5.2Queryinterface - recharge、settlement、withdrawal（notificationInquiry）",
+                    link: "/en/Rechargebalancewithdrawal/notificationInquiry",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "6. test tools",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "6.1 Payment testing tools ",
+                    link: "/en/testtools/Collectionverificationtool",
+                  },
+                  {
+                    text: "6.2 Collection verification tool",
+                    link: "/en/testtools/Paymenttestingtools",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "7.Obtain basic code list information",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "7.1Obtain Country Definition (getNationality)",
+                    link: "/en/Obtainbasiccodelistinformation/getNationality",
+                  },
+                  {
+                    text: "7.2Obtaining citizenship status(getCivilStatus)",
+                    link: "/en/Obtainbasiccodelistinformation/getCivilStatus",
+                  },
+                  {
+                    text: "7.3Obtain authentication category(getIdentificationType)",
+                    link: "/en/Obtainbasiccodelistinformation/getIdentificationType",
+                  },
+                  {
+                    text: "7.4Obtain the city code(getTownCity)",
+                    link: "/en/Obtainbasiccodelistinformation/getTownCity",
+                  },
+                  {
+                    text: "7.5Obtain province code (getProvince)",
+                    link: "/en/Obtainbasiccodelistinformation/getProvince",
+                  },
+                  {
+                    text: "7.6Obtain bank code (getBankCode)",
+                    link: "/en/Obtainbasiccodelistinformation/getBankCode",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "8.Backpropagation message definition   ",
+            collapsed: true,
+            items: [
+              {
+                text: "Backhaulcode",
+                link: "/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
+              },
+            ],
+          },
+          {
+            text: "9.Payment pipeline (channel code)",
+            collapsed: true,
+            items: [
+              {
+                text: "Payment pipeline    ",
+                link: "/en/Paymentpipeline/Paymentpipeline",
+              },
+            ],
+          },
+          {
+            text: "10.Payment channel (channel code)  ",
+            collapsed: true,
+            items: [
+              {
+                text: "Payment pipeline  ",
+                link: "/en/Paymentpipeline/Paymentpipeline1",
+              },
+            ],
+          },
+          {
+            text: "11.Change key process",
+            collapsed: true,
+            items: [
+              {
+                text: "Change key process",
+                link: "/en/Changekeyprocess/Changekeyprocess",
+              },
+            ],
+          },
+        ]
+      }
     },
   },
 
@@ -39,7 +245,7 @@ export default defineConfig({
 
   // text: "Version",
   link: "/",
-  lastUpdated: true,
+  // lastUpdated: true,
 
   themeConfig: {
     docFooter: {
@@ -263,16 +469,16 @@ export default defineConfig({
         ],
       },
     ],
-    '/en/': [
-      {
-        text: "introduction",
-        items: [
-          { text: "Version", link: "/src/en/Version1" },
-          { text: "API", link: "/src/en/api-examples" },
-          { text: "前言", link: "/src/en/preface" },
-          { text: "文档说明", link: "/src/en/APIdocumentationdescription" },
-        ],
-      },
-    ],
+    // sidebar: [
+    //   {
+    //     text: "introduction",
+    //     items: [
+    //       { text: "Version", link: "/src/en/Version1" },
+    //       { text: "API", link: "/src/en/api-examples" },
+    //       { text: "前言", link: "/src/en/preface" },
+    //       { text: "文档说明", link: "/src/en/APIdocumentationdescription" },
+    //     ],
+    //   },
+    // ],
   },
 });

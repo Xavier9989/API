@@ -5,12 +5,12 @@
 
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>collectionInquiry(Fixed parameter values) - Ex:"action":"collectionInquiry"|
-|authentication |string |255|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication |string |255|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber|string|13~15|Y|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |amount|string|10.20|Y|Must be the actual amount received by the user, with a maximum of two decimal places -  ex:"amount":3400.00|
-|phone|string|11|Y|11 digit number starting with 09  - Ex:"phone":"09270348095"|
+|phone|string|11|Y|11 digit number starting with 09 <br> Ex:"phone":"09270348095"|
 
 ### Post data
 
@@ -28,13 +28,13 @@
 ### Output parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:-----:|--------------------------------|   
-|responseTime|DateTime|50|Y|Return time -yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode|int|4|Y|Return Code - System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription|string|255| Y|Return content description - response information|
-|amount|decimal|10.20|Y|Receipt amount - Payment amount can only be two decimal places (required). Regulatory requirements require repayment information to be kept in a file|
-|payerName|string|255|Y|Reparer's name - separated by commas。Last name+","+First name+","+Middle name+","+Suffix Regulatory requirements require repayment information to be retained in a file|
+|responseTime|DateTime|50|Y|Return time <br>yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode|int|4|Y|Return Code<br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
+|responseDescription|string|255| Y|Return content description<br> response information|
+|amount|decimal|10.20|Y|Receipt amount <br> Payment amount can only be two decimal places (required). Regulatory requirements require repayment information to be kept in a file|
+|payerName|string|255|Y|Reparer's name <br> separated by commas。Last name+","+First name+","+Middle name+","+Suffix Regulatory requirements require repayment information to be retained in a file|
 |payer increase ress|string|255|Y|The regulatory requirements for the borrower's address require the retention of repayment information in a file|
-|payerPhone|string|11|Y|Repayment person's phone number -11 digits starting with 09. Regulatory requirements require repayment information to be retained in a file|
+|payerPhone|string|11|Y|Repayment person's phone number<br>11 digits starting with 09. Regulatory requirements require repayment information to be retained in a file|
 
 ### Output data
 

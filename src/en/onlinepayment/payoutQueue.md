@@ -12,10 +12,10 @@ When customers obtain payment transaction approval information, partners must pu
 ### Input parameters:
 | parameter                        |    type     | length   |Y/N |describe|
 |:-------------------------:|:-----------:|     :------:     |   :-----:       |-----------|   
-|userName |string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|User name <br>provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action     |   string  | 50   |  Y  |Call behavior<br>payoutQueuePayout(Fixed parameter values) - Ex:"action":"payoutQueue"|
 |authentication|string |50| Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender  |string|100|  Y  |Payer - Product APP Name (Required: Designed by Partner)<br> Ex:"sender":"APP NAME"|
+|sender  |string|100|  Y  |Payer <br> Product APP Name (Required: Designed by Partner)<br> Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|  Y  |Name of withdrawal person <br> separated by commas. - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone|string|11 |  Y |11 digit number starting with 09  <br> Ex:"phone":"09270348095"|

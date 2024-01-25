@@ -1,8 +1,8 @@
-# 8.Backpropagation message definition
+# 8.回传讯息定义
 
-#   The API return code is as follows
+##   API返回代码如下
 
-| Status Code                        |   Status Description    | 
+| 状态代码                       |   状态描述    | 
 | :-------------------------: | :----------- |
 |1000|Success|
 |-1000|Post context is not valid|

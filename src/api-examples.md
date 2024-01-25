@@ -14,7 +14,7 @@
 
 ### 下面列出的 HTTP 代码指示 API 请求是否成功。
 
-|HTTP Code| Message|Description |
+|Code| Message|Description |
 |:-------------------------:|:-----------:|----------------|
 |200|OK|正常状态|
 |400|Bad Request|请求不可接受，通常是由于无效或缺少参数。|

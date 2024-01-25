@@ -1,42 +1,25 @@
-# API 目录
-###   SkyPay第三支付API规范
-_________________
-- [版本](./Version1.md).
-- 目录
-- [前言](./preface.md).
-- [API文档说明](./APIdocumentationdescription.md)
-    - 1.数据加密说明
-    - 2.加密程序说明
-- 3. 线上支付说明
-    - [3.1推送线上支付交易(payoutQueue)](./onlinepayment/payoutQueue.md)
-    - [3.2回传支付确认讯息（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
-    - [3.3取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [3.4 ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
-    - [3.5修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
-- 4. 支付处理流程-实时交易说明
-    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
-    - [4.1 线下支付数据验证（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
-	- [4.2 支付成功通知（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
-    - [4.3 收款数据验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
-        - [4.3.1产生7-11收款条形码（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
-    - [4.4 收款成功通知（collectionCollect）](./Offlinepayment/collectionCollect.md).
-    - [4.5 支付状态查询（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
-    - [4.6 交易结果查询（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
-    - [4.7余额查询（balanceQuery）](./Offlinepayment/balanceQuery.md).
-- 5. 充值、结算、提现
-    - [5.1通知接口-充值、结算、提现（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
-    - [5.2查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
-- 6. 测试工具
-    - [6.1 支付测试工具](./testtools/Collectionverificationtool.md).
-    - [6.2 收款验证工具](./testtools/Paymenttestingtools.md).
-- 7. 取得基本代码列表信息
-    - [7.1取得国别定义(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
-    - [7.2取得公民状态(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [7.3取得身份验证类别(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [7.4取得城巿代码(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
-    - [7.5取得省份代码(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
-    - [7.6取得银行代码(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
-- 8. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 9. [支付管道（渠道代码）](./Paymentpipeline/Paymentpipeline.md).
-- 10. [收款管道（渠道代码）](./Paymentpipeline/Paymentpipeline1.md).
-- 11. [更改密钥流程](./Changekeyprocess/Changekeyprocess.md).
+# 状态码和 HTTP 码
+
+### 下面列出的状态代码表示操作中 API 请求的状态。
+
+|       Status Enumeration             | Description|
+|:-------------------------:|:-----------|
+|requires_payment_method|付款方式或付款方式数据无效|
+|requires_confirmation|创建付款 支持「直接创建交易」及「先开单后确认交易」2 种作法，此状态为「先开单后确认交易」时之交易状态。需要进行 付款确认 的调用，来确认执行交易。|
+|requires_action|此状态为合作伙伴已创建付款交易，需要执行下一个行动。<br>例如，用户端重定向到响应的 URL。|
+|processing|交易处理中。<br>(此状态取决于系统处理时间，通常很短暂，不容易出现)|
+|canceled| 交易已取消|
+|succeeded| 交易成功|
+
+
+### 下面列出的 HTTP 代码指示 API 请求是否成功。
+
+|HTTP Code| Message|Description |
+|:-------------------------:|:-----------:|----------------|
+|200|OK|正常状态|
+|400|Bad Request|请求不可接受，通常是由于无效或缺少参数。|
+|401|Unauthorized|没有提供有效的 client id、 client secret、partner id 或 API key|
+|403|Forbidden|禁止访问|
+|500|Server Errors|服务器遇到意外情况，无法完成请求。|
+|502|Bad Gateway|无法从原始服务器获取有效的响应|
+|503|Service Unavailable|Biller 合作伙伴宕机|

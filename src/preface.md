@@ -1,27 +1,25 @@
-# 1.目的
+# 1.介绍
+本文档说明各渠道对应网页支付之接口方法与规范。
 
-在本文档中,时间参数的定义是使用GMT+8时区
-## 2.系统架构
-#### <font color = red>callerName：由SkyPay提供（在账户绑定邮箱的邮件中）</font>
-######  <font color = red>已开户的callerName只能发送一次到邮箱内，如有忘记请联系我们的技术支持</font>
-_________________
-- 测试请求接口url：
-- https://test.skypay.ph/services/{callerName}
-- 正式请求接口url：
-- https://api.skypay.ph/services/{callerName}
-## 3.通讯协议
+
+## 2.2.通讯协议和请求方法
 - Service Type：Restful Service
 - Http Method：POST
-- Content Type：text/plain
+
+## 接口认证（授权）
+授权是使用用户名和密码来进行基本身份验证，所使用的方法为Basic Authentication。
+认证授权所需参数：
+- 1.api url
+- 2.tenant
+- 3.username
+- 4.password
+#### <font color = red>以上1,2参数于开立帐号时系统自动寄送至指定信箱，3, 4参数请参考7. 生成认证金钥 由SkyPay后台生成。</font>
 _________________
+## Basic Authentication
 
-## 4.加密要求
-在传送数据前,必须先进行加密。
-![](./public/CC更改金钥.png "Shiprock")
-- Encrypt Key：加密金钥由SkyPay提供，在管理后台CC更改密钥功能处获取
-
-## 5.验证机制
-<font color = red>每次交易进行API功能调用时,必须先提供验证信息,以便于后台进行安全验证,包含下列信息</font>
-- <font color = red>User Name使用者：由SkyPay另外提供（在账户绑定邮箱的邮件中）</font>
-- <font color = red>Authentication Key验证密钥：由SkyPay另外提供（在管理后台的金钥功能里）</font>
-- <font color = red>Prefix前缀码：由SkyPay另外提供（在账户绑定邮箱的邮件中，放还款统一使用SKY**开头）</font>
+### 由username和password来组成认证码，例如：
+-  username: alice, pw: superman 
+-  alice:superman
+-  Base64 encoded: YWxpY2U6c3VwZXJtYW4=
+-   HTTP request header:
+ - Authorization: Basic YWxpY2U6c3VwZXJtYW4=

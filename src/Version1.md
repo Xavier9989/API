@@ -1,46 +1,14 @@
-# 版本  -    当前版本 ： 1.36
+# 版本  -    当前版本 ： 2.5
 _________________
-### 本文档包含Skypay专有的信息，未经本公司明确书面许可，不得复制、披露或全部或部分使用。
+### 注意：本文件包含保密信息或受保密特权保护的信息，仅供个人或特定实体使用。任何其他人不得出于任何目的披露、复制、分发或使用本文件的内容。严禁未经授权使用、传播或复制本文件，否则可能是非法的。如果您错误地收到此文档，或者您不是授权收件人，请立即删除此文档。
+
 _________________
  
-| Version      | 上版时间 | 描述                       |Wayne.Wang|
+| Version      | 上版时间 | 描述                       |更新者|
 | ------ | :-----------: | -------------------------------------------|-----     |   
-| 1.36     |   2023/12/15    |添加5.充值、提现、查询接口。<br>5.1通知接口-充值、结算、提现（financeNotification）。<br>添加5.2查詢接口充值、结算、提现(notificationInquiry)。|Wayne.Wang|
-| 1.35     |   2023/5/11     |添加 4.6 getReportPayout/(Collection)。|Wayne.Wang|
-| 1.33     |   2021/01/26    |添加 Withdraw Channel:LBC,EGcash。|Abel|
-| 1.32     |   2020/11/19    |添加 WithdrawChannel E-wallet:Paymaya,GrabPay,OmniPay。|Abel|
-| 1.31     |   2020/09/29    |3.1推送线上支付交易(payoutQueue)修改后只允许电子电子和银行交易。<br>添加 3.4 payoutQueueV2。<br>添加 3.4.1 Generate QRCode。<br>添加 3.5 amendTransactionV2。<br>3.2 payoutQueuePayout添加 ml referenceNumber。|Denny Pujo|
-| 1.30     |   2020/08/28    |删除 3.4 payoutQueueV2。<br>删除 3.4.1 Generate QRCode。<br>删除 3.5 amendTransactionV2。|Denny Pujo|
-| 1.29     |   2020/02/24    |添加 4.3.1 Generate QR Code。|Denny Pujo|
-| 1.27     |   2019/10/21    |添加 7-11 Generate Barcode。|Denny Pujo|
-| 1.24     |   2019/08/25    |更改字段的数据类型和长度描述符。|Vinson Huang|
-| 1.23     |   2019/08/14    |变更可用渠道。|Vinson Huang|
-| 1.22     |   2019/08/05    |将发行日期和到期日期更改为3.1版银行付款队列中的可选日期。|Denny Pujo|
-| 1.21     |   2019/07/08    |1.新增中文说明。<br>2.增加的支付渠道。|Vinson Huang|
-| 1.20     |   2019/06/18    |添加ed related ProvinceId in Town City。|Denny Pujo|
-| 1.19     |   2019/05/06    |添加 3.1	Payout–payoutQueue For Bank 。<br>添加 7	Get Catalog。|Denny Pujo|
-| 1.18     |   2019/04/29    |添加 4.5支付状态查询（payoutQueryStatus）。|Wayne.Wang|
-| 1.17     |   2019/03/24    |添加 9.withdrawChannel已修改了所有章节以添加所需的列。<br>4.3收款数据验证（CollectionInquiry）Modified parameter to fit MLhuillier bills payment API interface。|Wayne.Wang|
-| 1.16     |   2019/02/18    |3.1推送线上支付交易(payoutQueue)MLhuillier&Palawan Pawnshop going to stop using and the stop date will annoce at future.。 <br>   4.1线下支付数据验证（PayoutInquiry）Final the api sepc.。<br>4.2支付成功通知（PayoutPayout）Final the api spec。<br>4.3收款数据验证（CollectionInquiry）添加输出参数。<br> 删除 8.withdrawChannel。|Wayne.Wang|
-| 1.15     |   2019/01/31    |3.1推送线上支付交易(payoutQueue)删除 Bank,Paymaya channel添加新的返回代码。<br>7.Return Code更新返回代码列表。<br>8.withdrawChannel更新可用的渠道。|Wayne.Wang|
-| 1.14     |   2018/12/07    |3.1推送线上支付交易(payoutQueue)添加输入参数–accountNo,bankNo,bankProvince,bankCity添加输出参数–referenceNo。<br>7.Return Code添加新的返回代码。 <br>添加 8.withdrawChannel 。|Wayne.Wang|
-| 1.13     |   2018/11/28    |3.2回传支付确认讯息（payoutQueuePayout）添加输入参数–action<br> 4.2支付成功通知（PayoutPayout）添加输出参数–withdrawChannel。<br>4.2支付成功通知（PayoutPayout）添加输入参数–payChannel。<br>4.4收款成功通知（collectionCollect）更新输入参数–4:ECPay。<br>4.2支付成功通知（PayoutPayout）添加输入参数–companyName。|Wayne.Wang|
-| 1.12     |   2018/09/19    | 4.4收款成功通知（collectionCollect）添加输入参数–collectedTime。|Wayne.Wang|
-| 1.11     |   2018/09/11    |添加6。测试工具|Wayne.Wang|
-| 1.10     |   2018/09/06    |在每一章中添加期望返回代码。|Wayne.Wang|
-| 1.9      |   2018/08/31    |3.1推送线上支付交易(payoutQueue) 更新输入参数–Phone is 10 digits <br>4.1线下支付数据验证（PayoutInquiry）更新响应参数–Phone is 10 digits|Wayne.Wang|
-| 1.8      |   2018/08/22    |3.Payout process(non realtime transaction)更新流程图。 |Wayne.Wang|
-| 1.7      |   2018/08/21    |4.4收款成功通知（collectionCollect）添加输入参数–receiptNumber。|Wayne.Wang|
-| 1.6      |   2018/08/21    |3.3取消支付交易（cancelPayout）更新输入参数–contractNumbers[]。 |Wayne.Wang|
-| 1.5|2018/08/16|4.3收款数据验证（CollectionInquiry） 。<br>4.4收款成功通知（collectionCollect）更新输入参数of sample(typo contractNumber) <br>3.1推送线上支付交易(payoutQueue)-更新输入参数–withdrawChannel description。|Wayne.Wang|
-| 1.4      |   2018/08/10    |3.3取消支付交易（cancelPayout）更新所有的输入参数。|Wayne.Wang|
-| 1.3      |   2018/08/07    |   3.2回传支付确认讯息（payoutQueuePayout）更新输入参数–sername(typo userName)。 |Wayne.Wang|
-| 1.2      |   2018/08/07    |3.2回传支付确认讯息（payoutQueuePayout）添加输入参数–userName&authentication。 |Wayne.Wang|
-| 1.1      |   2018/08/03    |   3.1推送线上支付交易(payoutQueue)     添加输入参数–withdrawChannel。  |Wayne.Wang|
-| 1.0      |   2018/06/21    | 基准1.0 |Wayne.Wang|
-
-
-
-# (提醒)：
-#### 1.修改后的文件验证之后将进行有效的修改。
-#### 2.本封面应附在修改后的或新的发布文档中。
+| 2.5     |   2023/12/29    |优化修改接口参数<br>拿掉x-Tenat、brand参数|Wayne.Wang|
+| 2.4     |   2023/09/25     |3. 接口认证 (更新)<br>5. 支付方式 (新增)<br>7. 生成认证金钥 (新增)|Wayne.Wang|
+| 2.3     |   2023/9/4    |II. 接口流程图，修正部份错误流程。<br>新增 I. 通知 接口规范。|Wayne.Wang|
+| 2.2     |   2023/8/21    |新增截图说明特定参数目地，以及参数「payment_method_types」|Wayne.Wang|
+| 2.1     |   2023/08/11    |III. 创建付款 – 技术规范，新增参数「brand」。<br>EndPoint:/payment_intentions<br>EndPoint:/payment_intentions/{payment_intentions_id}|Wayne.Wang|
+| 2.0     |   2022/06/12    |定版 1.0|Denny Pujo|

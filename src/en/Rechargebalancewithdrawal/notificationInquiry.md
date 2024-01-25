@@ -5,11 +5,11 @@
 ### Input parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User name, - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
 |authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|transctionDate|Date|10| |Notification Date - Start- ex:2023-06-18|
-|transEndDate |Date|10| |Notification Date - End - ex:2023-06-19|
+|transctionDate|Date|10| |Notification Date <br> Start- ex:2023-06-18|
+|transEndDate |Date|10| |Notification Date <br> End - ex:2023-06-19|
 |statementTypes |string[]|| |Notification type:<br>1. Recharge from payment account<br>2. Recharge from payment settlement<br>3. Account balance transfer<br>4. Payment transaction settlement<br>5. Withdrawal from payment account<br>6. Withdrawal from payment account|
 ### Post data
 
@@ -25,21 +25,21 @@
 
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|Return code - 1000|
+|responseTime  |DateTime|50|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|Return code <br> 1000|
 |responseDescription |string|255|Success|
-|notifications |string[]|255|Notification array name- Array|
-|transctionDate  |DateTime|50|notice date - ex:2023-06-18 17:52:10|
-|companyPrefix |string|5|Company Code - ex:SKY98|
-|companyName |string|200|corporate name - ex:Skybridge Payment Inc.|
-|accountNo |string|5|account - ex:SKY98|
-|sourceAccountNo |string|20|Fund source account - (actual bank account number, only provided at withdrawal)|
-|beneficiaryAccountNo |string|20|Fund purpose account - (actual bank account number, only provided during recharge and withdrawal)|
+|notifications |string[]|255|Notification array name<br>Array|
+|transctionDate  |DateTime|50|notice date<br> ex:2023-06-18 17:52:10|
+|companyPrefix |string|5|Company Code<br> ex:SKY98|
+|companyName |string|200|corporate name <br> ex:Skybridge Payment Inc.|
+|accountNo |string|5|account <br> ex:SKY98|
+|sourceAccountNo |string|20|Fund source account <br> (actual bank account number, only provided at withdrawal)|
+|beneficiaryAccountNo |string|20|Fund purpose account<br>(actual bank account number, only provided during recharge and withdrawal)|
 |statementType |string|1|Notification type:<br>1. Recharge from payment account<br>2. Recharge from payment settlement<br>3. Account balance transfer<br>4. Payment transaction settlement<br>5. Withdrawal from payment account<br>6. Withdrawal from payment account|
 |signType |string|10|Type of fund increase or decrease :<br> recharge:Additional items <br> reduce:deduction|
-|Amount|int||money - Ex:1200000|
+|Amount|int||money <br> Ex:1200000|
 |Currency |string|3|Fixed CurrencyPHP|
-|referenceNumber|string|15|Transaction Number (Unique) - This number can be queried in the background- S - The starting number is the transaction generated in the settlement function (backend)- D - The starting number is the transaction generated in the recharge function (backend) - {callerName}–The starting number is a transaction that is automatically settled by the system. -ex:S-20231204-001D-20231204-001,skypay-20231204|
+|referenceNumber|string|15|Transaction Number (Unique) <br> This number can be queried in the background- S - The starting number is the transaction generated in the settlement function (backend)- D - The starting number is the transaction generated in the recharge function (backend) - {callerName}–The starting number is a transaction that is automatically settled by the system. -ex:S-20231204-001D-20231204-001,skypay-20231204|
 
 ### Output data
 

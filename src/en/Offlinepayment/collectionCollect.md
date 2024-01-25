@@ -5,15 +5,15 @@
 ### Input parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
-|authentication|string |255|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber |string|13~15|Y|Payment code - prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|amount|decimal|10.20|Y|Must be the actual amount received by the user, with a maximum of two decimal places -  ex:"amount":3400.00|
+|authentication|string |255|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|contractNumber |string|13~15|Y|Payment code<br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|amount|decimal|10.20|Y|Must be the actual amount received by the user<br> with a maximum of two decimal places -  ex:"amount":3400.00|
 |phone|string|50|Y|11 digit number starting with 09 - Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  Receipt No|
-|collectedTime|DateTime| |Y|(yyyy-MM-dd HH:mm:ss) -  - Collection time, date format yyyy-MM-dd HH:mm:ss|
-|payChannel|int||Y|Payment Pipeline - For detailed instructions, please refer to Chapter 10[Channel code value](../Paymentpipeline/Paymentpipeline1.md)|
+|collectedTime|DateTime| |Y|(yyyy-MM-dd HH:mm:ss) <br> Collection time, date format yyyy-MM-dd HH:mm:ss|
+|payChannel|int||Y|Payment Pipeline <br> For detailed instructions, please refer to Chapter 10[Channel code value](../Paymentpipeline/Paymentpipeline1.md)|
 
 ### Post data
 
@@ -34,9 +34,9 @@
 ### Output parameters
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
-|responseCode |int|4|Return Code - System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription |string|255|Feedback Content Description - Response Information (Required)|
+|responseTime|DateTime|50|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
+|responseCode |int|4|Return Code <br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
+|responseDescription |string|255|Feedback Content Description<br> Response Information (Required)|
 
 ### Output data：
 

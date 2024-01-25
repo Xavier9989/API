@@ -6,7 +6,7 @@
 
 | 参数                        |    类型     | 长度   |Y/N |描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|用户名称，SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|用户名称<br>SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|调用行为<br>getCatalog(固定参数值)- Ex:"action":"getCatalog"|
 |authentication |string |255.|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |catalogType|string|50||目录类别<br> 选择所需的基础代码类别 - Ex:"catalogType":"getTownCity"|

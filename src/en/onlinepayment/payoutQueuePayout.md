@@ -18,7 +18,7 @@
 
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User Name - Provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|User Name<br> Provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>payoutQueuePayout(Fixed parameter values) - Ex:"action":"payoutQueuePayout"|
 |authentication   |string |50|Y|    Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber  |string|13~15|Y|  Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|

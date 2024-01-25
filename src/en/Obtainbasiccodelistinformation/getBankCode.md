@@ -5,10 +5,10 @@
 ### Input parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>getCatalog(Fixed parameter values)- Ex:"action":"getCatalog"|
 |authentication|string |255|Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|catalogType |string|50|| Catalog Category - Select the required base code category - Ex:"catalogType":"getBankCode"|
+|catalogType |string|50|| Catalog Category <br> Select the required base code category - Ex:"catalogType":"getBankCode"|
 |versionDate |dataTime|||Version Date|
 
 
@@ -26,9 +26,9 @@
 ### Output parameters
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS（REQUIRED）|
-|responseCode  |int|4|Return Code - The default return code of the system is a number with a length of 4, as defined by the standard reference return code|
-|result |string[]|Key/Value|Return Result - Return Key/Value Format String Array|
+|responseTime  |DateTime|50|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS（REQUIRED）|
+|responseCode  |int|4|Return Code<br> The default return code of the system is a number with a length of 4, as defined by the standard reference return code|
+|result |string[]|Key/Value|Return Result <br> Return Key/Value Format String Array|
 |getBankCode|int||Bank code ID|
 |BankName|string|50|Bank Name|
 

@@ -14,9 +14,9 @@
 
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>generate711Barcode(Fixed parameter values) - Ex:"action":"generate711Barcode"|
-|authentication|string |255|Y|Verification Code - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication|string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumbers|String[]||Y|Payment code array name <br> Array(parameter tag name is controlNumber)|
 |controlNumber |String|13~15|Y|Payment code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 

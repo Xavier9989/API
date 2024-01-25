@@ -5,12 +5,12 @@
 ### Input parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
-|userName|string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName|string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>payoutPayout(Fixed parameter values) - Ex:"action":"payoutPayout"|
-|authentication |string |100|Y|Verification Code<br> - Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|authentication |string |100|Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber |string|13~15|Y|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|withdrawChannel|int |Option|Y|Payment Pipeline - For detailed content, please refer to Chapter 9 - Ex:Payment pipeline name 9	RDPawnshop|
-|payTime|DateTime||Y |time of payment - (yyyy-MM-dd HH:mm:ss) - Cashier payment time|
+|withdrawChannel|int |Option|Y|Payment Pipeline <br> For detailed content, please refer to Chapter 9 - Ex:Payment pipeline name 9	RDPawnshop|
+|payTime|DateTime||Y |time of payment<br> (yyyy-MM-dd HH:mm:ss) - Cashier payment time|
 
 ### Post data
 
@@ -28,9 +28,9 @@
 
 | parameter                        |    type     | length    |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime |DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|Return Code - System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription |string|255|Feedback Content Description - Response Information (Required)|
+|responseTime |DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|Return Code<br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
+|responseDescription |string|255|Feedback Content Description <br> Response Information (Required)|
 
 
 ### Output data：

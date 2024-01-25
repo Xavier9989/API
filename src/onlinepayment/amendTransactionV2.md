@@ -51,7 +51,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间<br> yyyy-MM-dd HH:mm:ss.SSSS - 必填|
 |responseCode |int|4|系统默认回传码,长度为4的数字,标准参考回传码定义|
-|responseDescription |string|255|回传内容描述 - 响应信息|
+|responseDescription |string|255|回传内容描述 <br> 响应信息|
 
 ### Output data：
 

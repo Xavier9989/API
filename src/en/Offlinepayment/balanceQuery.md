@@ -4,7 +4,7 @@
 
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User name - provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|userName |string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
 |action|string|50|Y|Call behavior<br>balanceQuery(Fixed parameter values) - Ex:"action":"balanceQuery"|
 |authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
@@ -20,10 +20,10 @@
 ### Output parameters
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|Return time - yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
-|responseCode  |int|4|Return Code - System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription|string|255|Feedback Content Description - Response Information (Required)|
-|Balance |decimal|10.20|Return Partner - Account Balance|
+|responseTime|DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
+|responseCode  |int|4|Return Code <br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
+|responseDescription|string|255|Feedback Content Description<br> Response Information (Required)|
+|Balance |decimal|10.20|Return Partner<br> Account Balance|
 
 ### Output data：
 

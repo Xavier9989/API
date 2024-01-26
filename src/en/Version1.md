@@ -6,7 +6,7 @@ _________________
 
 _________________
  
-| Version      | time | describe                       |Updater|
+| Version      | Valid Date	 | describe                       |Updater|
 | ------ | :-----------: | -------------------------------------------|-----     |   
 | 2.5     |   2023/12/29    |Optimize and modify interface parameters<br>Remove x-Tenat and brand parameters|Wayne.Wang|
 | 2.4     |   2023/09/25     |3. Interface authentication (update)<br>[Payment method](../APIdocumentationdescription.md) (new)<br>7 Generate authentication key (new)|Wayne.Wang|

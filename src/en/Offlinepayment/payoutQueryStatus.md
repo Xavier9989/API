@@ -1,4 +1,4 @@
-# 4.5 Payment status query（payoutQueryStatus）
+# 6.1Payment status query（payoutQueryStatus）
 
 #### The payment status query service API is provided by Skypay and can query transaction status, with a maximum quantity of 50 transactions
 

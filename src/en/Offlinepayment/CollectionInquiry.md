@@ -1,4 +1,4 @@
-# 4.3 Verification of payment data（CollectionInquiry）
+# 5.3 Verification of payment data（CollectionInquiry）
 #### The API is provided by partners and will be triggered by customers when applying for repayment.
 
 ### Input parameters

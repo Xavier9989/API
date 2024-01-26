@@ -1,4 +1,4 @@
-# 6.1 支付测试工具
+# 7.1 支付测试工具
 
 
 - <font color = red>请在后台CallBack配置好对应接口的回调地址，Content Type：text/plain，测试工具位置（中文界面显示付款工具，英文界面显示payout tool）</font>

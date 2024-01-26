@@ -57,25 +57,25 @@ export default defineConfig({
             ],
           },
           {
-            text: "3.5.1Onlinerequestandofflinepaymentprocess",
+            text: "4.nlinerequestandofflinepaymentprocess",
             collapsed: true,
             items: [
               {
-                text: "3.3Cancelpaymenttransaction（cancelPayout）",
+                text: "4.1Cancelpaymenttransaction（cancelPayout）",
                 link: "/en/onlinepayment/cancelPayout",
               },
               {
-                text: "3.4 ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                text: "4.2 ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
                 link: "/en/onlinepayment/payoutQueueV2",
               },
               {
-                text: "3.5Modifypaymenttransactions（amendTransactionV2）",
+                text: "4.3Modifypaymenttransactions（amendTransactionV2）",
                 link: "/en/onlinepayment/amendTransactionV2",
               },
             ],
           },
           {
-            text: "4.Offlinepaymentprocessingflow",
+            text: "5.Offlinepaymentofflineprocessingflow",
             collapsed: true,
             items: [
               {
@@ -85,55 +85,55 @@ export default defineConfig({
                     link: "/en/Offlinepayment/Realtimetransactioninstructions",
                   },
                   {
-                    text: "4.1 Offlinepaymentdataverification（PayoutInquiry）",
+                    text: "5.1Offlinepaymentdataverification（PayoutInquiry）",
                     link: "/en/Offlinepayment/PayoutInquiry",
                   },
                   {
-                    text: "4.2 Paymentsuccessnotification（PayoutPayout）",
+                    text: "5.2Paymentsuccessnotification（PayoutPayout）",
                     link: "/en/Offlinepayment/PayoutPayout",
                   },
                   {
-                    text: "4.3 Verificationofpaymentdata （CollectionInquiry）",
+                    text: "5.3Verificationofpaymentdata （CollectionInquiry）",
                     link: "/en/Offlinepayment/CollectionInquiry",
                     items: [
                       {
-                        text: "4.3.1Generate7-11paymentbarcode（Generate711Barcode）",
+                        text: "5.3.1Generate7-11paymentbarcode（Generate711Barcode）",
                         link: "/en/Offlinepayment/Generate711Barcode",
                       },
                     ],
                   },
                   {
-                    text: "4.4 Notificationofsuccessfulpayment（collectionCollect）",
+                    text: "5.4Notificationofsuccessfulpayment（collectionCollect）",
                     link: "/en/Offlinepayment/collectionCollect",
-                  },
-                  {
-                    text: "4.5 Paymentstatusquery  （payoutQueryStatus）",
-                    link: "/en/Offlinepayment/payoutQueryStatus",
-                  },
-                  {
-                    text: "4.6 Transaction result query（getReportPayout(Collection)）",
-                    link: "/en/Offlinepayment/getReportPayout",
-                  },
-                  {
-                    text: "4.7balanceinquiry （balanceQuery）",
-                    link: "/en/Offlinepayment/balanceQuery",
                   },
                 ],
               },
             ],
           },
           {
-            text: "5. Recharge、settle、withdraw",
+            text: "6. Function Query",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "5.1NotificationInterface - Recharge、Settlement、Withdrawal（financeNotification）",
+                    text: "6.1 Paymentstatusquery  （payoutQueryStatus）",
+                    link: "/en/Offlinepayment/payoutQueryStatus",
+                  },
+                  {
+                    text: "6.2Transaction result query（getReportPayout(Collection)）",
+                    link: "/en/Offlinepayment/getReportPayout",
+                  },
+                  {
+                    text: "6.3balanceinquiry （balanceQuery）",
+                    link: "/en/Offlinepayment/balanceQuery",
+                  },
+                  {
+                    text: "6.4NotificationInterface - Recharge、Settlement、Withdrawal（financeNotification）",
                     link: "/en/Rechargebalancewithdrawal/financeNotification",
                   },
                   {
-                    text: "5.2Queryinterface - recharge、settlement、withdrawal（notificationInquiry）",
+                    text: "6.5Queryinterface - recharge、settlement、withdrawal（notificationInquiry）",
                     link: "/en/Rechargebalancewithdrawal/notificationInquiry",
                   },
                 ],
@@ -141,17 +141,17 @@ export default defineConfig({
             ],
           },
           {
-            text: "6. test tools",
+            text: "7. test tools",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "6.1 Payment testing tools ",
+                    text: "7.1 Payment testing tools ",
                     link: "/en/testtools/Collectionverificationtool",
                   },
                   {
-                    text: "6.2 Collection verification tool",
+                    text: "7.2 Collection verification tool",
                     link: "/en/testtools/Paymenttestingtools",
                   },
                 ],
@@ -159,33 +159,33 @@ export default defineConfig({
             ],
           },
           {
-            text: "7.Obtain basic code list information",
+            text: "8.Obtain basic code list information",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "7.1Obtain Country Definition (getNationality)",
+                    text: "8.1Obtain Country Definition (getNationality)",
                     link: "/en/Obtainbasiccodelistinformation/getNationality",
                   },
                   {
-                    text: "7.2Obtaining citizenship status(getCivilStatus)",
+                    text: "8.2Obtaining citizenship status(getCivilStatus)",
                     link: "/en/Obtainbasiccodelistinformation/getCivilStatus",
                   },
                   {
-                    text: "7.3Obtain authentication category(getIdentificationType)",
+                    text: "8.3Obtain authentication category(getIdentificationType)",
                     link: "/en/Obtainbasiccodelistinformation/getIdentificationType",
                   },
                   {
-                    text: "7.4Obtain the city code(getTownCity)",
+                    text: "8.4Obtain the city code(getTownCity)",
                     link: "/en/Obtainbasiccodelistinformation/getTownCity",
                   },
                   {
-                    text: "7.5Obtain province code (getProvince)",
+                    text: "8.5Obtain province code (getProvince)",
                     link: "/en/Obtainbasiccodelistinformation/getProvince",
                   },
                   {
-                    text: "7.6Obtain bank code (getBankCode)",
+                    text: "8.6Obtain bank code (getBankCode)",
                     link: "/en/Obtainbasiccodelistinformation/getBankCode",
                   },
                 ],
@@ -193,7 +193,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "8.Backpropagation message definition   ",
+            text: "9.Backpropagation message definition   ",
             collapsed: true,
             items: [
               {
@@ -203,7 +203,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "9.Payment pipeline (channel code)",
+            text: "10.Payment pipeline (channel code)",
             collapsed: true,
             items: [
               {
@@ -213,7 +213,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "10.Payment channel (channel code)  ",
+            text: "11.Payment channel (channel code)  ",
             collapsed: true,
             items: [
               {
@@ -223,7 +223,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "11.Change key process",
+            text: "12.Change key process",
             collapsed: true,
             items: [
               {
@@ -292,26 +292,26 @@ export default defineConfig({
         ],
       },
       {
-        text: "3.5.1线上请求线下支付流程",
+        text: "4.线上请求线下支付流程",
         collapsed: true,
         items: [
           {
-            text: "3.3取消支付交易（cancelPayout）",
+            text: "4.1取消支付交易（cancelPayout）",
             link: "/onlinepayment/cancelPayout",
           },
           {
-            text: "3.4 ML/Cebuana实时放款（payoutQueueV2）",
+            text: "4.2ML/Cebuana非实时放款（payoutQueueV2）",
             link: "/onlinepayment/payoutQueueV2",
           },
           {
-            text: "3.5修改支付交易（amendTransactionV2）",
+            text: "4.3修改支付交易（amendTransactionV2）",
             link: "/onlinepayment/amendTransactionV2",
           },
         ],
       },
 
       {
-        text: "4.线下支付处理流程",
+        text: "5.线下支付线下处理流程",
         collapsed: true,
         items: [
           {
@@ -321,55 +321,55 @@ export default defineConfig({
                 link: "/Offlinepayment/Realtimetransactioninstructions",
               },
               {
-                text: "4.1 线下支付数据验证（PayoutInquiry）",
+                text: "5.1线下支付数据验证（PayoutInquiry）",
                 link: "/Offlinepayment/PayoutInquiry",
               },
               {
-                text: "4.2 支付成功通知（PayoutPayout）",
+                text: "5.2支付成功通知（PayoutPayout）",
                 link: "/Offlinepayment/PayoutPayout",
               },
               {
-                text: "4.3 收款数据验证（CollectionInquiry）",
+                text: "5.3收款数据验证（CollectionInquiry）",
                 link: "/Offlinepayment/CollectionInquiry",
                 items: [
                   {
-                    text: "4.3.1产生7-11收款条形码（Generate711Barcode）",
+                    text: "5.3.1产生7-11收款条形码（Generate711Barcode）",
                     link: "/Offlinepayment/Generate711Barcode",
                   },
                 ],
               },
               {
-                text: "4.4 收款成功通知（collectionCollect）",
+                text: "5.4 收款成功通知（collectionCollect）",
                 link: "/Offlinepayment/collectionCollect",
-              },
-              {
-                text: "4.5 支付状态查询（payoutQueryStatus）",
-                link: "/Offlinepayment/payoutQueryStatus",
-              },
-              {
-                text: "4.6 交易结果查询（getReportPayout(Collection)）",
-                link: "/Offlinepayment/getReportPayout",
-              },
-              {
-                text: "4.7余额查询（balanceQuery）",
-                link: "/Offlinepayment/balanceQuery",
-              },
+              },  
             ],
           },
         ],
       },
       {
-        text: "5. 充值、结算、提现",
+        text: "6. 功能查询",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "5.1通知接口-充值、结算、提现（financeNotification）",
+                text: "6.1支付状态查询（payoutQueryStatus）",
+                link: "/Offlinepayment/payoutQueryStatus",
+              },
+              {
+                text: "6.2交易结果查询（getReportPayout(Collection)）",
+                link: "/Offlinepayment/getReportPayout",
+              },
+              {
+                text: "6.3余额查询（balanceQuery）",
+                link: "/Offlinepayment/balanceQuery",
+              },
+              {
+                text: "6.4通知接口-充值、结算、提现（financeNotification）",
                 link: "/Rechargebalancewithdrawal/financeNotification",
               },
               {
-                text: "5.2查詢接口-充值、结算、提现（notificationInquiry）",
+                text: "6.5查詢接口-充值、结算、提现（notificationInquiry）",
                 link: "/Rechargebalancewithdrawal/notificationInquiry",
               },
             ],
@@ -377,17 +377,17 @@ export default defineConfig({
         ],
       },
       {
-        text: "6. 测试工具",
+        text: "7. 测试工具",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "6.1 支付测试工具",
+                text: "7.1 支付测试工具",
                 link: "/testtools/Collectionverificationtool",
               },
               {
-                text: "6.2 收款验证工具",
+                text: "7.2 收款验证工具",
                 link: "/testtools/Paymenttestingtools",
               },
             ],
@@ -395,33 +395,33 @@ export default defineConfig({
         ],
       },
       {
-        text: "7.取得基本代码列表信息",
+        text: "8.取得基本代码列表信息",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "7.1取得国别定义(getNationality)",
+                text: "8.1取得国别定义(getNationality)",
                 link: "/Obtainbasiccodelistinformation/getNationality",
               },
               {
-                text: "7.2取得公民状态(getCivilStatus)",
+                text: "8.2取得公民状态(getCivilStatus)",
                 link: "/Obtainbasiccodelistinformation/getCivilStatus",
               },
               {
-                text: "7.3取得身份验证类别(getIdentificationType)",
+                text: "8.3取得身份验证类别(getIdentificationType)",
                 link: "/Obtainbasiccodelistinformation/getIdentificationType",
               },
               {
-                text: "7.4取得城巿代码(getTownCity)",
+                text: "8.4取得城巿代码(getTownCity)",
                 link: "/Obtainbasiccodelistinformation/getTownCity",
               },
               {
-                text: "7.5取得省份代码(getProvince)",
+                text: "8.5取得省份代码(getProvince)",
                 link: "/Obtainbasiccodelistinformation/getProvince",
               },
               {
-                text: "7.6取得银行代码(getBankCode)",
+                text: "8.6取得银行代码(getBankCode)",
                 link: "/Obtainbasiccodelistinformation/getBankCode",
               },
             ],
@@ -429,7 +429,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "8.回传讯息定义",
+        text: "9.回传讯息定义",
         collapsed: true,
         items: [
           {
@@ -439,7 +439,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "9.支付管道（渠道代码）",
+        text: "10.支付管道（渠道代码）",
         collapsed: true,
         items: [
           {
@@ -449,7 +449,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "10.收款管道（渠道代码）",
+        text: "11.收款管道（渠道代码）",
         collapsed: true,
         items: [
           {
@@ -459,7 +459,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "11.更改密钥流程",
+        text: "12.更改密钥流程",
         collapsed: true,
         items: [
           {

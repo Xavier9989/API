@@ -1,4 +1,4 @@
-# 3.4    ML/Cebuana实时放款（payoutQueueV2）
+# 4.2 ML/Cebuana实时放款（payoutQueueV2）
 
 ### 此接口为指定渠道支付接口，由合作伙伴主动推送至SkyPay，为异步接口并由3.2 PayoutQueuePayout接口回调支付结果。
 ![](../public/线上请求线下取款.png)

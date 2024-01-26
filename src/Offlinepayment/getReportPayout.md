@@ -1,4 +1,4 @@
-# 4.6 交易结果查询（getReportPayout(Collection)）
+# 6.2交易结果查询（getReportPayout(Collection)）
 
 ### 交易结果查询服务API由Skypay提供,可以对交易结果进行查询
 

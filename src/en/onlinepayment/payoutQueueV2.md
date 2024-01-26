@@ -1,4 +1,4 @@
-# 3.4    ML/CebuanaOnline request for offline withdrawal（payoutQueueV2）
+# 4.2 ML/CebuanaOnline request for offline withdrawal（payoutQueueV2）
 
 ### This interface is a designated channel payment interface that is actively pushed by partners to SkyPay. It is an asynchronous interface and the payment result is recalled by the 3.2 PayoutQueuePayout interface。
 ![](../public/线上请求线下取款.png)

@@ -1,4 +1,4 @@
-# 4.3 收款数据验证（CollectionInquiry）
+# 5.3 收款数据验证（CollectionInquiry）
 ### API由合作伙伴提供，顾客在申请还款时将触发API。
 
 ### Input parameters

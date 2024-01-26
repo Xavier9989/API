@@ -1,4 +1,4 @@
-# 7.6取得银行代码(getBankCode)
+# 8.6取得银行代码(getBankCode)
 ### 这支取得基本代码服务的API,提供用于使用银行付款的数据列表。调用服务时,versionDate请传空值，一切以正式环境接口为准。
 
 ### Input parameters

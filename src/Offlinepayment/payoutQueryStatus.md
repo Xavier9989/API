@@ -1,4 +1,4 @@
-# 4.5 支付状态查询（payoutQueryStatus）
+# 6.1支付状态查询（payoutQueryStatus）
 
 #### 支付状态查询服务API由Skypay提供,可以对交易状态进行查询,最大数量50笔
 ### <font color = red>注意</font>

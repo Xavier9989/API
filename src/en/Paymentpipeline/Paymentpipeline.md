@@ -1,4 +1,4 @@
-# 9.Payment pipeline (channel code or code value)
+# 10.Payment pipeline (channel code or code value)
 
 | code                       |    Is it real-time    | interface    |channel| describe|
 | :-------------------------: | :-----------: |:-----:| --------------------------------| :--------------------:  |

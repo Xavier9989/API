@@ -1,4 +1,4 @@
-# 4.7余额查询（balanceQuery）
+# 6.3余额查询（balanceQuery）
 ### 调用余额查询服务,由SkyPay提供。
 
 | 参数                        |    类型     | 长度   |Y/N |描述|

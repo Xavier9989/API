@@ -1,4 +1,4 @@
-# 4.1 线下支付数据验证（PayoutInquiry）
+# 5.1 线下支付数据验证（PayoutInquiry）
 **<font color=red>这个支付验证的API服务,是由合作伙伴提供,它将会在取现人要求提款时,发出要求验证讯息</font>**
 ![](../public/4.1线下放款.png)
 

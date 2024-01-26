@@ -1,4 +1,4 @@
-# 4.4 收款成功通知（collectionCollect）
+# 5.4 收款成功通知（collectionCollect）
 #### 这支服务是由合作伙伴提供,它将由线下店出纳触发以确认报销。
 
 ### Input parameters

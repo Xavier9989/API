@@ -1,4 +1,4 @@
-# 7.4取得城巿代码(getTownCity)
+# 8.4取得城巿代码(getTownCity)
 
 ### This API, which obtains basic code services, provides a data list for using bank payments. When calling the service, please pass a null value for version date, and everything will be based on the official environment interface.
 

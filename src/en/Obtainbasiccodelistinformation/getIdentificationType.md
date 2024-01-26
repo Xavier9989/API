@@ -1,4 +1,4 @@
-# 7.3取得身份验证类别(getIdentificationType)
+# 8.3取得身份验证类别(getIdentificationType)
 ### This API, which obtains basic code services, provides a data list for using bank payments. When calling the service, please pass a null value for version date, and everything will be based on the official environment interface.
 
 ### Input parameters

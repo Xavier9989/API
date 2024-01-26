@@ -1,4 +1,4 @@
-# 4.6 Transaction result query（getReportPayout(Collection)）
+# 6.2Transaction result query（getReportPayout(Collection)）
 
 ### The transaction result query service API is provided by Skypay and can query transaction results
 

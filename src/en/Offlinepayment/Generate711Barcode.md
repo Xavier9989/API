@@ -1,4 +1,4 @@
-# 4.3.1Generate 7-11 payment barcode（Generate711Barcode）
+# 5.3.1Generate 7-11 payment barcode（Generate711Barcode）
 
 #### <font color=red>The purpose of this API is to reduce the possibility of filling in incorrect contract number amounts.</font><br>
 

@@ -1,4 +1,4 @@
-# 4.7balance inquiry（balanceQuery）
+# 6.3balance inquiry（balanceQuery）
 
 ### Call the balance query service, provided by SkyPay.
 

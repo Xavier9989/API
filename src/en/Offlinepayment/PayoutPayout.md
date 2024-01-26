@@ -1,4 +1,4 @@
-# 4.2 Payment success notification（PayoutPayout）
+# 5.2 Payment success notification（PayoutPayout）
 
 ### The function of replying to successful withdrawal information is provided by the partner. When the offline store cashier confirms the withdrawal, they will send a successful withdrawal message to Skypay and then reply to the partner.
 

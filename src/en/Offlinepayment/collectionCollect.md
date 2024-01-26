@@ -1,4 +1,4 @@
-# 4.4 Notification of successful payment（collectionCollect）
+# 5.4 Notification of successful payment（collectionCollect）
 
 ##### This service is provided by the partner and will be triggered by the offline store cashier to confirm reimbursement.
 

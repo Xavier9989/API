@@ -1,4 +1,4 @@
-# 7.1取得国别定义(getNationality)
+# 8.1取得国别定义(getNationality)
 
 ### 这支取得基本代码服务的API,提供用于使用银行付款的数据列表。调用服务时,versionDate请传空值，一切以正式环境接口为准。
 

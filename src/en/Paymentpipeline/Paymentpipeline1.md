@@ -1,4 +1,6 @@
-# 10.收款管道（渠道代码即code值）
+# 10.Payment pipeline (Channel code is the code value)
+
+
 
 | code      | interface    |channel| describe|
 | :-------------------------: | :----------------------------------------: |:-----:| --------------------------------| 

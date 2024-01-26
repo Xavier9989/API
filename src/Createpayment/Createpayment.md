@@ -7,12 +7,12 @@
   
 ## 输入参数（请求头）
 ### Input parameters:
-|       Key                | Type         |   Required       |  Description|
+|       参数                | Type         |   Required       |  描述|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
-|IdempotencyKey |string|NO|The unique key for the same transaction request will be saved for 24 hours. If the account holder sends the same request using the same identity key within 24 hours, they will receive a response from the previous transaction. If there is a key in the system, Skypay will not resend the transaction to the merchant side|
+|IdempotencyKey |string|NO|同一交易请求的唯一密钥，将保存 24 小时。在 24 小时内，如果账单人使用相同的idempotency key 发送相同的请求，则将得到来自前一个事务的响应。如果系统中存在密钥，Skypay 将不会向商家方重新发送交易|
 
 ## 输入参数（Body）
-|       Key                | Type         |   Required       |  Description|
+|       参数                | Type         |   Required       |  描述|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |amount     |   Number  | Yes   |交易金额|
 |currency|string |Yes| 货币类型|
@@ -55,7 +55,7 @@
 
 
 ## 输出参数主体
-|       Name                | Type         |   Description |
+|       参数                | Type         |   描述 |
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |固定值：payment_intention|
 |id     |   String  |交易id，用于在我们系统中的查询API进行查询|

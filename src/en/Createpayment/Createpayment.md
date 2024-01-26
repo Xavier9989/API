@@ -12,12 +12,12 @@
 ## Input parameters (request header)
 
 ### Input parameters:
-|       Key                | Type         |   Required       |  Description|
+|       parameter                | Type         |   Required       |  Description|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |IdempotencyKey |string|NO|The unique key for the same transaction request will be saved for 24 hours. If the account holder sends the same request using the same identity key within 24 hours, they will receive a response from the previous transaction. If there is a key in the system, Skypay will not resend the transaction to the merchant side|
 
 ## input parameter（Body）
-|       Key                | Type         |   Required       |  Description|
+|       parameter                | Type         |   Required       |  Description|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |amount     |   Number  | Yes   |Transaction amount|
 |currency|string |Yes| Currency type|
@@ -62,7 +62,7 @@
 
 
 ## Output parameter body
-|       Name                | Type         |   Description |
+|       parameter                | Type         |   Description |
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |fixed value：payment_intention|
 |id     |   String  |Transaction ID, used for querying in our system's query API|

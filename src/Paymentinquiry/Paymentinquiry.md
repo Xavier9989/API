@@ -5,7 +5,7 @@
  - Method	: GET
 
 ## 输入参数
-|       Key                | Type         |   Required       |  Description|
+|       参数                | Type         |   Required       |  描述|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |payment_intentions_id |string|YES|由Skypay为每笔交易生成的Id|
 
@@ -17,7 +17,7 @@
 }
 
 ## 输出参数主体
-|       Name                | Type         |   Description|
+|       参数                | Type         |   描述|
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |固定值：payment_intention|
 |id     |   String  |交易id，用于在我们系统中的查询API进行查询|

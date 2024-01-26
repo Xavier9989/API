@@ -6,12 +6,12 @@
 
 ## 输入参数（请求头）
 ### Input parameters:
-|       Key                | Type         |   Required       |  Description|
+|       参数                | Type         |   Required       |  描述|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |IdempotencyKey |string|NO|同一交易请求的唯一密钥，将保存24小时。在24小时内，如果账单人使用相同的idempotency key发送相同的请求，则将得到来自前一个事务的响应。如果系统中存在密钥，Skypay将不会向商家方重新发送交易|
 
 ## 输入参数（Body）
-|       Key                | Type         |   Required       |  Description|
+|       参数                | Type         |   Required       |  描述|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
 |payment_method_types   | string |Yes | 选择要使用的支付方式。请参考  5. 支付方式  列表带入值。|
 | <table><tr><td>payment_method_data</td></tr></table>|Object |Yes|支付方式。|
@@ -46,7 +46,7 @@
 }
 
 ## 输出参数主体
-|       Name                | Type         |   Description|
+|       参数                | Type         |   描述|
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |固定值：payment_intention|
 |id     |   String  |交易id，用于在我们系统中的查询API进行查询|

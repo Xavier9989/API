@@ -4,7 +4,7 @@
 - Method	: POST
 
 ## 输入参数（Body）
-|       Name                |  Type         |   Description|
+|       参数                |  Type         |   描述|
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |Json root|
 |type     |   String  | event + ',' + status |

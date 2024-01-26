@@ -4,7 +4,7 @@
 
 ###  The following is a list of supported payment channels
 
-|       Payment Method              | Description|
+|       Method              | Description|
 |:-------------------------:|:-----------|
 |gcash_wepay|GCash webpay webpage redirect payment, payment needs to be executed after logging into the wallet|
 |gcash_dyna_qr|(Integrated, not yet enabled) <br> GCash dynamically generates QR codes, supports users to scan and make payments|

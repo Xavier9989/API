@@ -5,7 +5,7 @@
 - Method	: POST
 
 ## input parameter（Body）
-|       Name                |  Type         |   Description|
+|       parameter                |  Type         |   Description|
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |Json root|
 |type     |   String  | event + ',' + status |

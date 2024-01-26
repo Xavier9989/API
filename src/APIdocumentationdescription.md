@@ -2,7 +2,7 @@
 
 ###  下面列出支持的支付渠道
 
-|       Payment Method              | Description|
+|       Method           | 描述|
 |:-------------------------:|:-----------|
 |gcash_wepay|GCash webpay 网页跳转支付，需登入钱包后执行付款|
 |gcash_dyna_qr|(集成中，尚未启用)<br>GCash 动态生成二维码，支持用户扫描付款|

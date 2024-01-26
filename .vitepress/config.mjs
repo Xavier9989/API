@@ -68,7 +68,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "5.Offlinepaymentofflineprocessingflow",
+            text: "5.Offlinerequestofflineprocessingflow",
             collapsed: true,
             items: [
               {
@@ -295,7 +295,7 @@ export default defineConfig({
       },
 
       {
-        text: "5.线下支付线下处理流程",
+        text: "5.线下请求线下处理流程",
         collapsed: true,
         items: [
           {

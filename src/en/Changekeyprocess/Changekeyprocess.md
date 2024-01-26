@@ -42,7 +42,7 @@
 
  - (5) Enable Key
 
--Step 4: Enable the key. Once enabled, the key becomes effective and cannot be viewed.
+  - Step 4: Enable the key. Once enabled, the key becomes effective and cannot be viewed.
 
  - <font color = red>(Please note that due to the Cache mechanism, the key will only take effect after 5 minutes of activation)</font>
 

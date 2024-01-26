@@ -1,31 +1,17 @@
 import { defineConfig } from "vitepress";
 
-// import { sidebar } from "./sidebar.mjs";
-
 export default defineConfig({
-  // aside: true,
   title: "SKYPAY",
   description: "A VitePress Site",
   locales: {
-    // root:{
-    //   label: '中文',
-    //   lang: 'zh-CN',
-    // },
-    // en: {
-    //   label: 'English',
-    //   lang: 'en'
-    // },
     root: {
       lang: "zh-CN",
       label: "简体中文",
-      description:
-        "A powerful & simple & fast theme for Hexo. 一个对可爱自以为是的 Hexo 主题。",
       selectText: "简体中文",
     },
     en: {
       lang: "en-US",
       label: "English",
-      description: "A powerful & simple & fast theme for Hexo.",
       selectText: "English",
       themeConfig: {
         sidebar: [
@@ -35,7 +21,10 @@ export default defineConfig({
               { text: "Version", link: "/en/Version1" },
               { text: "API", link: "/en/api-examples" },
               { text: "preface", link: "/en/preface" },
-              { text: "Documentation", link: "/en/APIdocumentationdescription" },
+              {
+                text: "Documentation",
+                link: "/en/APIdocumentationdescription",
+              },
             ],
           },
           {
@@ -232,36 +221,27 @@ export default defineConfig({
               },
             ],
           },
-        ]
-      }
+        ],
+      },
     },
   },
-
   head: [["link", { rel: "icon", href: "/favicon.png" }]],
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
   outDir: "./dist",
-
-  // text: "Version",
   link: "/",
-  // lastUpdated: true,
-
   themeConfig: {
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
-    // i18nRouting: false,
     logo: "/logo.svg",
-
     siteTitle: false,
     search: {
       provider: "local",
     },
-    // logo:'/logo.png',
     nav: [{ text: "Home", link: "/Version1" }],
-    // sidebar,
     sidebar: [
       {
         text: "introduction",
@@ -341,7 +321,7 @@ export default defineConfig({
               {
                 text: "5.4 收款成功通知（collectionCollect）",
                 link: "/Offlinepayment/collectionCollect",
-              },  
+              },
             ],
           },
         ],
@@ -469,16 +449,5 @@ export default defineConfig({
         ],
       },
     ],
-    // sidebar: [
-    //   {
-    //     text: "introduction",
-    //     items: [
-    //       { text: "Version", link: "/src/en/Version1" },
-    //       { text: "API", link: "/src/en/api-examples" },
-    //       { text: "前言", link: "/src/en/preface" },
-    //       { text: "文档说明", link: "/src/en/APIdocumentationdescription" },
-    //     ],
-    //   },
-    // ],
   },
 });

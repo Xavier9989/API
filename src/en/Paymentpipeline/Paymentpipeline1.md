@@ -9,7 +9,7 @@
 |6|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|GCash|Wallet|  
 |8|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|Paymaya|Wallet|
 |9|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|RD Pawnshop|Remittance shop|
-|10|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|7-11|convenience store|
+|10|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|7-11|convenience store/cliqq app|
 |2|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|Cebuana - Lhuillier|Remittance shop|
 |12|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|True Money|Remittance shop|
 |19|4.3 CollectionInquery - Receipt confirmation <br> 4.4 CollectionCollect - Notification of successful payment|ShopeePay|Wallet|

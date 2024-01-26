@@ -17,9 +17,9 @@
 |amount     |   Number  | Yes   |交易金额|
 |currency|string |Yes| 货币类型|
 |confirm  |Boolean|Yes|值为true，要提交事务，并且在确认交易后无法更新。|
-|payment_method_types   | string |Yes | 选择要使用的支付方式。请参考  5. 支付方式  列表带入值。|
+|payment_method_types   | string |Yes | 选择要使用的支付方式。请参考 [支付方式](../APIdocumentationdescription.md) 列表带入值。|
 | <table><tr><td>payment_method_data</td></tr></table>|Object |Yes|支付方式。|
-|type   | string |Yes | 选择要使用的支付方式。请参考  5. 支付方式  列表带入值。|
+|type   | string |Yes | 选择要使用的支付方式。请参考 [支付方式](../APIdocumentationdescription.md) 列表带入值。|
 | <table><tr><td>gcash_webpay</td></tr></table>  |  | | |
 |statement_descriptor   | string |Yes |付款说明|
 |success_redirect_url   | string |Yes |重新定向到付款成功时网页URL|

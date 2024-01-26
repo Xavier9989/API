@@ -14,6 +14,10 @@ export default defineConfig({
       label: "English",
       selectText: "English",
       themeConfig:{
+        docFooter: {
+          prev: "previous page",
+          next: "next page",
+        },
         sidebar: [
           {
             text: "introduction",

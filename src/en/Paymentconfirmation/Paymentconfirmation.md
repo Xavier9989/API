@@ -18,9 +18,9 @@
 ## input parameter（Body）
 |       parameter                | Type         |   Required       |  Description|
 |:-------------------------:|:-----------:|     :------:     |   :-----       | 
-|payment_method_types   | string |Yes | Choose the payment method you want to use. Please refer to 5 Input value from the payment method list.|
+|payment_method_types   | string |Yes | Choose the payment method you want to use. Please refer to [Payment method](../APIdocumentationdescription.md).|
 | <table><tr><td>payment_method_data</td></tr></table>|Object |Yes|Payment method.|
-|type   | string |Yes | Choose the payment method you want to use. Please refer to 5 Input value from the payment method list.|
+|type   | string |Yes | Choose the payment method you want to use. Please refer to [Payment method](../APIdocumentationdescription.md).|
 | <table><tr><td>gcash_webpay</td></tr></table>  |  | | |
 |statement_descriptor   | string |Yes |Payment instructions|
 |success_redirect_url   | string |Yes |Redirect to the webpage URL upon successful payment|

@@ -1,20 +1,9 @@
 import { defineConfig } from "vitepress";
 
-// import { sidebar } from "./sidebar.mjs";
-
 export default defineConfig({
-  // aside: true,
   title: "SKYPAY",
   description: "A VitePress Site",
   locales: {
-    // root:{
-    //   label: '中文',
-    //   lang: 'zh-CN',
-    // },
-    // en: {
-    //   label: 'English',
-    //   lang: 'en'
-    // },
     root: {
       lang: "zh-CN",
       label: "简体中文",
@@ -35,7 +24,6 @@ export default defineConfig({
               { text: "Payment method", link: "/en/APIdocumentationdescription" },
             ],
           },
-    
           {
             text: "Create Payment - Technical Specifications",
             collapsed: true,
@@ -118,23 +106,18 @@ export default defineConfig({
       },
     },
   },
-
   head: [["link", { rel: "icon", href: "/favicon.png" }]],
   // 源码目录
   srcDir: "./src",
   // 打包后的代码目录
   outDir: "./dist",
-
-  // text: "Version",
   link: "/",
-  // lastUpdated: true,
-
   themeConfig: {
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
-    // i18nRouting: false,
+
     logo: "/logo.svg",
 
     siteTitle: false,

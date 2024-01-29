@@ -9,7 +9,7 @@
 |authentication |string |255|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber|string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |amount|string|10.20|Y|支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
-|phone|string|11|Y|09开头的11位数字 <br> Ex:"phone":"09270348095"|
+|phone|string|11|Y|09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
 
 ### Post data
 
@@ -33,7 +33,7 @@
 |amount|decimal|10.20|Y|收款金额 <br> 支付金额只能为数字小数位两位监管要求需要还款信息留存档案|
 |payerName|string|255|Y|还款人名字 <br> 使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix监管要求需要还款信息留存档案|
 |payer添加ress|string|255|Y|还款人地址 监管要求需要还款信息留存档案|
-|payerPhone|string|11|Y|还款人电话 <br>09开头11位数字 监管要求需要还款信息留存档案|
+|payerPhone|string|11|Y|还款人电话 <br>09/08开头11位数字 监管要求需要还款信息留存档案|
 
 ### Output data
 

@@ -8,13 +8,13 @@ _________________
     - 1.Data encryption instructions
     - 2.Encryption Program Description
 - 3. Online payment instructions
-    - [3.1Push online payment transactions(payoutQueue)](./onlinepayment/payoutQueue.md)
-    - [3.2Return payment confirmation message（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
+    - [3.1 Push online payment transactions(payoutQueue)](./onlinepayment/payoutQueue.md)
+    - [3.2 Return payment confirmation message（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
 - 4. 
     - [4.1 ML/CebuanaOnline request for offline loan disbursement（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
-    - [4.2Cancel payment transaction（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [4.3Modify payment transactions（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
-- 4. Payment processing flow - Real time transaction instructions
+    - [4.2 Cancel payment transaction（cancelPayout）](./onlinepayment/cancelPayout.md).
+    - [4.3 Modify payment transactions（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
+- 5. Payment processing flow - Real time transaction instructions
 
     - [5.1 Offline payment data verification（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
 	- [5.2 Payment success notification（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
@@ -23,20 +23,20 @@ _________________
     - [5.4 Notification of successful payment（collectionCollect）](./Offlinepayment/collectionCollect.md).
 - 6. Function Query
     - [6.1 Payment status query（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
-    - 6.2 Transaction result query（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
-    - [6.3balance inquiry（balanceQuery）](./Offlinepayment/balanceQuery.md).
-    - [6.4Notification Interface - Recharg 、Settlement、 Withdrawal（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
-    - [6.5Query interface - recharge、 settlement、 withdrawal（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
+    - [6.2 Transaction result query（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
+    - [6.3 balance inquiry（balanceQuery）](./Offlinepayment/balanceQuery.md).
+    - [6.4 Notification Interface - Recharg 、Settlement、 Withdrawal（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
+    - [6.5 Query interface - recharge、 settlement、 withdrawal（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
 - 7. test tools
     - [7.1 Payment testing tools](./testtools/Collectionverificationtool.md).
     - [7.2 Collection verification tool](./testtools/Paymenttestingtools.md).
 - 8. Obtain basic code list information
-    - [8.1Obtain Country Definition(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
-    - [8.2Obtaining citizenship status(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [8.3Obtaining citizenship status(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [8.4Obtain the city code(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
-    - [8.5Obtain province code(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
-    - [8.6Obtain bank code(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
+    - [8.1 Obtain Country Definition(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
+    - [8.2 Obtaining citizenship status(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [8.3 Obtaining citizenship status(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [8.4 Obtain the city code(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
+    - [8.5 Obtain province code(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
+    - [8.6 Obtain bank code(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
 - 9. [Backhaulcode](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
 - 10. [Payment pipeline (channel code or code value)](./Paymentpipeline/Paymentpipeline.md).
 - 11. [Payment pipeline (channel code, i.e. code value)](./Paymentpipeline/Paymentpipeline1.md).

@@ -57,12 +57,12 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "4.1Cancelpaymenttransaction（cancelPayout）",
-                    link: "/en/onlinepayment/cancelPayout",
+                    text: "4.1ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                    link: "/en/onlinepayment/payoutQueueV2",
                   },
                   {
-                    text: "4.2ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
-                    link: "/en/onlinepayment/payoutQueueV2",
+                    text: "4.2Cancelpaymenttransaction（cancelPayout）",
+                    link: "/en/onlinepayment/cancelPayout",
                   },
                   {
                     text: "4.3Modifypaymenttransactions（amendTransactionV2）",
@@ -287,12 +287,12 @@ export default defineConfig({
           {
             items: [
               {
-                text: "4.1取消支付交易（cancelPayout）",
-                link: "/onlinepayment/cancelPayout",
+                text: "4.1ML/Cebuana非实时放款（payoutQueueV2）",
+                link: "/onlinepayment/payoutQueueV2",
               },
               {
-                text: "4.2ML/Cebuana非实时放款（payoutQueueV2）",
-                link: "/onlinepayment/payoutQueueV2",
+                text: "4.2取消支付交易（cancelPayout）",
+                link: "/onlinepayment/cancelPayout",
               },
               {
                 text: "4.3修改支付交易（amendTransactionV2）",

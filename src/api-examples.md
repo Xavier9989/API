@@ -11,8 +11,8 @@ _________________
     - [3.1推送线上支付交易(payoutQueue)](./onlinepayment/payoutQueue.md)
     - [3.2回传支付确认讯息（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
 - 4. 线上请求线下支付流程
-    - [4.1取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [4.2 ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [4.1ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [4.2取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
     - [4.3修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
 - 5. 线下请求线下支付流程
     - [5.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).

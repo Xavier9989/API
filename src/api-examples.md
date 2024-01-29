@@ -7,36 +7,37 @@ _________________
 - [API文档说明](./APIdocumentationdescription.md)
     - 1.数据加密说明
     - 2.加密程序说明
-- 3. 线上支付说明
+- 3. 线上请求线上支付说明
     - [3.1推送线上支付交易(payoutQueue)](./onlinepayment/payoutQueue.md)
     - [3.2回传支付确认讯息（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
-    - [3.3取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [3.4 ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
-    - [3.5修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
-- 4. 支付处理流程-实时交易说明
-    - [4.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
-    - [4.1 线下支付数据验证（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
-	- [4.2 支付成功通知（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
-    - [4.3 收款数据验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
-        - [4.3.1产生7-11收款条形码（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
-    - [4.4 收款成功通知（collectionCollect）](./Offlinepayment/collectionCollect.md).
-    - [4.5 支付状态查询（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
-    - [4.6 交易结果查询（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
-    - [4.7余额查询（balanceQuery）](./Offlinepayment/balanceQuery.md).
-- 5. 充值、结算、提现
-    - [5.1通知接口-充值、结算、提现（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
-    - [5.2查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
-- 6. 测试工具
-    - [6.1 支付测试工具](./testtools/Collectionverificationtool.md).
-    - [6.2 收款验证工具](./testtools/Paymenttestingtools.md).
-- 7. 取得基本代码列表信息
-    - [7.1取得国别定义(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
-    - [7.2取得公民状态(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [7.3取得身份验证类别(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [7.4取得城巿代码(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
-    - [7.5取得省份代码(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
-    - [7.6取得银行代码(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
-- 8. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 9. [支付管道（渠道代码）](./Paymentpipeline/Paymentpipeline.md).
-- 10. [收款管道（渠道代码）](./Paymentpipeline/Paymentpipeline1.md).
-- 11. [更改密钥流程](./Changekeyprocess/Changekeyprocess.md).
+- 4. 线上请求线下支付流程
+    - [4.1取消支付交易（cancelPayout）](./onlinepayment/cancelPayout.md).
+    - [4.2 ML/Cebuana线上请求线下放款（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
+    - [4.3修改支付交易（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
+- 5. 线下请求线下支付流程
+    - [5.支付处理流程-实时交易说明（Realtimetransactioninstructions）](./Offlinepayment/Realtimetransactioninstructions.md).
+    - [5.1 线下支付数据验证（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
+	- [5.2 支付成功通知（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
+    - [5.3 收款数据验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
+        - [5.3.1产生7-11收款条形码（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
+    - [5.4 收款成功通知（collectionCollect）](./Offlinepayment/collectionCollect.md).
+- 6. 功能查询
+    - [6.1 支付状态查询（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
+    - [6.2 交易结果查询（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
+    - [6.3余额查询（balanceQuery）](./Offlinepayment/balanceQuery.md).
+    - [6.4通知接口-充值、结算、提现（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
+    - [6.5查詢接口-充值、结算、提现（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
+- 7. 测试工具
+    - [7.1 支付测试工具](./testtools/Collectionverificationtool.md).
+    - [7.2 收款验证工具](./testtools/Paymenttestingtools.md).
+- 8. 取得基本代码列表信息
+    - [8.1取得国别定义(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
+    - [8.2取得公民状态(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [8.3取得身份验证类别(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [8.4取得城巿代码(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
+    - [8.5取得省份代码(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
+    - [8.6取得银行代码(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
+- 9. [回传code](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 10. [支付管道（渠道代码）](./Paymentpipeline/Paymentpipeline.md).
+- 11. [收款管道（渠道代码）](./Paymentpipeline/Paymentpipeline1.md).
+- 12. [更改密钥流程](./Changekeyprocess/Changekeyprocess.md).

@@ -15,7 +15,7 @@
 |userName |string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action     |   string  | 50   |  Y  |调用行为<br>payoutQueuePayout(固定参数值) - Ex:"action":"payoutQueue"|
 |authentication|string |50| Y|验证密钥<br>  Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender  |string|100|  Y  |支付方<br> 产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
+|sender  |string|100|  Y  |支付方<br> 产品APP名称(由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|  Y  |取现人名字<br>使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |phone|string|11 |  Y |09/08开头的11位数字 <br> Ex:"phone":"09270348095"|

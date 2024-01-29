@@ -73,15 +73,11 @@ export default defineConfig({
             ]
           },
           {
-            text: "5.Offlinerequestofflineprocessingflow",
+            text: "5.Offlinerequestforofflinepaymentprocess",
             collapsed: true,
             items: [
               {
                 items: [
-                  {
-                    text: "Paymentprocessingflow - Realtimetransactioninstructions",
-                    link: "/en/Offlinepayment/Realtimetransactioninstructions",
-                  },
                   {
                     text: "5.1Offlinepaymentdataverification（PayoutInquiry）",
                     link: "/en/Offlinepayment/PayoutInquiry",
@@ -304,15 +300,11 @@ export default defineConfig({
       },
 
       {
-        text: "5.线下请求线下处理流程",
+        text: "5.线下请求线下支付流程",
         collapsed: true,
         items: [
           {
             items: [
-              {
-                text: "支付处理流程-实时交易说明",
-                link: "/Offlinepayment/Realtimetransactioninstructions",
-              },
               {
                 text: "5.1线下支付数据验证（PayoutInquiry）",
                 link: "/Offlinepayment/PayoutInquiry",

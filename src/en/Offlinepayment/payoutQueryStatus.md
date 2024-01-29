@@ -42,7 +42,7 @@
 ### Output parameters
 | parameter                        |    type     | length   |Y/N |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|responseTime |DateTime|50|Y|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS(必填)|
+|responseTime |DateTime|50|Y|Return time <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode |int|4|Y|Return Code <br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and specify the content of the return|
 |responseDescription |string|255|Y| Feedback Content Description<br> Response Information (Required)|
 |controlNumbers |String[]|  | Y   |Name of withdrawal code array <br> Array|

@@ -1,11 +1,11 @@
 # 4.3  Modify payment transactions（amendTransactionV2）
-#### When there is an error in the payment data push, this interface can be used for data correction. The most common error is a user name error (typo, sequence error). This interface is related to「3.4 Payout–payoutQueueV2」The fields are the same, please input new values for the fields you want to modify, and input the original values.
+#### When there is an error in the payment data push, this interface can be used for data correction. The most common error is a user name error (typo, sequence error). This interface is related to「4.1 Payout–payoutQueueV2」The fields are the same, please input new values for the fields you want to modify, and input the original values.
 
 ### <font color = red>pay attention to ：</font>
 
- ### <font color = red>If it cannot be modified, please cancel the transaction first and then use the API"3.4 Payout-payoutQueueV2"Resend。</font>
+ ### <font color = red>If it cannot be modified, please cancel the transaction first and then use the API"4.1 Payout-payoutQueueV2"Resend。</font>
 
-### <font color = red>CebuanaFor channel transactions, only the name of the payee can be modified, and other information cannot be modified。</font>
+### <font color = red>LBCExpress channel transactions, only the name of the payee can be modified, and other information cannot be modified。</font>
 
 ### Input parameters:
 | parameter                        |    type     | length   |Y/N |describe|

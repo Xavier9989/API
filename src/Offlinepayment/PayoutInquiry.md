@@ -27,18 +27,18 @@
 |responseTime  |DateTime|26|Y |回应时间 <br>  yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|Y |回应代码<br> 4系统默认回传码,长度为4的数字,标准参考回传码定义,|
 |responseDescription  |string|255||回应描叙内容 <br> 响应信息|
-|sender  |string|255|Y|汇款人 <br> 产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
+|sender  |string|255|Y|汇款人 <br> 产品APP名称(由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |sender添加ress|string|255|Y |汇款人地址|
 |name |string |50| Y|取现人名字  <br> 使用逗号分割  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |birthday |Date|10|Y |生日格式：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |identificationId  |string|50|Y|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
-|idType  |string|50| |验证身份证件类别<br> 身份证类型（SSS、UMID、驾驶执照、TIN…）“idType”：“TIN”（必填）|
-|phone |string|11| Y |09开头的11位数字(必填)  <br> Ex:"phone":"09270348095"|
-|amount |string|10.20| Y |金额 <br> 支付金额支持数字小数位两位(必填) -  ex:"amount":3400.00|
-|idcardPicType |string|50| Y|相片文件格式 <br> 文件格式之附属档名(必填) - Ex:"idcardPicType":"jpg"|
+|idType  |string|50| |验证身份证件类别<br> 身份证类型（SSS、UMID、驾驶执照、TIN…）“idType”：“TIN”（|
+|phone |string|11| Y |09开头的11位数字  <br> Ex:"phone":"09270348095"|
+|amount |string|10.20| Y |金额 <br> 支付金额支持数字小数位两位 -  ex:"amount":3400.00|
+|idcardPicType |string|50| Y|相片文件格式 <br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl |string |500|Y|相片存取网络地址 <br> Ex:"idcardPicUrl":"https://12334"|
 |contractNumber  |string|15|N|收款码 <br>前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|location  |string |100| Y|地址 <br>添加ress取现人地址(必填)|
+|location  |string |100| Y|地址 <br>添加ress取现人地址|
 
 ### Output data：
 

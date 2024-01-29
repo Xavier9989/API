@@ -30,8 +30,8 @@
 |responseTime|DateTime|50|Y|回传时间 <br>yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode|int|4|Y|系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容|
 |responseDescription|string|255| Y|回传内容描述 <br> 响应信息|
-|amount|decimal|10.20|Y|收款金额 <br> 支付金额只能为数字小数位两位(必填)监管要求需要还款信息留存档案|
-|payerName|string|255|Y|还款人名字 <br> 使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix(必填)监管要求需要还款信息留存档案|
+|amount|decimal|10.20|Y|收款金额 <br> 支付金额只能为数字小数位两位监管要求需要还款信息留存档案|
+|payerName|string|255|Y|还款人名字 <br> 使用逗号分割。Last name+","+First name+","+Middle name+","+Suffix监管要求需要还款信息留存档案|
 |payer添加ress|string|255|Y|还款人地址 监管要求需要还款信息留存档案|
 |payerPhone|string|11|Y|还款人电话 <br>09开头11位数字 监管要求需要还款信息留存档案|
 

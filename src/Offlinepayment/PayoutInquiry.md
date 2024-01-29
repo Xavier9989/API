@@ -33,7 +33,7 @@
 |birthday |Date|10|Y |生日格式：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |identificationId  |string|50|Y|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |idType  |string|50| |验证身份证件类别<br> 身份证类型（SSS、UMID、驾驶执照、TIN…）“idType”：“TIN”（|
-|phone |string|11| Y |09开头的11位数字  <br> Ex:"phone":"09270348095"|
+|phone |string|11| Y |09/08开头的11位数字  <br> Ex:"phone":"09270348095"|
 |amount |string|10.20| Y |金额 <br> 支付金额支持数字小数位两位 -  ex:"amount":3400.00|
 |idcardPicType |string|50| Y|相片文件格式 <br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl |string |500|Y|相片存取网络地址 <br> Ex:"idcardPicUrl":"https://12334"|

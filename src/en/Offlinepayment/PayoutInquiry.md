@@ -34,7 +34,7 @@
 |birthday |Date|10|Y |Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
 |identificationId  |string|50|Y|ID number <br>Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
 |idType  |string|50| |Verify ID Type <br> ID Type (SSS, UMID, Driver's License, TIN...) "idType": "TIN" (mandatory)|
-|phone |string|11| Y |11 digit number starting with 09 (required) <br> Ex:"phone":"09270348095"|
+|phone |string|11| Y |11 digit number starting with 09/08 (required) <br> Ex:"phone":"09270348095"|
 |amount |string|10.20| Y |Amount <br>Payment amount supports two decimal places (required) -  ex:"amount":3400.00|
 |idcardPicType |string|50| Y|Photo file format <br>file format attachment file name (required) - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl |string |500|Y|Photo access network address<br> Ex:"idcardPicUrl":"https://12334"|

@@ -4,7 +4,7 @@
 ![](../public/线上请求线下取款.png)
 ### <font color = red>注意</font>
 ### <font color = red>请注意若选择此支付接口，表示此笔款项指定在Cebuana或ML取款，其他渠道将不支持取此笔款项。</font>
-### <font color = red>在用户未取款前皆可取消此笔支付，请调用「3.3 Payout–cancelPayout」。取消不是实时取消，次日回复取消结果，取消不退服务费。</font>
+### <font color = red>在用户未取款前皆可取消此笔支付，请调用「4.2 Payout–cancelPayout」。取消不是实时取消，次日回复取消结果，取消不退服务费。</font>
 
 
 ### Input parameters:

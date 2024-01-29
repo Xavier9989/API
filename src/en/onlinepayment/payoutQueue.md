@@ -59,7 +59,7 @@ When customers obtain payment transaction approval information, partners must pu
 
 
 
-### When making a payment to a bank, call the API to send out the data format content:<font color = red>（When conducting bank transactions, please first go to the 7.6 to obtain the bank code interface to obtain the currently available bank list） </font>
+### When making a payment to a bank, call the API to send out the data format content:<font color = red>（When conducting bank transactions, please first go to the 8.6 to obtain the bank code interface to obtain the currently available bank list） </font>
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>

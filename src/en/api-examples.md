@@ -26,7 +26,7 @@ _________________
     - [6.3 balance inquiry（balanceQuery）](./Offlinepayment/balanceQuery.md).
     - [6.4 Notification Interface - Recharg 、Settlement、 Withdrawal（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
     - [6.5 Query interface - recharge、 settlement、 withdrawal（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
-- 7. test tools
+- 7. Test Tools
     - [7.1 Payment testing tools](./testtools/Collectionverificationtool.md).
     - [7.2 Collection verification tool](./testtools/Paymenttestingtools.md).
 - 8. Obtain basic code list information

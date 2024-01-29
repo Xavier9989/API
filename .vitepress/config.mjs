@@ -134,7 +134,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "7. test tools",
+            text: "7. Test Tools",
             collapsed: true,
             items: [
               {

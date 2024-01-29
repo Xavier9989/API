@@ -1,4 +1,4 @@
-# 8.2取得公民状态(getCivilStatus)
+# 8.2 Obtaining Citizenship Status(getCivilStatus)
 ### This API, which obtains basic code services, provides a data list for using bank payments. When calling the service, please pass a null value for version date, and everything will be based on the official environment interface.
 
 ### Input parameters

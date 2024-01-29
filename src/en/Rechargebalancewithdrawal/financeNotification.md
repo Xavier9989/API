@@ -1,4 +1,4 @@
-# 5.1 Notification Interface - Recharge, Settlement, Withdrawal (financeNotification)
+# 6.4 Notification Interface - Recharge, Settlement, Withdrawal (financeNotification)
 
 ### This API is provided by partners and is requested by SKYPAY to send payment notifications for "recharge, settlement, and withdrawal" to partners at the following times.
 

@@ -28,8 +28,8 @@
 |beneficiaryAccountNo |string|20|   |资金目的帐号 <br> (实际银行帐号，只在充值及提现时提供)|
 |statementType|string|1||通知类型:<br>1:打款帐户充值<br>2:收款结算转充值<br>3:帐户馀额互转<br>4:收款交易结算<br>5:收款帐户提现<br>6:打款帐户提现|
 |signType  |string|10|  |资金增减类型 :<br> recharge:增项 <br> reduce:减项|
-|Amount |int||     |金額 - Ex:1200000|
-|Currency |string|3|    | 固定币别 <br>- PHP|
+|Amount |int||     |金額 <br> Ex:1200000|
+|Currency |string|3|    | 固定币别 <br>PHP|
 |referenceNumber|string|15|  |交易编号(唯一) <br> 此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
 
 ### Post data
@@ -57,7 +57,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码 <br>1000|
-|responseDescription |string|255|回传内容描述 - 响应信息|
+|responseDescription |string|255|回传内容描述 <br> 响应信息|
 
 ### Output data：
 

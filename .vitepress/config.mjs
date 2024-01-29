@@ -55,18 +55,22 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "4.1Cancelpaymenttransaction（cancelPayout）",
-                link: "/en/onlinepayment/cancelPayout",
-              },
-              {
-                text: "4.2ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
-                link: "/en/onlinepayment/payoutQueueV2",
-              },
-              {
-                text: "4.3Modifypaymenttransactions（amendTransactionV2）",
-                link: "/en/onlinepayment/amendTransactionV2",
-              },
-            ],
+                items: [
+                  {
+                    text: "4.1Cancelpaymenttransaction（cancelPayout）",
+                    link: "/en/onlinepayment/cancelPayout",
+                  },
+                  {
+                    text: "4.2ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                    link: "/en/onlinepayment/payoutQueueV2",
+                  },
+                  {
+                    text: "4.3Modifypaymenttransactions（amendTransactionV2）",
+                    link: "/en/onlinepayment/amendTransactionV2",
+                  },
+                ],
+              }
+            ]
           },
           {
             text: "5.Offlinerequestofflineprocessingflow",
@@ -91,7 +95,7 @@ export default defineConfig({
                     link: "/en/Offlinepayment/CollectionInquiry",
                     items: [
                       {
-                        text: "5.3.1Generate7-11paymentbarcode（Generate711Barcode）",
+                        text: "5.3.1Generate711paymentbarcode（Generate711Barcode）",
                         link: "/en/Offlinepayment/Generate711Barcode",
                       },
                     ],
@@ -163,7 +167,7 @@ export default defineConfig({
                     link: "/en/Obtainbasiccodelistinformation/getNationality",
                   },
                   {
-                    text: "8.2Obtaining citizenship status(getCivilStatus)",
+                    text: "8.2Obtaining Citizenship Status(getCivilStatus)",
                     link: "/en/Obtainbasiccodelistinformation/getCivilStatus",
                   },
                   {
@@ -281,18 +285,22 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
-            text: "4.1取消支付交易（cancelPayout）",
-            link: "/onlinepayment/cancelPayout",
-          },
-          {
-            text: "4.2ML/Cebuana非实时放款（payoutQueueV2）",
-            link: "/onlinepayment/payoutQueueV2",
-          },
-          {
-            text: "4.3修改支付交易（amendTransactionV2）",
-            link: "/onlinepayment/amendTransactionV2",
-          },
-        ],
+            items: [
+              {
+                text: "4.1取消支付交易（cancelPayout）",
+                link: "/onlinepayment/cancelPayout",
+              },
+              {
+                text: "4.2ML/Cebuana非实时放款（payoutQueueV2）",
+                link: "/onlinepayment/payoutQueueV2",
+              },
+              {
+                text: "4.3修改支付交易（amendTransactionV2）",
+                link: "/onlinepayment/amendTransactionV2",
+              },
+            ],
+          }
+        ]
       },
 
       {
@@ -318,7 +326,7 @@ export default defineConfig({
                 link: "/Offlinepayment/CollectionInquiry",
                 items: [
                   {
-                    text: "5.3.1产生7-11收款条形码（Generate711Barcode）",
+                    text: "5.3.1产生711收款条形码（Generate711Barcode）",
                     link: "/Offlinepayment/Generate711Barcode",
                   },
                 ],

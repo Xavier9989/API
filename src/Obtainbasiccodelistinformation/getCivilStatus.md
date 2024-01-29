@@ -26,7 +26,7 @@
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS（必填）|
-|responseCode |int|4|回传代码 - 系统默认回传码,长度为4的数字,标准参考回码定义|
+|responseCode |int|4|回传代码<br> 系统默认回传码,长度为4的数字,标准参考回码定义|
 |result |string[]|Key/Value|回传结果 <br> 回传Key/Value格式字符串数组|
 |CivilStatusId|int||公民状态代码|
 |CivilStatus|string|255|公民状态|

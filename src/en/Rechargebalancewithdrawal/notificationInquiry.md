@@ -1,4 +1,4 @@
-# 5.2 Query Interface - Recharge, Settlement, Withdrawal (Notification Inquiry)
+# 6.5 Query Interface - Recharge, Settlement, Withdrawal (Notification Inquiry)
 
 ### This API is provided by SKYPAY and is requested by partners for querying. Provide date range and type queries, and return notification records for "recharge, settlement, and withdrawal" within the date and type range.
 

@@ -14,6 +14,7 @@ export default defineConfig({
       label: "English",
       selectText: "English",
       themeConfig:{
+        nav: [{ text: "Home", link: "/en/Version1" }],
         docFooter: {
           prev: "previous page",
           next: "next page",

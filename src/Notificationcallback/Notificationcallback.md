@@ -4,12 +4,15 @@
 - Method	: POST
 
 ## 输入参数（Body）
+
+
+
 |       参数                |  Type         |   描述|
 |:-------------------------:|:-----------:|     :------     |
 |object     |   String  |Json root|
 |type     |   String  | event + ',' + status |
 |live_mode     |   String  |false|
-|<table><tr><td>data </td></tr></table>      |   Object  |数据|
+|<table><tr><td>data </td></tr></table>   |   Object  |数据|
 |id     |   String  |交易id，用于在我们系统中的查询API进行查询|
 |object     |   String  |payment_intention|
 |tenant   |   String  |一个将由 SKYPAY 生成并提供给合作伙伴的固定名称 ID|

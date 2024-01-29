@@ -23,7 +23,7 @@ export default defineConfig({
             text: "introduction",
             items: [
               { text: "Version", link: "/en/Version1" },
-              { text: "preface", link: "/en/preface" },
+              { text: "Preface", link: "/en/preface" },
               { text:"Generate authentication key",link:"/en/Generateauthenticationkey"},
               { text: "Payment method", link: "/en/APIdocumentationdescription" },
             ],
@@ -35,7 +35,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "payment_intentions",
+                    text: "Payment_intentions",
                     link: "/en/Createpayment/Createpayment",
                   },
                 ],
@@ -49,7 +49,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "payment_intentions(PI)",
+                    text: "Payment_intentions(PI)",
                     link: "/en/Paymentupdate/Paymentupdate",
                   },
                 ],
@@ -63,7 +63,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "payment_intentions(ID)confirm",
+                    text: "Payment_intentions(ID)confirm",
                     link: "/en/Paymentconfirmation/Paymentconfirmation",
                   },
                 ],
@@ -77,7 +77,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "payment_intentions(PI)",
+                    text: "Payment_intentions(PI)",
                     link: "/en/Paymentinquiry/Paymentinquiry",
                   },
                 ],
@@ -91,7 +91,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "notice",
+                    text: "Notice",
                     link: "/en/Notificationcallback/Notificationcallback",
                   },
                 ],

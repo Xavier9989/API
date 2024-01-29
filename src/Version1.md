@@ -7,7 +7,7 @@ _________________
 | Version      | 上版时间 | 描述                       |更新者|
 | ------ | :-----------: | -------------------------------------------|-----     |   
 | 2.5     |   2023/12/29    |优化修改接口参数<br>拿掉x-Tenat、brand参数|Wayne.Wang|
-| 2.4     |   2023/09/25     |3. 接口认证 (更新)<br>[支付方式](../APIdocumentationdescription.md)(新增)<br>7. 生成认证金钥 (新增)|Wayne.Wang|
+| 2.4     |   2023/09/25     |3. 接口认证 (更新)<br>[支付方式](/APIdocumentationdescription.md)(新增)<br>7. 生成认证金钥 (新增)|Wayne.Wang|
 | 2.3     |   2023/9/4    |接口流程图，修正部份错误流程。<br>新增 通知 接口规范。|Wayne.Wang|
 | 2.2     |   2023/8/21    |新增截图说明特定参数目地，以及参数「payment_method_types」|Wayne.Wang|
 | 2.1     |   2023/08/11    | 创建付款 – 技术规范，新增参数「brand」。<br>EndPoint:/payment_intentions<br>EndPoint:/payment_intentions/{payment_intentions_id}|Wayne.Wang|

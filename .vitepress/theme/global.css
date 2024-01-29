@@ -4,6 +4,7 @@
 
 .logo {
     
-    height: auto!important;
-    margin-right: 2px!important;
+    /* height: auto!important; */
+    /* margin-right: 10px!important; */
+    min-height:55px!important
 }

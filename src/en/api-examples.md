@@ -10,12 +10,11 @@ _________________
 - 3. Online payment instructions
     - [3.1 Push online payment transactions(payoutQueue)](./onlinepayment/payoutQueue.md)
     - [3.2 Return payment confirmation message（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
-- 4. 
+- 4. Online request and offline payment process
     - [4.1 ML/CebuanaOnline request for offline loan disbursement（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
     - [4.2 Cancel payment transaction（cancelPayout）](./onlinepayment/cancelPayout.md).
     - [4.3 Modify payment transactions（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
-- 5. Payment processing flow - Real time transaction instructions
-
+- 5. Offline request for offline payment process
     - [5.1 Offline payment data verification（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
 	- [5.2 Payment success notification（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
     - [5.3 Verification of payment data（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).

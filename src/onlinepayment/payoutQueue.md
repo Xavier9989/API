@@ -18,21 +18,21 @@
 |sender  |string|100|  Y  |支付方<br> 产品APP名称(必填：由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|  Y  |取现人名字<br>使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone|string|11 |  Y |09开头的11位数字 <br> Ex:"phone":"09270348095"|
+|phone|string|11 |  Y |09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
 |amount|string|10.20  |    Y   |支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
-|bankNo|string |50| Y |账户号<br>银行渠道进行支付时必填，电子钱包无此参数请参考第七章接口7.6 Get Bank Code,银行代码为3位的字符|
-|accountNo  |string |50| Y |电子钱包<br>账号为取现人09开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
-|withdrawChannel|int||  Y| 指定支付渠道代码<br> 参考第九章管道详细说明[渠道code值](../Paymentpipeline/Paymentpipeline.md)|
+|bankNo|string |50| Y |账户号<br>银行渠道进行支付时必填，电子钱包无此参数请参考第八章接口8.6 Get Bank Code,银行代码为3位的字符|
+|accountNo  |string |50| Y |电子钱包<br>账号为取现人09/08开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
+|withdrawChannel|int||  Y| 指定支付渠道代码<br> 参考第十章管道详细说明[渠道code值](../Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
-|identificationTypeId  |string |3|   N  |验证身份证件类别<br>参考7.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
+|identificationTypeId  |string |3|   N  |验证身份证件类别<br>参考8.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
 |idType  |string|50| N  |验证身份证件类别<br>电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|
 |idcardPicType  |string|50|     N   |图片格式<br>电子钱包进行支付时选填，银行无此参数Ex:"idcardPicType":"jpg"|
 |idcardPicUrl  |string |500| N  |相片存取网络地址<br>电子钱包进行支付时选填，银行无此参数Ex:"idcardPicUrl":""|
 |birthday  |Date|10|  N     |生日格式<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |birthPlace  |string|250|  N  |出生地<br>银行渠道进行支付时选填，电子钱包无此参数|
 |location  |string |500|N |取款人地址<br> Ex:"location":manila"|
-|provinceId |int| |  N   |省份ID<br>请参考第七章接口7.5 Get Province - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
-|cityId  |int||   N   |城巿ID<br>请参考第七章接口7.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
+|provinceId |int| |  N   |省份ID<br>请参考第八章接口8.5 Get Province - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
+|cityId  |int||   N   |城巿ID<br>请参考第八章接口8.4 Get Town City - 银行渠道进行支付时选填，电子钱包无此参数 -  Ex:省份Id城巿Id城巿名称 - ProvinceId TownCityId	TownCity47	996	Manila…|
 |expiryDate  |string |50| N|证件到期日<br>银行渠道进行支付时选填，电子钱包无此参数|
 
 ### Post data

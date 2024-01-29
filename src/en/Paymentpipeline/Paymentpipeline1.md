@@ -12,6 +12,7 @@
 |10|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|7-11|convenience store/cliqq app|
 |11|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|Cebuana  Lhuillier|Remittance shop|
 |12|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|True Money|Remittance shop|
+|13|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|LBC Express|Remittance shop|
 |19|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|ShopeePay|Wallet|
 |26|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|Lazada|Wallet|
 |41|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|Union Bank|Bank|

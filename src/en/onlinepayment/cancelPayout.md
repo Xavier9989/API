@@ -1,12 +1,12 @@
-# 4.1Cancelling Payment Transactions
+# 4.2Cancelling Payment Transactions
 
 #### This service is provided by SkyPay and aims to cancel a transaction when its status is Uploaded.
 
 ## <font color=red>Note</font>
 
-### <font color = red>Please note that if the user refunds through the "EGCash" and "Cebuana" channels, the service fee will not be refunded</font>
+### <font color = red>Please note that if the user refunds through the "EGCash" and "LBC Express" channels, the service fee will not be refunded</font>
 
-### <font color = red>Only Cebuana channel loans can be cancelled</font>
+### <font color = red>Only LBC Express channel loans can be cancelled</font>
 
 ### <font color = red>When requesting to cancel the interface, the status will change to Canceled. At this time, it is waiting for the channel to cancel. After the cancellation is successful, the Cancel Time will have a time for the cancellation to be successful. We will call back to interface 3.2 to notify you. If the cancellation fails, the status will change from Canceled to Uploaded, and interface 3.2 will not be called back. (If calling the 4.5 interface to query the status, it should be noted that there must be a Cancel Time and the status is Cancelled in order for the cancellation to be successful)</font>
 

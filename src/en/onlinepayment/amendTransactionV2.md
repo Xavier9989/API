@@ -18,7 +18,7 @@
 |name |string |50|Y|Name of withdrawal person <br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
 |birthday|Date|10|Y | Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
 |identificationId  |string|50|Y|ID number<br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|identificationTypeId |string |3|Y|Please refer to Chapter 7.3 to obtain the identification type for verifying the type of identity document (bank)<br> Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
+|identificationTypeId |string |3|Y|Please refer to Chapter 8.3 to obtain the identification type for verifying the type of identity document (bank)<br> Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
 |phone |string|11|Y| 11 digit number starting with 09 <br> Ex:"phone":"09270348095"|
 |idcardPicType |string|50|Y|Photo File Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl|string |500|Y|Photo access network address <br> Ex:"idcardPicUrl":"https://12334"|

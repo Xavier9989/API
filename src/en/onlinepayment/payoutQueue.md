@@ -18,21 +18,21 @@ When customers obtain payment transaction approval information, partners must pu
 |sender  |string|100|  Y  |Payer <br> Product APP Name (Required: Designed by Partner)<br> Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|  Y  |Name of withdrawal person <br> separated by commas. - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone|string|11 |  Y |11 digit number starting with 09  <br> Ex:"phone":"09270348095"|
+|phone|string|11 |  Y |11 digit number starting with 09/08  <br> Ex:"phone":"09270348095"|
 |amount|string|10.20  |    Y   |Payment amount supports two decimal places<br> ex:"amount":3400.00|
-|bankNo|string |50| Y |Account number<br> required when making payments through bank channels. This parameter is not available in electronic wallets. Please refer to Chapter 7 Interface for details7.6 Get Bank Code,Bank code is a 3-digit character|
+|bankNo|string |50| Y |Account number<br> When making payments through bank channels, this parameter is mandatory. This parameter is not available in electronic wallets. Please refer to Chapter 8 Interface 8.6 Get Bank Code, which consists of 3 characters|
 |accountNo  |string |50| Y |Electronic wallet:<br> The account is a mobile phone number with the first 11 digits of 09 for the withdrawal person <br>Bank:The designated bank account of the withdrawer (specify a valid bank account)|
-|withdrawChannel|int||  Y| Designated payment channel code<br> refer to Chapter 9 for detailed pipeline instructions[Channel code value](../Paymentpipeline/Paymentpipeline.md)|
+|withdrawChannel|int||  Y| Designated payment channel code<br> refer to Chapter 10 for detailed pipeline instructions[Channel code value](../Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |ID number <br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|identificationTypeId  |string |3|   N  |Verify ID Document Category <br> Reference7.3 Get Identification Type - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:":identificationTypeId":"2"|
+|identificationTypeId  |string |3|   N  |Verify ID Document Category <br> Reference8.3 Get Identification Type - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:":identificationTypeId":"2"|
 |idType  |string|50| N  |Optional field for verifying ID type <br> electronic wallet for payment, bank does not have this paramete - ex:"idType":"TIN"|
 |idcardPicType  |string|50|     N   |Image format <br> optional for electronic wallet payment, bank does not have this parameter - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl  |string |500| N  |Photo access network address <br> optional for electronic wallet payment, bank does not have this parameterEx:"idcardPicUrl":""|
 |birthday  |Date|10|  N     |Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
 |birthPlace  |string|250|  N  |When making payments through the birthplace bank channel, this parameter is optional and not available in the electronic wallet|
 |location  |string |500|N |Withdrawal address <br>Ex:"location":manila"|
-|provinceId |int| |  N   |Province ID<br> Please refer to Chapter 7 Interface7.5 Get Province - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
-|cityId  |int||   N   |City ID <br> Please refer to Chapter 7 Interface7.4 Get Town City - When making payments through bank channels, this parameter is optional and not available in the electronic wallet - Ex: Province ID City ID City Name - ProvinceId TownCityId	TownCity47	996	Manila…|
+|provinceId |int| |  N   |Province ID<br> Please refer to Chapter 8 Interface8.5 Get Province - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:ProvinceId	Province1	Abra  - 2	Agusan del Norte…|
+|cityId  |int||   N   |City ID <br> Please refer to Chapter 8 Interface8.4 Get Town City - When making payments through bank channels, this parameter is optional and not available in the electronic wallet - Ex: Province ID City ID City Name - ProvinceId TownCityId	TownCity47	996	Manila…|
 |expiryDate  |string |50| N|Certificate expiration date <br> optional when making payments through bank channels, this parameter is not available in electronic wallets|
 
 ### Post data

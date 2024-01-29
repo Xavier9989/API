@@ -1,12 +1,12 @@
-# 4.1 取消支付交易
+# 4.2 取消支付交易
 
 #### 该服务由SkyPay提供,目的在该笔交易状态为Uploaded时,进行取消交易动作。
 
 ## <font color = red>注意</font>
 
-### <font color = red>请注意，如果用户通过"EGCash"和"Cebuana"渠道退款，则服务费将不予退还。</font>
+### <font color = red>请注意，如果用户通过"EGCash"和"LBC Express"渠道退款，则服务费将不予退还。</font>
 
-### <font color = red>只能取消Cebuana渠道的放款。</font>
+### <font color = red>只能取消LBC Express渠道的放款。</font>
 
 ### <font color = red>请求取消接口时状态会变为Cancelled，此时是等待渠道取消，待取消成功后，Cancel Time会有取消成功的时间，我们会回调3.2接口通知您，如取消失败，状态会从Cancelled变回Uploaded，不会回调3.2接口。（如调用4.5接口查询状态，需要注意，必须有Cancel Time且状态为Cancelled才是取消成功）</font>
 

@@ -9,7 +9,7 @@
 |action|string|50|Y|调用行为<br>payoutPayout(固定参数值) - Ex:"action":"payoutPayout"|
 |authentication |string |100|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber |string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|withdrawChannel|int |Option|Y|支付管道<br> 详细内容请参考第9章 - Ex:支付管道支付管道名称9	RDPawnshop|
+|withdrawChannel|int |Option|Y|支付管道<br> 详细内容请参考第10章 - Ex:支付管道支付管道名称10	RDPawnshop|
 |payTime|DateTime||Y |支付时间<br> (yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
 
 ### Post data

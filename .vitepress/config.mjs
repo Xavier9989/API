@@ -24,7 +24,7 @@ export default defineConfig({
             items: [
               { text: "Version", link: "/en/Version1" },
               { text: "API", link: "/en/api-examples" },
-              { text: "preface", link: "/en/preface" },
+              { text: "Preface", link: "/en/preface" },
               {
                 text: "Documentation",
                 link: "/en/APIdocumentationdescription",
@@ -50,7 +50,7 @@ export default defineConfig({
             ],
           },
           {
-            text: "4.nlinerequestandofflinepaymentprocess",
+            text: "4.Nlinerequestandofflinepaymentprocess",
             collapsed: true,
             items: [
               {
@@ -58,7 +58,7 @@ export default defineConfig({
                 link: "/en/onlinepayment/cancelPayout",
               },
               {
-                text: "4.2 ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                text: "4.2ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
                 link: "/en/onlinepayment/payoutQueueV2",
               },
               {
@@ -118,7 +118,7 @@ export default defineConfig({
                     link: "/en/Offlinepayment/getReportPayout",
                   },
                   {
-                    text: "6.3balanceinquiry （balanceQuery）",
+                    text: "6.3Balanceinquiry （balanceQuery）",
                     link: "/en/Offlinepayment/balanceQuery",
                   },
                   {
@@ -190,7 +190,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Backhaulcode",
+                text: "9.Backhaulcode",
                 link: "/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
               },
             ],
@@ -200,7 +200,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Payment pipeline    ",
+                text: "10.Payment pipeline",
                 link: "/en/Paymentpipeline/Paymentpipeline",
               },
             ],
@@ -210,7 +210,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Payment pipeline  ",
+                text: "11.Payment pipeline  ",
                 link: "/en/Paymentpipeline/Paymentpipeline1",
               },
             ],
@@ -220,7 +220,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Change key process",
+                text: "12.Change key process",
                 link: "/en/Changekeyprocess/Changekeyprocess",
               },
             ],

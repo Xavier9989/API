@@ -36,11 +36,11 @@ SFA6Iwgv35ruBIkFglcZdrT5dofQN2dDavP9qAX3Pu82Mlsj36kd9RikBOS<br>+3BdiqT0sniupvgcF
 - ## 2.加密程序说明 ##
   - 我们提供不同开发平台的加密工具如下
     - Java
-      - [AESUtil.java](./public/AESUtil.java.md)
+      - [AESUtil.java](/public/AESUtil.java.md)
     - .Net C#：
        - 1.Encrypt_net_core.cs
        - 2.clsCryptAES.cs
          - Bin:IKVM.OpenJDK.Charsets.dll,IKVM.OpenJDK.Core.dll,IKVM.OpenJDK.Security.dll,IKVM.OpenJDK.Util.dll,IKVM.Runtime.dll
     - Php：
-        - 1.[Aes.php](./public/Aes.php.md)
-        - 2.[AESUtil.php](./public/AESUtil.php.md)
+        - 1.[Aes.php](/public/Aes.php.md)
+        - 2.[AESUtil.php](/public/AESUtil.php.md)

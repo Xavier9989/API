@@ -41,5 +41,5 @@ _________________
     - [8.5 getProvince](/en/Obtainbasiccodelistinformation/getProvince.md).
     - [8.6 getBankCode](/en/Obtainbasiccodelistinformation/getBankCode.md).
 - 9. [Error Code Table](/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 10. [Payout Channel Code](/en/Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](./Paymentpipeline/Paymentpipeline1.md).
+- 10. [Payout Channel Code](/en/Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](/en/Paymentpipeline/Paymentpipeline1.md).
 - 11. [Rnew Credentials](/en/Changekeyprocess/Changekeyprocess.md).

@@ -21,7 +21,3 @@
 |96|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|USSC|Remittance shop|
 |99|5.3 CollectionInquery - Receipt confirmation <br> 5.4 CollectionCollect - Notification of successful payment|others|other|
 
-
-
-<!-- 分隔线  -->
-

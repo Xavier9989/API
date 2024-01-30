@@ -1,7 +1,7 @@
 # payoutQueueV2 (Remit Store)
 
 ### This interface is a designated channel payment interface that is actively pushed by partners to SkyPay. It is an asynchronous interface and the payment result is recalled by the 3.2 PayoutQueuePayout interface。
-![](/en/public/线上请求线下取款.png)
+![线上请求线下取款](/en/public/线上请求线下取款.png)
 ### <font color = red>pay attention to</font>
 #### <font color = red>Please note that if this payment interface is selected, it means that this payment is specified to be withdrawn from Cebuana or ML, and other channels will not support withdrawing this payment。</font>
 #### <font color = red>You can cancel this payment before the user withdraws it. Please call "3.3 Payout - cancelPayout". Cancellation is not a real-time cancellation. Please reply with the cancellation result the next day and cancel without refunding the service fee。</font>

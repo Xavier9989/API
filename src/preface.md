@@ -17,7 +17,7 @@ _________________
 
 ## 4.加密要求
 在传送数据前,必须先进行加密。
-![](./public/CC更改金钥.png "Shiprock")
+![CC更改金钥](/public/CC更改金钥.png "Shiprock")
 - Encrypt Key：加密金钥由SkyPay提供，在管理后台CC更改密钥功能处获取
 
 ## 5.验证机制

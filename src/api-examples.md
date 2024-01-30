@@ -9,7 +9,7 @@ _________________
     - 2.加密程序说明
 - 3. 线上支付（非同步）
     - [3.1推送交易 (银行、钱包)(payoutQueue)](/onlinepayment/payoutQueue.md)
-    - [3.2回调交易结果（payoutQueuePayout）](./onlinepayment/payoutQueuePayout.md).
+    - [3.2回调交易结果（payoutQueuePayout）](/onlinepayment/payoutQueuePayout.md).
 - 4. 线下支付（非同步）
     - [4.1推送交易 (汇款店)(payoutQueueV2)](/onlinepayment/payoutQueueV2.md).
     - [4.2取消交易(cancelPayout)](/onlinepayment/cancelPayout.md).

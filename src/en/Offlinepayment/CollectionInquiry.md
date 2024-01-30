@@ -1,5 +1,30 @@
-# 5.3 Verification of payment data（CollectionInquiry）
+# 5.3 CollectionInquiry
 #### The API is provided by partners and will be triggered by customers when applying for repayment.
+
+
+![](../public/收款交易顺序图1.png)
+
+
+
+### <font color=red>collectionInquiry Verify receipt information</font>
+
+- (1) CollectionInquiry is used to verify whether this payment information exists
+
+- (2) CollectionInquiry occurs in real time when the withdrawal person requests payment at an offline store
+
+- (3) The withdrawal person needs to provide a payment code and necessary identity verification information, and conduct payment verification through the cashier or convenience store's automatic payment machine
+
+- (4) The trigger point for the collectionInquiry function is that when the offline store cashier or cash withdrawal person selects the "send collectionInquiry" function request through the convenience store kiosk, they will send it to SkyPay
+
+
+
+### <font color=red>CollectionCollect replies with successful payment information</font>
+
+- (1) CollectionCollect is used by offline stores to reply to confirmed completed payment transactions
+
+- (2) After the cashier completes the confirmation, a real-time collectionCollect message will be sent back
+
+- (3) Function trigger point, at the cashier, select collectionCollect and reply with a successful payment message to the SkyPay server
 
 ### Input parameters
 

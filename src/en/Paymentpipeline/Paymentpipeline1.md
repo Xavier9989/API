@@ -1,4 +1,4 @@
-# 11.Payment pipeline (Channel code is the code value)
+# Collection Channel Code
 
 
 

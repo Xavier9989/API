@@ -1,4 +1,4 @@
-# 4.3  Modify payment transactions（amendTransactionV2）
+# amendTransactionV2
 #### When there is an error in the payment data push, this interface can be used for data correction. The most common error is a user name error (typo, sequence error). This interface is related to「4.1 Payout–payoutQueueV2」The fields are the same, please input new values for the fields you want to modify, and input the original values.
 
 ### <font color = red>pay attention to ：</font>

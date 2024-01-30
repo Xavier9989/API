@@ -1,4 +1,4 @@
-# 8.1Obtain Country Definition(getNationality)
+# 8.1getNationality
 
 ### This API, which obtains basic code services, provides a data list for using bank payments. When calling the service, please pass a null value for version date, and everything will be based on the official environment interface.
 

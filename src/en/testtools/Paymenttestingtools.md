@@ -1,4 +1,4 @@
-# 7.2 Collection verification tool
+# 7.2 Collection Tool
 
 - <font color = red>Please configure the callback address for the corresponding interface in the background CallBack，Content Type：text/plain</font>，Test tool location (Chinese interface displays repayment tool, English interface displayscollection tool）
 ![](../public/6.2付款测试工具.png "Shiprock")

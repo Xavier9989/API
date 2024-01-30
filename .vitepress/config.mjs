@@ -21,29 +21,29 @@ export default defineConfig({
         },
         sidebar: [
           {
-            text: "introduction",
+            text: "Introduction",
             items: [
               { text: "Version", link: "/en/Version1" },
-              { text: "API", link: "/en/api-examples" },
+              { text: "Table of contents", link: "/en/api-examples" },
               { text: "Preface", link: "/en/preface" },
               {
-                text: "Documentation",
+                text: "Data Encryption",
                 link: "/en/APIdocumentationdescription",
               },
             ],
           },
           {
-            text: "3.OnlineRequestOnlinePaymentProcess",
+            text: "3.Online Payment <br>(Async mode)",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "3.1Pushonlinepaymenttransactions(payoutQueue)",
+                    text: "3.1payoutQueue (Bank/Wallet)",
                     link: "/en/onlinepayment/payoutQueue",
                   },
                   {
-                    text: "3.2Returnpaymentconfirmationmessage（payoutQueuePayout）",
+                    text: "3.2payoutQueuePayout (CallBack)",
                     link: "/en/onlinepayment/payoutQueuePayout",
                   },
                 ],
@@ -51,84 +51,115 @@ export default defineConfig({
             ],
           },
           {
-            text: "4.Nlinerequestandofflinepaymentprocess",
+            text: "4.Offline Payment <br>(Async mode)",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "4.1ML/CebuanaRealtimeloandisbursement（payoutQueueV2）",
+                    text: "4.1payoutQueueV2 <br>(Remit Store)",
                     link: "/en/onlinepayment/payoutQueueV2",
                   },
                   {
-                    text: "4.2Cancelpaymenttransaction（cancelPayout）",
+                    text: "4.2cancelPayout",
                     link: "/en/onlinepayment/cancelPayout",
                   },
                   {
-                    text: "4.3Modifypaymenttransactions（amendTransactionV2）",
+                    text: "4.3amendTransactionV2",
                     link: "/en/onlinepayment/amendTransactionV2",
-                  },
-                ],
-              }
-            ]
-          },
-          {
-            text: "5.Offlinerequestforofflinepaymentprocess",
-            collapsed: true,
-            items: [
-              {
-                items: [
-                  {
-                    text: "5.1Offlinepaymentdataverification（PayoutInquiry）",
-                    link: "/en/Offlinepayment/PayoutInquiry",
-                  },
-                  {
-                    text: "5.2Paymentsuccessnotification（PayoutPayout）",
-                    link: "/en/Offlinepayment/PayoutPayout",
-                  },
-                  {
-                    text: "5.3Verificationofpaymentdata （CollectionInquiry）",
-                    link: "/en/Offlinepayment/CollectionInquiry",
-                    items: [
-                      {
-                        text: "5.3.1Generate711paymentbarcode（Generate711Barcode）",
-                        link: "/en/Offlinepayment/Generate711Barcode",
-                      },
-                    ],
-                  },
-                  {
-                    text: "5.4Notificationofsuccessfulpayment（collectionCollect）",
-                    link: "/en/Offlinepayment/collectionCollect",
                   },
                 ],
               },
             ],
           },
           {
-            text: "6. Function Query",
+            text: "5.Offline transactions (synchronous)",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "6.1 Paymentstatusquery  （payoutQueryStatus）",
-                    link: "/en/Offlinepayment/payoutQueryStatus",
+                    text: "Offline Payment <br>(Sync mode)",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "5.1payoutInquiry",
+                        link: "/en/Offlinepayment/PayoutInquiry",
+                      },
+                      {
+                        text: "5.2payoutPayout",
+                        link: "/en/Offlinepayment/PayoutPayout",
+                      },
+                    ],
                   },
+                ],
+              },
+              {
+                items: [
                   {
-                    text: "6.2Transaction result query（getReportPayout(Collection)）",
-                    link: "/en/Offlinepayment/getReportPayout",
+                    text: "Collection interface (synchronous)",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "5.3collectionInquiry",
+                        link: "/en/Offlinepayment/CollectionInquiry",
+                      },
+                      {
+                        text: "5.3.1 generate711Barcode",
+                        link: "/en/Offlinepayment/Generate711Barcode",
+                      },
+                      {
+                        text: "5.4collectionCollect",
+                        link: "/en/Offlinepayment/collectionCollect",
+                      },
+                    ],
                   },
+                ],
+              },
+            ],
+          },
+
+          {
+            text: "6. functional interface",
+            collapsed: true,
+            items: [
+              {
+                items: [
                   {
-                    text: "6.3Balanceinquiry （balanceQuery）",
-                    link: "/en/Offlinepayment/balanceQuery",
+                    text: "6. Inquiry APIs",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "6.1 payoutQueryStatus",
+                        link: "/en/Offlinepayment/payoutQueryStatus",
+                      },
+                      {
+                        text: "6.2getRepoertPayout/getRerpotCollection",
+                        link: "/en/Offlinepayment/getReportPayout",
+                      },
+                      {
+                        text: "6.3balanceQuery",
+                        link: "/en/Offlinepayment/balanceQuery",
+                      },
+                    ],
                   },
+                ],
+              },
+              {
+                items: [
                   {
-                    text: "6.4NotificationInterface - Recharge、Settlement、Withdrawal（financeNotification）",
-                    link: "/en/Rechargebalancewithdrawal/financeNotification",
-                  },
-                  {
-                    text: "6.5Queryinterface - recharge、settlement、withdrawal（notificationInquiry）",
-                    link: "/en/Rechargebalancewithdrawal/notificationInquiry",
+                    text: "6. Finance APIs",
+                    collapsed: true,
+                    items: [
+                      {
+                        text: "6.4financeNotification",
+                        link: "/en/Rechargebalancewithdrawal/financeNotification",
+                      },
+                      {
+                        text: "6.5notificationInquiry",
+                        link: "/en/Rechargebalancewithdrawal/notificationInquiry",
+                      },
+                    ],
                   },
                 ],
               },
@@ -141,11 +172,11 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "7.1 Payment testing tools ",
+                    text: "7.1 Payout Tool ",
                     link: "/en/testtools/Collectionverificationtool",
                   },
                   {
-                    text: "7.2 Collection verification tool",
+                    text: "7.2 Collection Tool",
                     link: "/en/testtools/Paymenttestingtools",
                   },
                 ],
@@ -153,33 +184,33 @@ export default defineConfig({
             ],
           },
           {
-            text: "8.Obtain basic code list information",
+            text: "8.Code Table",
             collapsed: true,
             items: [
               {
                 items: [
                   {
-                    text: "8.1Obtain Country Definition (getNationality)",
+                    text: "8.1getNationality",
                     link: "/en/Obtainbasiccodelistinformation/getNationality",
                   },
                   {
-                    text: "8.2Obtaining Citizenship Status(getCivilStatus)",
+                    text: "8.2getCivilStatus",
                     link: "/en/Obtainbasiccodelistinformation/getCivilStatus",
                   },
                   {
-                    text: "8.3Obtain authentication category(getIdentificationType)",
+                    text: "8.3getIdentificationType",
                     link: "/en/Obtainbasiccodelistinformation/getIdentificationType",
                   },
                   {
-                    text: "8.4Obtain the city code(getTownCity)",
+                    text: "8.4getTownCity",
                     link: "/en/Obtainbasiccodelistinformation/getTownCity",
                   },
                   {
-                    text: "8.5Obtain province code (getProvince)",
+                    text: "8.5getProvince",
                     link: "/en/Obtainbasiccodelistinformation/getProvince",
                   },
                   {
-                    text: "8.6Obtain bank code (getBankCode)",
+                    text: "8.6getBankCode",
                     link: "/en/Obtainbasiccodelistinformation/getBankCode",
                   },
                 ],
@@ -187,42 +218,61 @@ export default defineConfig({
             ],
           },
           {
-            text: "9.Backpropagation message definition   ",
+            text: "9.Error Code Table",
             collapsed: true,
             items: [
               {
-                text: "9.Backhaulcode",
-                link: "/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
+                items: [
+                  {
+                    text: "9.Error Code",
+                    link: "/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
+                  },
+                ],
               },
             ],
           },
           {
-            text: "10.Payment pipeline (channel code)",
+            text: "10.Channel Code table",
             collapsed: true,
             items: [
               {
-                text: "10.Payment pipeline",
-                link: "/en/Paymentpipeline/Paymentpipeline",
+                items: [
+                  {
+                    items: [
+                      {
+                        text: "Payout Channel Code",
+                        link: "/en/Paymentpipeline/Paymentpipeline",
+                      },
+                    ],
+                  },
+                ],
+              },
+              {
+                items: [
+                  {
+                    items: [
+                      {
+                        text: "Collection Channel Code",
+                        link: "/en/Paymentpipeline/Paymentpipeline1",
+                      },
+                    ],
+                  },
+                ],
               },
             ],
           },
+
           {
-            text: "11.Payment channel (channel code)  ",
+            text: "11.Rnew Credentials",
             collapsed: true,
             items: [
               {
-                text: "11.Payment pipeline  ",
-                link: "/en/Paymentpipeline/Paymentpipeline1",
-              },
-            ],
-          },
-          {
-            text: "12.Change key process",
-            collapsed: true,
-            items: [
-              {
-                text: "12.Change key process",
-                link: "/en/Changekeyprocess/Changekeyprocess",
+                items: [
+                  {
+                    text: "Rnew Credentials",
+                    link: "/en/Changekeyprocess/Changekeyprocess",
+                  },
+                ],
               },
             ],
           },
@@ -249,27 +299,27 @@ export default defineConfig({
     nav: [{ text: "Home", link: "/Version1" }],
     sidebar: [
       {
-        text: "introduction",
+        text: "文档介绍",
         items: [
-          { text: "Version", link: "/Version1" },
-          { text: "API 目录", link: "/api-examples" },
+          { text: "版本", link: "/Version1" },
+          { text: "目录", link: "/api-examples" },
           { text: "前言", link: "/preface" },
           { text: "文档说明", link: "/APIdocumentationdescription" },
         ],
       },
 
       {
-        text: "3.线上请求线上支付流程",
+        text: "3.线上支付 (非同步)",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "3.1推送线上支付交易(payoutQueue)",
+                text: "3.1推送交易 (银行、钱包)(payoutQueue)",
                 link: "/onlinepayment/payoutQueue",
               },
               {
-                text: "3.2回传支付确认讯息（payoutQueuePayout）",
+                text: "3.2回调交易结果(payoutQueuePayout)",
                 link: "/onlinepayment/payoutQueuePayout",
               },
             ],
@@ -277,85 +327,111 @@ export default defineConfig({
         ],
       },
       {
-        text: "4.线上请求线下支付流程",
+        text: "4.线下支付 (非同步)",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "4.1ML/Cebuana非实时放款（payoutQueueV2）",
+                text: "4.1推送交易 (汇款店)(payoutQueueV2)",
                 link: "/onlinepayment/payoutQueueV2",
               },
               {
-                text: "4.2取消支付交易（cancelPayout）",
+                text: "4.2取消交易 <br>(cancelPayout)",
                 link: "/onlinepayment/cancelPayout",
               },
               {
-                text: "4.3修改支付交易（amendTransactionV2）",
+                text: "4.3修改交易(amendTransactionV2)",
                 link: "/onlinepayment/amendTransactionV2",
               },
             ],
-          }
-        ]
+          },
+        ],
       },
 
       {
-        text: "5.线下请求线下支付流程",
+        text: "5.线下交易 (同步)",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "5.1线下支付数据验证（PayoutInquiry）",
-                link: "/Offlinepayment/PayoutInquiry",
-              },
-              {
-                text: "5.2支付成功通知（PayoutPayout）",
-                link: "/Offlinepayment/PayoutPayout",
-              },
-              {
-                text: "5.3收款数据验证（CollectionInquiry）",
-                link: "/Offlinepayment/CollectionInquiry",
+                text: "线下支付 (同步)",
+                collapsed: true,
                 items: [
                   {
-                    text: "5.3.1产生711收款条形码（Generate711Barcode）",
-                    link: "/Offlinepayment/Generate711Barcode",
+                    text: "5.1支付验证(payoutInquiry)",
+                    link: "/Offlinepayment/PayoutInquiry",
+                  },
+                  {
+                    text: "5.2支付确认(payoutPayout)",
+                    link: "/Offlinepayment/PayoutPayout",
                   },
                 ],
               },
+            ],
+          },
+          {
+            items: [
               {
-                text: "5.4 收款成功通知（collectionCollect）",
-                link: "/Offlinepayment/collectionCollect",
+                text: "收款接口 (同步)",
+                collapsed: true,
+                items: [
+                  {
+                    text: "5.3收款验证(collectionInquiry) (同步)",
+                    link: "/Offlinepayment/CollectionInquiry",
+                  },
+                  {
+                    text: "5.3.1 7-11收款条码(generate711Barcode)",
+                    link: "/Offlinepayment/Generate711Barcode",
+                  },
+                  {
+                    text: "5.4收款确认(collectionCollect)",
+                    link: "/Offlinepayment/collectionCollect",
+                  },
+                ],
               },
             ],
           },
         ],
       },
       {
-        text: "6. 功能查询",
+        text: "6. 功能接口",
         collapsed: true,
         items: [
           {
             items: [
               {
-                text: "6.1支付状态查询（payoutQueryStatus）",
-                link: "/Offlinepayment/payoutQueryStatus",
+                text: "查询功能",
+                collapsed: true,
+                items: [
+                  {
+                    text: "6.1支付状态查询(payoutQueryStatus)",
+                    link: "/Offlinepayment/payoutQueryStatus",
+                  },
+                  {
+                    text: "6.2交易报表查询(getRepoertPayout/getRerpotCollection)",
+                    link: "/Offlinepayment/getReportPayout",
+                  },
+                  {
+                    text: "6.3余额查询(balanceQuery)",
+                    link: "/Offlinepayment/balanceQuery",
+                  },
+                ],
               },
               {
-                text: "6.2交易结果查询（getReportPayout(Collection)）",
-                link: "/Offlinepayment/getReportPayout",
-              },
-              {
-                text: "6.3余额查询（balanceQuery）",
-                link: "/Offlinepayment/balanceQuery",
-              },
-              {
-                text: "6.4通知接口-充值、结算、提现（financeNotification）",
-                link: "/Rechargebalancewithdrawal/financeNotification",
-              },
-              {
-                text: "6.5查詢接口-充值、结算、提现（notificationInquiry）",
-                link: "/Rechargebalancewithdrawal/notificationInquiry",
+                text: "财务功能",
+                collapsed: true,
+                items: [
+                  {
+                    text: "6.4通知接口(financeNotification)",
+                    link: "/Rechargebalancewithdrawal/financeNotification",
+                  },
+                  {
+                    text: "6.5查詢接口(notificationInquiry)",
+                    link: "/Rechargebalancewithdrawal/notificationInquiry",
+                  },
+                ],
               },
             ],
           },
@@ -372,7 +448,7 @@ export default defineConfig({
                 link: "/testtools/Collectionverificationtool",
               },
               {
-                text: "7.2 收款验证工具",
+                text: "7.2 收款测试工具",
                 link: "/testtools/Paymenttestingtools",
               },
             ],
@@ -380,7 +456,7 @@ export default defineConfig({
         ],
       },
       {
-        text: "8.取得基本代码列表信息",
+        text: "8.基本代码表",
         collapsed: true,
         items: [
           {
@@ -414,42 +490,61 @@ export default defineConfig({
         ],
       },
       {
-        text: "9.回传讯息定义",
+        text: "9.返回代码表",
         collapsed: true,
         items: [
           {
-            text: "回传code",
-            link: "/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
+            items: [
+              {
+                text: "回传代码",
+                link: "/Backpropagationmessagedefinition/Backpropagationmessagedefinition",
+              },
+            ],
           },
         ],
       },
       {
-        text: "10.支付管道（渠道代码）",
+        text: "10.渠道代码",
         collapsed: true,
         items: [
           {
-            text: "支付管道",
-            link: "/Paymentpipeline/Paymentpipeline",
+            items: [
+              {
+                items: [
+                  {
+                    text: "支付渠道代码",
+                    link: "/Paymentpipeline/Paymentpipeline",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            items: [
+              {
+                items: [
+                  {
+                    text: "放款渠道代码",
+                    link: "/Paymentpipeline/Paymentpipeline1",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
+
       {
-        text: "11.收款管道（渠道代码）",
+        text: "11.密钥更改",
         collapsed: true,
         items: [
           {
-            text: "收款管道",
-            link: "/Paymentpipeline/Paymentpipeline1",
-          },
-        ],
-      },
-      {
-        text: "12.更改密钥流程",
-        collapsed: true,
-        items: [
-          {
-            text: "更改密钥流程",
-            link: "/Changekeyprocess/Changekeyprocess",
+            items: [
+              {
+                text: "更改密钥流程",
+                link: "/Changekeyprocess/Changekeyprocess",
+              },
+            ],
           },
         ],
       },

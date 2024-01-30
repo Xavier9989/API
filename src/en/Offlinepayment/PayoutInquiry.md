@@ -1,7 +1,28 @@
-# 5.1 Offline payment data verification（PayoutInquiry）
+# 5.1 PayoutInquiry
 
 **<font color=red>This payment verification API service is provided by the partner and will send a verification request message when the withdrawer requests a withdrawal</font>**
 ![](../public/4.1线下放款.png)
+
+### PayoutInquiry withdrawal verification information
+
+- (1) When the withdrawal person requests an offline store to make a withdrawal request, payoutInquire will be called in real-time to verify payment information
+
+- (2) After being called, payoutInquire will return the verification results to the partners, and offline stores will receive detailed payment information and user information
+
+- (3) The withdrawal person needs to provide the withdrawal code and necessary identity verification information, such as to the cashier
+
+- (4) After checking the withdrawal code and identity verification information, the cashier will receive a manual verification message and send it to the Skypay server
+
+
+
+### <font color=red>payoutPayout replies with payment success message</font>
+
+- (1) After the payoutInquiry is successful, the payoutPayout will be called by the offline store, and the message that the transaction has been successfully paid will be returned
+
+- (2) This transaction will occur when the cashier confirms the payment and the payment action has been completed
+
+- (3) The actual triggering point of this function is when the cashier presses the payoutPay function button (manual operation)
+
 
 ### Input parameters
 

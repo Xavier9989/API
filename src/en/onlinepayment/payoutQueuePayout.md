@@ -1,4 +1,4 @@
-# 3.2    Return payment confirmation message（payoutQueuePayout）
+# payoutQueuePayout (CallBack)
 -   This API is provided by partners and requested by payment vendors at the following times
 
     -   (1) When the transaction is uploaded to the payment provider

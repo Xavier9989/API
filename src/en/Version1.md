@@ -4,7 +4,7 @@ _________________
 
 _________________
  
-| Version    | Valid Date | Description                       |Wayne.Wang|
+| Version    | Publicationdate | illustrate |publisher|
 | ------ | :-----------: | -------------------------------------------|--------------     |   
 | 1.36     |   2023/12/15    |Add 5. Recharge, withdraw, and query interfaces<br>5.1 Notification Interface - Recharge, Settlement, Withdrawal (financeNotification)<br>Add 5.2 query interface for recharge, settlement, and withdrawal (notifyionInquiry). |Wayne.Wang|
 | 1.35     |   2023/5/11     |Add 4.6 getReportPayout/(Collection)|Wayne.Wang|

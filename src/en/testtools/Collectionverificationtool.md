@@ -1,4 +1,4 @@
-# 7.1 Payment testing tools
+# 7.1 Payout Tool
 
 - <font color = red>Please configure the callback address for the corresponding interface in the background CallBack，Content Type：text/plain，Test tool location （Chinese interface displays payment tool, English interface displays payout tool）</font>
 - 

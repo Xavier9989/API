@@ -1,5 +1,18 @@
-# 5.3 收款数据验证（CollectionInquiry）
+# 5.3 收款数据验证（CollectionInquiry）（同步）
 ### API由合作伙伴提供，顾客在申请还款时将触发API。
+
+![](../public/收款交易顺序图1.png)
+
+### <font color = red>collectionInquiry验证收款信息</font>
+- (1)CollectionInquiry是用来验证这笔支付信息是否存在
+- (2)collectionInquiry是在取现人去线下店要求收款时实时发生
+- (3)取现人需要提供收款码及必要身分验证信息,透过出纳人员或便利商店自动收款机,进行收款验证
+- (4)collectionInquiry功能触发点在线下店出纳人员或取现人透过便利商店Kiosk收款机,点选发送collectionInquiry功能要求时,会发送要到SkyPay
+
+### <font color = red>collectionCollect回复收款成功信息</font>
+- (1)collectionCollect是线下店用来回复已确认完成收款交易时使用
+- (2)当出纳人员完成确认后,会实时回传collectionCollect讯息
+- (3)功能触发点,在出纳人员,点选collectionCollect,回复收款成功信息给SkyPay服务器
 
 ### Input parameters
 | 参数                        |    类型     | 长度   |Y/N |描述|

@@ -1,6 +1,18 @@
-# 5.1 线下支付数据验证（PayoutInquiry）
+# 5.1 支付验证（PayoutInquiry）
 **<font color=red>这个支付验证的API服务,是由合作伙伴提供,它将会在取现人要求提款时,发出要求验证讯息</font>**
 ![](../public/4.1线下放款.png)
+
+
+### <font color = red>payoutInquiry取款验证信息</font>
+- (1)当取现人要求线下店进行取款要求时,payoutInquire将会实时被叫用,进行支付信息验证工作
+-  (2)payoutInquire被叫用后,会回传合作伙伴验证结果,线下店将会收到详细的支付信息以及用户信息
+- (3)取现人需要提供取款码及必要的身分验证信息如给出纳人员
+- (4)出纳人员在检查取款码及身分验证信息后,会系统回复人工验证是否成功讯息,并传送到Skypay服务器
+
+###  <font color = red>payoutPayout回复支付成功信息</font>
+- (1)payoutInquiry成功后,payoutPayout将会由线下店进行叫用,回传这笔交易己支付成功的讯息
+- (2)这个交易会在出纳确认该支付,已完成支付动作时发生
+- (3)这个功能的实际触发点在出纳人员按下payoutPayout功能按钮时(人工操作)
 
 
 ### Input parameters

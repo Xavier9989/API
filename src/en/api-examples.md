@@ -4,39 +4,42 @@ _________________
 - [Version](./Version1.md).
 - Directory
 - [Preface](./preface.md).
-- [API documentation description](./APIdocumentationdescription.md)
+- [Data Encryption](./APIdocumentationdescription.md)
     - 1.Data encryption instructions
     - 2.Encryption Program Description
-- 3. Online payment instructions
-    - [3.1 Push online payment transactions(payoutQueue)](./onlinepayment/payoutQueue.md)
-    - [3.2 Return payment confirmation message（payoutQueuePayout）)](./onlinepayment/payoutQueuePayout.md).
-- 4. Online request and offline payment process
-    - [4.1 ML/CebuanaOnline request for offline loan disbursement（payoutQueueV2）](./onlinepayment/payoutQueueV2.md).
-    - [4.2 Cancel payment transaction（cancelPayout）](./onlinepayment/cancelPayout.md).
-    - [4.3 Modify payment transactions（amendTransactionV2）](./onlinepayment/amendTransactionV2.md).
-- 5. Offline request for offline payment process
-    - [5.1 Offline payment data verification（PayoutInquiry）](./Offlinepayment/PayoutInquiry.md).
-	- [5.2 Payment success notification（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
-    - [5.3 Verification of payment data（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
-        - [5.3.1Generate 7-11 payment barcode（Generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
-    - [5.4 Notification of successful payment（collectionCollect）](./Offlinepayment/collectionCollect.md).
+- 3. Online Payment (Async mode)
+    - [3.1 payoutQueue (Bank/Wallet)](./onlinepayment/payoutQueue.md)
+    - [3.2 payoutQueuePayout (CallBack)](./onlinepayment/payoutQueuePayout.md).
+- 4. Offline Payment (Async mode)
+    - [4.1 payoutQueueV2 (Remit Store)](./onlinepayment/payoutQueueV2.md).
+    - [4.2 cancelPayout](./onlinepayment/cancelPayout.md).
+    - [4.3 amendTransactionV2](./onlinepayment/amendTransactionV2.md).
+- 5. Offline transactions (synchronous)
+    - Offline Payment (Sync mode) 
+    - [5.1 payoutInquiry](./Offlinepayment/PayoutInquiry.md).
+	- [5.2 payoutPayout](./Offlinepayment/PayoutPayout.md).
+    - Collection (Sync mode)
+    - [5.3 CollectionInquiry](./Offlinepayment/CollectionInquiry.md).
+    - [5.3.1 generate711Barcode](./Offlinepayment/Generate711Barcode.md).
+    - [5.4 collectionCollect](./Offlinepayment/collectionCollect.md).
 - 6. Function Query
-    - [6.1 Payment status query（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).
-    - [6.2 Transaction result query（getReportPayout(Collection)）](./Offlinepayment/getReportPayout.md).
-    - [6.3 balance inquiry（balanceQuery）](./Offlinepayment/balanceQuery.md).
-    - [6.4 Notification Interface - Recharg 、Settlement、 Withdrawal（financeNotification）](./Rechargebalancewithdrawal/financeNotification.md).
-    - [6.5 Query interface - recharge、 settlement、 withdrawal（notificationInquiry）](./Rechargebalancewithdrawal/notificationInquiry.md).
+    - Inquiry APIs   
+    - [6.1 payoutQueryStatus](./Offlinepayment/payoutQueryStatus.md).
+    - [6.2 getRepoertPayout/getRerpotCollection](./Offlinepayment/getReportPayout.md).
+    - [6.3 balanceQuery](./Offlinepayment/balanceQuery.md).
+    - Finance APIs
+    - [6.4 financeNotification](./Rechargebalancewithdrawal/financeNotification.md).
+    - [6.5 notificationInquiry](./Rechargebalancewithdrawal/notificationInquiry.md).
 - 7. Test Tools
-    - [7.1 Payment testing tools](./testtools/Collectionverificationtool.md).
-    - [7.2 Collection verification tool](./testtools/Paymenttestingtools.md).
-- 8. Obtain basic code list information
-    - [8.1 Obtain Country Definition(getNationality)](./Obtainbasiccodelistinformation/getNationality.md).
-    - [8.2 Obtaining citizenship status(getCivilStatus)](./Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [8.3 Obtaining citizenship status(getIdentificationType)](./Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [8.4 Obtain the city code(getTownCity)](./Obtainbasiccodelistinformation/getTownCity.md).
-    - [8.5 Obtain province code(getProvince)](./Obtainbasiccodelistinformation/getProvince.md).
-    - [8.6 Obtain bank code(getBankCode)](./Obtainbasiccodelistinformation/getBankCode.md).
-- 9. [Backhaulcode](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 10. [Payment pipeline (channel code or code value)](./Paymentpipeline/Paymentpipeline.md).
-- 11. [Payment pipeline (channel code, i.e. code value)](./Paymentpipeline/Paymentpipeline1.md).
-- 12. [Change key process](./Changekeyprocess/Changekeyprocess.md).
+    - [7.1 Payout Tool](./testtools/Collectionverificationtool.md).
+    - [7.2 Collection Tool](./testtools/Paymenttestingtools.md).
+- 8. Code Table
+    - [8.1 getNationality](./Obtainbasiccodelistinformation/getNationality.md).
+    - [8.2 getCivilStatus](./Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [8.3 getIdentificationType](./Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [8.4 getTownCity](./Obtainbasiccodelistinformation/getTownCity.md).
+    - [8.5 getProvince](./Obtainbasiccodelistinformation/getProvince.md).
+    - [8.6 getBankCode](./Obtainbasiccodelistinformation/getBankCode.md).
+- 9. [Error Code Table](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 10. [Payout Channel Code](./Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](./Paymentpipeline/Paymentpipeline1.md).
+- 11. [Rnew Credentials](./Changekeyprocess/Changekeyprocess.md).

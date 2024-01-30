@@ -3,7 +3,7 @@ _________________
 ### 本文档包含Skypay专有的信息，未经本公司明确书面许可，不得复制、披露或全部或部分使用。
 _________________
  
-| Version      | 上版时间 | 描述                       |Wayne.Wang|
+| 版本      | 出版日 |说明 |出版人|
 | ------ | :-----------: | -------------------------------------------|-----     |   
 | 1.36     |   2023/12/15    |添加5.充值、提现、查询接口。<br>5.1通知接口-充值、结算、提现（financeNotification）。<br>添加5.2查詢接口充值、结算、提现(notificationInquiry)。|Wayne.Wang|
 | 1.35     |   2023/5/11     |添加 4.6 getReportPayout/(Collection)。|Wayne.Wang|
@@ -17,7 +17,7 @@ _________________
 | 1.23     |   2019/08/14    |变更可用渠道。|Vinson Huang|
 | 1.22     |   2019/08/05    |将发行日期和到期日期更改为3.1版银行付款队列中的可选日期。|Denny Pujo|
 | 1.21     |   2019/07/08    |1.新增中文说明。<br>2.增加的支付渠道。|Vinson Huang|
-| 1.20     |   2019/06/18    |添加ed related ProvinceId in Town City。|Denny Pujo|
+| 1.20.     |   2019/06/18    |添加ed related ProvinceId in Town City。|Denny Pujo|
 | 1.19     |   2019/05/06    |添加 3.1	Payout–payoutQueue For Bank 。<br>添加 7	Get Catalog。|Denny Pujo|
 | 1.18     |   2019/04/29    |添加 4.5支付状态查询（payoutQueryStatus）。|Wayne.Wang|
 | 1.17     |   2019/03/24    |添加 9.withdrawChannel已修改了所有章节以添加所需的列。<br>4.3收款数据验证（CollectionInquiry）Modified parameter to fit MLhuillier bills payment API interface。|Wayne.Wang|

@@ -1,4 +1,4 @@
-# Payment API documentations
+# Data Encryption
 - ## 1.Data encryption instructions ##
     - Before POST data the JSON string must be encrypted. Sample steps are as follows:
 - (1) Json string/Clear text format before encryption：postData

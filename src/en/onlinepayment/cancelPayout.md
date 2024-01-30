@@ -1,4 +1,4 @@
-# 4.2Cancelling Payment Transactions
+# cancelPayout
 
 #### This service is provided by SkyPay and aims to cancel a transaction when its status is Uploaded.
 

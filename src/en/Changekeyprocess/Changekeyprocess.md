@@ -8,13 +8,13 @@
 
 ## 2. Operation process
 
-- (1) CC Change Key
+## (1) CC Change Key
 
 ![](../public/CC更改金钥.png)
 
 
 
-- (2) Generate key
+## (2) Generate key
 
  - The first step is to generate the key, which will be displayed on the page in an encrypted manner after generation
 
@@ -24,7 +24,7 @@
 
 
 
-- (3) View the key and record it
+##  (3) View the key and record it
 
  - The second step is to click the button to display the original text, and you need to record it yourself.
 
@@ -32,7 +32,7 @@
 
 
 
- - (4) Set key expiration date
+## (4) Set key expiration date
 
  - The third step is to set the key period. There are three options: 30 days, 60 days, and 90 days, which can be selected as needed.
 
@@ -40,7 +40,7 @@
 
 
 
- - (5) Enable Key
+ ## (5) Enable Key
 
   - Step 4: Enable the key. Once enabled, the key becomes effective and cannot be viewed.
 
@@ -50,7 +50,7 @@
 
 
 
- - (6) Set email key expiration reminder
+## (6) Set email key expiration reminder
 
  - This operation is to enable email notification reminder. After filling in the email, the system will send an email notification seven days before the key expires. Please note
 
@@ -60,7 +60,7 @@
 
 
 
- - (7) Refresh Key History
+## (7) Refresh Key History
 
  - This operation is to refresh the key history and update it to the latest generated key record.
 

@@ -21,8 +21,8 @@
 |action|string|50|Y|调用行为<br>collectionInquiry(固定参数值) - Ex:"action":"collectionInquiry"|
 |authentication |string |255|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber|string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|amount|string|10.20|Y|支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
-|phone|string|11|Y|09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
+|amount|string|10.20|Y|金额<br>支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
+|phone|string|11|Y|手机号<br>09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
 
 ### Post data
 

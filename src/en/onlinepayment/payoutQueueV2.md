@@ -18,8 +18,8 @@
 |birthday |Date|10|Y| Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
 |identificationId  |string|50|Y|ID number <br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3| |Verify ID document type <br> please refer to Chapter 8.3 for identification type - Ex:IdentificationId IdentificationType <br>1.Company ID<br>2. Driver’s License|
-|phone  |string|11|Y | 11 digit number starting with 09/08 <br>  Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y |Payment amount supports two decimal places <br>   ex:"amount":3400.00|
+|phone  |string|11|Y |phone number<br> 11 digit number starting with 09/08 <br>  Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y |amount of money<br>Payment amount supports two decimal places <br>   ex:"amount":3400.00|
 |idcardPicType  |string|50|Y|Image Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl  |string |500|Y|Photo access network address  <br>  Ex:"idcardPicUrl":"https://12334.png"|
 |location  |string |500|Y| Withdrawal address <br> Ex:"location":"lalakay los banos laguna"|

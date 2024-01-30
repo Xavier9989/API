@@ -304,7 +304,7 @@ export default defineConfig({
           { text: "版本", link: "/Version1" },
           { text: "目录", link: "/api-examples" },
           { text: "前言", link: "/preface" },
-          { text: "文档说明", link: "/APIdocumentationdescription" },
+          { text: "数据加密", link: "/APIdocumentationdescription" },
         ],
       },
 

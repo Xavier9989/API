@@ -18,10 +18,10 @@ When customers obtain payment transaction approval information, partners must pu
 |sender  |string|100|  Y  |Payer <br> Product APP Name (Required: Designed by Partner)<br> Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|  Y  |Name of withdrawal person <br> separated by commas. - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone|string|11 |  Y |11 digit number starting with 09/08  <br> Ex:"phone":"09270348095"|
-|amount|string|10.20  |    Y   |Payment amount supports two decimal places<br> ex:"amount":3400.00|
-|bankNo|string |50| Y |Account number<br> When making payments through bank channels, this parameter is mandatory. This parameter is not available in electronic wallets. Please refer to Chapter 8 Interface 8.6 Get Bank Code, which consists of 3 characters|
-|accountNo  |string |50| Y |Electronic wallet:<br> The account is a mobile phone number with the first 11 digits of 09 for the withdrawal person <br>Bank:The designated bank account of the withdrawer (specify a valid bank account)|
+|phone|string|11 |  Y |phone number<br>11 digit number starting with 09/08  <br> Ex:"phone":"09270348095"|
+|amount|string|10.20  |    Y   |amount of money<br>Payment amount supports two decimal places<br> ex:"amount":3400.00|
+|bankNo|string |50| Y |Bank code<br> When making payments through bank channels, this parameter is mandatory. This parameter is not available in electronic wallets. Please refer to Chapter 8 Interface 8.6 Get Bank Code, which consists of 3 characters|
+|accountNo  |string |50| Y |account number:<br> The account is a mobile phone number with the first 11 digits of 09 for the withdrawal person <br>Bank:The designated bank account of the withdrawer (specify a valid bank account)|
 |withdrawChannel|int||  Y| Designated payment channel code<br> refer to Chapter 10 for detailed pipeline instructions[Channel code value](../Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |ID number <br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3|   N  |Verify ID Document Category <br> Reference8.3 Get Identification Type - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:":identificationTypeId":"2"|

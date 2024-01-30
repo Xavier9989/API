@@ -10,8 +10,8 @@
 |authentication|string |255|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |contractNumber|string|13~15|Y|收款码 <br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|Y|还款人名字<br> 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone |string|50|Y|09/08开头的11位数字<br> Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
+|phone |string|50|Y|手机号<br>09/08开头的11位数字<br> Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y|金额<br>必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
 
 ### Post data
 

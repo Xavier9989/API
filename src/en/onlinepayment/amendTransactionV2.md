@@ -19,7 +19,7 @@
 |birthday|Date|10|Y | Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
 |identificationId  |string|50|Y|ID number<br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
 |identificationTypeId |string |3|Y|Please refer to Chapter 8.3 to obtain the identification type for verifying the type of identity document (bank)<br> Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
-|phone |string|11|Y| 11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
+|phone |string|11|Y|phone number<br> 11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
 |idcardPicType |string|50|Y|Photo File Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl|string |500|Y|Photo access network address <br> Ex:"idcardPicUrl":"https://12334"|
 |location  |string |100|Y|Withdrawal address <br> Ex:"location":"lalakay los banos laguna"|

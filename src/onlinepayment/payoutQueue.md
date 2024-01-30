@@ -18,10 +18,10 @@
 |sender  |string|100|  Y  |支付方<br> 产品APP名称(由合作伙伴设计) - Ex:"sender":"APP NAME"|
 |controlNumber   | string | 13~15 |  Y |取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |name |string |50|  Y  |取现人名字<br>使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone|string|11 |  Y |09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
-|amount|string|10.20  |    Y   |支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
-|bankNo|string |50| Y |账户号<br>银行渠道进行支付时必填，电子钱包无此参数请参考第八章接口8.6 Get Bank Code,银行代码为3位的字符|
-|accountNo  |string |50| Y |电子钱包<br>账号为取现人09/08开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
+|phone|string|11 |  Y |手机号<br>09/08开头的11位数字 <br> Ex:"phone":"09270348095"|
+|amount|string|10.20  |    Y   |金额<br>支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
+|bankNo|string |50| Y |银行代码<br>银行渠道进行支付时必填，电子钱包无此参数请参考第八章接口8.6 Get Bank Code,银行代码为3位的字符|
+|accountNo  |string |50| Y |账户号<br>账号为取现人09/08开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
 |withdrawChannel|int||  Y| 指定支付渠道代码<br> 参考第十章管道详细说明[渠道code值](../Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3|   N  |验证身份证件类别<br>参考8.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|

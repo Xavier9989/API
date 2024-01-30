@@ -19,8 +19,8 @@
 |birthday |Date|10|Y| 生日格式：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
 |identificationId  |string|50|Y|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3| |验证身份证件类别 <br> 请参考第8.3章，获取标识类型 - Ex:IdentificationId IdentificationType<br> 1.Company ID<br>2. Driver’s License|
-|phone  |string|11|Y | 09/08开头的11位数字<br>  Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y |支付金额支持数字小数位两位 <br>   ex:"amount":3400.00|
+|phone  |string|11|Y |手机号<br> 09/08开头的11位数字<br>  Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y |金额<br>支付金额支持数字小数位两位 <br>   ex:"amount":3400.00|
 |idcardPicType  |string|50|Y|图片格式<br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
 |idcardPicUrl  |string |500|Y|相片存取网络地址 <br>  Ex:"idcardPicUrl":"https://12334.png"|
 |location  |string |500|Y| 取款人地址<br> Ex:"location":"lalakay los banos laguna"|

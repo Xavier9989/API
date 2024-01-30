@@ -14,8 +14,8 @@
 |authentication|string |255|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |contractNumber|string|13~15|Y|Payment code<br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |name |string |50|Y|Reparer's name <br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|phone |string|50|Y|11 digit number starting with 09/08  Ex:"phone":"09270348095"|
-|amount |decimal|10.20|Y|Must be the actual amount received by the user<br> with a maximum of two decimal places -  ex:"amount":3400.00|
+|phone |string|50|Y|phone number<br>11 digit number starting with 09/08  Ex:"phone":"09270348095"|
+|amount |decimal|10.20|Y|amount of money<br>Must be the actual amount received by the user<br> with a maximum of two decimal places -  ex:"amount":3400.00|
 
 ### Post data
 

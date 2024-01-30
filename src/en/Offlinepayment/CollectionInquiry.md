@@ -34,8 +34,8 @@
 |action|string|50|Y|Call behavior<br>collectionInquiry(Fixed parameter values) - Ex:"action":"collectionInquiry"|
 |authentication |string |255|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |controlNumber|string|13~15|Y|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|amount|string|10.20|Y|Must be the actual amount received by the user<br> with a maximum of two decimal places -  ex:"amount":3400.00|
-|phone|string|11|Y|11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
+|amount|string|10.20|Y|amount of money<br>Must be the actual amount received by the user<br> with a maximum of two decimal places -  ex:"amount":3400.00|
+|phone|string|11|Y|phone number<br>11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
 
 ### Post data
 

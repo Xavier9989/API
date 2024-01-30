@@ -8,8 +8,8 @@
 |action|string|50|Y|调用行为<br>generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
 |authentication|string |255|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |contractNumber |string|13~15|Y|收款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|amount|decimal|10.20|Y|必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
-|phone|string|50|Y|09/08开头的11位数字<br> Ex:"phone":"09270348095"|
+|amount|decimal|10.20|Y|金额<br>必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
+|phone|string|50|Y|手机号<br>09/08开头的11位数字<br> Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  收据编号|
 |collectedTime|DateTime| |Y| 收款时间<br>日期格式yyyy-MM-dd HH:mm:ss|
 |payChannel|int||Y|收款管道<br> 详细说明请参考第11章[渠道code值](../Paymentpipeline/Paymentpipeline1.md)|

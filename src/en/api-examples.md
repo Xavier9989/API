@@ -11,7 +11,7 @@ _________________
     - [3.1 payoutQueue (Bank/Wallet)](/en/onlinepayment/payoutQueue.md)
     - [3.2 payoutQueuePayout (CallBack)](/en/onlinepayment/payoutQueuePayout.md).
 - 4. Offline Payment (Async mode)
-    - [4.1 payoutQueueV2 (Remit Store)](en/onlinepayment/payoutQueueV2.md).
+    - [4.1 payoutQueueV2 (Remit Store)](/en/onlinepayment/payoutQueueV2.md).
     - [4.2 cancelPayout](/en/onlinepayment/cancelPayout.md).
     - [4.3 amendTransactionV2](/en/onlinepayment/amendTransactionV2.md).
 - 5. Offline transactions (synchronous)

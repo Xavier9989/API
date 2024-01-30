@@ -291,7 +291,7 @@ export default defineConfig({
       prev: "上一页",
       next: "下一页",
     },
-    logo: "/logo.svg",
+    logo: "/public/logo.svg",
     siteTitle: false,
     search: {
       provider: "local",
@@ -524,7 +524,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "放款渠道代码",
+                    text: "收款渠道代码",
                     link: "/Paymentpipeline/Paymentpipeline1",
                   },
                 ],

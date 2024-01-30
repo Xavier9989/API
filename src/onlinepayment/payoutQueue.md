@@ -1,7 +1,7 @@
 # 推送交易 (银行、钱包)(payoutQueue)
 这个API是由SkyPay提供,并由合作伙伴进行主动推送。
 当客户取得支付交易核准信息,合作伙伴必须透过此界面推送支付数据进行支付交易。
-![](../public/4线上放款.png)
+![](/public/4线上放款.png)
 
 - <font color = red>重复支付注意 </font>
     - <font color = red>为了避免重复支付，重送交易前请先查询交易状态（查询操作请在交易发送后300秒）。</font>
@@ -22,7 +22,7 @@
 |amount|string|10.20  |    Y   |金额<br>支付金额支持数字小数位两位<br>  ex:"amount":3400.00|
 |bankNo|string |50| Y |银行代码<br>银行渠道进行支付时必填，电子钱包无此参数请参考第八章接口8.6 Get Bank Code,银行代码为3位的字符|
 |accountNo  |string |50| Y |账户号<br>账号为取现人09/08开头11位长度之手机号码 <br>Bank:取现人指定银行账号,(指定有效之银行账号)|
-|withdrawChannel|int||  Y| 指定支付渠道代码<br> 参考第十章管道详细说明[渠道code值](../Paymentpipeline/Paymentpipeline.md)|
+|withdrawChannel|int||  Y| 指定支付渠道代码<br> 参考第十章管道详细说明[渠道code值](/Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3|   N  |验证身份证件类别<br>参考8.3 Get Identification Type - 银行渠道进行支付时选填，电子钱包无此参数 - Ex:":identificationTypeId":"2"|
 |idType  |string|50| N  |验证身份证件类别<br>电子钱包进行支付时选填，银行无此参数 - ex:"idType":"TIN"|

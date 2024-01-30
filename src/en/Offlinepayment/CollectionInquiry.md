@@ -2,7 +2,7 @@
 #### The API is provided by partners and will be triggered by customers when applying for repayment.
 
 
-![](../public/收款交易顺序图1.png)
+![收款交易顺序图](/en/public/收款交易顺序图1.png)
 
 
 

@@ -1,6 +1,6 @@
 # payoutQueue (Bank/Wallet)
 This API is provided by SkyPay and actively pushed by partners.
-![](../public/4线上放款.png)
+![4线上放款](/en/public/4线上放款.png)
 When customers obtain payment transaction approval information, partners must push payment data through this interface for payment transactions.
 
 - <font color = red>Attention to duplicate payments </font>
@@ -22,7 +22,7 @@ When customers obtain payment transaction approval information, partners must pu
 |amount|string|10.20  |    Y   |amount of money<br>Payment amount supports two decimal places<br> ex:"amount":3400.00|
 |bankNo|string |50| Y |Bank code<br> When making payments through bank channels, this parameter is mandatory. This parameter is not available in electronic wallets. Please refer to Chapter 8 Interface 8.6 Get Bank Code, which consists of 3 characters|
 |accountNo  |string |50| Y |account number:<br> The account is a mobile phone number with the first 11 digits of 09 for the withdrawal person <br>Bank:The designated bank account of the withdrawer (specify a valid bank account)|
-|withdrawChannel|int||  Y| Designated payment channel code<br> refer to Chapter 10 for detailed pipeline instructions[Channel code value](../Paymentpipeline/Paymentpipeline.md)|
+|withdrawChannel|int||  Y| Designated payment channel code<br> refer to Chapter 10 for detailed pipeline instructions[Channel code value](/en/Paymentpipeline/Paymentpipeline.md)|
 |identificationId  |string|        50  |  N       |ID number <br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
 |identificationTypeId  |string |3|   N  |Verify ID Document Category <br> Reference8.3 Get Identification Type - Optional when making payments through bank channels, this parameter is not available in electronic wallets - Ex:":identificationTypeId":"2"|
 |idType  |string|50| N  |Optional field for verifying ID type <br> electronic wallet for payment, bank does not have this paramete - ex:"idType":"TIN"|

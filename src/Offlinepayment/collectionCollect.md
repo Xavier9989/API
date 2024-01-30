@@ -12,7 +12,7 @@
 |phone|string|50|Y|手机号<br>09/08开头的11位数字<br> Ex:"phone":"09270348095"|
 |receiptNumber  |string|50|Y|  收据编号|
 |collectedTime|DateTime| |Y| 收款时间<br>日期格式yyyy-MM-dd HH:mm:ss|
-|payChannel|int||Y|收款管道<br> 详细说明请参考第11章[渠道code值](../Paymentpipeline/Paymentpipeline1.md)|
+|payChannel|int||Y|收款管道<br> 详细说明请参考第11章[渠道code值](/Paymentpipeline/Paymentpipeline1.md)|
 
 ### Post data
 

@@ -1,45 +1,45 @@
 # API directory
 ###   SkyPay Third Payment API Specification
 _________________
-- [Version](./Version1.md).
+- [Version](/en/Version1.md).
 - Directory
-- [Preface](./preface.md).
-- [Data Encryption](./APIdocumentationdescription.md)
+- [Preface](/en/preface.md).
+- [Data Encryption](/en/APIdocumentationdescription.md)
     - 1.Data encryption instructions
     - 2.Encryption Program Description
 - 3. Online Payment (Async mode)
-    - [3.1 payoutQueue (Bank/Wallet)](./onlinepayment/payoutQueue.md)
-    - [3.2 payoutQueuePayout (CallBack)](./onlinepayment/payoutQueuePayout.md).
+    - [3.1 payoutQueue (Bank/Wallet)](/en/onlinepayment/payoutQueue.md)
+    - [3.2 payoutQueuePayout (CallBack)](/en/onlinepayment/payoutQueuePayout.md).
 - 4. Offline Payment (Async mode)
-    - [4.1 payoutQueueV2 (Remit Store)](./onlinepayment/payoutQueueV2.md).
-    - [4.2 cancelPayout](./onlinepayment/cancelPayout.md).
-    - [4.3 amendTransactionV2](./onlinepayment/amendTransactionV2.md).
+    - [4.1 payoutQueueV2 (Remit Store)](en/onlinepayment/payoutQueueV2.md).
+    - [4.2 cancelPayout](/en/onlinepayment/cancelPayout.md).
+    - [4.3 amendTransactionV2](/en/onlinepayment/amendTransactionV2.md).
 - 5. Offline transactions (synchronous)
     - Offline Payment (Sync mode) 
-    - [5.1 payoutInquiry](./Offlinepayment/PayoutInquiry.md).
-	- [5.2 payoutPayout](./Offlinepayment/PayoutPayout.md).
+    - [5.1 payoutInquiry](/en/Offlinepayment/PayoutInquiry.md).
+	- [5.2 payoutPayout](/en/Offlinepayment/PayoutPayout.md).
     - Collection (Sync mode)
-    - [5.3 CollectionInquiry](./Offlinepayment/CollectionInquiry.md).
-    - [5.3.1 generate711Barcode](./Offlinepayment/Generate711Barcode.md).
-    - [5.4 collectionCollect](./Offlinepayment/collectionCollect.md).
+    - [5.3 CollectionInquiry](/en/Offlinepayment/CollectionInquiry.md).
+    - [5.3.1 generate711Barcode](/en/Offlinepayment/Generate711Barcode.md).
+    - [5.4 collectionCollect](/en/Offlinepayment/collectionCollect.md).
 - 6. Function Query
     - Inquiry APIs   
-    - [6.1 payoutQueryStatus](./Offlinepayment/payoutQueryStatus.md).
-    - [6.2 getRepoertPayout/getRerpotCollection](./Offlinepayment/getReportPayout.md).
-    - [6.3 balanceQuery](./Offlinepayment/balanceQuery.md).
+    - [6.1 payoutQueryStatus](/en/Offlinepayment/payoutQueryStatus.md).
+    - [6.2 getRepoertPayout/getRerpotCollection](/en/Offlinepayment/getReportPayout.md).
+    - [6.3 balanceQuery](/en/Offlinepayment/balanceQuery.md).
     - Finance APIs
-    - [6.4 financeNotification](./Rechargebalancewithdrawal/financeNotification.md).
-    - [6.5 notificationInquiry](./Rechargebalancewithdrawal/notificationInquiry.md).
+    - [6.4 financeNotification](/en/Rechargebalancewithdrawal/financeNotification.md).
+    - [6.5 notificationInquiry](/en/Rechargebalancewithdrawal/notificationInquiry.md).
 - 7. Test Tools
-    - [7.1 Payout Tool](./testtools/Collectionverificationtool.md).
-    - [7.2 Collection Tool](./testtools/Paymenttestingtools.md).
+    - [7.1 Payout Tool](/en/testtools/Collectionverificationtool.md).
+    - [7.2 Collection Tool](/en/testtools/Paymenttestingtools.md).
 - 8. Code Table
-    - [8.1 getNationality](./Obtainbasiccodelistinformation/getNationality.md).
-    - [8.2 getCivilStatus](./Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [8.3 getIdentificationType](./Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [8.4 getTownCity](./Obtainbasiccodelistinformation/getTownCity.md).
-    - [8.5 getProvince](./Obtainbasiccodelistinformation/getProvince.md).
-    - [8.6 getBankCode](./Obtainbasiccodelistinformation/getBankCode.md).
-- 9. [Error Code Table](./Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 10. [Payout Channel Code](./Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](./Paymentpipeline/Paymentpipeline1.md).
-- 11. [Rnew Credentials](./Changekeyprocess/Changekeyprocess.md).
+    - [8.1 getNationality](/en/Obtainbasiccodelistinformation/getNationality.md).
+    - [8.2 getCivilStatus](/en/Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [8.3 getIdentificationType](/en/Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [8.4 getTownCity](/en/Obtainbasiccodelistinformation/getTownCity.md).
+    - [8.5 getProvince](/en/Obtainbasiccodelistinformation/getProvince.md).
+    - [8.6 getBankCode](/en/Obtainbasiccodelistinformation/getBankCode.md).
+- 9. [Error Code Table](/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 10. [Payout Channel Code](/en/Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](./Paymentpipeline/Paymentpipeline1.md).
+- 11. [Rnew Credentials](/en/Changekeyprocess/Changekeyprocess.md).

@@ -50,7 +50,7 @@
 
 
 The Code128-A barcode generated based on the referenceNumber returned by the API is as follows
-![](../public/711条形码.png "Shiprock")
+![711条形码](/en/public/711条形码.png "Shiprock")
 
 
 

@@ -17,7 +17,7 @@ _________________
 
 ## 4.4.Encryption
 Post data must be encrypted before POST request.
-![](./public/CC更改金钥.png "Shiprock")
+![CC更改金钥](/en/public/CC更改金钥.png "Shiprock")
 - Encrypt Key：The encryption key is provided by SkyPay and obtained from the CC change key function in the management backend
 
 ## 5.5.Authentication 

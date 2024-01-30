@@ -1,4 +1,4 @@
-# API directory
+# Table of contents
 ###   SkyPay Third Payment API Specification
 _________________
 - [Version](/en/Version1.md).

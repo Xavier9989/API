@@ -126,7 +126,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "6. Inquiry APIs",
+                    text: "Inquiry APIs",
                     collapsed: true,
                     items: [
                       {
@@ -148,7 +148,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "6. Finance APIs",
+                    text: "Finance APIs",
                     collapsed: true,
                     items: [
                       {

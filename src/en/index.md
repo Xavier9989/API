@@ -1,1 +1,2 @@
-<!--@include: ./Version1.md-->
+# SkyPay Third Payment API Specification
+

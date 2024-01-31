@@ -1,4 +1,4 @@
-# 取消交易(cancelPayout)
+# 4.2取消交易(cancelPayout)
 
 #### 该服务由SkyPay提供,目的在该笔交易状态为Uploaded时,进行取消交易动作。
 

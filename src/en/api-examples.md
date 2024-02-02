@@ -19,14 +19,12 @@ _________________
 	- [5.2 payoutPayout](../en/Offlinepayment/PayoutPayout.md).
 - 6. Collection (Sync mode)
     - [6.3 CollectionInquiry](../en/Offlinepayment/CollectionInquiry.md).
-    - [6.2.1 generate711Barcode](../en/Offlinepayment/Generate711Barcode.md).
+    - [6.2 generate711Barcode](../en/Offlinepayment/Generate711Barcode.md).
     - [6.3 collectionCollect](../en/Offlinepayment/collectionCollect.md).
-- 7. Function Query
-    - Inquiry APIs   
+- 7. Inquiry APIs
     - [7.1 payoutQueryStatus](../en/Offlinepayment/payoutQueryStatus.md).
     - [7.2 getRepoertPayout/getRerpotCollection](../en/Offlinepayment/getReportPayout.md).
     - [7.3 balanceQuery](../en/Offlinepayment/balanceQuery.md).
-    <!-- - [7.4 balanceTransfer](/en/Offlinepayment/balancetransfer.md). -->
     - [7.4 balanceTransfer](../en/Offlinepayment/Balancetransfer.md).
 - 8. Finance APIs
     - [8.1 financeNotification](../en/Rechargebalancewithdrawal/financeNotification.md).

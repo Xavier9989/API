@@ -22,7 +22,7 @@ _________________
   - [5.2 支付确认（PayoutPayout）](./Offlinepayment/PayoutPayout.md).
 - 6. 收款接口（同步）
   - [6.1 收款验证（CollectionInquiry）](./Offlinepayment/CollectionInquiry.md).
-  - [6.2.1产生7-11收款条码（generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
+  - [6.2 产生7-11收款条码（generate711Barcode）](./Offlinepayment/Generate711Barcode.md).
   - [6.3 收款确认（collectionCollect）](./Offlinepayment/collectionCollect.md).
 - 7. 查询功能
   - [7.1 支付状态查询（payoutQueryStatus）](./Offlinepayment/payoutQueryStatus.md).

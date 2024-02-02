@@ -5,7 +5,7 @@ _________________
  
 | <img width=30/>版本     | 出版日 |说明 |出版人|
 | ------ | :-----------: | -------------------------------------------|-----     |   
-| 1.37     |   2024/1/32     |添加 4.8 余额互转（balanceTransfer）|Wayne.Wang|
+| 1.37     |   2024/1/31     |添加 4.8 余额互转（balanceTransfer）|Wayne.Wang|
 | 1.36     |   2023/12/15    |添加 5.充值、提现、查询接口。<br>添加 5.1通知接口-充值结算提现financeNotification。<br>添加 5.2查詢接口充值结算提现(notificationInquiry)。<br>删除EGcsh<br>删除LBC Express|Wayne.Wang|
 | 1.35     |   2023/5/11     |添加 4.6 getReportPayout/(Collection)。|Wayne.Wang|
 | 1.33     |   2021/01/26    |添加 Withdraw Channel:LBC,EGcash。|Abel|

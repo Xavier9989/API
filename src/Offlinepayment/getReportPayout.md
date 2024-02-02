@@ -3,7 +3,7 @@
 ### 交易结果查询服务API由Skypay提供,可以对交易结果进行查询
 
 ### Input parameters
-| 参数                        |    类型     | <img width=30/>长度  |<img width=30/>必填 |描述|
+| 参数                        |    类型     | <img width=30/>长度  |<img width=50/>必填 |描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
 |userName|string|50|是|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|是| 调用行为<br>payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|

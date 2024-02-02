@@ -27,17 +27,17 @@
 |userName|string|50|YES|User name<br>provided by SkyPay - <br>"userName":"AppName@skypay"|
 |action|string|50|YES|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
 |authentication  |string |255|YES|Verification Code<br>Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|transctionDate |DateTime|50| |notice date -  ex:2023-06-18 17:52:10|
-|companyPrefix |string|5|  |Company Code <br>  ex:SKY98|
-|companyName |string|200|  |corporate name <br>ex:Skybridge Payment Inc.|
-|accountNo |string|5|   |account - ex:SKY98|
-|sourceAccountNo |string|20|   | Fund source account <br> (actual bank account number, <br>only provided at withdrawal)|
-|beneficiaryAccountNo |string|20|   |Fund purpose account<br>(actual bank account number, <br>only provided during recharge and withdrawal)|
-|statementType|string|1||Notification type:<br>1: Recharge from payment account<br>2: Recharge from collection settlement<br>3: Account balance transfer<br>4: Collectiontransactionsettlement<br>5: Withdrawal from payment account<br>6: Withdrawal from payment account|
-|signType  |string|10|  |Type of fund increase or decrease<br> recharge:Additional items <br> reduce:deduction|
-|Amount |int||     |money <br> Ex:1200000|
-|Currency |string|3|    | Fixed Currency <br> PHP|
-|referenceNumber|string|15|  |Transaction Number (Unique)<br>This number can be queried <br>in the background- S <br>The starting number is the transaction generated in the settlement function (backend)- D <br>The starting number is the transaction <br>generated in the recharge function (backend) <br> {caller Name} <br>The starting number is the transaction automatically <br>settled by the system。<br>ex:S-20231204-001D-20231204-001,skypay-20231204|
+|transctionDate |DateTime|50|YES |notice date -  ex:2023-06-18 17:52:10|
+|companyPrefix |string|5| YES |Company Code <br>  ex:SKY98|
+|companyName |string|200| YES |corporate name <br>ex:Skybridge Payment Inc.|
+|accountNo |string|5| YES  |account - ex:SKY98|
+|sourceAccountNo |string|20|  YES | Fund source account <br> (actual bank account number, <br>only provided at withdrawal)|
+|beneficiaryAccountNo |string|20| YES  |Fund purpose account<br>(actual bank account number, <br>only provided during recharge and withdrawal)|
+|statementType|string|1|YES|Notification type:<br>1: Recharge from payment account<br>2: Recharge from collection settlement<br>3: Account balance transfer<br>4: Collectiontransactionsettlement<br>5: Withdrawal from payment account<br>6: Withdrawal from payment account|
+|signType  |string|10| YES |Type of fund increase or decrease<br> recharge:Additional items <br> reduce:deduction|
+|Amount |int||   YES  |money <br> Ex:1200000|
+|Currency |string|3|  YES  | Fixed Currency <br> PHP|
+|referenceNumber|string|15| YES |Transaction Number (Unique)<br>This number can be queried <br>in the background- S <br>The starting number is the transaction generated in the settlement function (backend)- D <br>The starting number is the transaction <br>generated in the recharge function (backend) <br> {caller Name} <br>The starting number is the transaction automatically <br>settled by the system。<br>ex:S-20231204-001D-20231204-001,skypay-20231204|
 
 ### Post data
 

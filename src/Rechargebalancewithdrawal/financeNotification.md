@@ -15,22 +15,22 @@
 
 ### Input parameters
 
-| 参数                        |    类型     | <img width=30/>长度   |<img width=30/>必填|描述|
+| 参数                        |    类型     | <img width=40/>长度   |<img width=40/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName|string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|userName|string|50|是|使用者名称<br> SkyPay提供 <br> "userName":"AppName@skypay"|
 |action|string|50|是|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
 |authentication  |string |255|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |transctionDate |DateTime|50| |通知日期<br> ex:2023-06-18 17:52:10|
-|companyPrefix |string|5|  |公司编码<br>  ex:SKY98|
-|companyName |string|200|  |公司名称<br> ex:Skybridge Payment Inc.|
-|accountNo |string|5|   |帐户 <br> ex:SKY98|
-|sourceAccountNo |string|20|   | 资金来源帐号 <br> (实际银行帐号，只在提现时提供)|
-|beneficiaryAccountNo |string|20|   |资金目的帐号 <br> (实际银行帐号，只在充值及提现时提供)|
-|statementType|string|1||通知类型:<br>1:打款帐户充值<br>2:收款结算转充值<br>3:帐户馀额互转<br>4:收款交易结算<br>5:收款帐户提现<br>6:打款帐户提现|
-|signType  |string|10|  |资金增减类型 :<br> recharge:增项 <br> reduce:减项|
-|Amount |int||     |金額 <br> Ex:1200000|
-|Currency |string|3|    | 固定币别 <br>PHP|
-|referenceNumber|string|15|  |交易编号(唯一) <br> 此编号可于后台查询。- S–开头编号为结算功能(後台)中生成的交易。 - D–开头编号为充值功能(後台)中生成的交易- {callerName}–开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
+|companyPrefix |string|5| 是 |公司编码<br>  ex:SKY98|
+|companyName |string|200| 是 |公司名称<br> ex:Skybridge Payment Inc.|
+|accountNo |string|5|  是 |帐户 <br> ex:SKY98|
+|sourceAccountNo |string|20| 是  | 资金来源帐号 <br> (实际银行帐号，只在提现时提供)|
+|beneficiaryAccountNo |string|20| 是  |资金目的帐号 <br> (实际银行帐号，只在充值及提现时提供)|
+|statementType|string|1|是|通知类型:<br>1:打款帐户充值<br>2:收款结算转充值<br>3:帐户馀额互转<br>4:收款交易结算<br>5:收款帐户提现<br>6:打款帐户提现|
+|signType  |string|10|是  |资金增减类型 :<br> recharge:增项 <br> reduce:减项|
+|Amount |int||   是  |金額 <br> Ex:1200000|
+|Currency |string|3| 是   | 固定币别 <br>PHP|
+|referenceNumber|string|15| 是 |交易编号(唯一) <br> 此编号可于后台查询。- S–<br>开头编号为结算功能(後台)<br>中生成的交易。<br> D–开头编号为充值功能(後台)<br>中生成的交易<br> {callerName}开头编号为系统自动结算的交易。-ex:S-20231204-001D-20231204-001,skypay-20231204|
 
 ### Post data
 

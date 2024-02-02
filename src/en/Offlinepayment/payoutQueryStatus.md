@@ -52,7 +52,7 @@
 |statusDesc |String|50|YES|State Description: <br> Pending:Waiting <br> Completed:Complet <br> Uploaded:Complete upload <br> Cancelled:Canceled <br> Failed:fail <br> Inquiry Success:query was successful <br> Inquiry Failure:Query failed|
 |payTime  |DateTime|||Withdrawal time <br> (yyyy-MM-dd HH:mm:ss)|
 |cancelTime |DateTime|||Cancel time <br> (yyyy-MM-dd HH:mm:ss)|
-|withdrawChannel |int |||Payment Pipeline <br> For detailed information, please refer to section12|
+|withdrawChannel |int |||Payment Pipeline <br> For detailed information, please refer to section12[Channel code value](/en/Paymentpipeline/Paymentpipeline.md)|
 |referenceNo |String|50||Receipt No <br> GCash:reference number - Real time return receipt number|
 |traceNo |String|50||MLExclusive payment code <br> MLhuillier(RT) - referenceNumber MLExclusive payment code|
 

@@ -1,4 +1,4 @@
-# 6.2.1 7-11收款条码（Generate711Barcode）
+# 6.2 7-11收款条码（Generate711Barcode）
 #### <font color=red>该 API 的目的是减少填写错误的合同编号金额的可能性。</font><br>
 #### 条形码生成有效期 24 小时。客户需要在其 Apps中将 API 返回的代码中的 referenceNumber 生成为 Code128-A 条形码。<br>取现人转到 7-11 进行收款后，他们可以向店员显示条形码以处理收款。店员扫描条形码后，收款流程将不会改变，在进一步处理之前，它将再次调用收款查询。
 
@@ -31,7 +31,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码<br> 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription |string|255| 回传内容描述<br> 响应信息（必填）|
+|responseDescription |string|255| 回传内容描述<br> 响应信息|
 |referenceNumber|string|50|Generated Code|
 
 ### Output data：

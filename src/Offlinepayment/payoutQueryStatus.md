@@ -48,7 +48,7 @@
 |statusDesc |String|50|是|状态描叙: <br> Pending:等待中 <br> Completed:己完成 <br> Uploaded:完成上传 <br> Cancelled:己取消 <br> Failed:失败 <br> Inquiry Success:查询成功 <br> Inquiry Failure:查询失败|
 |payTime  |DateTime|||取款时间 <br> (yyyy-MM-dd HH:mm:ss)|
 |cancelTime |DateTime|||取消时间 <br> (yyyy-MM-dd HH:mm:ss)|
-|withdrawChannel |int |||支付管道 <br> 详细内容请参考第12|
+|withdrawChannel |int |||支付管道 <br> 详细内容请参考第12[支付渠道](/Paymentpipeline/Paymentpipeline.md)|
 |referenceNo |String|50||收据号码 <br> GCash:reference number - 实时回传收据号码|
 |traceNo |String|50||ML专属支付码 <br> MLhuillier(RT) - referenceNumber ML专属支付码|
 

@@ -19,9 +19,9 @@
 ### Output parameters
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|回传时间<br> yyyy-MM-dd HH:mm:ss.SSSS(必填)|
+|responseTime|DateTime|50|回传时间<br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码 <br>系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription|string|255|回传内容描述 <br>响应信息（必填）|
+|responseDescription|string|255|回传内容描述 <br>响应信息|
 |Balance |decimal|10.20|回传合作伙伴账户余额|
 
 ### Output data：

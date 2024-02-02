@@ -17,8 +17,8 @@ Input parameters:
 |controlNumber  |string|13~15|是|   取款码<br>   前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
 |payType  |int|1|是|支付状态 :<br>  1：upload:己上传,代表交易数据之支付信息,己通知支付单位 <br> 2：payout:己支付,支付单位完成付款,回传通知支付成功讯息 <br> 3：cancel:取消支付,未支付,合作伙伴通知取消交易,回传取消交易成功 <br> 4:failure:支付失败=>支付时错误,回传支付失败讯息 <br> 5：Amended Success:修改资料成功 <br> 6:Amended Fail:修改资料失败|
 |dealTime  |DateTime||是|交易时间 :<br> 1：uploaded Time:上传时间 <br> 2：paid Time:完成支付时 <br> 3：canceled Time:取消交易时间 <br> 4：fail time:支付失败时间 <br> 5：Ameded Success Time:修改资料成功时间 <br> 6：Ameded Fail Time:修改资料失败时间|
-|failDescription |string |Option|是|Fail description<br> 交易失败讯息|
-|referenceNumber|string|Option|否|当使用ML支付回调payType为1和5的状态时返回referenceNumber（upload和Amended Success）|
+|failDescription |string |Option|是|交易失败讯息|
+|referenceNumber|string|Option|否|关联码<br>当使用ML支付回调payType为1和5的状态时返回referenceNumber（upload和Amended Success）|
 ### Post data
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>

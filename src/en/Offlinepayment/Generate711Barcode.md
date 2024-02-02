@@ -1,4 +1,4 @@
-# 6.2.1 Generate711Barcode
+# 6.2 Generate711Barcode
 
 #### <font color=red>The purpose of this API is to reduce the possibility of filling in incorrect contract number amounts.</font><br>
 
@@ -35,7 +35,7 @@
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime |DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|Return Code<br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription |string|255| Feedback Content Description <br> Response Information (Required)|
+|responseDescription |string|255| Feedback Content Description <br> Response Information|
 |referenceNumber|string|50|Generated Code|
 
 ### Output data：

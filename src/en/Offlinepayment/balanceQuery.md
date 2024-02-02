@@ -20,9 +20,9 @@
 ### Output parameters
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime|DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
+|responseTime|DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|Return Code <br> System default return code, a number of 4 in length, standard reference return code definition. When the system default return code is insufficient, users can customize the code. Please start with the number 2, a number of 4 in length, and clearly describe the content of the return|
-|responseDescription|string|255|Feedback Content Description<br> Response Information (Required)|
+|responseDescription|string|255|Feedback Content Description<br> Response Information |
 |Balance |decimal|10.20|Return Partner<br> Account Balance|
 
 ### Output data：

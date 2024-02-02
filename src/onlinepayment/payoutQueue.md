@@ -53,7 +53,7 @@
 }
 
 
-### 支付为银行时,调用API送出的数据格式内容:<font color = red>（bank交易时，请先走8.6获取银行代码接口来获取目前可用的银行列表） </font>
+### 支付为银行时,调用API送出的数据格式内容:<font color = red>（bank交易时，请先走10.6获取银行代码接口来获取目前可用的银行列表） </font>
 
 {<br>
     <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>

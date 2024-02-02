@@ -4,7 +4,7 @@
 
 ### Input parameters
 
-| 参数                        |    类型     | <img width=30/>长度  |<img width=30/>必填|描述|
+| 参数                        |    类型     | <img width=50/>长度  |<img width=50/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
 |userName |string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
 |action|string|50|是|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
@@ -27,7 +27,7 @@
 
 ### Output parameters
 
-| 参数                        |    类型     | <img width=30/>长度    |描述|
+| 参数                        |    类型     | <img width=50/>长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码 <br> 1000|

@@ -54,7 +54,7 @@
 ### Output parameters:
 | parameter                        |    type     | length    |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS - REQUIRED|
+|responseTime  |DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|The default length of the system's return code is 4, which is a numerical standard reference for the definition of return codes|
 |responseDescription |string|255|Return content description <br> response information|
 |referenceNo  |string|255|Relationship code <br> This field will bring back a null value|

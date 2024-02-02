@@ -105,7 +105,7 @@ export default defineConfig({
                     link: "/en/Offlinepayment/CollectionInquiry",
                   },
                   {
-                    text: "6.2.1 generate711Barcode",
+                    text: "6.2 generate711Barcode",
                     link: "/en/Offlinepayment/Generate711Barcode",
                   },
                   {
@@ -385,7 +385,7 @@ export default defineConfig({
                 link: "/Offlinepayment/CollectionInquiry",
               },
               {
-                text: "6.2.1 7-11收款条码(generate711Barcode)",
+                text: "6.2 7-11收款条码(generate711Barcode)",
                 link: "/Offlinepayment/Generate711Barcode",
               },
               {

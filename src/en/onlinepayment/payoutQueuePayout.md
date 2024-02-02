@@ -24,8 +24,8 @@
 |controlNumber  |string|13~15|YES|  Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 |payType  |int|1|YES|Payment status:<br>1: upload: uploaded, representing payment information of transaction data, notified to payment unit<br>2: layout: paid, payment unit completed payment, return notification of payment success message<br>3: cancel: payment cancelled, not paid, partner notified to cancel transaction, return notification of successful cancellation transaction<br>4: failure: payment failed=>payment error, Return payment failure message<br>5: Amended Success: Data modification successful<br>6: Amended Failure: Data modification failed|
 |dealTime  |DateTime||YES|Trading Hours :<br> 1: Uploaded Time<br>2: paid Time: upon completion of payment<br>3: canceled Time: cancellation of transaction<br>4: fail time: payment failure time<br>5: Amed Success Time: modification of data success time<br>6: Amed Failure Time: modification of data failure time<br>|
-|failDescription |string |Option|YES|Fail description <br> Transaction failure message|
-|referenceNumber|string|Option|deny|Returned when using ML payment callback with payType 1 and 5 statusreferenceNumber（upload and Amended Success）|
+|failDescription |string |Option|YES|Fail description |
+|referenceNumber|string|Option|deny|relating codes<br>Returned when using ML payment callback with payType 1 and 5 statusreferenceNumber（upload and Amended Success）|
 
 ### Post data
 

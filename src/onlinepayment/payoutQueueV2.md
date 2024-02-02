@@ -53,7 +53,7 @@
 ### Output parameters:
 | 参数                        |    类型     | 长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
-|responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS - 必填|
+|responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|系统默认回传码长度为4的数字标准参考回传码定义|
 |responseDescription |string|255|回传内容描述 <br> 响应信息|
 |referenceNo  |string|255|关连码<br> 此字段将带回空值|

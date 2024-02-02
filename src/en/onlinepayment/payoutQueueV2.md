@@ -2,7 +2,7 @@
 
 ### This interface is a designated channel payment interface that is actively pushed by partners to SkyPay. It is an asynchronous interface and the payment result is recalled by the 3.2 PayoutQueuePayout interface。
 
-![线上请求线下取款](/en/public/线上请求线下取款.png)
+![线上请求线下放款](/线上请求线下放款.png)
 
 ### <font color = red>pay attention to</font>
 

@@ -46,7 +46,7 @@
 
 
 根据API返回的referenceNumber生成的Code128-A条码如下
-![711条形码](/public/711条形码.png "Shiprock")
+![711条形码](/711条形码.png "Shiprock")
 
 
 

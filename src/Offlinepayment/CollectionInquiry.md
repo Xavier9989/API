@@ -1,7 +1,7 @@
 # 6.1 收款验证（CollectionInquiry）（同步）
 ### API由合作伙伴提供，顾客在申请还款时将触发API。
 
-![](../public/收款交易顺序图1.png)
+![收款交易顺序图1](/收款交易顺序图1.png)
 
 ### <font color = red>collectionInquiry验证收款信息</font>
 - (1)CollectionInquiry是用来验证这笔支付信息是否存在

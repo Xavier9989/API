@@ -10,7 +10,7 @@
 
 ## (1) CC Change Key
 
-![CC Change Key](/en/public/CC更改金钥.png)
+![CC Change Key](/CC更改金钥.png)
 
 
 
@@ -20,7 +20,7 @@
 
 
 
-![Generate key](/en/public/产生金钥.png)
+![Generate key](/产生金钥.png)
 
 
 
@@ -28,7 +28,7 @@
 
  - The second step is to click the button to display the original text, and you need to record it yourself.
 
-![View the key and record it](/en/public/查看金钥.png)
+![View the key and record it](/查看金钥.png)
 
 
 
@@ -36,7 +36,7 @@
 
  - The third step is to set the key period. There are three options: 30 days, 60 days, and 90 days, which can be selected as needed.
 
-![Set key expiration date](/en/public/设置密钥期限.png)
+![Set key expiration date](/设置密钥期限.png)
 
 
 
@@ -46,7 +46,7 @@
 
  - <font color = red>(Please note that due to the Cache mechanism, the key will only take effect after 5 minutes of activation)</font>
 
-![Enable Key](/en/public/启用金钥.png)
+![Enable Key](/启用金钥.png)
 
 
 
@@ -56,7 +56,7 @@
 
  - Update key information. If you do not set an email, please leave it blank. The expiration reminder will be displayed above the background.
 
-![Set email key expiration reminder](/en/public/设置预先密钥到期提醒.png)
+![Set email key expiration reminder](/设置预先密钥到期提醒.png)
 
 
 
@@ -66,4 +66,4 @@
 
  - (Key history record, only records relevant information such as creation and activation time, and does not record enabled keys)
 
-![Refresh Key History](/en/public/刷新密钥历史记录.png)
+![Refresh Key History](/刷新密钥历史记录.png)

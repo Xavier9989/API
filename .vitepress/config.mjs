@@ -295,7 +295,7 @@ export default defineConfig({
       prev: "上一页",
       next: "下一页",
     },
-    logo: "/public/logo.svg",
+    logo: "/logo.svg",
     siteTitle: false,
     
     search: {

@@ -2,7 +2,7 @@
 
 ### 此接口为指定渠道支付接口，由合作伙伴主动推送至SkyPay，为异步接口并由3.2 PayoutQueuePayout接口回调支付结果。
 
-![](../public/线上请求线下放款.png)
+![线上请求线下放款](/线上请求线下放款.png)
 
 ### <font color = red>注意</font>
 

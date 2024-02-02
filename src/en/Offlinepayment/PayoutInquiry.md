@@ -1,7 +1,7 @@
 # 5.1 PayoutInquiry
 
 **<font color=red>This payment verification API service is provided by the partner and will send a verification request message when the withdrawer requests a withdrawal</font>**
-![4.1线下放款](/en/public/4.1线下放款.png)
+![4.1线下放款](/4.1线下放款.png)
 
 ### PayoutInquiry withdrawal verification information
 

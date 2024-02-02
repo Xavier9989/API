@@ -1,6 +1,6 @@
 # 3.1 payoutQueue (Bank/Wallet)
 This API is provided by SkyPay and actively pushed by partners.
-![4线上放款](/en/public/4线上放款.png)
+![4线上放款](/4线上放款.png)
 When customers obtain payment transaction approval information, partners must push payment data through this interface for payment transactions.
 
 - <font color = red>Attention to duplicate payments </font>

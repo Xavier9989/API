@@ -16,7 +16,7 @@
 
     - (6) Withdrawal from payment account - When the partner applies for withdrawal from the payment account and SKYPAY finance confirms completion of the payment
 ### Recharge、 settlement、 and withdrawal notification process
-![充值、结算、提现](/en/public/充值、结算、提现.png "Shiprock")
+![充值、结算、提现](/充值、结算、提现.png "Shiprock")
 
 ### <font color = red>The callback interface is only used for notification purposes. Regardless of any status received, it can only return responseCode 1000, indicating successful notification receipt.</font>
 

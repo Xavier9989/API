@@ -13,6 +13,18 @@
 |transferTo |string |5|YES|Transfer destination account<br> (Subject company prefix)ex: SKY99|
 |amount |decimal |||Ex:1200000.00|
 
+
+## Post Date
+
+{<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"userName"</font> : <font color=blue>"AppName@skypay"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"action"</font> : <font color=blue>"notificationInquiry"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"authentication"</font> : <font color=blue>"30AC21B2-9EAA-4503-B0F0-7BE5C277ED75"</font>,<br>
+    <font color=red>&ensp;&ensp;&ensp;&ensp;"transferFrom"</font> : <font color=blue>"SKY98"</font>,<br>
+     <font color=red>&ensp;&ensp;&ensp;&ensp;"transferTo"</font> : <font color=blue>"SKY99"</font>,<br>
+      <font color=red>&ensp;&ensp;&ensp;&ensp;"transferTo"</font> : <font color=blue>1200000.00</font>,<br>
+}
+
 ### Output parameters
 
 | parameter                        |    type     | length   |describe|

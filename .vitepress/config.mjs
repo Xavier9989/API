@@ -362,11 +362,11 @@ export default defineConfig({
                   {
                     items: [
                       {
-                        text: "5.1 支付验证(payoutInquiry)",
+                        text: "5.1 支付验证<br>(payoutInquiry)",
                         link: "/Offlinepayment/PayoutInquiry",
                       },
                       {
-                        text: "5.2 支付确认(payoutPayout)",
+                        text: "5.2 支付确认<br>(payoutPayout)",
                         link: "/Offlinepayment/PayoutPayout",
                       },
                     ],
@@ -413,7 +413,7 @@ export default defineConfig({
                       link: "/Offlinepayment/getReportPayout",
                     },
                     {
-                      text: "7.3 余额查询(balanceQuery)",
+                      text: "7.3 余额查询<br>(balanceQuery)",
                       link: "/Offlinepayment/balanceQuery",
                     },
                     {

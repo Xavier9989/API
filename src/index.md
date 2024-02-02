@@ -1,1 +1,1 @@
-# SkyPay第三支付API规范
+# SkyPay第三支付文档

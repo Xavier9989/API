@@ -1,1 +1,1 @@
-# SkyPay Third Payment API Specification
+# SkyPay Third Payment Document

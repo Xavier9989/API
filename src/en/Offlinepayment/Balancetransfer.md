@@ -1,6 +1,6 @@
 # 7.4 balanceTransfer
 
-## This API is provided by SKYPAY and is requested by partners to perform balance exchange between different entities.
+## This API is provided by SKYPAY and is requested by partners to perform balance exchange between different entities
 
 ### Input parameters
 
@@ -15,8 +15,6 @@
 
 ### Output parameters
 
-
-### Output parameters
 | parameter                        |    type     | length   |describe|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime|DateTime|50|Return time<br> yyyy-MM-dd HH:mm:ss.SSSS(REQUIRED)|
@@ -31,8 +29,7 @@
     <font color=red>&ensp;&ensp;&ensp;&ensp;"responseDescription"</font> : <font color=blue>"Success"</font>,<br>
 }
 
-
-### Return code:
+### Return code
 
 | Status  Code                     |   Status Description    | 
 | :-------------------------: | :----------- |

@@ -1,4 +1,4 @@
-# 7.1 Payout Tool
+# 9.1 Payout Tool
 
 - <font color = red>Please configure the callback address for the corresponding interface in the background CallBack，Content Type：text/plain，Test tool location （Chinese interface displays payment tool, English interface displays payout tool）</font>
 - 
@@ -10,13 +10,12 @@
 ![查看交易信息](/en/public/查看交易信息.png "Shiprock")
 
 - Offline store loan testing process
-    - imitate4.1 payoutInquiry&4.2 payoutPayoutOffline store payment inquiry and payment success callback message process. Click the CREATE button to open the testing tool page.
+    - imitate5.1 payoutInquiry&5.2 payoutPayoutOffline store payment inquiry and payment success callback message process. Click the CREATE button to open the testing tool page.
 ![4.1线下放款测试工具](/en/public/4.1线下放款测试工具.png "Shiprock")
 
-- 4.1 payoutInquiryLoan inquiry request simulation
+- 5.1 payoutInquiryLoan inquiry request simulation
 
     - Select Channel Channel<font color = red>(Recommended choices RD Pawnshop)</font>，Type select payoutInquiry，<font color = red>Enter loan code Control No</font>，Click the SEND button to send the request, and the interface will request the URL configured in Callback and return the parsed information.
-- 4.2 payoutPayout Loan confirmation notification request simulation
-    - 4.1After the interface is successful, operation 4.2 can only be performed. Performing operation 4.2 alone will directly fail. Select Channel Channel<font color = red>(Recommended choicesRD Pawnshop)</font>，Type Select payoutPayout，<font color = red>Enter loan code Control No And loan disbursement time Pay Time（EX:2022-07-01 16:00:00）</font>，。Click the SEND button to send the request, and the interface will request the URL configured in Callback and return the parsed information
+- 5.2 payoutPayout Loan confirmation notification request simulation
+    - 5.1After the interface is successful, operation 5.2 can only be performed. Performing operation 5.2 alone will directly fail. Select Channel Channel<font color = red>(Recommended choicesRD Pawnshop)</font>，Type Select payoutPayout，<font color = red>Enter loan code Control No And loan disbursement time Pay Time（EX:2022-07-01 16:00:00）</font>，。Click the SEND button to send the request, and the interface will request the URL configured in Callback and return the parsed information
 ![4.2选择渠道进行付款](/en/public/4.2选择渠道进行付款.png "Shiprock")
-

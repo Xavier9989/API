@@ -1,14 +1,14 @@
-# 8.4取得城巿代码(getTownCity)
+# 10.4 取得城巿代码(getTownCity)
 
 ### 这支取得基本代码服务的API,提供用于使用银行付款的数据列表。调用服务时,versionDate请传空值，一切以正式环境接口为准。
 
 ### Input parameters
 
-| 参数                        |    类型     | 长度   |Y/N |描述|
+| 参数                        |    类型     | <img width=30/>长度   |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|用户名称<br>SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>getCatalog(固定参数值)- Ex:"action":"getCatalog"|
-|authentication |string |255.|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName|string|50|是|用户名称<br>SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>getCatalog(固定参数值)- Ex:"action":"getCatalog"|
+|authentication |string |255|是|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |catalogType|string|50||目录类别<br> 选择所需的基础代码类别 - Ex:"catalogType":"getTownCity"|
 |versionDate |dataTime|||版本日期|
 

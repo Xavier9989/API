@@ -1,13 +1,13 @@
 # Payout Channel Code
 
-| code                       |    Is it real-time    | interface    |channel| describe|
-| :-------------------------: | :-----------: |:-----:| --------------------------------| :--------------------:  |
-|1|5.1 Real-Time|5.1 PayoutInquery <br> 5.2 PayoutIPayout|MLhuillie | Remittance shop|  
-|5|3.1 Non-Real Time|3.1 PayoutOueue <br> 3.2 PayoutQueuePayou|Bank|bank|  
-|6|3.1 Non-Real Time|3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|GCash|Wallet|  
-|8|3.1 Non-Real Time|3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|Paymaya|Wallet|  
-|9|5.1 Real-Time|5.1 PayoutInquery <br> 5.2 PayoutIPayout|RD Pawnshop | Remittance shop|
-|2|4.1 Real-Time|4.1 payoutQueueV2 <br> 3.2 PayoutQueuePayout|Cebuana| Remittance shop|
-|13|4.1 Real-Time|4.1 payoutQueueV2 <br> 3.2 PayoutQueuePayout|Cebuana| Remittance shop|  
-|15|3.1 Non-Real Time|3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|GrabPay|Wallet|
+| code                       | channel| describe|interface    |
+| :-------------------------: |:-----:| --------------------------------| :--------------------:  |
+|1|MLhuillie | Remittance shop|  5.1 PayoutInquery <br> 5.2 PayoutIPayout|
+|2|Cebuana| Remittance shop|4.1 payoutQueueV2 <br> 3.2 PayoutQueuePayout|
+|5|Bank|bank|  3.1 PayoutOueue <br> 3.2 PayoutQueuePayou|
+|6|GCash|Wallet|  3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|
+|8|Paymaya|Wallet|  3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|
+|9|RD Pawnshop | Remittance shop|5.1 PayoutInquery <br> 5.2 PayoutIPayout|
+|13|Cebuana| Remittance shop|  4.1 payoutQueueV2 <br> 3.2 PayoutQueuePayout|
+|15|GrabPay|Wallet|3.1 PayoutOueue <br> 3.2 PayoutQueuePayout|
 

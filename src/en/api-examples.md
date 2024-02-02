@@ -14,32 +14,32 @@ _________________
     - [4.1 payoutQueueV2 (Remit Store)](/en/onlinepayment/payoutQueueV2.md).
     - [4.2 cancelPayout](/en/onlinepayment/cancelPayout.md).
     - [4.3 amendTransactionV2](/en/onlinepayment/amendTransactionV2.md).
-- 5. Offline transactions (synchronous)
-    - Offline Payment (Sync mode) 
+- 5. Offline Payment (Sync mode) 
     - [5.1 payoutInquiry](/en/Offlinepayment/PayoutInquiry.md).
 	- [5.2 payoutPayout](/en/Offlinepayment/PayoutPayout.md).
-    - Collection (Sync mode)
-    - [5.3 CollectionInquiry](/en/Offlinepayment/CollectionInquiry.md).
-    - [5.3.1 generate711Barcode](/en/Offlinepayment/Generate711Barcode.md).
-    - [5.4 collectionCollect](/en/Offlinepayment/collectionCollect.md).
-- 6. Function Query
+- 6. Collection (Sync mode)
+    - [6.3 CollectionInquiry](/en/Offlinepayment/CollectionInquiry.md).
+    - [6.2.1 generate711Barcode](/en/Offlinepayment/Generate711Barcode.md).
+    - [6.3 collectionCollect](/en/Offlinepayment/collectionCollect.md).
+- 7. Function Query
     - Inquiry APIs   
-    - [6.1 payoutQueryStatus](/en/Offlinepayment/payoutQueryStatus.md).
-    - [6.2 getRepoertPayout/getRerpotCollection](/en/Offlinepayment/getReportPayout.md).
-    - [6.3 balanceQuery](/en/Offlinepayment/balanceQuery.md).
-    - Finance APIs
-    - [6.4 financeNotification](/en/Rechargebalancewithdrawal/financeNotification.md).
-    - [6.5 notificationInquiry](/en/Rechargebalancewithdrawal/notificationInquiry.md).
-- 7. Test Tools
-    - [7.1 Payout Tool](/en/testtools/Collectionverificationtool.md).
-    - [7.2 Collection Tool](/en/testtools/Paymenttestingtools.md).
-- 8. Code Table
-    - [8.1 getNationality](/en/Obtainbasiccodelistinformation/getNationality.md).
-    - [8.2 getCivilStatus](/en/Obtainbasiccodelistinformation/getCivilStatus.md).
-    - [8.3 getIdentificationType](/en/Obtainbasiccodelistinformation/getIdentificationType.md).
-    - [8.4 getTownCity](/en/Obtainbasiccodelistinformation/getTownCity.md).
-    - [8.5 getProvince](/en/Obtainbasiccodelistinformation/getProvince.md).
-    - [8.6 getBankCode](/en/Obtainbasiccodelistinformation/getBankCode.md).
-- 9. [Error Code Table](/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
-- 10. [Payout Channel Code](/en/Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](/en/Paymentpipeline/Paymentpipeline1.md).
-- 11. [Rnew Credentials](/en/Changekeyprocess/Changekeyprocess.md).
+    - [7.1 payoutQueryStatus](/en/Offlinepayment/payoutQueryStatus.md).
+    - [7.2 getRepoertPayout/getRerpotCollection](/en/Offlinepayment/getReportPayout.md).
+    - [7.3 balanceQuery](/en/Offlinepayment/balanceQuery.md).
+    - [7.4 balanceTransfer](/en/Offlinepayment/balancetransfer.md).
+- 8. Finance APIs
+    - [8.1 financeNotification](/en/Rechargebalancewithdrawal/financeNotification.md).
+    - [8.2 notificationInquiry](/en/Rechargebalancewithdrawal/notificationInquiry.md).
+- 9. Test Tools
+    - [9.1 Payout Tool](/en/testtools/Collectionverificationtool.md).
+    - [9.2 Collection Tool](/en/testtools/Paymenttestingtools.md).
+- 10. Code Table
+    - [10.1 getNationality](/en/Obtainbasiccodelistinformation/getNationality.md).
+    - [10.2 getCivilStatus](/en/Obtainbasiccodelistinformation/getCivilStatus.md).
+    - [10.3 getIdentificationType](/en/Obtainbasiccodelistinformation/getIdentificationType.md).
+    - [10.4 getTownCity](/en/Obtainbasiccodelistinformation/getTownCity.md).
+    - [10.5 getProvince](/en/Obtainbasiccodelistinformation/getProvince.md).
+    - [10.6 getBankCode](/en/Obtainbasiccodelistinformation/getBankCode.md).
+- 11. [Error Code Table](/en/Backpropagationmessagedefinition/Backpropagationmessagedefinition.md).
+- 12. [Payout Channel Code](/en/Paymentpipeline/Paymentpipeline.md).  [Collection Channel Code](/en/Paymentpipeline/Paymentpipeline1.md).
+- 13. [Rnew Credentials](../en/Changekeyprocess/Changekeyprocess.md).

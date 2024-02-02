@@ -2,14 +2,14 @@
 ### The function of replying to successful withdrawal information is provided by the partner. When the offline store cashier confirms the withdrawal, they will send a successful withdrawal message to Skypay and then reply to the partner.
 
 ### Input parameters
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must |describe|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
-|userName|string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>payoutPayout(Fixed parameter values) - Ex:"action":"payoutPayout"|
-|authentication |string |100|Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber |string|13~15|Y|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|withdrawChannel|int |Option|Y|Payment Pipeline <br> For detailed content, please refer to Chapter 10 - Ex:Payment pipeline name 10	RDPawnshop|
-|payTime|DateTime||Y |time of payment<br> (yyyy-MM-dd HH:mm:ss) - Cashier payment time|
+|userName|string|50|YES|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>payoutPayout(Fixed parameter values) - Ex:"action":"payoutPayout"|
+|authentication |string |100|YES|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber |string|13~15|YES|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|withdrawChannel|int ||YES|Payment Pipeline <br> For detailed content, please refer to Chapter 12 - Ex:Payment pipeline name 12	RDPawnshop|
+|payTime|DateTime||YES|time of payment<br> (yyyy-MM-dd HH:mm:ss) - Cashier payment time|
 
 ### Post data
 

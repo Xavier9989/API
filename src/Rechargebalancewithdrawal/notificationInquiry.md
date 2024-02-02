@@ -1,17 +1,17 @@
-# 6.5查詢接口（notificationInquiry）
+# 8.2 查詢接口（notificationInquiry）
 
 ### 这支API是由SKYPAY提供,由合作伙伴发动请求進行查詢。提供日期区间及类型之查询，并返回日期及类型范围内「充值、结算、提现」之通知记录。
 
 ### Input parameters
 
-| 参数                        |    类型     | 长度  |Y/N  |描述|
+| 参数                        |    类型     | <img width=30/>长度  |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
-|authentication |string |255.|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|transctionDate|Date|10| |通知日期<br>开始- ex:2023-06-18|
-|transEndDate |Date|10| |通知日期<br>结束 - ex:2023-06-19|
-|statementTypes |string[]|| |通知类型：<br>1:打款帐户充值 <br> 2:收款结算转充值 <br> 3:帐户馀额互转 <br> 4:收款交易结算<br> 5:收款帐户提现 <br> 6:打款帐户提现|
+|userName |string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
+|authentication |string |255|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|transctionDate|Date|10|是 |通知日期<br>开始- ex:2023-06-18|
+|transEndDate |Date|10|是 |通知日期<br>结束 - ex:2023-06-19|
+|statementTypes |string[]||是 |通知类型：<br>1:打款帐户充值 <br> 2:收款结算转充值 <br> 3:帐户馀额互转 <br> 4:收款交易结算<br> 5:收款帐户提现 <br> 6:打款帐户提现|
 
 ### Post data
 
@@ -27,7 +27,7 @@
 
 ### Output parameters
 
-| 参数                        |    类型     | 长度    |描述|
+| 参数                        |    类型     | <img width=30/>长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime  |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|回传代码 <br> 1000|
@@ -35,7 +35,7 @@
 |notifications |string[]|255|通知数组名<br>Array|
 |transctionDate  |DateTime|50|通知日期 <br> ex:2023-06-18 17:52:10|
 |companyPrefix |string|5|公司编码 <br> ex:SKY98|
-|companyName |string|200.|公司名称 <br> ex:Skybridge Payment Inc.|
+|companyName |string|200|公司名称 <br> ex:Skybridge Payment Inc.|
 |accountNo |string|5|帐户<br> ex:SKY98|
 |sourceAccountNo |string|20|资金来源帐号 <br> (实际银行帐号，只在提现时提供)|
 |beneficiaryAccountNo |string|20|资金目的帐号 <br> (实际银行帐号，只在充值及提现时提供)|

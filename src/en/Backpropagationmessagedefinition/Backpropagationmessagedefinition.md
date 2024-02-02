@@ -1,4 +1,4 @@
-# 9.Error Code Table
+# 11. Error Code Table
 
 ## The API return code is as follows
 
@@ -7,6 +7,7 @@
 | :-------------------------: | :----------- |
 |1000|Success|
 |-1000|Post context is not valid|
+|-1001|Invalid Accountnumber|
 |-1008|Control number is already exists|
 |-1009|Unpredictable exception occurMerchant is not available|
 |-1016|Insufficient balance|
@@ -17,4 +18,3 @@
 |-1028|Has exceeded the limit of 5 transactions per day|
 |-1032|Your IP xxx is not whitelisted.Please contact Support Team.|
 |-9999|Service not available/Connection error|
-|-1001|Invalid Accountnumber|

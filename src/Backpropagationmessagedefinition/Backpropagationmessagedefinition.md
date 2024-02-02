@@ -1,4 +1,4 @@
-# 9.返回代码表
+# 11. 返回代码表
 
 ##   API返回代码如下
 
@@ -6,6 +6,7 @@
 | :-------------------------: | :----------- |
 |1000|Success|
 |-1000|Post context is not valid|
+|-1001|Invalid Accountnumber|
 |-1008|Control number is already exists|
 |-1009|Unpredictable exception occurMerchant is not available|
 |-1016|Insufficient balance|
@@ -16,4 +17,3 @@
 |-1028|Has exceeded the limit of 5 transactions per day|
 |-1032|Your IP xxx is not whitelisted.Please contact Support Team.|
 |-9999|Service not available/Connection error|
-|-1001|Invalid Accountnumber|

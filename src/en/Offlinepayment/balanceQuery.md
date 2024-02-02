@@ -1,12 +1,12 @@
-# 6.3balanceQuery
+# 7.3 balanceQuery
 
 ### Call the balance query service, provided by SkyPay.
 
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must|describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>balanceQuery(Fixed parameter values) - Ex:"action":"balanceQuery"|
-|authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName |string|50|YES|User name <br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>balanceQuery(Fixed parameter values) - Ex:"action":"balanceQuery"|
+|authentication |string |255|YES|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 ### Input parameters
 

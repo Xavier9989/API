@@ -1,4 +1,4 @@
-# 3.2payoutQueuePayout (CallBack)
+# 3.2 payoutQueuePayout (CallBack)
 -   This API is provided by partners and requested by payment vendors at the following times
 
     -   (1) When the transaction is uploaded to the payment provider
@@ -16,16 +16,16 @@
 
 ### Input parameters:
 
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User Name<br> Provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>payoutQueuePayout(Fixed parameter values) - Ex:"action":"payoutQueuePayout"|
-|authentication   |string |50|Y|    Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber  |string|13~15|Y|  Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|payType  |int|1|Y |Payment status:<br>1: upload: uploaded, representing payment information of transaction data, notified to payment unit<br>2: layout: paid, payment unit completed payment, return notification of payment success message<br>3: cancel: payment cancelled, not paid, partner notified to cancel transaction, return notification of successful cancellation transaction<br>4: failure: payment failed=>payment error, Return payment failure message<br>5: Amended Success: Data modification successful<br>6: Amended Failure: Data modification failed|
-|dealTime  |DateTime||Y|Trading Hours :<br> 1: Uploaded Time<br>2: paid Time: upon completion of payment<br>3: canceled Time: cancellation of transaction<br>4: fail time: payment failure time<br>5: Amed Success Time: modification of data success time<br>6: Amed Failure Time: modification of data failure time<br>|
-|failDescription |string |Option|Y|Fail description <br> Transaction failure message|
-|referenceNumber|string|Option|N|Returned when using ML payment callback with payType 1 and 5 statusreferenceNumber（upload and Amended Success）|
+|userName |string|50|YES|User Name<br> Provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>payoutQueuePayout(Fixed parameter values) - Ex:"action":"payoutQueuePayout"|
+|authentication   |string |50|YES|    Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber  |string|13~15|YES|  Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|payType  |int|1|YES|Payment status:<br>1: upload: uploaded, representing payment information of transaction data, notified to payment unit<br>2: layout: paid, payment unit completed payment, return notification of payment success message<br>3: cancel: payment cancelled, not paid, partner notified to cancel transaction, return notification of successful cancellation transaction<br>4: failure: payment failed=>payment error, Return payment failure message<br>5: Amended Success: Data modification successful<br>6: Amended Failure: Data modification failed|
+|dealTime  |DateTime||YES|Trading Hours :<br> 1: Uploaded Time<br>2: paid Time: upon completion of payment<br>3: canceled Time: cancellation of transaction<br>4: fail time: payment failure time<br>5: Amed Success Time: modification of data success time<br>6: Amed Failure Time: modification of data failure time<br>|
+|failDescription |string |Option|YES|Fail description <br> Transaction failure message|
+|referenceNumber|string|Option|deny|Returned when using ML payment callback with payType 1 and 5 statusreferenceNumber（upload and Amended Success）|
 
 ### Post data
 

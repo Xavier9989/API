@@ -1,22 +1,20 @@
-# 4.2cancelPayout
+# 4.2 cancelPayout
 
 #### This service is provided by SkyPay and aims to cancel a transaction when its status is Uploaded.
 
 ## <font color=red>Note</font>
 
-### <font color = red>Please note that if the user refunds through the "EGCash" and "LBC Express" channels, the service fee will not be refunded</font>
-
-### <font color = red>Only LBC Express channel loans can be cancelled</font>
+### <font color = red>Only ML and Cebuana channel loans can be cancelled</font>
 
 ### <font color = red>When requesting to cancel the interface, the status will change to Canceled. At this time, it is waiting for the channel to cancel. After the cancellation is successful, the Cancel Time will have a time for the cancellation to be successful. We will call back to interface 3.2 to notify you. If the cancellation fails, the status will change from Canceled to Uploaded, and interface 3.2 will not be called back. (If calling the 6.1 interface to query the status, it should be noted that there must be a Cancel Time and the status is Cancelled in order for the cancellation to be successful)</font>
 
 ### Input parameters:
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must |describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|User Name <br> Provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>cancelPayout(Fixed parameter values) - Ex:"action":"cancelPayout"|
-|authentication  |string |50|Y| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumbers[] |string[]|13~15  |Y|Withdrawal Code Array <br> When canceling a transaction, multiple withdrawal codes can be cancelled simultaneously. Using array format, multiple withdrawal codes to be cancelled can be transmitted at once|
+|userName|string|50|YES|User Name <br> Provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>cancelPayout(Fixed parameter values) - Ex:"action":"cancelPayout"|
+|authentication  |string |50|YES| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumbers[] |string[]|13~15  |YES|Withdrawal Code Array <br> When canceling a transaction, multiple withdrawal codes can be cancelled simultaneously. Using array format, multiple withdrawal codes to be cancelled can be transmitted at once|
 
 ### Post data
 

@@ -1,12 +1,12 @@
-# 8.2 getCivilStatus
+# 10.2 getCivilStatus
 ### This API, which obtains basic code services, provides a data list for using bank payments. When calling the service, please pass a null value for version date, and everything will be based on the official environment interface.
 
 ### Input parameters
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must|describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>getCatalog(Fixed parameter values)- Ex:"action":"getCatalog"|
-|authentication |string |255|Y|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName|string|50|YES|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>getCatalog(Fixed parameter values)- Ex:"action":"getCatalog"|
+|authentication |string |255|YES|Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |catalogType |string|50||Catalog Category <br> Select the required base code category - Ex:"catalogType":"getCivilStatus"|
 |versionDate |dataTime|||Version Date|
 

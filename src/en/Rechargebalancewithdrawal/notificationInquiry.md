@@ -1,16 +1,16 @@
-# 6.5 notificationInquiry
+# 8.2 notificationInquiry
 
 ### This API is provided by SKYPAY and is requested by partners for querying. Provide date range and type queries, and return notification records for "recharge, settlement, and withdrawal" within the date and type range.
 
 ### Input parameters
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must |describe|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
-|authentication |string |255|Y|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|transctionDate|Date|10| |Notification Date <br> Start- ex:2023-06-18|
-|transEndDate |Date|10| |Notification Date <br> End - ex:2023-06-19|
-|statementTypes |string[]|| |Notification type:<br>1. Recharge from payment account<br>2. Recharge from payment settlement<br>3. Account balance transfer<br>4. Payment transaction settlement<br>5. Withdrawal from payment account<br>6. Withdrawal from payment account|
+|userName |string|50|YES|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
+|authentication |string |255|YES|Verification Code <br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|transctionDate|Date|10| YES|Notification Date <br> Start- ex:2023-06-18|
+|transEndDate |Date|10| YES|Notification Date <br> End - ex:2023-06-19|
+|statementTypes |string[]||YES |Notification type:<br>1. Recharge from payment account<br>2. Recharge from payment settlement<br>3. Account balance transfer<br>4. Payment transaction settlement<br>5. Withdrawal from payment account<br>6. Withdrawal from payment account|
 ### Post data
 
 {<br>

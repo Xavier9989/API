@@ -1,18 +1,18 @@
-# 6.2交易报表查询(getRepoertPayout/getRerpotCollection)
+# 7.2 交易报表查询(getRepoertPayout/getRerpotCollection)
 
 ### 交易结果查询服务API由Skypay提供,可以对交易结果进行查询
 
 ### Input parameters
-| 参数                        |    类型     | 长度  |Y/N  |描述|
+| 参数                        |    类型     | <img width=30/>长度  |<img width=30/>必填 |描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
-|userName|string|50|Y|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y| 调用行为<br>payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
-|authentication|string |255.|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|startDate|string|50| Y|起始时间<br> "2022-12-02"|
-|endDate |string|50|Y|截止时间 <br>"2022-12-02"|
-|dateType|string|50|Y|CreateDate、CollectedTime(collection)、PayTime(payout)|
-|Pagination |string|50|Y|页码 <br> 1|
-|pageSize |string|50|Y|页面尺寸 <br> 100|
+|userName|string|50|是|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是| 调用行为<br>payoutInquiry(固定参数值)- Ex:"action":"payoutInquiry"|
+|authentication|string |255.|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|startDate|string|50|是|起始时间<br> "2022-12-02"|
+|endDate |string|50|是|截止时间 <br>"2022-12-02"|
+|dateType|string|50|是|CreateDate、CollectedTime(collection)、PayTime(payout)|
+|Pagination |string|50|是|页码 <br> 1|
+|pageSize |string|50|是|页面尺寸 <br> 100|
 
 ## Payout
 ### Post data

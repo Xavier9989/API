@@ -1,4 +1,4 @@
-# 4.3修改交易  (amendTransactionV2)
+# 4.3 修改交易  (amendTransactionV2)
 
 #### 当支付数据推送错误时，可以此接口进行数据修正，最常见为用户姓名错误(错字、顺序错误)，此接口与「4.1 Payout–payoutQueueV2」字段相同，请针对欲修改的字段带入新值，其于请带入原始值。
 
@@ -6,25 +6,25 @@
 
  ### <font color = red>如果无法修改，请先取消交易，然后通过API"4.1 Payout-payoutQueueV2"再次发送。</font>
 
-### <font color = red>LBCExpress渠道的交易，只能修改收款人姓名，其他信息不能修改。</font>
+### <font color = red>Cebuana渠道的交易，只能修改收款人姓名，其他信息不能修改。</font>
 
 ### Input parameters:
-| 参数                        |    类型     | 长度   | Y/N |描述|
+| 参数                        |    类型     | 长度   | <img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
-|userName |string|50|Y|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>amendTransactionV2(固定参数值) - Ex:"action":"amendTransactionV2"|
-|authentication   |string |50|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender |string|100| Y|支付方<br> 产品APP名称(由合作伙伴设计) - Ex:"sender":"APP NAME"|
-|controlNumber  |string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|name |string |50|Y|取现人名字<br> 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday|Date|10|Y | 生日格式<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
-|identificationId  |string|50|Y|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
-|identificationTypeId |string |3|Y|验证身份证件类别（银行）请参考第8.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
-|phone |string|11|Y|手机号<br> 09/08开头的11位数字<br> Ex:"phone":"09270348095"|
-|idcardPicType |string|50|Y|相片文件格式 <br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl|string |500|Y|相片存取网络地址<br> Ex:"idcardPicUrl":"https://12334"|
-|location  |string |100|Y|取款人地址<br> Ex:"location":"lalakay los banos laguna"|
-|withdrawChannel|int|Option | Y|支付渠道名称<br> 1 MLhuillier  |
+|userName |string|50|是|使用者名称<br>  SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>amendTransactionV2(固定参数值) - Ex:"action":"amendTransactionV2"|
+|authentication   |string |50|是|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|sender |string|100|是|支付方<br> 产品APP名称(由合作伙伴设计) - Ex:"sender":"APP NAME"|
+|controlNumber  |string|13~15|是|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|name |string |50|是|取现人名字<br> 使用逗号分割。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|birthday|Date|10|是| 生日格式<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  写入此字段，参数需要填入正确格式|
+|identificationId  |string|50|是|身份证件号码<br> 依不同身份验证方式,持有证件编号 - Ex:"identificationId":"442301922000"|
+|identificationTypeId |string |3|是|验证身份证件类别（银行）请参考第10.3章，获取标识类型 - Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
+|phone |string|11|是|手机号<br> 09/08开头的11位数字<br> Ex:"phone":"09270348095"|
+|idcardPicType |string|50|是|相片文件格式 <br> 文件格式之附属档名 - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl|string |500|是|相片存取网络地址<br> Ex:"idcardPicUrl":"https://12334"|
+|location  |string |100|是|取款人地址<br> Ex:"location":"lalakay los banos laguna"|
+|withdrawChannel|int| |是|支付渠道名称<br> 1 MLhuillier  |
 
 ### Post data
 

@@ -1,4 +1,4 @@
-# 6.4通知接口（financeNotification）
+# 8.1 通知接口（financeNotification）
 
 ### 这支API是由合作伙伴提供,透过下列时机由SKYPAY发动请求，对合作伙伴发送「充值、结算、提现」之入帐通知。
 - 充值、结算、提现
@@ -15,14 +15,14 @@
 
 ### Input parameters
 
-| 参数                        |    类型     | 长度   |Y/N |描述|
+| 参数                        |    类型     | <img width=30/>长度   |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
-|authentication  |string |255|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName|string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>payoutInquiry(固定参数值) - Ex:"action":"payoutInquiry"|
+|authentication  |string |255|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 |transctionDate |DateTime|50| |通知日期<br> ex:2023-06-18 17:52:10|
 |companyPrefix |string|5|  |公司编码<br>  ex:SKY98|
-|companyName |string|200.|  |公司名称<br> ex:Skybridge Payment Inc.|
+|companyName |string|200|  |公司名称<br> ex:Skybridge Payment Inc.|
 |accountNo |string|5|   |帐户 <br> ex:SKY98|
 |sourceAccountNo |string|20|   | 资金来源帐号 <br> (实际银行帐号，只在提现时提供)|
 |beneficiaryAccountNo |string|20|   |资金目的帐号 <br> (实际银行帐号，只在充值及提现时提供)|

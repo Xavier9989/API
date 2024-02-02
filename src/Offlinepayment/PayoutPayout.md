@@ -3,14 +3,14 @@
 ### 这支回复取款成功信息功能由合作伙伴提供,线下店出纳已确认取款时,会回传送取款成功讯息给Skypay,再回复合作伙伴。
 
 ### Input parameters
-| 参数                        |    类型     | 长度   |Y/N |描述|
+| 参数                        |    类型     | 长度   |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:--:|--------------------------------|   
-|userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>payoutPayout(固定参数值) - Ex:"action":"payoutPayout"|
-|authentication |string |100|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber |string|13~15|Y|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|withdrawChannel|int |Option|Y|支付管道<br> 详细内容请参考第10章 - Ex:支付管道支付管道名称10	RDPawnshop|
-|payTime|DateTime||Y |支付时间<br> (yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
+|userName|string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>payoutPayout(固定参数值) - Ex:"action":"payoutPayout"|
+|authentication |string |100|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber |string|13~15|是|取款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|withdrawChannel|int ||是|支付管道<br> 详细内容请参考第12章 - Ex:支付管道支付管道名称12	RDPawnshop|
+|payTime|DateTime||是|支付时间<br> (yyyy-MM-dd HH:mm:ss) - 出纳支付时间|
 
 ### Post data
 
@@ -26,11 +26,11 @@
 
 ### Output parameters:
 
-| 参数                        |    类型     | 长度    |描述|
+| 参数                        |    类型     | <img width=30/>长度    |描述|
 | :-------------------------: | :-----------: |:-------------:|----------------------------------------------------------------------|   
 |responseTime |DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS|
 |responseCode  |int|4|系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription |string|255.|回传内容描述 <br> 响应信息（必填）|
+|responseDescription |string|255|回传内容描述 <br> 响应信息（必填）|
 
 
 #### Output data：

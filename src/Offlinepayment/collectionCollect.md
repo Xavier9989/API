@@ -1,18 +1,18 @@
-# 5.4 收款确认（collectionCollect）
+# 6.3 收款确认（collectionCollect）
 #### 这支服务是由合作伙伴提供,它将由线下店出纳触发以确认报销。
 
 ### Input parameters
-| 参数                        |    类型     | 长度   |Y/N |描述|
+| 参数                        |    类型     | 长度   |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName|string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
-|authentication|string |255|Y|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|contractNumber |string|13~15|Y|收款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
-|amount|decimal|10.20|Y|金额<br>必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
-|phone|string|50|Y|手机号<br>09/08开头的11位数字<br> Ex:"phone":"09270348095"|
-|receiptNumber  |string|50|Y|  收据编号|
-|collectedTime|DateTime| |Y| 收款时间<br>日期格式yyyy-MM-dd HH:mm:ss|
-|payChannel|int||Y|收款管道<br> 详细说明请参考第11章[渠道code值](/Paymentpipeline/Paymentpipeline1.md)|
+|userName|string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>generate711Barcode(固定参数值) - Ex:"action":"generate711Barcode"|
+|authentication|string |255|是|验证密钥<br>Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|contractNumber |string|13~15|是|收款码<br> 前缀码5码+8~10个数字（前缀码在绑定邮箱中获取） - Ex:SKY**12345678|
+|amount|decimal|10.20|是|金额<br>必须是用户实际收款金额,小数点最高二位数 <br>  ex:"amount":3400.00|
+|phone|string|50|是|手机号<br>09/08开头的11位数字<br> Ex:"phone":"09270348095"|
+|receiptNumber  |string|50|是|  收据编号|
+|collectedTime|DateTime| |是| 收款时间<br>日期格式yyyy-MM-dd HH:mm:ss|
+|payChannel|int||是|收款管道<br> 详细说明请参考第12章[渠道code值](../Paymentpipeline/Paymentpipeline1.md)|
 
 ### Post data
 
@@ -31,11 +31,11 @@
 
 
 ### Output parameters
-| 参数                        |    类型     | 长度    |描述|
+| 参数                        |    类型     | <img width=30/>长度    |描述|
 | :-------------------------: | :-----------: |:-----:|--------------------------------|   
 |responseTime|DateTime|50|回传时间 <br> yyyy-MM-dd HH:mm:ss.SSSS(必填)|
 |responseCode |int|4|回传代码<br> 系统默认回传码,长度为4的数字,标准参考回码定义,系统默认回传码不足时,使用者可自定义代码,请以数字2开头,长度为4的数字,并明确在回传内容描述说明|
-|responseDescription |string|255.|回传内容描述 <br>响应信息（必填）|
+|responseDescription |string|255|回传内容描述 <br>响应信息（必填）|
 
 ### Output data：
 

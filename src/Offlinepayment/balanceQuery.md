@@ -1,11 +1,11 @@
-# 6.3余额查询（balanceQuery）
+# 7.3 余额查询（balanceQuery）
 ### 调用余额查询服务,由SkyPay提供。
 
-| 参数                        |    类型     | 长度   |Y/N |描述|
+| 参数                        |    类型     | <img width=30/>长度   |<img width=30/>必填|描述|
 | :-------------------------: | :-----------: |:-----:|:---:|--------------------------------|   
-|userName |string|50|Y|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|调用行为<br>balanceQuery(固定参数值) - Ex:"action":"balanceQuery"|
-|authentication |string |255.|Y|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|userName |string|50|是|使用者名称<br> SkyPay提供 - Ex:"userName":"AppName@skypay"|
+|action|string|50|是|调用行为<br>balanceQuery(固定参数值) - Ex:"action":"balanceQuery"|
+|authentication |string |255|是|验证密钥<br> Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
 
 ### Input parameters
 

@@ -26,12 +26,12 @@
 
 ### Input parameters
 
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must|describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|   
-|userName |string|50|Y|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
-|authentication   |string |100|Y|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|controlNumber |string|13~15|Y| Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|userName |string|50|YES|User name<br> provided by SkyPay - Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>payoutInquiry(Fixed parameter values) - Ex:"action":"payoutInquiry"|
+|authentication   |string |100|YES|Verification Code<br>  Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|controlNumber |string|13~15|YES| Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
 
 ### Post data
 
@@ -44,23 +44,23 @@
 
 
 ### Output parameters
-|              parameter                        |    type     | length   |Y/N |describe|
+|  parameter  |    type     | length |must | describe|
 | :-----------------------------: | :-----------: |:-----:| :--:|--------------------------------|   
-|responseTime  |DateTime|26|Y |responsiveness <br>  yyyy-MM-dd HH:mm:ss.SSSS|
-|responseCode  |int|4|Y |Response code <br>4 system default return code, a number of length 4, standard reference return code definition|
-|responseDescription  |string|255||Response Description Content <br> Response Information|
-|sender  |string|255|Y|Remitter<br> Product APP Name (Required: Designed by Partner) - Ex:"sender":"APP NAME"|
-|sender increaseress|string|255|Y |Remittance Address|
-|name |string |50| Y|Name of withdrawal person <br> separated by commas  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday |Date|10|Y |Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
-|identificationId  |string|50|Y|ID number <br>Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|idType  |string|50| |Verify ID Type <br> ID Type (SSS, UMID, Driver's License, TIN...) "idType": "TIN" (mandatory)|
-|phone |string|11| Y |phone number<br>11 digit number starting with 09/08 (required) <br> Ex:"phone":"09270348095"|
-|amount |string|10.20| Y |amount of money <br>Payment amount supports two decimal places (required) -  ex:"amount":3400.00|
-|idcardPicType |string|50| Y|Photo file format <br>file format attachment file name (required) - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl |string |500|Y|Photo access network address<br> Ex:"idcardPicUrl":"https://12334"|
-|contractNumber  |string|15|N|Payment code <br> prefix code 5+8-10 digits (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|location  |string |100| Y|Address<br> Add Address Withdrawal Address (Required)|
+|responseTime  |DateTime|26|YES |responsiveness <br>  yyyy-MM-dd HH:mm:ss.SSSS|
+|responseCode  |int|4|YES|Response code <br>4 system default return code, a number of length 4, <br>standard reference return code definition|
+|responseDescription  |string|255|YES|Response Description Content <br> Response Information|
+|sender  |string|255|YES|Remitter<br> Product APP Name (Required: Designed by Partner)<br>Ex:"sender":"APP NAME"|
+|sender address|string|255|YES|Remittance Address|
+|name |string |50|YES|Name of withdrawal person <br> separated by commas<br> Last name+","+<br>First name+","+Middle name+","+Suffix <br>Ex:"name":<br>"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|birthday |Date|10|YES|Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
+|identificationId  |string|50|YES|ID number <br>Depending on different authentication methods,<br>   hold the ID number - :"identificationId":"442301922000"|
+|idType  |string|50|YES |Verify ID Type <br> ID Type (SSS, UMID, Driver's License, TIN...) <br>"idType": "TIN" |
+|phone |string|11|YES|phone number<br>11 digit number starting with 09/08 (required) <br> Ex:"phone":"09270348095"|
+|amount |string|10.20|YES|amount of money <br>Payment amount supports two decimal places (required) -  ex:"amount":3400.00|
+|idcardPicType |string|50|YES|Photo file format <br>file format attachment file name (required) - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl |string |500|YES|Photo access network address<br> Ex:"idcardPicUrl":"https://12334"|
+|contractNumber  |string|15|deny|Payment code <br> prefix code 5+8-10 digits<br> (prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|location  |string |100|YES|Address<br> Add Address Withdrawal Address|
 
 ### Output data：
 
@@ -71,7 +71,7 @@
     <font color=red>&ensp;&ensp;"referenceNo"</font> : <font color=blue>""</font>,<br>
     <font color=red>&ensp;&ensp;"sender"</font> : <font color=blue>"Skybridge"</font>,<br>
     <font color=red>&ensp;&ensp;"controlNumber"</font> : <font color=blue>"SKYXXXXXXXXXX"</font>,<br>
-    <font color=red>&ensp;&ensp;"sender increase ress"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font>,<br>
+    <font color=red>&ensp;&ensp;"sender  address"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font>,<br>
     <font color=red>&ensp;&ensp;"name"</font> : <font color=blue>"Last name,First name,Middle name"</font>,<br>
     <font color=red>&ensp;&ensp;"birthday"</font> : <font color=blue>"1945-01-01"</font>,<br>
     <font color=red>&ensp;&ensp;"identificationId"</font> : <font color=blue>"123456789011"</font>,<br>
@@ -83,7 +83,6 @@
     <font color=red>&ensp;&ensp;"contractNumber"</font> : <font color=blue>"SK00000000001"</font>,<br>
     <font color=red>&ensp;&ensp;"location"</font> : <font color=blue>"1740 Mabini St,Malate,Manila,1004 Metro Manila,Phi-lip-pin"</font><br>
 }
-
 
 ### Return code:
 
@@ -97,6 +96,3 @@
 |-1016|Insufficient balance|
 |-1022|Invalid Accountnumber|
 |-1026|Transactions has been paid|
-
-
-

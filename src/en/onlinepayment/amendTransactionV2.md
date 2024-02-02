@@ -1,4 +1,4 @@
-# 4.3amendTransactionV2
+# 4.3 amendTransactionV2
 #### When there is an error in the payment data push, this interface can be used for data correction. The most common error is a user name error (typo, sequence error). This interface is related to「4.1 Payout–payoutQueueV2」The fields are the same, please input new values for the fields you want to modify, and input the original values.
 
 ### <font color = red>pay attention to ：</font>
@@ -8,22 +8,22 @@
 ### <font color = red>LBCExpress channel transactions, only the name of the payee can be modified, and other information cannot be modified。</font>
 
 ### Input parameters:
-| parameter                        |    type     | length   |Y/N |describe|
+| parameter                        |    type     | length   |must|describe|
 | :-------------------------: | :-----------: |:-----:|:----:|--------------------------------|  
-|userName |string|50|Y|User name<br>  provided by SkyPay Ex:"userName":"AppName@skypay"|
-|action|string|50|Y|Call behavior<br>amendTransactionV2(Fixed parameter values) - Ex:"action":"amendTransactionV2"|
-|authentication  |string |50|Y| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
-|sender |string|100| Y|Payer <br> Product APP Name (Required: Designed by Partner) <br>Ex:"sender":"APP NAME"|
-|controlNumber  |string|13~15|Y|Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
-|name |string |50|Y|Name of withdrawal person <br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
-|birthday|Date|10|Y | Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
-|identificationId  |string|50|Y|ID number<br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
-|identificationTypeId |string |3|Y|Please refer to Chapter 8.3 to obtain the identification type for verifying the type of identity document (bank)<br> Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
-|phone |string|11|Y|phone number<br> 11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
-|idcardPicType |string|50|Y|Photo File Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
-|idcardPicUrl|string |500|Y|Photo access network address <br> Ex:"idcardPicUrl":"https://12334"|
-|location  |string |100|Y|Withdrawal address <br> Ex:"location":"lalakay los banos laguna"|
-|withdrawChannel|int|Option | Y|Payment channel name <br> 1 MLhuillier  |
+|userName |string|50|YES|User name<br>  provided by SkyPay Ex:"userName":"AppName@skypay"|
+|action|string|50|YES|Call behavior<br>amendTransactionV2(Fixed parameter values) - Ex:"action":"amendTransactionV2"|
+|authentication  |string |50|YES| Verification Code<br> Verification Key - Ex:"authentication":"E1234567-123C-1234-123F-A12345670"|
+|sender |string|100|YES|Payer <br> Product APP Name (Required: Designed by Partner) <br>Ex:"sender":"APP NAME"|
+|controlNumber  |string|13~15|YES|Withdrawal code <br> Prefix code 5+8-10 digits (Prefix code can be obtained from the bound email) - Ex:SKY**12345678|
+|name |string |50|YES|Name of withdrawal person <br> separated by commas。  - Last name+","+First name+","+Middle name+","+Suffix - Ex:"name":"Lardizabal,Mary Annalou B.Lardizabal,Berja,|
+|birthday|Date|10|YES| Birthday format：<br>yyyy-MM-dd - Ex:"birthday":"1991-10-02" -  To write this field, the parameters need to be filled in the correct format|
+|identificationId  |string|50|YES|ID number<br> Depending on different authentication methods, hold the ID number - Ex:"identificationId":"442301922000"|
+|identificationTypeId |string |3|YES|Please refer to Chapter 10.3 to obtain the identification type for verifying the type of identity document (bank)<br> Ex:IdentificationId IdentificationType Company ID2 Driver’s License|
+|phone |string|11|YES|phone number<br> 11 digit number starting with 09/08 <br> Ex:"phone":"09270348095"|
+|idcardPicType |string|50|YES|Photo File Format <br> File Format Affiliated File Name - Ex:"idcardPicType":"jpg"|
+|idcardPicUrl|string |500|YES|Photo access network address <br> Ex:"idcardPicUrl":"https://12334"|
+|location  |string |100|YES|Withdrawal address <br> Ex:"location":"lalakay los banos laguna"|
+|withdrawChannel|int| |YES|Payment channel name <br> 1 MLhuillier  |
 
 ### Post data
 

@@ -9,7 +9,7 @@
 |object     |   String  |Json root|
 |type     |   String  | event + ',' + status |
 |live_mode     |   String  |false|
-|<table><tr><td>data </td></tr></table>      |   Object  |数据|
+|data|   Object  ||
 |id     |   String  |交易id，用于在我们系统中的查询API进行查询|
 |object     |   String  |payment_intention|
 |tenant   |   String  |一个将由 SKYPAY 生成并提供给合作伙伴的固定名称 ID|
@@ -19,7 +19,7 @@
 |currency   |   String  |货币类型|
 |payment_method     |   String  |所生成的支付方法数据的对象的Id|
 |metadata   |   Json    |要保存的任何其他数据。Key物件最多20组，value值最长255字元。|
-|<table><tr><td>Last_payment_error  </td></tr></table>    |   String  |支付错误内容|
+|Last_payment_error     |   String  |支付错误内容|
 |type     |   String   |错误类型|
 |charge     |   String  | 请求值|
 |code     |   String  |错误代码|

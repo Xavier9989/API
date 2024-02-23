@@ -1,9 +1,9 @@
-# 1.introduce
+# introduce
 
 This document explains the interface methods and specifications for web payment corresponding to each channel.
 
 
-## 2.2.Communication protocols and request methods
+## Communication protocols and request methods
 - Service Type：Restful Service
 - Http Method：POST
 
@@ -24,5 +24,5 @@ _________________
 -  username: alice, pw: superman 
 -  alice:superman
 -  Base64 encoded: YWxpY2U6c3VwZXJtYW4=
--   HTTP request header:
+-  HTTP request header:
 - Authorization: Basic YWxpY2U6c3VwZXJtYW4=

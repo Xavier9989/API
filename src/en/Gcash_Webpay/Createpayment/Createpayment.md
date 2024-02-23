@@ -1,4 +1,4 @@
-# Create Payment - Technical Specifications
+# Create Payment
 
 
 

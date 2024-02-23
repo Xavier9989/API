@@ -98,6 +98,7 @@ export default defineConfig({
       label: "English",
       selectText: "English",
       themeConfig:{
+        nav: [{ text: "Home", link: "/en/Version1" }],
         docFooter: {
           prev: "previous page",
           next: "next page",
@@ -114,7 +115,7 @@ export default defineConfig({
             text: "Introduce",
             items: [
               { text: "Version", link: "/en/Version1" },
-              { text: "preface", link: "/en/preface" },
+              { text: "Preface", link: "/en/preface" },
               { text:"Generate authentication key",link:"/en/Generateauthenticationkey"},
               { text: "Payment method", link: "/en/APIdocumentationdescription" },
             ],
@@ -123,22 +124,72 @@ export default defineConfig({
             text: "Gcash_Webpay Interface Process",
             collapsed: true,
             items: [
+<<<<<<< HEAD
               { text: "I interface flowchart", link: "/en/Gcash_Webpay/process/process"},
               { text: "II Paymentcreate", link: "/en/Gcash_Webpay/Createpayment/Createpayment"},
               { text: "III Paymentupdate", link: "/en/Gcash_Webpay/Paymentupdate/Paymentupdate"},
               { text: "IV Paymentconfirmation", link: "/en/Gcash_Webpay/Paymentconfirmation/Paymentconfirmation"},
               { text: "V Paymentinquiry", link: "/en/Gcash_Webpay/Paymentinquiry/Paymentinquiry"},
+=======
+              {
+                items: [
+                  {
+                    text: "Payment_intentions",
+                    link: "/en/Createpayment/Createpayment",
+                  },
+                ],
+              },
+>>>>>>> 5178f457e30cd5bd8167829f59ba8946df014b64
             ],
           },
           {
             text: "qr_ph interface process",
             collapsed: true,
             items: [
+<<<<<<< HEAD
               { text: "I interface flowchart", link: "/en/qr_ph/process1/process1"},
               { text: "II Paymentcreate", link: "/en/qr_ph/Createpayment1/Createpayment1"},
               { text: "III Paymentupdate", link: "/en/qr_ph/Paymentupdate1/Paymentupdate1"},
               { text: "IV Paymentconfirmation", link: "/en/qr_ph/Paymentconfirmation1/Paymentconfirmation1"},
               { text: "V Paymentinquiry", link: "/en/qr_ph/Paymentinquiry1/Paymentinquiry1"},
+=======
+              {
+                items: [
+                  {
+                    text: "Payment_intentions(PI)",
+                    link: "/en/Paymentupdate/Paymentupdate",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "Payment Confirmation - Technical Specifications",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "Payment_intentions(ID)confirm",
+                    link: "/en/Paymentconfirmation/Paymentconfirmation",
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            text: "Payment inquiry - Technical specifications",
+            collapsed: true,
+            items: [
+              {
+                items: [
+                  {
+                    text: "Payment_intentions(PI)",
+                    link: "/en/Paymentinquiry/Paymentinquiry",
+                  },
+                ],
+              },
+>>>>>>> 5178f457e30cd5bd8167829f59ba8946df014b64
             ],
           },
           {
@@ -148,7 +199,7 @@ export default defineConfig({
               {
                 items: [
                   {
-                    text: "notice",
+                    text: "Notice",
                     link: "/en/Notificationcallback/Notificationcallback",
                   },
                 ],
